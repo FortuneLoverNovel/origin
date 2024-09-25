@@ -830,66 +830,6 @@
 
     };
 
-    $.setStorageFile = function(key, val) {
-        val = JSON.stringify(val);
-        var fs = require('fs');
-        
-        var out_path = "";
-        
-        //mac os Sierra 対応
-        if(process.execPath.indexOf("var/folders")!=-1){
-            out_path = process.env.HOME+"/_TyranoGameData";
-            if(!fs.existsSync(out_path)){
-                fs.mkdirSync(out_path);
-            }
-        }else{
-            out_path = $.getProcessPath();
-        }
-        
-        
-        fs.writeFileSync(out_path + "/" + key + ".sav", escape(val));
-
-    };
-
-    $.getStorageFile = function(key) {
-
-        try {
-
-            var gv = "null";
-            var fs = require('fs');
-            var out_path = "";
-        
-            //Mac os Sierra 対応
-            if(process.execPath.indexOf("var/folders")!=-1){
-                out_path = process.env.HOME+"/_TyranoGameData";
-                if(!fs.existsSync(out_path)){
-                    fs.mkdirSync(out_path);
-                }
-            }else{
-                out_path = $.getProcessPath();
-            }
-            
-            if (fs.existsSync(out_path+"/" + key + ".sav")) {
-                var str = fs.readFileSync(out_path+"/" + key + ".sav");
-                gv = unescape(str);
-            } else {
-                //Fileが存在しない場合にローカルストレージから読み取る使用は破棄。
-                //gv = unescape(localStorage.getItem(key));
-            }
-
-            if (gv == "null")
-                return null;
-
-        } catch(e) {
-            alert("この環境はセーブ機能を利用できません。ローカルで実行している場合などに発生します");
-            $.confirmSaveClear();
-        }
-
-        return gv;
-
-    };
-
-    /*
     $.setStorage = function(key,val){
     val = JSON.stringify(val);
     localStorage.setItem(key, LZString.compress(escape(val)));
@@ -919,7 +859,6 @@
     return gv;
 
     };
-    */
 
     $.alert = function(str,cb) {
         

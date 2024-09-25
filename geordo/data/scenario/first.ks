@@ -49,12 +49,7 @@
 ;@jump storage="main/gio.ks"
 
 
-[if exp="$.isNWJS()==false" ]
-@jump storage="validate.ks"
-[else]
-[playbgm storage="M19_FinalMix.ogg" volume=50]
 @jump storage="title.ks"
-[endif]
 
 
 [s]
