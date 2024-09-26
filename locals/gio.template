@@ -365,23 +365,23 @@ f.charas = [
 */
 
 #
-{phrase3}[r]
+{phrase3}[l][r]
 {phrase4}[r]
 {phrase5}[p]
 
 #
-{phrase6}[r]
+{phrase6}[l][r]
 {phrase7}[r]
 {phrase8}[p]
 
 #マリア
-{phrase9}[r]
+{phrase9}[l][r]
 {phrase10}[p]
 
 [bg storage="HF04_078.png"]
 
 #
-{phrase11}[r]
+{phrase11}[l][r]
 {phrase12}[p]
 
 #マリア:hamehura_Maria_cos1_def
@@ -392,7 +392,7 @@ f.charas = [
 {phrase15}[r]
 {phrase16}[p]
 #
-{phrase17}[r]
+{phrase17}[l][r]
 {phrase18}[r]
 {phrase19}[p]
 
@@ -409,7 +409,7 @@ f.charas = [
 
 #
 {phrase24}[r]
-{phrase25}[r]
+{phrase25}[l][r]
 {phrase26}[p]
 
 [chara_move name="maria" left="&f.left" face="hamehura_Maria_cos1_ase"]
@@ -423,7 +423,7 @@ f.charas = [
 
 [v storage="h2"]
 #
-{phrase28}[r]
+{phrase28}[l][r]
 {phrase29}[p]
 
 #
@@ -467,7 +467,7 @@ f.charas = [
 
 #ジオルド	
 
-{phrase41}[r]
+{phrase41}[l][r]
 {phrase42}[p]
 
 #
@@ -491,7 +491,7 @@ f.charas = [
 
 #
 {phrase48}[r]
-{phrase49}[r]
+{phrase49}[l][r]
 {phrase50}[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
@@ -523,7 +523,7 @@ f.charas = [
 {phrase58}[p]
 
 #マリア
-{phrase59}[r]
+{phrase59}[l][r]
 {phrase60}[p]
 
 #ジオルド
@@ -538,14 +538,14 @@ f.charas = [
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-{phrase64}[r]
+{phrase64}[l][r]
 {phrase65}[r]
 {phrase66}[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
 #ジオルド
-{phrase67}[r]
+{phrase67}[l][r]
 {phrase68}[p]
 
 #
@@ -574,7 +574,7 @@ f.charas = [
 
 #
 [v storage="h2"]
-{phrase74}[r]
+{phrase74}[l][r]
 {phrase75}[r]
 {phrase76}[p]
 
@@ -582,7 +582,7 @@ f.charas = [
 {phrase77}[p]
 
 #
-{phrase78}[r]
+{phrase78}[l][r]
 {phrase79}[r]
 {phrase80}[p]
 
@@ -623,7 +623,7 @@ f.charas = [
 
 #マリア
 {phrase87}[r]
-{phrase88}[r]
+{phrase88}[l][r]
 {phrase89}[p]
 
 #
@@ -660,7 +660,7 @@ f.charas = [
 
 #
 {phrase101}[r]
-{phrase102}[r]
+{phrase102}[l][r]
 {phrase103}[p]
 
 #
@@ -679,7 +679,7 @@ f.charas = [
 {phrase107}[p]
 
 #
-{phrase108}[r]
+{phrase108}[l][r]
 {phrase109}[r]
 {phrase110}[p]
 
@@ -716,7 +716,7 @@ f.charas = [
 [resetfont]
 
 #
-{phrase123}[r]
+{phrase123}[l][r]
 {phrase124}[p]
 
 [chara_hide name="maria" wait=false ]
@@ -766,7 +766,7 @@ f.charas = [
 {phrase133}[p]
 
 {phrase134}[r]
-{phrase135}[r]
+{phrase135}[l][r]
 {phrase136}[p]
 
 #カタリナ	
@@ -800,15 +800,15 @@ f.charas = [
 {phrase143}[p]
 
 #
-{phrase144}[r]
-{phrase145}[r]
+{phrase144}[l][r]
+{phrase145}[l][r]
 {phrase146}[p]
 
 
 #
 
 {phrase147}[r]
-{phrase148}[r]
+{phrase148}[l][r]
 {phrase149}[p]
 
 [chara_hide_all ]
@@ -830,12 +830,12 @@ f.charas = [
 
 #
 [v storage="h2"]
-{phrase153}[r]
+{phrase153}[l][r]
 {phrase154}[r]
 {phrase155}[p]
 
 #
-{phrase156}[r]
+{phrase156}[l][r]
 {phrase157}[p]
 
 [free_layermode time=1000 ]
@@ -886,7 +886,7 @@ f.charas = [
 [chara_mod  name="maria" face="hamehura_Maria_cos1_def"]
 
 #マリア
-{phrase163}[r]
+{phrase163}[l][r]
 {phrase164}[p]
 
 
@@ -904,7 +904,7 @@ f.charas = [
 {phrase169}[p]
 
 #
-{phrase170}[r]
+{phrase170}[l][r]
 {phrase171}[p]
 
 [chara_hide name="maria"]
@@ -926,7 +926,7 @@ f.charas = [
 
 #
 [v storage="h2"]
-{phrase175}[r]
+{phrase175}[l][r]
 {phrase176}[r]
 {phrase177}[p]
 
@@ -945,8 +945,8 @@ f.charas = [
 
 #
 
-{phrase181}[r]
-{phrase182}[r]
+{phrase181}[l][r]
+{phrase182}[l][r]
 {phrase183}[p]
 
 [chara_hide name="gio"]
@@ -962,7 +962,7 @@ f.charas = [
 
 #ジオルド	
 
-{phrase185}[r]
+{phrase185}[l][r]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
 {phrase186}[p]
@@ -1018,7 +1018,7 @@ f.charas = [
 {phrase196}[p]
 
 #マリア
-{phrase197}[r]
+{phrase197}[l][r]
 {phrase198}[p]
 
 #
@@ -1067,7 +1067,7 @@ f.charas = [
 #ジオルド
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-{phrase207}[r]
+{phrase207}[l][r]
 {phrase208}[p]
 
 #
@@ -1103,13 +1103,13 @@ f.charas = [
 [v storage="h1"]
 
 {phrase218}[r]
-{phrase219}[r]
+{phrase219}[l][r]
 {phrase220}[p]
 
 #
 
 {phrase221}[r]
-{phrase222}[r]
+{phrase222}[l][r]
 {phrase223}[p]
 
 [chara_hide name="gio"]
@@ -1120,7 +1120,7 @@ f.charas = [
 {phrase224}[p]
 
 #
-{phrase225}[r]
+{phrase225}[l][r]
 {phrase226}[p]
 
 
@@ -1210,11 +1210,11 @@ f.charas = [
 
 
 #令嬢1
-{phrase247}[r]
+{phrase247}[l][r]
 {phrase248}[p]
 
 #令嬢2:hamehura_DVDmob2_fear
-{phrase249}[r]
+{phrase249}[l][r]
 {phrase250}[p]
 
 #令嬢1
@@ -1233,7 +1233,7 @@ f.charas = [
 {phrase257}[p]
 
 #令嬢1
-{phrase258}[r]
+{phrase258}[l][r]
 {phrase259}[r]
 {phrase260}[p]
 
@@ -1249,14 +1249,14 @@ f.charas = [
 {phrase266}[p]
 
 #令嬢3:hamehura_DVDmob3_fear
-{phrase267}[r]
+{phrase267}[l][r]
 {phrase268}[r]
 {phrase269}[p]
 
 [chara_hide_all]
 
 #
-{phrase270}[r]
+{phrase270}[l][r]
 
 {phrase271}[r]
 {phrase272}[p]
@@ -1409,11 +1409,11 @@ f.charas = [
 
 #マリア
 {phrase327}[r]
-{phrase328}[r]
+{phrase328}[l][r]
 {phrase329}[p]
 
 #マリア
-{phrase330}[r]
+{phrase330}[l][r]
 {phrase331}[r]
 {phrase332}[p]
 
@@ -1454,7 +1454,7 @@ f.charas = [
 #ジオルド
 [v storage="145"]
 {phrase346}[p]
-{phrase347}[r]
+{phrase347}[l][r]
 {phrase348}[r]
 {phrase349}[p]
 
@@ -1465,7 +1465,7 @@ f.charas = [
 
 #
 
-{phrase351}[r]
+{phrase351}[l][r]
 {phrase352}[r]
 {phrase353}[p]
 
@@ -1485,11 +1485,11 @@ f.charas = [
 
 [cm]
 #マリア:hamehura_Maria_cos1_ai
-{phrase354}[r]
+{phrase354}[l][r]
 {phrase355}[p]
 
 #
-{phrase356}[r]
+{phrase356}[l][r]
 {phrase357}[p]
 
 {phrase358}[p]
@@ -1530,7 +1530,7 @@ f.charas = [
 {phrase367}[p]
 
 #
-{phrase368}[r]
+{phrase368}[l][r]
 {phrase369}[p]
 
 #
@@ -1547,13 +1547,13 @@ f.charas = [
 [cm]
 
 #マリア:hamehura_Maria_cos1_def2
-{phrase371}[r]
+{phrase371}[l][r]
 {phrase372}[p]
 
 #
 {phrase373}[p]
 
-{phrase374}[r]
+{phrase374}[l][r]
 {phrase375}[p]
 
 #ジオルド
@@ -1597,12 +1597,12 @@ f.charas = [
 
 #
 
-{phrase386}[r]
+{phrase386}[l][r]
 {phrase387}[r]
 {phrase388}[p]
 
 #
-{phrase389}[r]
+{phrase389}[l][r]
 {phrase390}[p]
 
 #

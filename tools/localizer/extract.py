@@ -3,7 +3,7 @@ import os
 import re
 from config import Row, files, tmp_folder
 
-phrase_regex = re.compile(r"^(.+)(\[\w\])$")
+phrase_regex = re.compile(r"^(.+?)((?:\[\w\])+)$")
 
 
 def extract():

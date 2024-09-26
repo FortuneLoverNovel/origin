@@ -449,7 +449,7 @@ f.charas = [
 {phrase7}[p]
 
 #
-{phrase8}[r]
+{phrase8}[l][r]
 {phrase9}[r]
 {phrase10}[p]
 
@@ -753,7 +753,7 @@ f.charas = [
 
 #
 {phrase93}[r]
-{phrase94}[r]
+{phrase94}[l][r]
 {phrase95}[p]
 
 
@@ -1349,7 +1349,7 @@ f.charas = [
 {phrase257}[p]
 
 #
-{phrase258}[r]
+{phrase258}[l][r]
 {phrase259}[r]
 {phrase260}[p]
 
@@ -1390,7 +1390,7 @@ f.charas = [
 {phrase269}[p]
 
 #
-{phrase270}[r]
+{phrase270}[l][r]
 {phrase271}[r]
 {phrase272}[p]
 
@@ -1439,7 +1439,7 @@ f.charas = [
 {phrase282}[p]
 
 #
-{phrase283}[r]
+{phrase283}[l][r]
 {phrase284}[r]
 {phrase285}[p]
 
@@ -1530,7 +1530,7 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-{phrase308}[r]
+{phrase308}[l][r]
 {phrase309}[r]
 {phrase310}[p]
 
@@ -1640,7 +1640,7 @@ f.charas = [
 {phrase337}[p]
 
 #
-{phrase338}[r]
+{phrase338}[l][r]
 {phrase339}[r]
 {phrase340}[p]
 
@@ -1780,7 +1780,7 @@ f.charas = [
 {phrase382}[p]
 
 #
-{phrase383}[r]
+{phrase383}[l][r]
 {phrase384}[r]
 {phrase385}[p]
 
