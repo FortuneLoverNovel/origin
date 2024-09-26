@@ -1,0 +1,1981 @@
+
+*start
+
+;タイトルマスク
+
+[cm]
+[clearfix]
+[start_keyconfig]
+
+[mask graphic="now_loading.png" time=10]
+
+[bg storage="HF08_021_026.png" time=10]
+
+
+;メニューボタンの表示
+;@showmenubutton
+
+;メッセージウィンドウの設定
+[position layer=message0 width=960 height=280 top=510 left=180]
+[position layer=message0 page=fore frame="frame.png" margint="30" marginl="100" marginr="70" marginb="60" ]
+[image layer="message0" name="nameplate" storage="name_blue.png" folder="image" left=210 top=490 zindex="111" ]
+
+[iscript]
+$(".nameplate").hide();
+[endscript]
+
+;メッセージウィンドウの表示
+[layopt layer=message0 visible=false]
+[layopt layer="0" visible=true]
+[layopt layer="1" visible=true]
+
+;キャラクターの名前が表示される文字領域
+[ptext name="chara_name_area" layer="message0" color="0x8b8f98" size=26 bold="bold" x=240 y=500 width=200 align=center]
+
+;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
+[chara_config ptext="chara_name_area"]
+[chara_config talk_focus="brightness" ]
+[chara_config time="10" ]
+
+;このゲームで登場するキャラクターを宣言
+;[preload storage="tyrano/images/system/nextpage.gif" ]
+
+
+;ロールボタン配置
+;セーブ
+[button name="role_button" role="menu" graphic="btn_save.png"  x=0 y=0]
+
+;バックログ
+[button name="role_button" role="backlog" graphic="btn_log.png" x=1125 y=530]
+
+;ボリュームボタン
+[button name="btn_volume" role="none" fix=true graphic="btn_volume.png" x=1135 y=595]
+
+[iscript]
+
+f.chara = {
+    
+    "maria":
+    {
+        
+        "怒り":"hamehura_Maria_cos1_do",
+        "焦り":"hamehura_Maria_cos1_ase",
+        "悲しみ":"hamehura_Maria_cos1_ai",
+        "驚き":"hamehura_Maria_cos1_odo",
+        "無表情":"hamehura_Maria_cos1_mu",
+        "泣き":"hamehura_Maria_cos1_naki",
+        "微笑み":"hamehura_Maria_cos1_def",
+        "照れ":"hamehura_Maria_cos1_tere",
+        "笑顔":"hamehura_Maria_cos1_def2",
+        
+    },
+    
+    "alan":{
+        
+        "悲しみ":"hamehura_Alan_cos1_ai",
+        "微笑み":"hamehura_Alan_cos1_def",
+        "怒り":"hamehura_Alan_cos1_do",
+        "ドヤ顔":"hamehura_Alan_cos1_doya",
+        "混乱":"hamehura_Alan_cos1_kon",
+        "無表情":"hamehura_Alan_cos1_mu",
+        "驚き":"hamehura_Alan_cos1_odo",
+        "照れ":"hamehura_Alan_cos1_tere",
+        
+        
+    },
+    
+    "mary":{
+        
+        "悲しみ":"hamehura_Mary_cos1_ai",
+        "微笑み":"hamehura_Mary_cos1_def",
+        "怒り":"hamehura_Mary_cos1_do",
+        "無表情":"hamehura_Mary_cos1_mu",
+        
+    },
+        
+
+}
+
+[endscript]
+
+[iscript]
+    
+    sf.btn_volume = true;
+    
+    $(".btn_volume").on("click",function(){
+        
+        if(sf.btn_volume==true){
+            sf.btn_volume = false;
+            $(".btn_volume").attr("src","./data/image/btn_volume_off.png");
+            TG.ftag.startTag("stopse", {buf:"2",stop:"true"});
+            TG.tmp.map_bgm["0"].muted = true;
+        
+        }else{
+            sf.btn_volume = true;
+            $(".btn_volume").attr("src","./data/image/btn_volume.png");
+            TG.tmp.map_bgm["0"].muted = false;
+        
+        }
+        
+    });
+    
+    f.mixmode = false;
+    
+    if ('CSS' in window && 'supports' in window.CSS) {
+        if (window.CSS.supports('mix-blend-mode', 'soft-light')) {
+          f.mixmode = true;
+        }
+    }
+    
+    
+
+[endscript]
+
+
+
+[macro name="md"]
+
+    [iscript]
+        
+        tf.face = f.chara[mp.name][mp.face]
+        
+    [endscript]
+
+    [chara_mod name="&mp.name" face="&tf.face"]
+
+[endmacro]
+
+[macro name="v" ]
+    
+    [if exp="sf.btn_volume==true"]
+    
+    [eval exp="mp.storage='vo/'+mp.storage+'.ogg'" ]
+    
+    [playse * buf=2 ]
+    
+    [endif]
+    
+[endmacro]
+
+[macro name="kanim_chara" ]
+
+
+[kanim layer=0 name="%name" keyframe=quake time=300 count=1 easing=linear]
+
+[wait time=500]
+
+[iscript]
+$(".tyrano_chara").css({
+    "animation-play-state":"",
+    "animation-iteration-count":"",
+    "animation-fill-mode":"",
+    "animation-timing-function":"",
+    "animation-name":"",
+    "animation-duration":"",
+    "transform":""
+});
+[endscript]
+
+    
+[endmacro]
+
+[macro name="quake_camera" ]
+
+[kanim layer=0 name="layer_camera" keyframe=quake time=300 count=2 easing=linear mode="none"]
+
+[iscript]
+TYRANO.kag.tmp.num_anim = 0;
+[endscript]
+
+[wait time=500]
+
+[iscript]
+$(".layer_camera").css({
+    "animation-play-state":"",
+    "animation-iteration-count":"",
+    "animation-fill-mode":"",
+    "animation-timing-function":"",
+    "animation-name":"",
+    "animation-duration":"",
+    "transform":""
+});
+
+[endscript]
+
+[endmacro]
+
+[macro name="love_up"]
+
+[iscript]
+
+$(".celanim").remove();
+
+f.love++;
+tf.love_file='love_'+f.love+'.png';
+[endscript]
+
+[free layer=0 name="love" time=100 ]
+[image layer=0 name="love" storage="&tf.love_file" left=980 top=10 time=500] 
+
+[endmacro]
+
+
+[iscript]
+
+    f.top = -120;
+    f.left = -120;
+    f.right = 300;
+    f.love = 0;
+    
+    if(sf.alan_cg_1==undefined){
+       sf.alan_cg_1=false;
+       sf.alan_cg_2=false;
+    }
+
+        
+[endscript]
+
+
+
+[iscript]
+
+f.charas = [
+
+"data/fgimage/chara/alan/hamehura_Alan_cos1_ai.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_def.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_do.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_doya.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_kon.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_mu.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_odo.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_tere.png",
+
+"data/fgimage/chara/alan/hamehura_Alan_cos1_ai_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_def_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_do_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_doya_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_kon_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_mu_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_odo_b.png",
+"data/fgimage/chara/alan/hamehura_Alan_cos1_tere_b.png",
+
+
+"data/fgimage/chara/mary/hamehura_Mary_cos1_ai.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_def.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_do.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_mu.png",
+
+"data/fgimage/chara/mary/hamehura_Mary_cos1_ai_b.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_def_b.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_do_b.png",
+"data/fgimage/chara/mary/hamehura_Mary_cos1_mu_b.png",
+
+
+"data/fgimage/chara/maria/hamehura_Maria_cos1_ai.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_ase.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_cry.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_def.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_def2.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_do.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_mu.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_odo.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_tere.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_naki.png",
+
+
+"data/fgimage/chara/maria/hamehura_Maria_cos1_ai_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_ase_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_cry_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_def_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_def2_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_do_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_mu_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_odo_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_tere_b.png",
+"data/fgimage/chara/maria/hamehura_Maria_cos1_naki_b.png",
+ 
+ ];
+
+
+[endscript]
+
+[preload storage="&f.charas"]
+
+
+;キャラクター情報読み込み
+[chara_new  name="alan" color="0x6b7c9d" storage="chara/alan/hamehura_Alan_cos1_ai.png" jname="アラン" ]
+[chara_new  name="mary"  color="0xff0981" storage="chara/mary/hamehura_Mary_cos1_ai.png" jname="メアリ" ]
+[chara_new  name="maria" color="0xff0981" storage="chara/maria/hamehura_Maria_cos1_ai.png" jname="マリア" ]
+
+;キャラクターの表情登録
+
+;アラン
+[chara_face name="alan" face="hamehura_Alan_cos1_ai" storage="chara/alan/hamehura_Alan_cos1_ai.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_def" storage="chara/alan/hamehura_Alan_cos1_def.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_do" storage="chara/alan/hamehura_Alan_cos1_do.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_doya" storage="chara/alan/hamehura_Alan_cos1_doya.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_kon" storage="chara/alan/hamehura_Alan_cos1_kon.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_mu" storage="chara/alan/hamehura_Alan_cos1_mu.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_odo" storage="chara/alan/hamehura_Alan_cos1_odo.png"]
+[chara_face name="alan" face="hamehura_Alan_cos1_tere" storage="chara/alan/hamehura_Alan_cos1_tere.png"]
+
+
+;メアリ
+[chara_face name="mary" face="hamehura_Mary_cos1_ai" storage="chara/mary/hamehura_Mary_cos1_ai.png"]
+[chara_face name="mary" face="hamehura_Mary_cos1_def" storage="chara/mary/hamehura_Mary_cos1_def.png"]
+[chara_face name="mary" face="hamehura_Mary_cos1_do" storage="chara/mary/hamehura_Mary_cos1_do.png"]
+[chara_face name="mary" face="hamehura_Mary_cos1_mu" storage="chara/mary/hamehura_Mary_cos1_mu.png"]
+
+
+;マリア
+[chara_face name="maria" face="hamehura_Maria_cos1_ai" storage="chara/maria/hamehura_Maria_cos1_ai.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_ase" storage="chara/maria/hamehura_Maria_cos1_ase.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_cry" storage="chara/maria/hamehura_Maria_cos1_cry.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_def" storage="chara/maria/hamehura_Maria_cos1_def.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_def2" storage="chara/maria/hamehura_Maria_cos1_def2.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_do" storage="chara/maria/hamehura_Maria_cos1_do.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_mu" storage="chara/maria/hamehura_Maria_cos1_mu.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_odo" storage="chara/maria/hamehura_Maria_cos1_odo.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_tere" storage="chara/maria/hamehura_Maria_cos1_tere.png"]
+[chara_face name="maria" face="hamehura_Maria_cos1_naki" storage="chara/maria/hamehura_Maria_cos1_naki.png"]
+
+
+
+; 背景先読み
+[preload storage="data/bgimage/alan1.png" ]
+[preload storage="data/bgimage/alan2.png" ]
+
+[preload storage="data/bgimage/HF04_002.png" ]
+[preload storage="data/bgimage/HF04_078.png" ]
+[preload storage="data/bgimage/HF04_292.png" ]
+[preload storage="data/bgimage/HF08_018_r.png" ]
+[preload storage="data/bgimage/HF08_021_026.png" ]
+
+
+[layopt layer=message0 visible=true]
+
+;Loveメーター
+[image layer=0 name="love" storage="love_0.png" left=980 top=10 ] 
+
+[fadeoutbgm time=1000]
+
+
+[mask_off time=2000 ]
+
+
+[keyframe name=rotate]
+[frame p=0%  rotate=0deg]
+[frame p=100% rotate=360deg]
+[endkeyframe]
+
+[keyframe name=quake]
+[frame p=8%   x=0   y=-6]
+[frame p=16%  x=-8  y=0]
+[frame p=24%  x=2   y=8]
+[frame p=32%  x=9   y=2]
+[frame p=40%  x=1   y=-11]
+[frame p=48%  x=-12 y=-2]
+[frame p=56%  x=5   y=11]
+[frame p=64%  x=13  y=-4]
+[frame p=72%  x=2   y=-15]
+[frame p=80%  x=-5  y=-12]
+[frame p=88%  x=-8  y=-8]
+[frame p=96%  x=17  y=9]
+[frame p=100% x=0   y=-6]
+[endkeyframe]
+
+
+*common
+;============== ゲームスタート ====================
+
+
+;[jump target="dev1"]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ai" wait=true]
+
+#マリア
+
+
+{phrase1}[p]
+
+[playbgm  volume=15   storage="M33_FinalMix.ogg" ]
+
+
+#
+{phrase2}[p]
+
+#マリア
+{phrase3}[r]
+{phrase4}[p]
+
+[chara_hide name="maria"]
+
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+#
+{phrase5}[r]
+{phrase6}[p]
+
+#
+{phrase7}[r]
+{phrase8}[r]
+{phrase9}[p]
+
+[chara_hide name="alan"]
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ai" wait=true]
+
+#マリア
+{phrase10}[r]
+{phrase11}[p]
+
+#
+
+{phrase12}[r]
+{phrase13}[r]
+{phrase14}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase15}[r]
+{phrase16}[p]
+
+[stopbgm]
+
+#
+{phrase17}[p]
+
+[playbgm  volume=15   storage="M40_FinalMix.ogg" ]
+[playse storage="se/door-open1.ogg" ]
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+
+[md name="maria" face="焦り"]
+#
+{phrase18}[r]
+{phrase19}[p]
+
+#
+{phrase20}[r]
+{phrase21}[p]
+
+[chara_hide name="maria"]
+
+[v storage="h1" ]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+
+[wait time=1000]
+	
+[chara_hide name="alan"]	
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
+
+#マリア
+{phrase22}[p]
+
+#マリア
+
+（どうしよう？）
+	
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="隠れておこう"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="そっと出ていこう" target="*select_01_02" ]
+
+[s]
+
+;隠れておこう
+*select_01_01
+[cm]
+
+[md name="maria" face="焦り"]
+
+[love_up]
+
+#マリア
+{phrase23}[r]
+{phrase24}[p]
+
+;[anim name="maria" left=-1000 ]
+;[wa]
+
+[chara_hide name="maria"]
+
+#
+{phrase25}[p]
+
+[playse storage="se/walk-asphalt1.ogg"]
+
+#
+{phrase26}[p]
+
+#
+{phrase27}[r]
+{phrase28}[r]
+{phrase29}[p]
+
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_do" wait=true]
+
+[stopse]
+
+#アラン	
+{phrase30}[p]
+
+
+#
+{phrase31}[r]
+{phrase32}[p]
+
+[chara_hide name="alan" pos_mode=false ]
+
+[wait time=1000]
+
+;[anim name="maria" left="&f.left" time=2300 ]
+;[wa]
+
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
+
+#
+{phrase33}[r]
+{phrase34}[p]
+
+[md name="maria" face="悲しみ"]
+
+#マリア
+{phrase35}[r]
+{phrase36}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase37}[r]
+{phrase38}[r]
+{phrase39}[p]
+
+[jump target="*common1" ]
+
+*select_01_02
+[cm]
+
+[md name="maria" face="焦り"]
+
+#マリア
+{phrase40}[r]
+{phrase41}[p]
+
+#
+{phrase42}[r]
+{phrase43}[p]
+
+[chara_hide name="maria"]
+
+[playse storage="se/walk-asphalt1.ogg"]
+
+#
+{phrase44}[r]
+{phrase45}[p]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
+
+#マリア
+{phrase46}[p]
+
+#
+{phrase47}[r]
+{phrase48}[r]
+{phrase49}[p]
+
+[md name="maria" face="驚き" ]
+
+[playse storage="se/door-open1.ogg"]
+
+#
+{phrase50}[r]
+{phrase51}[p]
+
+[stopbgm]
+[md name="maria" face="焦り" ]
+
+#マリア
+{phrase52}[p]
+
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_odo" wait=true]
+
+#アラン	
+{phrase53}[p]
+
+[playbgm  volume=15 storage="M46_FinalMix.ogg" ]
+
+#
+{phrase54}[r]
+{phrase55}[r]
+{phrase56}[p]
+
+#
+{phrase57}[p]
+
+[md name="alan" face="怒り"]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+#マリア
+{phrase58}[p]
+
+[playse storage="se/dash-asphalt2.ogg" ]
+
+[chara_hide name="maria"]
+
+[md name="alan" face="驚き"]
+
+[v storage="h2"]
+
+#
+{phrase59}[r]
+{phrase60}[p]
+
+*common1	
+
+*dev1 
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide name="alan" time=10]
+[chara_hide name="maria" time=10 ]
+
+[wait time=2000 ]
+
+[bg storage="HF08_018_r.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm  volume=15   storage="M08_FinalMix.ogg" ]
+
+[chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_ai" wait=false]
+	
+#
+{phrase61}[r]
+{phrase62}[r]
+{phrase63}[p]
+
+#
+{phrase64}[r]
+{phrase65}[p]
+
+[md name="maria" face="微笑み" ]
+
+#マリア
+{phrase66}[p]
+
+#
+{phrase67}[r]
+{phrase68}[p]
+
+[fadeinbgm  volume=15 storage="M02_FinalMix.ogg" time=2000 ]
+[wait time=2000]
+
+[md name="maria" face="驚き" ]
+
+#
+{phrase69}[r]
+{phrase70}[p]
+
+[md name="maria" face="笑顔" ]
+
+#マリア
+{phrase71}[p]
+
+[md name="maria" face="微笑み" ]
+
+#マリア
+{phrase72}[p]
+
+[chara_hide name="maria"]
+
+[bg storage="HF04_292.png" ]
+
+
+[chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_def" wait=true]
+
+#
+{phrase73}[r]
+{phrase74}[r]
+{phrase75}[p]
+
+[chara_move name="maria" top="&f.top" left="&f.left" wait=true]
+[md name="maria" face="驚き"]
+
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+
+#マリア
+{phrase76}[p]
+
+[stopbgm]
+[kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
+
+[md name="alan" face="怒り"]
+
+#アラン	
+
+[v storage="22"]
+
+[font size=30]
+――だ、誰だッ!?
+[resetfont]
+[p]
+
+[playbgm  volume=15   storage="M09_FinalMix.ogg" ]
+
+#
+{phrase77}[r]
+{phrase78}[p]
+
+[md name="maria" face="焦り"]
+
+#マリア
+{phrase79}[r]
+{phrase80}[p]
+
+#マリア
+{phrase81}[r]
+{phrase82}[p]
+
+[md name="alan" face="驚き"]
+
+#アラン	
+{phrase83}[p]
+
+[v storage="h6"]
+
+#
+{phrase84}[r]
+{phrase85}[r]
+{phrase86}[p]
+
+[md name="alan" face="悲しみ"]
+
+[v storage="27"]
+
+#アラン	
+{phrase87}[r]
+{phrase88}[r]
+{phrase89}[p]
+
+[md name="maria" face="怒り"]
+
+#マリア
+{phrase90}[p]
+
+[md name="maria" face="微笑み"]
+
+#マリア
+{phrase91}[p]
+
+[md name="maria" face="焦り"]
+
+[v storage="29_A"]
+
+#アラン	
+{phrase92}[p]
+
+[v storage="29_B"]
+
+#アラン	
+{phrase93}[r]
+{phrase94}[r]
+{phrase95}[p]
+
+#
+{phrase96}[r]
+{phrase97}[p]
+
+[md name="maria" face="悲しみ"]
+[md name="alan" face="驚き"]
+
+#
+{phrase98}[r]
+{phrase99}[p]
+
+#マリア
+{phrase100}[r]
+{phrase101}[p]
+
+#マリア
+
+{phrase102}[r]
+{phrase103}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="無表情"]
+
+#マリア
+{phrase104}[p]
+
+#マリア
+{phrase105}[r]
+{phrase106}[r]
+{phrase107}[p]
+
+[md name="maria" face="笑顔"]
+
+
+#マリア
+{phrase108}[r]
+{phrase109}[r]
+{phrase110}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="悲しみ"]
+
+
+#アラン
+{phrase111}[p]
+
+#
+{phrase112}[r]
+{phrase113}[p]
+
+[v storage="38"]
+
+#アラン
+{phrase114}[p]
+
+[md name="maria" face="笑顔"]
+
+#マリア
+{phrase115}[p]
+
+[md name="maria" face="微笑み"]
+
+#アラン	
+{phrase116}[p]
+
+[md name="alan" face="微笑み"]
+
+#アラン	
+[font size=18]
+……そうか。……そうかもな。
+[resetfont]
+
+[p]
+
+[md name="maria" face="笑顔"]
+
+#マリア
+{phrase117}[p]
+
+[md name="maria" face="照れ"]
+
+#マリア
+{phrase118}[p]
+
+[md name="maria" face="笑顔"]
+[md name="alan" face="驚き"]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+#マリア
+{phrase119}[r]
+{phrase120}[r]
+{phrase121}[p]
+
+[md name="alan" face="微笑み"]
+
+#アラン	
+{phrase122}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="無表情"]
+
+#アラン	
+{phrase123}[p]
+
+[v storage="45"]
+
+[md name="alan" face="照れ"]
+
+#アラン	
+[font size="18"]
+……ありがとな。
+[resetfont]
+[p]
+
+#
+{phrase124}[r]
+{phrase125}[p]
+
+[md name="maria" face="驚き"]
+[md name="alan" face="悲しみ"]
+
+[v storage="47"]
+
+#アラン	
+{phrase126}[r]
+{phrase127}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="驚き"]
+
+#マリア
+{phrase128}[p]
+
+[md name="alan" face="悲しみ"]
+
+#アラン
+{phrase129}[p]
+
+[md name="maria" face="照れ"]
+
+#マリア
+{phrase130}[r]
+{phrase131}[p]
+
+[md name="alan" face="無表情"]
+
+#アラン
+{phrase132}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="照れ"]
+
+#
+{phrase133}[r]
+{phrase134}[r]
+{phrase135}[p]
+
+[md name="maria" face="笑顔"]
+[md name="alan" face="微笑み"]
+
+#
+{phrase136}[p]
+
+[md name="maria" face="照れ"]
+
+#マリア
+{phrase137}[r]
+{phrase138}[p]
+[md name="maria" face="微笑み"]
+[md name="alan" face="怒り"]
+
+[v storage="h2"]
+
+#
+{phrase139}[r]
+{phrase140}[r]
+{phrase141}[p]
+
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide name="alan" time=10]
+[chara_hide name="maria" time=10 ]
+
+[wait time=2000 ]
+
+[bg storage="HF08_018_r.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm  volume=15 storage="M23_FinalMix.ogg" ]
+
+
+#
+{phrase142}[r]
+{phrase143}[r]
+{phrase144}[p]
+
+
+[chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_ai" wait=true]
+
+#マリア
+{phrase145}[r]
+{phrase146}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase147}[r]
+{phrase148}[p]
+
+{phrase149}[r]
+{phrase150}[p]
+
+#
+
+{phrase151}[p]
+
+[chara_hide name="maria" ]
+
+[bg storage="HF04_078.png"]
+
+
+[chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_odo" wait=true]
+	
+#
+{phrase152}[r]
+{phrase153}[p]
+
+#アラン
+{phrase154}[p]
+
+#マリア
+{phrase155}[p]
+
+#マリア
+（どうしよう？）
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="寝顔を見守る"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="声をかけてみる" target="*select_02_02" ]
+
+[s]
+
+*select_02_01
+[cm]
+
+[md name="maria" face="照れ"]
+
+#マリア
+{phrase156}[r]
+{phrase157}[p]
+
+#
+{phrase158}[r]
+{phrase159}[r]
+{phrase160}[p]
+
+[md name="maria" face="驚き"]
+
+#
+{phrase161}[r]
+{phrase162}[r]
+{phrase163}[p]
+
+[md name="maria" face="微笑み"]
+
+#
+{phrase164}[r]
+{phrase165}[p]
+
+#マリア
+{phrase166}[p]
+
+#
+{phrase167}[r]
+{phrase168}[r]
+{phrase169}[p]
+
+[md name="maria" face="笑顔"]
+
+#マリア
+{phrase170}[p]
+
+#
+{phrase171}[r]
+{phrase172}[p]
+
+[md name="maria" face="驚き"]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+[v storage="h2"]
+
+#アラン
+{phrase173}[p]
+
+[md name="maria" face="焦り"]
+[chara_move name="maria" left="&f.left" time=500 ]
+
+#マリア
+{phrase174}[r]
+{phrase175}[p]
+
+#アラン
+{phrase176}[p]
+
+#マリア
+{phrase177}[p]
+
+#
+{phrase178}[r]
+{phrase179}[r]
+{phrase180}[p]
+
+#
+{phrase181}[r]
+{phrase182}[p]
+
+#
+{phrase183}[p]
+
+[jump target="common2"]
+
+*select_02_02
+[cm]
+
+[md name="maria" face="悲しみ"]
+
+#マリア
+{phrase184}[r]
+{phrase185}[p]
+
+[md name="maria" face="微笑み"]
+
+#マリア
+{phrase186}[r]
+{phrase187}[p]
+
+[md name="maria" face="照れ"]
+
+#マリア
+{phrase188}[p]
+
+#
+{phrase189}[r]
+{phrase190}[p]
+
+#アラン
+{phrase191}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase192}[p]
+
+#マリア
+{phrase193}[r]
+{phrase194}[p]
+
+#
+{phrase195}[r]
+{phrase196}[p]
+
+[md name="maria" face="驚き"]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+[v storage="h2"]
+
+#アラン
+{phrase197}[p]
+
+[md name="maria" face="焦り"]
+
+[chara_move name="maria" left="&f.left" time=500 ]
+;[wa]
+
+#マリア
+{phrase198}[r]
+{phrase199}[p]
+
+[md name="alan" face="ドヤ顔"]
+
+#アラン
+{phrase200}[p]
+
+[md name="maria" face="驚き"]
+
+#マリア
+{phrase201}[p]
+
+#マリア
+{phrase202}[p]
+
+[md name="maria" face="照れ"]
+
+#
+{phrase203}[r]
+{phrase204}[r]
+{phrase205}[p]
+
+#マリア
+{phrase206}[r]
+{phrase207}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="微笑み"]
+
+[celanim anim="blue_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+@wait time=200
+[celanim anim="blue_rose_2" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+
+[love_up]
+
+
+#アラン
+{phrase208}[p]
+
+#
+{phrase209}[r]
+{phrase210}[p]
+
+*common2
+
+[md name="maria" face="驚き"]
+[md name="alan" face="微笑み"]
+
+
+[v storage="65"]
+
+#アラン
+{phrase211}[p]
+
+#
+{phrase212}[r]
+{phrase213}[r]
+{phrase214}[p]
+
+[v storage="67"]
+
+#アラン
+{phrase215}[p]
+
+#マリア
+{phrase216}[r]
+{phrase217}[p]
+
+
+;スチル表示
+[chara_hide_all ]
+
+[wait time=1000 ]
+
+[eval exp="sf.alan_cg_1=true" ]
+[bg storage="alan1.png" time=2000] 
+
+
+#
+{phrase218}[r]
+{phrase219}[r]
+{phrase220}[p]
+
+[if exp="f.mixmode==true"]
+[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
+[endif]
+
+#
+{phrase221}[r]
+{phrase222}[r]
+{phrase223}[p]
+
+#
+{phrase224}[r]
+{phrase225}[p]
+
+[v storage="72"]
+
+#アラン
+{phrase226}[p]
+
+#マリア
+{phrase227}[r]
+{phrase228}[r]
+{phrase229}[p]
+
+[v storage="h5"]
+
+#アラン
+{phrase230}[p]
+
+#マリア
+{phrase231}[r]
+{phrase232}[p]
+
+[v storage="h1"]
+
+#
+{phrase233}[r]
+{phrase234}[r]
+{phrase235}[p]
+
+#
+{phrase236}[r]
+{phrase237}[p]
+
+[fadeoutbgm time=1000] 
+
+[wait time=1000]
+[playbgm volume=15 storage="M21_FinalMix.ogg" ]
+
+[v storage="78"]
+
+#アラン
+{phrase238}[p]
+
+#
+{phrase239}[p]
+
+[v storage="80"]
+
+#アラン
+{phrase240}[r]
+{phrase241}[r]
+{phrase242}[p]
+
+[v storage="81"]
+
+#アラン	
+{phrase243}[r]
+{phrase244}[r]
+{phrase245}[p]
+
+[v storage="82_A"]
+
+#アラン
+{phrase246}[r]
+{phrase247}[p]
+
+[v storage="82_B"]
+
+#アラン
+{phrase248}[r]
+{phrase249}[r]
+{phrase250}[p]
+
+#マリア
+{phrase251}[p]
+
+;要チェック
+[v storage="84"]
+
+#アラン
+{phrase252}[r]
+{phrase253}[r]
+{phrase254}[p]
+
+[v storage="85_A"]
+
+#アラン
+{phrase255}[r]
+{phrase256}[p]
+
+[v storage="85_B"]
+
+#アラン
+{phrase257}[r]
+{phrase258}[p]
+
+[v storage="86"]
+
+#アラン
+{phrase259}[r]
+{phrase260}[p]
+
+#マリア
+{phrase261}[p]
+
+#
+{phrase262}[p]
+
+#
+{phrase263}[r]
+{phrase264}[r]
+{phrase265}[p]
+
+#マリア
+{phrase266}[r]
+{phrase267}[p]
+
+#マリア
+{phrase268}[p]
+
+#
+{phrase269}[p]
+
+#
+{phrase270}[r]
+{phrase271}[p]
+
+[free_layermode time=1000 ]
+
+
+[bg storage="HF04_078.png"]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_def" wait=false]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+[kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
+
+#
+{phrase272}[r]
+{phrase273}[p]
+
+[md name="maria" face="驚き"]
+[md name="alan" face="怒り"]
+
+[v storage="94"]
+
+#アラン
+{phrase274}[r]
+{phrase275}[r]
+{phrase276}[p]
+
+[md name="alan" face="無表情"]
+
+[v storage="95"]
+
+#アラン
+{phrase277}[r]
+{phrase278}[p]
+
+[fadeoutbgm time=1000]
+[playse storage="se/dash-asphalt2.ogg" ]
+
+[chara_hide name="alan"]
+
+#
+{phrase279}[r]
+{phrase280}[r]
+{phrase281}[p]
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide name="alan" time=10]
+[chara_hide name="maria" time=10 ]
+
+[wait time=2000 ]
+
+[playbgm  volume=15  storage="M42_FinalMix_Re.ogg" ]
+
+[bg storage="HF04_002.png" time=10] 
+
+[mask_off time=2000 ]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu" wait=true]
+
+
+#
+{phrase282}[r]
+{phrase283}[p]
+
+#
+{phrase284}[r]
+{phrase285}[p]
+
+[md name="maria" face="焦り"]
+[chara_show name="mary" top="&f.top" left="&f.right" face="hamehura_Mary_cos1_mu" wait=true]
+
+#メアリ
+{phrase286}[p]
+
+#
+{phrase287}[p]
+
+#メアリ
+{phrase288}[r]
+{phrase289}[r]
+{phrase290}[p]
+
+#
+{phrase291}[r]
+{phrase292}[p]
+
+
+[md name="maria" face="無表情"]
+
+#
+{phrase293}[r]
+{phrase294}[p]
+
+[md name="mary" face="怒り"]
+
+#メアリ
+{phrase295}[r]
+{phrase296}[p]
+
+[md name="maria" face="驚き"]
+[md name="mary" face="無表情"]
+
+#マリア
+{phrase297}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase298}[r]
+{phrase299}[p]
+
+#マリア
+{phrase300}[r]
+{phrase301}[r]
+{phrase302}[p]
+
+[md name="maria" face="微笑み"]
+
+#マリア
+{phrase303}[r]
+{phrase304}[p]
+
+#マリア
+{phrase305}[p]
+
+#マリア
+{phrase306}[p]
+
+[md name="maria" face="悲しみ"]
+[md name="mary" face="悲しみ"]
+
+#マリア
+{phrase307}[r]
+{phrase308}[r]
+{phrase309}[p]
+
+[md name="maria" face="無表情"]
+
+#マリア
+{phrase310}[r]
+{phrase311}[r]
+{phrase312}[p]
+
+#マリア
+{phrase313}[p]
+
+[md name="maria" face="悲しみ"]
+
+#
+{phrase314}[r]
+{phrase315}[p]
+
+#
+{phrase316}[r]
+{phrase317}[r]
+{phrase318}[p]
+
+#
+{phrase319}[r]
+{phrase320}[r]
+{phrase321}[p]
+
+#メアリ	
+{phrase322}[p]
+
+#
+{phrase323}[r]
+{phrase324}[p]
+
+[md name="mary" face="微笑み"]
+
+#
+{phrase325}[r]
+{phrase326}[p]
+
+[md name="maria" face="驚き"]
+
+#メアリ
+{phrase327}[p]
+
+[md name="maria" face="悲しみ"]
+
+#マリア
+{phrase328}[p]
+
+[md name="mary" face="悲しみ"]
+
+#メアリ
+{phrase329}[r]
+{phrase330}[p]
+
+#メアリ
+{phrase331}[r]
+{phrase332}[p]
+
+[md name="mary" face="微笑み"]
+
+#メアリ
+{phrase333}[r]
+{phrase334}[p]
+
+#メアリ
+{phrase335}[p]
+
+[md name="mary" face="悲しみ"]
+
+#メアリ	
+[font size="18"]
+……どうか、お幸せに。
+[resetfont]
+[p]
+
+#
+{phrase336}[r]
+{phrase337}[p]
+
+[chara_hide name="mary"]
+
+[md name="maria" face="焦り"]
+
+#マリア
+{phrase338}[p]
+
+#
+{phrase339}[r]
+{phrase340}[p]
+
+[md name="maria" face="悲しみ"]
+
+
+#マリア
+{phrase341}[p]
+
+[chara_hide name="maria"]
+
+#
+{phrase342}[r]
+{phrase343}[p]
+
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide name="alan" time=10]
+[chara_hide name="maria" time=10 ]
+
+[wait time=2000 ]
+
+[playbgm  volume=15   storage="M21_FinalMix.ogg" ]
+
+[bg storage="HF04_078.png" time=10] 
+
+[mask_off time=2000 ]
+
+
+#
+
+{phrase344}[r]
+{phrase345}[p]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu" wait=true]
+
+#
+{phrase346}[r]
+{phrase347}[p]
+
+[playse volume=50 storage="se/dash-in-room1.ogg" ]
+[wse]
+
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_do" wait=true]
+
+[kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
+
+[v storage="130"]
+
+#アラン
+[font size=36]マリア……！
+[resetfont]
+[p]
+
+[md name="maria" face="笑顔"]
+[md name="alan" face="無表情"]
+
+#マリア
+{phrase348}[p]
+
+#
+{phrase349}[r]
+{phrase350}[p]
+
+[chara_hide_all ]
+
+[eval exp="sf.alan_cg_2=true" ]
+[bg storage="alan2.png" ]
+
+#
+{phrase351}[r]
+{phrase352}[r]
+{phrase353}[p]
+
+[if exp="f.mixmode==true"]
+[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
+[endif]
+
+#
+{phrase354}[r]
+{phrase355}[p]
+
+[v storage="135"]
+
+#アラン
+{phrase356}[r]
+{phrase357}[r]
+{phrase358}[p]
+
+#
+{phrase359}[r]
+{phrase360}[r]
+{phrase361}[p]
+
+#
+{phrase362}[p]
+
+#マリア
+{phrase363}[r]
+{phrase364}[p]
+
+[v storage="139"]
+
+#アラン
+{phrase365}[p]
+
+[v storage="140"]
+
+#アラン
+{phrase366}[p]
+
+[v storage="141"]
+
+#アラン
+{phrase367}[p]
+
+#
+{phrase368}[r]
+{phrase369}[p]
+
+[v storage="143"]
+
+#アラン
+{phrase370}[r]
+{phrase371}[p]
+
+[v storage="144"]
+
+#アラン
+{phrase372}[r]
+{phrase373}[r]
+{phrase374}[p]
+
+#マリア
+{phrase375}[p]
+
+#
+{phrase376}[r]
+{phrase377}[p]
+
+#
+{phrase378}[r]
+{phrase379}[p]
+
+#
+
+{phrase380}[p]
+
+[v storage="149"]
+
+;@quake_camera
+
+#アラン	
+[font size="36"]お前の人生、俺にくれ！
+[resetfont]
+[p]
+
+[free_layermode time=1000 ]
+
+
+#マリア
+（なんて答えよう？）
+
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="喜んで"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="本当にいいんですか？" target="*select_03_02" ]
+
+[s]
+
+*select_03_01
+[cm]
+
+[bg storage="HF04_078.png"]
+[playbgm  volume=15   storage="M17_FinalMix.ogg" ]
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu" wait=false]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+#
+{phrase381}[r]
+{phrase382}[p]
+
+#
+{phrase383}[r]
+{phrase384}[p]
+
+#
+{phrase385}[r]
+{phrase386}[p]
+
+[md name="maria" face="微笑み"]
+
+#マリア
+{phrase387}[p]
+
+[md name="maria" face="笑顔"]
+
+#マリア
+{phrase388}[r]
+{phrase389}[p]
+
+[kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
+
+[celanim anim="blue_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+@wait time=200
+[celanim anim="blue_rose_2" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+
+[love_up]
+
+[md name="alan" face="照れ"]
+
+#アラン
+{phrase390}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="微笑み"]
+
+[v storage="154"]
+
+#アラン
+{phrase391}[p]
+
+[md name="maria" face="笑顔"]
+
+#
+{phrase392}[r]
+{phrase393}[p]
+
+#
+{phrase394}[r]
+{phrase395}[p]
+
+#
+{phrase396}[r]
+{phrase397}[p]
+
+@jump target="common_03"
+
+*select_03_02
+[cm]
+
+[bg storage="HF04_078.png"]
+[playbgm  volume=15   storage="M17_FinalMix.ogg" ]
+
+
+[chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu" wait=true]
+[chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
+
+#
+{phrase398}[r]
+{phrase399}[p]
+
+[md name="maria" face="悲しみ"]
+
+#
+{phrase400}[r]
+{phrase401}[p]
+
+[md name="alan" face="悲しみ"]
+
+#
+{phrase402}[r]
+{phrase403}[p]
+
+#
+{phrase404}[r]
+{phrase405}[r]
+{phrase406}[p]
+
+#マリア
+{phrase407}[p]
+
+#
+{phrase408}[r]
+{phrase409}[r]
+{phrase410}[p]
+
+#
+{phrase411}[r]
+{phrase412}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase413}[p]
+
+#マリア
+{phrase414}[r]
+{phrase415}[p]
+
+#
+{phrase416}[r]
+{phrase417}[p]
+
+[md name="maria" face="微笑み"]
+[md name="alan" face="照れ"]
+
+#
+{phrase418}[p]
+
+[md name="alan" face="微笑み"]
+
+#
+{phrase419}[r]
+{phrase420}[p]
+
+#
+{phrase421}[r]
+{phrase422}[p]
+
+[md name="alan" face="微笑み"]
+
+#マリア
+{phrase423}[p]
+
+[md name="maria" face="笑顔"]
+
+#
+{phrase424}[r]
+{phrase425}[r]
+{phrase426}[p]
+
+#
+{phrase427}[r]
+{phrase428}[p]
+
+*common_03
+
+[chara_hide_all]
+
+[layopt layer=message0 visible=false]
+[freeimage layer=0]
+[freeimage layer=1]
+@clearfix
+
+[if exp="f.love==3"]
+[bg time=2000 storage="happy_end.png"]
+[else]
+[bg time=2000 storage="normal_end.png"]
+[endif]
+
+[wait time=8000]
+
+;タイトルに戻る。
+
+[layopt layer=message0 visible=false]
+[fadeoutbgm time=3000]
+[wait time=3000]
+[fadeinbgm time=1000 storage="M19_FinalMix.ogg" ]
+[jump storage="title.ks"]
+
+[s]
+
+
+;===============================================
+
+
+
+

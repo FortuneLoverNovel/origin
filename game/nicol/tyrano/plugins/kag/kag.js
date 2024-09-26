@@ -531,7 +531,7 @@ tyrano.plugin.kag = {
         if ($.isHTTP(file_name))
             file_url = file_name;
         else
-            file_url = "./data/scenario/" + file_name;
+            file_url = "./data/scenario/" + file_name.replace("lang", window.location.search.replace("?", "") || "en");
         if (that.cache_scenario[file_url]) {
             if (call_back) {
                 var result_obj = that.cache_scenario[file_url];

@@ -19,7 +19,7 @@
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
 [fadeoutbgm time=1000 ]
-@jump storage="main/keeth.ks"
+@jump storage="main/keeth.lang.ks"
 
 
 

@@ -1,0 +1,1855 @@
+
+*start
+
+;タイトルマスク
+
+[cm]
+[clearfix]
+[start_keyconfig]
+
+[mask graphic="now_loading.png" time=10]
+
+[bg storage="HF04_034_r.png" time=10]
+
+
+;メニューボタンの表示
+;@showmenubutton
+
+;メッセージウィンドウの設定
+[position layer=message0 width=960 height=280 top=510 left=180]
+[position layer=message0 page=fore frame="frame.png" margint="30" marginl="100" marginr="70" marginb="60" ]
+[image layer="message0" name="nameplate" storage="name_blue.png" folder="image" left=210 top=490 zindex="111" ]
+
+[iscript]
+$(".nameplate").hide();
+[endscript]
+
+;メッセージウィンドウの表示
+[layopt layer=message0 visible=false]
+[layopt layer="0" visible=true]
+[layopt layer="1" visible=true]
+
+;キャラクターの名前が表示される文字領域
+[ptext name="chara_name_area" layer="message0" color="0x8b8f98" size=26 bold="bold" x=240 y=500 width=200 align=center]
+
+;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
+[chara_config ptext="chara_name_area" pos_mode=false]
+[chara_config talk_focus="brightness" ]
+[chara_config time="10" ]
+
+;このゲームで登場するキャラクターを宣言
+;[preload storage="tyrano/images/system/nextpage.gif" ]
+
+
+;ロールボタン配置
+;セーブ
+[button name="role_button" role="menu" graphic="btn_save.png"  x=0 y=0]
+
+;バックログ
+[button name="role_button" role="backlog" graphic="btn_log.png" x=1125 y=530]
+
+;ボリュームボタン
+[button name="btn_volume" role="none" fix=true graphic="btn_volume.png" x=1135 y=595]
+
+
+[iscript]
+    
+    sf.btn_volume = true;
+    
+    $(".btn_volume").on("click",function(){
+        
+        if(sf.btn_volume==true){
+            sf.btn_volume = false;
+            $(".btn_volume").attr("src","./data/image/btn_volume_off.png");
+            TG.ftag.startTag("stopse", {buf:"2",stop:"true"});
+            TG.tmp.map_bgm["0"].muted = true;
+        
+        }else{
+            sf.btn_volume = true;
+            $(".btn_volume").attr("src","./data/image/btn_volume.png");
+            TG.tmp.map_bgm["0"].muted = false;
+        
+        }
+        
+    });
+    
+    f.mixmode = false;
+    
+    if ('CSS' in window && 'supports' in window.CSS) {
+        if (window.CSS.supports('mix-blend-mode', 'soft-light')) {
+          f.mixmode = true;
+        }
+    }
+    
+    
+
+[endscript]
+
+
+
+[macro name="md"]
+
+    [iscript]
+        
+        tf.face = "chara/" + mp.face +".png";
+        
+    [endscript]
+
+    [chara_mod name="&mp.name" storage="&tf.face"]
+
+[endmacro]
+
+[macro name="v" ]
+    
+    [if exp="sf.btn_volume==true"]
+    
+    [eval exp="mp.storage='vo/'+mp.storage+'.ogg'" ]
+    
+    [playse * buf=2 ]
+    
+    [endif]
+    
+[endmacro]
+
+[macro name="kanim_chara" ]
+
+
+[kanim layer=0 name="%name" keyframe=quake time=300 count=1 easing=linear]
+
+[wait time=500]
+
+[iscript]
+$(".tyrano_chara").css({
+    "animation-play-state":"",
+    "animation-iteration-count":"",
+    "animation-fill-mode":"",
+    "animation-timing-function":"",
+    "animation-name":"",
+    "animation-duration":"",
+    "transform":""
+});
+[endscript]
+
+    
+[endmacro]
+
+[macro name="quake_camera" ]
+
+[kanim layer=0 name="layer_camera" keyframe=quake time=300 count=2 easing=linear mode="none"]
+
+[iscript]
+TYRANO.kag.tmp.num_anim = 0;
+[endscript]
+
+[wait time=500]
+
+[iscript]
+$(".layer_camera").css({
+    "animation-play-state":"",
+    "animation-iteration-count":"",
+    "animation-fill-mode":"",
+    "animation-timing-function":"",
+    "animation-name":"",
+    "animation-duration":"",
+    "transform":""
+});
+
+[endscript]
+
+[endmacro]
+
+[macro name="love_up"]
+
+[iscript]
+
+$(".celanim").remove();
+
+f.love++;
+tf.love_file='love_'+f.love+'.png';
+[endscript]
+
+[free layer=0 name="love" time=100 ]
+[image layer=0 name="love" storage="&tf.love_file" left=980 top=10 time=500] 
+
+[endmacro]
+
+
+[iscript]
+
+    f.top = -120;
+    
+    f.left = -120;
+    f.right_s = 370; 
+    
+    f.right = 300;
+    
+    
+    f.center = 110;
+    f.love = 0;
+    
+    if(sf.nicol_cg_1==undefined){
+       sf.nicol_cg_1=false;
+       sf.nicol_cg_2=false;
+    }
+
+        
+[endscript]
+
+
+
+[iscript]
+
+f.charas = [
+
+"hamehura_Maria_cos1_ai_b.png",
+"hamehura_Maria_cos1_ai.png",
+"hamehura_Maria_cos1_ase_b.png",
+"hamehura_Maria_cos1_ase.png",
+"hamehura_Maria_cos1_def_b.png",
+"hamehura_Maria_cos1_def.png",
+"hamehura_Maria_cos1_def2_b.png",
+"hamehura_Maria_cos1_def2.png",
+"hamehura_Maria_cos1_do_b.png",
+"hamehura_Maria_cos1_do.png",
+"hamehura_Maria_cos1_kon_b.png",
+"hamehura_Maria_cos1_kon.png",
+"hamehura_Maria_cos1_mu_b.png",
+"hamehura_Maria_cos1_mu.png",
+"hamehura_Maria_cos1_naki_b.png",
+"hamehura_Maria_cos1_naki.png",
+"hamehura_Maria_cos1_odo_b.png",
+"hamehura_Maria_cos1_odo.png",
+"hamehura_Maria_cos1_tere_b.png",
+"hamehura_Maria_cos1_tere.png",
+"hamehura_Maria_cos1_akire_b.png",
+"hamehura_Maria_cos1_akire.png",
+
+
+"hamehura_Maria_cos5_ai_b.png",
+"hamehura_Maria_cos5_ai.png",
+"hamehura_Maria_cos5_akire_b.png",
+"hamehura_Maria_cos5_akire.png",
+"hamehura_Maria_cos5_ase_b.png",
+"hamehura_Maria_cos5_ase.png",
+"hamehura_Maria_cos5_def_b.png",
+"hamehura_Maria_cos5_def.png",
+"hamehura_Maria_cos5_def2_b.png",
+"hamehura_Maria_cos5_def2.png",
+"hamehura_Maria_cos5_do_b.png",
+"hamehura_Maria_cos5_do.png",
+"hamehura_Maria_cos5_kon_b.png",
+"hamehura_Maria_cos5_kon.png",
+"hamehura_Maria_cos5_mu_b.png",
+"hamehura_Maria_cos5_mu.png",
+"hamehura_Maria_cos5_naki_b.png",
+"hamehura_Maria_cos5_naki.png",
+"hamehura_Maria_cos5_odo_b.png",
+"hamehura_Maria_cos5_odo.png",
+"hamehura_Maria_cos5_tere_b.png",
+"hamehura_Maria_cos5_tere.png",
+"hamehura_Maria_cos5_tere2_b.png",
+"hamehura_Maria_cos5_tere2.png",
+"hamehura_Sophia_cos1_do_b.png",
+"hamehura_Sophia_cos1_ai_b.png",
+"hamehura_Sophia_cos1_ai.png",
+"hamehura_Sophia_cos1_def_b.png",
+"hamehura_Sophia_cos1_def.png",
+"hamehura_Sophia_cos1_do.png",
+"hamehura_Sophia_cos1_mu_b.png",
+"hamehura_Sophia_cos1_mu.png",
+"hamehura_Sophia_cos1_odo_b.png",
+"hamehura_Sophia_cos1_odo.png",
+
+"hamehura_Nicol_cos1_do_b.png",
+"hamehura_Nicol_cos1_ai_b.png",
+"hamehura_Nicol_cos1_ai.png",
+"hamehura_Nicol_cos1_def_b.png",
+"hamehura_Nicol_cos1_def.png",
+"hamehura_Nicol_cos1_do.png",
+"hamehura_Nicol_cos1_kon_b.png",
+"hamehura_Nicol_cos1_kon.png",
+"hamehura_Nicol_cos1_mu_b.png",
+"hamehura_Nicol_cos1_mu.png",
+"hamehura_Nicol_cos1_odo_b.png",
+"hamehura_Nicol_cos1_odo.png",
+"hamehura_Nicol_cos2_ai_b.png",
+"hamehura_Nicol_cos2_ai.png",
+"hamehura_Nicol_cos2_def_b.png",
+"hamehura_Nicol_cos2_def.png",
+"hamehura_Nicol_cos2_do_b.png",
+"hamehura_Nicol_cos2_do.png",
+"hamehura_Nicol_cos2_kon_b.png",
+"hamehura_Nicol_cos2_kon.png",
+"hamehura_Nicol_cos2_mu_b.png",
+"hamehura_Nicol_cos2_mu.png",
+"hamehura_Nicol_cos2_odo_b.png",
+"hamehura_Nicol_cos2_odo.png",
+
+"reijo1/hamehura_DVDmob1_fear.png",
+"reijo2/hamehura_DVDmob2_fear.png",
+"reijo3/hamehura_DVDmob3_def.png"
+ 
+ ];
+
+
+f.charas2 = [];
+
+for(var key in f.charas){
+	f.charas2.push("data/fgimage/chara/" +f.charas[key]) ;
+}
+
+[endscript]
+
+[preload storage="&f.charas2"]
+
+
+;キャラクター情報読み込み
+[chara_new  name="nicol" color="0x6b7c9d" storage="chara/hamehura_Nicol_cos2_mu.png" jname="ニコル" ]
+[chara_new  name="sophia" color="0xff0981" storage="chara/hamehura_Sophia_cos1_mu.png" jname="ソフィア" ]
+[chara_new  name="maria" color="0xff0981" storage="chara/hamehura_Maria_cos1_mu.png" jname="マリア" ]
+
+;令嬢
+[chara_new  name="reijo1" color="0x8b8f98" storage="chara/reijo1/hamehura_DVDmob1_fear.png" jname="令嬢1" ]
+[chara_new  name="reijo2" color="0x8b8f98" storage="chara/reijo2/hamehura_DVDmob2_fear.png" jname="令嬢2" ]
+[chara_new  name="reijo3" color="0x8b8f98" storage="chara/reijo3/hamehura_DVDmob3_def.png" jname="令嬢3" ]
+
+;キャラクターの表情登録
+
+
+; 背景先読み
+[preload storage="data/bgimage/nicol1.png" ]
+[preload storage="data/bgimage/nicol2.png" ]
+
+[preload storage="data/bgimage/HF04_002.png" ]
+[preload storage="data/bgimage/HF04_016.png" ]
+[preload storage="data/bgimage/HF04_034_r.png" ]
+[preload storage="data/bgimage/HF04_066_071_073_084A.png" ]
+[preload storage="data/bgimage/HF04_232.png" ]
+[preload storage="data/bgimage/HF08_018_r.png" ]
+[preload storage="data/bgimage/HF08_021_026.png" ]
+
+
+[layopt layer=message0 visible=true]
+
+;Loveメーター
+[image layer=0 name="love" storage="love_0.png" left=980 top=10 ] 
+
+[fadeoutbgm time=1000]
+
+
+[mask_off time=2000 ]
+
+
+[keyframe name=rotate]
+[frame p=0%  rotate=0deg]
+[frame p=100% rotate=360deg]
+[endkeyframe]
+
+[keyframe name=quake]
+[frame p=8%   x=0   y=-6]
+[frame p=16%  x=-8  y=0]
+[frame p=24%  x=2   y=8]
+[frame p=32%  x=9   y=2]
+[frame p=40%  x=1   y=-11]
+[frame p=48%  x=-12 y=-2]
+[frame p=56%  x=5   y=11]
+[frame p=64%  x=13  y=-4]
+[frame p=72%  x=2   y=-15]
+[frame p=80%  x=-5  y=-12]
+[frame p=88%  x=-8  y=-8]
+[frame p=96%  x=17  y=9]
+[frame p=100% x=0   y=-6]
+[endkeyframe]
+
+
+*common
+;============== ゲームスタート ====================
+
+
+;[jump target="dev2"]
+
+[chara_show name="maria" top="&f.top" left="&f.center" storage="chara/hamehura_Maria_cos1_mu.png" wait=true]
+
+#
+{phrase1}[r]
+{phrase2}[r]
+{phrase3}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_do"]
+
+
+#マリア
+{phrase4}[r]
+{phrase5}[p]
+
+[chara_hide name="maria"]
+
+#
+{phrase6}[r]
+{phrase7}[p]
+
+[playbgm volume=30 storage="M03_FinalMix.ogg" ]
+[bg storage="HF08_021_026.png" time=1000 ]
+
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
+
+[v storage="5" ]
+
+#ニコル
+{phrase8}[r]
+{phrase9}[p]
+
+#
+{phrase10}[r]
+{phrase11}[r]
+{phrase12}[p]
+
+#
+{phrase13}[p]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=true]
+
+
+#マリア
+{phrase14}[r]
+{phrase15}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_mu"]
+
+#
+{phrase16}[p]
+
+;[chara_hide name="nicol" pos_mode=false ]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+#
+{phrase17}[r]
+{phrase18}[r]
+{phrase19}[p]
+
+[chara_show name="sophia" top="&f.top" left="620" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true zindex=0 ]
+
+
+#マリア	
+{phrase20}[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_odo"]
+
+#？？？	
+{phrase21}[p]
+
+[chara_move name="sophia" top="&f.top" anim=true left="520" wait=true zindex=0 ]
+
+
+#
+{phrase22}[r]
+{phrase23}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+#
+{phrase24}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+[v storage="14" ]
+
+#ニコル
+{phrase25}[r]
+{phrase26}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#マリア
+{phrase27}[r]
+{phrase28}[p]
+
+[chara_hide name="maria" pos_mode=false ]
+[md name="sophia" face="hamehura_Sophia_cos1_ai" ]
+
+#
+{phrase29}[r]
+{phrase30}[r]
+{phrase31}[p]
+
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=false time=10 ]
+[chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=10 ]
+
+[wait time=2000 ]
+
+[bg storage="HF04_034_r.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm   storage="M26_FinalMix.ogg" ]
+
+;========================================
+
+
+#マリア
+{phrase32}[r]
+{phrase33}[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_ai"]
+
+#ソフィア
+{phrase34}[p]
+
+;=======================================
+
+[mask graphic="black.png" time=1500 effect="slideInRight"]
+
+[bg storage="black.png" time=10 ]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+[md name="sophia" face="hamehura_Sophia_cos1_mu"]
+
+[bg storage="HF04_034_r.png" time=10] 
+
+[mask_off time=1500 effect="slideOutLeft"]
+
+;=======================================
+
+
+#マリア
+{phrase35}[r]
+{phrase36}[r]
+{phrase37}[p]
+[md name="sophia" face="hamehura_Sophia_cos1_ai"]
+
+#ソフィア	
+{phrase38}[p]
+
+;=======================================
+
+[mask graphic="black.png" time=1500 effect="slideInRight"]
+
+[bg storage="black.png" time=10 ]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+[md name="sophia" face="hamehura_Sophia_cos1_mu"]
+
+[bg storage="HF04_002.png" time=10]
+
+[mask_off time=1500 effect="slideOutLeft"]
+
+;=======================================
+
+	
+#マリア
+{phrase39}[r]
+{phrase40}[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_ai"]
+
+#ソフィア
+{phrase41}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#マリア
+{phrase42}[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_mu"]
+
+#ソフィア
+{phrase43}[p]
+	
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=1500 effect="slideInRight"]
+
+[bg storage="black.png" time=10 ]
+
+[chara_hide_all time=100]
+
+[chara_show name="nicol" top="&f.top" left="&f.center" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true time=100]
+
+[playbgm storage="M22B_FinalMix_Re.ogg"]
+
+[bg storage="HF04_232.png" time=10]
+
+[mask_off time=2000 ]
+
+;=======================================
+
+
+#
+{phrase44}[r]
+{phrase45}[r]
+{phrase46}[p]
+
+#ニコル
+{phrase47}[p]
+
+[chara_hide_all time=1000]
+
+[bg storage="HF04_002.png" ]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=false time=1000 ]
+[chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
+	
+#
+{phrase48}[r]
+{phrase49}[p]
+
+#
+{phrase50}[r]
+{phrase51}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#
+{phrase52}[r]
+{phrase53}[p]
+
+[chara_hide name="maria" pos_mode=false  wait=false]
+[chara_hide name="sophia" pos_mode=false wait=true ]
+
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
+
+#
+{phrase54}[r]
+{phrase55}[p]
+
+[chara_hide name="nicol" pos_mode=false wait=true ]
+
+[chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=10 ]
+
+
+#
+{phrase56}[r]
+{phrase57}[r]
+{phrase58}[p]
+
+#
+{phrase59}[r]
+{phrase60}[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_def"]
+
+#
+{phrase61}[r]
+{phrase62}[r]
+{phrase63}[p]
+
+[chara_hide name="sophia" pos_mode=false wait=true ]
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_odo.png" wait=true]
+
+
+#ニコル
+{phrase64}[p]
+
+#
+{phrase65}[r]
+{phrase66}[p]
+
+#
+{phrase67}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+[v storage="40" ]
+
+#ニコル
+{phrase68}[p]
+
+*dev1
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+
+[wait time=2000 ]
+
+[bg storage="HF08_018_r.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm   storage="M26_FinalMix.ogg" ]
+
+;========================================
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_odo.png" wait=false time=1000 ]
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true time=1000 ]
+
+#
+{phrase69}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#マリア
+{phrase70}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+
+#ニコル
+{phrase71}[r]
+{phrase72}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+
+#マリア
+{phrase73}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+#
+{phrase74}[r]
+{phrase75}[p]
+
+#ニコル
+{phrase76}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#マリア
+{phrase77}[r]
+{phrase78}[p]
+
+[v storage="h2" ]
+
+#ニコル
+{phrase79}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#マリア
+{phrase80}[r]
+{phrase81}[p]
+
+#
+{phrase82}[p]
+
+[chara_hide_all ]
+
+#
+{phrase83}[r]
+{phrase84}[p]
+
+
+[chara_show name="reijo1" top="&f.top" left="-160" storage="chara/reijo1/hamehura_DVDmob1_fear.png" wait=false]
+[chara_show name="reijo2" top="&f.top" left="100" storage="chara/reijo2/hamehura_DVDmob2_fear.png" wait=false]
+[chara_show name="reijo3" top="&f.top" left="340" storage="chara/reijo3/hamehura_DVDmob3_def.png" wait=true ]
+
+
+#令嬢1
+{phrase85}[r]
+{phrase86}[r]
+{phrase87}[p]
+
+#令嬢2
+{phrase88}[r]
+{phrase89}[p]
+
+#令嬢3
+{phrase90}[r]
+{phrase91}[r]
+{phrase92}[p]
+
+[chara_hide_all ]
+
+
+#令嬢たち
+{phrase93}[p]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=false time=1000 ]
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_do.png" wait=true time=1000 ]
+
+[v storage="h4" ]
+
+#ニコル
+{phrase94}[p]
+
+#
+{phrase95}[r]
+{phrase96}[p]
+
+#
+{phrase97}[r]
+{phrase98}[p]
+
+一息に言葉を吐き出した。
+
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="気にする必要などないと伝える"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="ありのままのニコルを信じると伝える" target="*select_01_02" ]
+
+[s]
+
+*select_01_01
+[cm]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+	
+[fadeinbgm storage="M10_FinalMix.ogg" time=2000]
+	
+#マリア
+{phrase99}[r]
+{phrase100}[r]
+{phrase101}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_odo"]
+
+#ニコル
+{phrase102}[p]
+
+[chara_hide_all]
+
+[eval exp="sf.nicol_cg_1=true" ]
+[bg storage="nicol1.png"]
+	
+#
+{phrase103}[p]
+
+[if exp="f.mixmode==true"]
+[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
+[endif]
+
+
+#
+{phrase104}[r]
+{phrase105}[p]
+
+#
+{phrase106}[r]
+{phrase107}[p]
+
+[v storage="64" ]
+
+#ニコル
+{phrase108}[r]
+{phrase109}[r]
+{phrase110}[p]
+
+#
+{phrase111}[p]
+
+#
+{phrase112}[p]
+
+#
+{phrase113}[r]
+{phrase114}[p]
+
+[jump target="common1"]
+
+*select_01_02
+[cm]
+
+[fadeinbgm storage="M10_FinalMix.ogg" time=2000]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+[md name="nicol" face="hamehura_Nicol_cos1_do"]
+
+[bg storage="HF08_018_r.png" time=10] 
+
+#マリア
+{phrase115}[r]
+{phrase116}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_odo"]
+
+#マリア
+{phrase117}[r]
+{phrase118}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+[kanim_chara layer=0 name="nicol" keyframe=quake time=300 count=1 easing=linear]
+
+#マリア
+{phrase119}[r]
+{phrase120}[p]
+
+[celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+@wait time=200
+[celanim anim="green_rose_2" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+
+[love_up]
+
+
+#ニコル
+{phrase121}[p]
+
+[chara_hide_all]
+
+[eval exp="sf.nicol_cg_1=true" ]
+[bg storage="nicol1.png"]	
+
+#
+{phrase122}[p]
+
+[if exp="f.mixmode==true"]
+[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
+[endif]
+
+#
+{phrase123}[p]
+
+#
+{phrase124}[r]
+{phrase125}[p]
+
+#ニコル
+{phrase126}[p]
+
+#
+{phrase127}[r]
+{phrase128}[p]
+
+#ニコル
+{phrase129}[r]
+{phrase130}[p]
+
+#
+{phrase131}[r]
+{phrase132}[r]
+{phrase133}[p]
+
+*common1
+
+
+[free_layermode time=1000 ]
+
+	
+[bg storage="HF08_018_r.png" time=10] 
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_tere.png" wait=false time=1000 ]
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_def.png" wait=true time=1000 ]
+
+
+#マリア
+{phrase134}[r]
+{phrase135}[p]
+
+#
+{phrase136}[r]
+{phrase137}[r]
+{phrase138}[p]
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=false time=10 ]
+
+[wait time=2000 ]
+
+[bg storage="HF08_021_026.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm  volume=60 storage="M09_FinalMix.ogg" ]
+
+;========================================
+
+
+#
+{phrase139}[r]
+{phrase140}[r]
+{phrase141}[p]
+
+#マリア
+{phrase142}[r]
+{phrase143}[p]
+
+#マリア
+{phrase144}[r]
+{phrase145}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_akire"]
+
+#
+{phrase146}[r]
+{phrase147}[p]
+
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
+
+
+#ニコル	
+{phrase148}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+#
+{phrase149}[r]
+{phrase150}[p]
+
+#マリア	
+{phrase151}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_do"]
+
+[v storage="76" ]
+
+#ニコル	
+{phrase152}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_mu"]
+
+#
+{phrase153}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ai"]
+
+#
+{phrase154}[r]
+{phrase155}[p]
+
+#マリア
+{phrase156}[r]
+{phrase157}[r]
+{phrase158}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#マリア
+{phrase159}[r]
+{phrase160}[r]
+{phrase161}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#
+{phrase162}[r]
+{phrase163}[r]
+{phrase164}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+[v storage="h1" ]
+
+#ニコル	
+{phrase165}[p]
+
+#
+{phrase166}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+[v storage="84" ]
+
+#ニコル
+{phrase167}[p]
+
+#マリア
+{phrase168}[p]
+
+#
+{phrase169}[r]
+{phrase170}[r]
+{phrase171}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_ai"]
+
+[v storage="87" ]
+
+#ニコル
+{phrase172}[r]
+{phrase173}[r]
+{phrase174}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+#ニコル
+{phrase175}[r]
+{phrase176}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ai"]
+
+#マリア
+{phrase177}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_ai"]
+
+#ニコル
+{phrase178}[p]
+
+[v storage="91" ]
+
+#ニコル
+{phrase179}[r]
+{phrase180}[r]
+{phrase181}[p]
+
+[v storage="92" ]
+
+#ニコル
+{phrase182}[r]
+{phrase183}[r]
+{phrase184}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+[v storage="93" ]
+
+#ニコル
+{phrase185}[r]
+{phrase186}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+[v storage="94" ]
+
+#ニコル
+{phrase187}[r]
+{phrase188}[p]
+
+[v storage="95" ]
+
+#ニコル
+{phrase189}[r]
+{phrase190}[p]
+
+#マリア	
+（なんて答えよう？）
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="こちらこそ、ありがとうございます"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="お礼を言われるようなことなんて……" target="*select_02_02" ]
+
+[s]
+
+*select_02_01
+[cm]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+
+#マリア
+{phrase191}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#マリア
+{phrase192}[r]
+{phrase193}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#マリア
+{phrase194}[r]
+{phrase195}[p]
+
+[v storage="99" ]
+
+#ニコル
+{phrase196}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_kon"]
+
+#マリア
+{phrase197}[r]
+{phrase198}[p]
+
+#ニコル
+{phrase199}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+[v storage="h3" ]
+
+#ニコル
+{phrase200}[r]
+{phrase201}[p]
+
+[celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+@wait time=200
+[celanim anim="green_rose_2" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+
+[love_up]
+
+
+#ニコル
+{phrase202}[r]
+{phrase203}[p]
+
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+
+#ニコル
+{phrase204}[p]
+
+#
+{phrase205}[r]
+{phrase206}[p]
+
+[jump target="common2"]
+
+*select_02_02
+[cm]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+
+#マリア
+{phrase207}[r]
+{phrase208}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+
+#
+{phrase209}[r]
+{phrase210}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_tere"]
+
+#
+{phrase211}[r]
+{phrase212}[p]
+
+[v storage="h1" ]
+
+#ニコル
+{phrase213}[p]
+
+#ニコル
+{phrase214}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+#マリア
+{phrase215}[p]
+
+#ニコル
+{phrase216}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_kon"]
+
+#マリア
+{phrase217}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+#ニコル
+{phrase218}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+[v storage="h3" ]
+
+#ニコル
+{phrase219}[r]
+{phrase220}[r]
+{phrase221}[p]
+
+#ニコル
+{phrase222}[p]
+
+#
+{phrase223}[r]
+{phrase224}[r]
+{phrase225}[p]
+
+*common2
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+[md name="nicol" face="hamehura_Nicol_cos1_mu"]
+
+[v storage="106" ]
+
+#ニコル
+{phrase226}[r]
+{phrase227}[r]
+{phrase228}[p]
+
+[chara_hide name="nicol" pos_mode=false ]
+
+#
+{phrase229}[r]
+{phrase230}[p]
+
+*dev2
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+[wait time=2000 ]
+
+[bg storage="HF04_016.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm   storage="M12_FinalMix.ogg" ]
+
+;========================================
+
+#
+{phrase231}[r]
+{phrase232}[p]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=true]
+
+#
+{phrase233}[p]
+
+#
+{phrase234}[r]
+{phrase235}[r]
+{phrase236}[p]
+
+#
+{phrase237}[r]
+{phrase238}[p]
+
+#マリア
+{phrase239}[r]
+{phrase240}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_akire"]
+
+
+#
+{phrase241}[r]
+{phrase242}[p]
+
+[fadeoutbgm time=2000]
+[playse storage="se/door_wood_knock1.ogg" ]
+
+#
+{phrase243}[r]
+{phrase244}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_mu"]
+
+
+#マリア
+{phrase245}[p]
+
+#
+{phrase246}[r]
+{phrase247}[p]
+
+[playse storage="se/door-open1.ogg" ]
+
+[fadeinbgm storage="M17_FinalMix.ogg" time=2000 ]
+
+[chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+	
+#ソフィア	
+{phrase248}[p]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+#マリア
+{phrase249}[p]
+
+#ソフィア
+{phrase250}[r]
+{phrase251}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ase"]
+
+
+#マリア
+{phrase252}[p]
+
+#
+{phrase253}[r]
+{phrase254}[r]
+{phrase255}[p]
+
+#ソフィア
+{phrase256}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+[kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
+
+#マリア
+{phrase257}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ai"]
+
+#
+{phrase258}[r]
+{phrase259}[p]
+
+#マリア
+{phrase260}[p]
+
+#マリア
+{phrase261}[r]
+{phrase262}[p]
+
+#マリア
+{phrase263}[r]
+{phrase264}[p]
+
+#ソフィア	
+{phrase265}[p]
+
+
+[md name="maria" face="hamehura_Maria_cos1_do"]
+
+#マリア
+[font size=30]本当です！[resetfont]
+[p]
+
+[md name="sophia" face="hamehura_Sophia_cos1_def"]
+
+#
+{phrase266}[r]
+{phrase267}[p]
+
+#ソフィア	
+{phrase268}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+#マリア
+{phrase269}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_kon"]
+
+#ソフィア
+{phrase270}[r]
+{phrase271}[p]
+
+#
+{phrase272}[r]
+{phrase273}[p]
+
+#ソフィア
+{phrase274}[r]
+{phrase275}[r]
+{phrase276}[p]
+
+#マリア
+{phrase277}[p]
+
+#ソフィア	
+{phrase278}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_mu"]
+
+#ソフィア
+{phrase279}[r]
+{phrase280}[p]
+
+#ソフィア	
+{phrase281}[p]
+
+
+;=======================================
+
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_mu.png" wait=true]
+
+[wait time=2000 ]
+
+[bg storage="HF04_034_r.png" time=10] 
+
+[mask_off time=2000 ]
+
+;========================================
+	
+#マリア
+{phrase282}[p]
+
+#
+{phrase283}[r]
+{phrase284}[r]
+{phrase285}[p]
+
+#ソフィア	
+{phrase286}[p]
+
+[bg storage="HF04_066_071_073_084A.png"]
+
+[chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_def.png" wait=true time=1000 ]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+#マリア
+{phrase287}[p]
+
+#
+{phrase288}[r]
+{phrase289}[p]
+
+#
+{phrase290}[r]
+{phrase291}[p]
+
+#ソフィア	
+{phrase292}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ase"]
+
+#マリア
+{phrase293}[r]
+{phrase294}[p]
+
+#ソフィア	
+{phrase295}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+#ソフィア	
+{phrase296}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def2"]
+
+#マリア
+[font size=30]
+{phrase297}[r]
+ソフィア様！
+[resetfont]
+[p]
+
+
+
+*dev3
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+[chara_hide_all time=100]
+
+[chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos5_mu.png" wait=true]
+
+[wait time=2000 ]
+
+[bg storage="HF03_202.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm volume=60 storage="M02_FinalMix.ogg" ]
+
+;========================================
+
+
+#
+{phrase298}[r]
+{phrase299}[r]
+{phrase300}[p]
+
+#
+{phrase301}[r]
+{phrase302}[p]
+
+[md name="maria" face="hamehura_Maria_cos5_akire"]
+
+#
+{phrase303}[r]
+{phrase304}[r]
+{phrase305}[p]
+
+#
+{phrase306}[p]
+
+[v storage="149"]
+
+#？？？	
+{phrase307}[p]
+
+[chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos2_mu.png" wait=true]
+[md name="maria" face="hamehura_Maria_cos5_odo"]
+
+#
+{phrase308}[r]
+{phrase309}[r]
+{phrase310}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos2_def"]
+
+[v storage="151"]
+
+#ニコル
+{phrase311}[p]
+
+[md name="maria" face="hamehura_Maria_cos5_kon"]
+
+#マリア
+{phrase312}[p]
+
+#ニコル
+{phrase313}[p]
+
+[md name="maria" face="hamehura_Maria_cos5_tere"]
+[md name="nicol" face="hamehura_Nicol_cos2_mu"]
+
+#
+{phrase314}[r]
+{phrase315}[p]
+
+[v storage="155"]
+
+#ニコル
+{phrase316}[p]
+
+;=======================================
+[fadeoutbgm ]
+[mask graphic="black.png" time=2000]
+
+[bg storage="black.png" time=10 ]
+
+[md name="maria" face="hamehura_Maria_cos5_tere"]
+[md name="nicol" face="hamehura_Nicol_cos2_mu"]
+
+[wait time=2000 ]
+
+[bg storage="HF01_145.png" time=10] 
+
+[mask_off time=2000 ]
+
+[playbgm   storage="M22B_FinalMix_Re.ogg" ]
+
+;========================================
+
+
+#
+{phrase317}[r]
+{phrase318}[p]
+
+[md name="maria" face="hamehura_Maria_cos5_tere2"]
+
+#
+{phrase319}[p]
+
+[md name="maria" face="hamehura_Maria_cos5_odo"]
+
+[v storage="158"]
+
+#ニコル
+{phrase320}[p]
+
+#
+{phrase321}[r]
+{phrase322}[p]
+
+#
+{phrase323}[r]
+{phrase324}[p]
+
+#
+{phrase325}[r]
+{phrase326}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos2_tere"]
+
+[v storage="162"]
+
+#ニコル
+{phrase327}[r]
+{phrase328}[p]
+
+[v storage="163"]
+
+#ニコル
+{phrase329}[r]
+{phrase330}[r]
+{phrase331}[p]
+
+[chara_hide_all time=1000]
+
+
+[eval exp="sf.nicol_cg_2=true" ]
+[bg storage="nicol2.png"]
+
+[v storage="164"]
+
+#ニコル
+{phrase332}[r]
+{phrase333}[p]
+
+[if exp="f.mixmode==true"]
+[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
+[endif]
+
+#
+{phrase334}[r]
+{phrase335}[p]
+
+#マリア
+{phrase336}[p]
+
+#
+{phrase337}[r]
+{phrase338}[r]
+{phrase339}[p]
+
+#
+{phrase340}[r]
+{phrase341}[r]
+{phrase342}[p]
+
+#
+{phrase343}[r]
+{phrase344}[p]
+
+#マリア
+{phrase345}[r]
+{phrase346}[p]
+
+#
+{phrase347}[r]
+{phrase348}[p]
+
+#
+{phrase349}[p]
+
+#マリア	
+（どうする？）
+
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="ニコルの手を取る"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="手を取るのをためらう" target="*select_03_02" ]
+
+[s]
+
+*select_03_01
+[cm]
+
+	
+#マリア
+{phrase350}[r]
+{phrase351}[p]
+
+#マリア
+{phrase352}[r]
+{phrase353}[p]
+
+#
+{phrase354}[r]
+{phrase355}[r]
+{phrase356}[p]
+
+[v storage="175"]
+
+#ニコル
+{phrase357}[p]
+
+#
+{phrase358}[p]
+
+#マリア
+{phrase359}[p]
+
+#
+{phrase360}[r]
+{phrase361}[p]
+
+#
+{phrase362}[r]
+{phrase363}[p]
+
+[celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+@wait time=200
+[celanim anim="green_rose_2" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
+
+[love_up]
+
+
+[jump target="common3"]
+
+*select_03_02
+[cm]
+	
+#
+{phrase364}[r]
+{phrase365}[r]
+{phrase366}[p]
+
+#
+{phrase367}[p]
+
+#ニコル
+{phrase368}[p]
+
+#
+{phrase369}[r]
+{phrase370}[p]
+
+[v storage="175"]
+
+#ニコル
+{phrase371}[p]
+
+#ニコル
+{phrase372}[p]
+
+#ニコル
+{phrase373}[p]
+
+#
+{phrase374}[r]
+{phrase375}[p]
+
+#
+{phrase376}[r]
+{phrase377}[p]
+
+#マリア
+{phrase378}[r]
+{phrase379}[p]
+
+#
+{phrase380}[r]
+{phrase381}[p]
+
+*common3
+
+[free_layermode time=1000 ]
+
+[chara_hide_all]
+
+[layopt layer=message0 visible=false]
+[freeimage layer=0]
+[freeimage layer=1]
+@clearfix
+
+[if exp="f.love==3"]
+[bg time=2000 storage="happy_end.png"]
+[else]
+[bg time=2000 storage="normal_end.png"]
+[endif]
+
+[wait time=8000]
+
+;タイトルに戻る。
+
+[layopt layer=message0 visible=false]
+[fadeoutbgm time=3000]
+[wait time=3000]
+[fadeinbgm time=1000 storage="M19_FinalMix.ogg" ]
+[jump storage="title.ks"]
+
+[s]
+
+
+;===============================================
+
+
+
