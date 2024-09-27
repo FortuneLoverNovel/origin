@@ -427,12 +427,12 @@ f.charas = [
 
 [v storage="1"]
 
-#キース	
-{phrase1}[p]
+#{name1}	
+{phrase2}[p]
 [playbgm  volume=15   storage="M30_FinalMix.ogg" ]
 
-#マリア
-{phrase2}[p]
+#{name3}
+{phrase4}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -440,38 +440,38 @@ f.charas = [
 
 
 #
-{phrase3}[r]
-{phrase4}[r]
-{phrase5}[p]
-
-#
+{phrase5}[r]
 {phrase6}[r]
 {phrase7}[p]
 
 #
-{phrase8}[l][r]
-{phrase9}[r]
-{phrase10}[p]
+{phrase8}[r]
+{phrase9}[p]
 
 #
-{phrase11}[p]
-
-[v storage="h2"]
-
-#キース
+{phrase10}[l][r]
+{phrase11}[r]
 {phrase12}[p]
 
 #
-{phrase13}[r]
+{phrase13}[p]
+
+[v storage="h2"]
+
+#{name1}
 {phrase14}[p]
+
+#
+{phrase15}[r]
+{phrase16}[p]
 
 [free_layermode time=1000 ]
 
-#マリア	
-（どうしよう？）
+#{name3}	
+{phrase17}
 
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="逃げる"  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="様子を見る" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="{text18}"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="{text19}" target="*select_01_02" ]
 
 [s]
 
@@ -484,17 +484,17 @@ f.charas = [
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_do" wait=false]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
-#マリア
-{phrase15}[p]
+#{name3}
+{phrase20}[p]
 
 [md name="maria" face="焦り"]
 
 #
-{phrase16}[p]
+{phrase21}[p]
 
-#マリア
-{phrase17}[r]
-{phrase18}[p]
+#{name3}
+{phrase22}[r]
+{phrase23}[p]
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -503,45 +503,45 @@ f.charas = [
 [love_up]
 
 
-#キース	
-{phrase19}[p]
+#{name1}	
+{phrase24}[p]
 
 #
-{phrase20}[r]
-{phrase21}[p]
+{phrase25}[r]
+{phrase26}[p]
 
 [md name="keeth" face="無表情"]
 
-#マリア
-{phrase22}[p]
+#{name3}
+{phrase27}[p]
 
-#マリア
-{phrase23}[r]
-{phrase24}[p]
+#{name3}
+{phrase28}[r]
+{phrase29}[p]
 
 [md name="maria" face="焦り"]
 
 #
-{phrase25}[p]
+{phrase30}[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
 #
-{phrase26}[r]
-{phrase27}[r]
-{phrase28}[p]
+{phrase31}[r]
+{phrase32}[r]
+{phrase33}[p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="微笑み"]
 
-#マリア
-{phrase29}[r]
-{phrase30}[p]
+#{name3}
+{phrase34}[r]
+{phrase35}[p]
 
 #
-{phrase31}[r]
-{phrase32}[p]
+{phrase36}[r]
+{phrase37}[p]
 
 [jump target="*common_01"]
 
@@ -555,31 +555,31 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
 
-#マリア
-{phrase33}[r]
-{phrase34}[p]
+#{name3}
+{phrase38}[r]
+{phrase39}[p]
 
 [md name="maria" face="焦り"]
 
 #
-{phrase35}[r]
-{phrase36}[r]
-{phrase37}[p]
+{phrase40}[r]
+{phrase41}[r]
+{phrase42}[p]
 
 #
-{phrase38}[r]
-{phrase39}[r]
-{phrase40}[p]
+{phrase43}[r]
+{phrase44}[r]
+{phrase45}[p]
 
 [chara_hide_all]
 
 [bg storage="black.png" time="100"]
 	
 #
-{phrase41}[p]
+{phrase46}[p]
 
-#マリア
-{phrase42}[p]
+#{name3}
+{phrase47}[p]
 
 [bg storage="HF04_034_r.png" time=2000]
 
@@ -590,45 +590,45 @@ f.charas = [
 [md name="keeth" face="悲しみ"]
 
 #
-{phrase43}[r]
-{phrase44}[p]
+{phrase48}[r]
+{phrase49}[p]
 
 [md name="maria" face="焦り"]
 
 
 ;[v storage="h2"]
 
-#キース
-{phrase45}[r]
-{phrase46}[r]
-{phrase47}[p]
+#{name1}
+{phrase50}[r]
+{phrase51}[r]
+{phrase52}[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="微笑み"]
 
-#キース
-{phrase48}[p]
+#{name1}
+{phrase53}[p]
 
 [md name="maria" face="焦り"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase49}[p]
+#{name3}
+{phrase54}[p]
 
-#マリア
-{phrase50}[p]
+#{name3}
+{phrase55}[p]
 
 [md name="maria" face="怒り"]
 
-#マリア
-{phrase51}[r]
-{phrase52}[p]
+#{name3}
+{phrase56}[r]
+{phrase57}[p]
 
 
 #
-{phrase53}[r]
-{phrase54}[p]
+{phrase58}[r]
+{phrase59}[p]
 
 *common_01
 
@@ -638,32 +638,32 @@ f.charas = [
 
 [v storage="h1"]
 
-#キース
-{phrase55}[p]
-
-#
-{phrase56}[r]
-{phrase57}[p]
-
-#
-{phrase58}[r]
-{phrase59}[r]
+#{name1}
 {phrase60}[p]
 
 #
 {phrase61}[r]
-{phrase62}[r]
-{phrase63}[p]
+{phrase62}[p]
+
+#
+{phrase63}[r]
+{phrase64}[r]
+{phrase65}[p]
+
+#
+{phrase66}[r]
+{phrase67}[r]
+{phrase68}[p]
 
 [md name="keeth" face="微笑み"]
 
-#キース
-{phrase64}[p]
+#{name1}
+{phrase69}[p]
 
 #
-{phrase65}[r]
-{phrase66}[r]
-{phrase67}[p]
+{phrase70}[r]
+{phrase71}[r]
+{phrase72}[p]
 
 *dev1
 
@@ -686,75 +686,75 @@ f.charas = [
 [playbgm  volume=15   storage="M39_FinalMix.ogg" ]
 
 #
-{phrase68}[r]
-{phrase69}[p]
+{phrase73}[r]
+{phrase74}[p]
 
 [chara_show  name="kata" face="hamehura_Catalina_cos1_aku" top="&f.top" left="&f.right" ]
 
 
 [v storage="19"]
 
-#カタリナ
-{phrase70}[p]
+#{name75}
+{phrase76}[p]
 
 #
-{phrase71}[r]
-{phrase72}[r]
-{phrase73}[p]
+{phrase77}[r]
+{phrase78}[r]
+{phrase79}[p]
 
 #
-{phrase74}[r]
-{phrase75}[p]
+{phrase80}[r]
+{phrase81}[p]
 
 [md name="kata" face="怒り"]
 
 [v storage="22"]
 
-#カタリナ
-{phrase76}[r]
-{phrase77}[p]
-
-#
-{phrase78}[r]
-{phrase79}[r]
-{phrase80}[p]
-
-#
-{phrase81}[r]
+#{name75}
 {phrase82}[r]
 {phrase83}[p]
 
-#マリア
-{phrase84}[p]
+#
+{phrase84}[r]
+{phrase85}[r]
+{phrase86}[p]
+
+#
+{phrase87}[r]
+{phrase88}[r]
+{phrase89}[p]
+
+#{name3}
+{phrase90}[p]
 
 [chara_hide name="kata" pos_mode=false ]
 
 [chara_show name="reijo1" top="&f.top" left="&f.right" face="hamehura_DVDmob1_do"]
 
-#令嬢1
+#{name91}
 
-{phrase85}[r]
-{phrase86}[p]
+{phrase92}[r]
+{phrase93}[p]
 
-#マリア
-{phrase87}[p]
+#{name3}
+{phrase94}[p]
 
 [chara_hide name="reijo1"  pos_mode=false]
 [chara_show name="reijo2" top="&f.top" left="&f.right" face="hamehura_DVDmob2_do" ]
 
-#令嬢2
-{phrase88}[r]
-{phrase89}[r]
-{phrase90}[p]
+#{name95}
+{phrase96}[r]
+{phrase97}[r]
+{phrase98}[p]
 
-#マリア
-{phrase91}[r]
-{phrase92}[p]
+#{name3}
+{phrase99}[r]
+{phrase100}[p]
 
 #
-{phrase93}[r]
-{phrase94}[l][r]
-{phrase95}[p]
+{phrase101}[r]
+{phrase102}[l][r]
+{phrase103}[p]
 
 
 [chara_hide_all]
@@ -762,7 +762,7 @@ f.charas = [
 [playbgm volume=15 storage="M43_FinalMix.ogg" ]
 
 #
-{phrase96}[p]
+{phrase104}[p]
 
 [chara_show time=1000 name="maria" face="hamehura_Maria_cos1_ase" top="&f.top" left="&f.left" wait=false]
 [chara_show time=1000 name="kata" face="hamehura_Catalina_cos1_aku2" top="&f.top" left="&f.right" wait=true]
@@ -772,28 +772,28 @@ f.charas = [
 
 [v storage="32"]
 
-#カタリナ
-{phrase97}[r]
-{phrase98}[r]
-{phrase99}[p]
+#{name75}
+{phrase105}[r]
+{phrase106}[r]
+{phrase107}[p]
 
 [chara_hide name="kata"  pos_mode=false]
 
 [chara_show name="reijo3" top="&f.top" left="&f.right" face="hamehura_DVDmob3_def" ]
 
 #
-{phrase100}[r]
-{phrase101}[p]
+{phrase108}[r]
+{phrase109}[p]
 
 #
-{phrase102}[r]
-{phrase103}[p]
+{phrase110}[r]
+{phrase111}[p]
 
 #
-{phrase104}[p]
+{phrase112}[p]
 
-{phrase105}[r]
-{phrase106}[p]
+{phrase113}[r]
+{phrase114}[p]
 
 [mask time=100 color="red"]
 [wait time=100]
@@ -807,8 +807,8 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase107}[p]
+#{name3}
+{phrase115}[p]
 
 [chara_hide name="reijo3" wait=false wait=false]
 [chara_hide name="maria"  wait=true wait=true]
@@ -816,10 +816,10 @@ f.charas = [
 [bg storage="black.png" time=100]	
 
 #
-{phrase108}[p]
+{phrase116}[p]
 
 #
-{phrase109}[p]
+{phrase117}[p]
 
 [bg storage="HF05_068_r.png"]
 
@@ -827,9 +827,9 @@ f.charas = [
 
 
 #
-{phrase110}[r]
-{phrase111}[r]
-{phrase112}[p]
+{phrase118}[r]
+{phrase119}[r]
+{phrase120}[p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
 
@@ -837,13 +837,13 @@ f.charas = [
 [kanim_chara layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 [v storage="42"]
 
-#カタリナ
-{phrase113}[p]
+#{name75}
+{phrase121}[p]
 
 #
-{phrase114}[r]
-{phrase115}[r]
-{phrase116}[p]
+{phrase122}[r]
+{phrase123}[r]
+{phrase124}[p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
 
@@ -854,36 +854,36 @@ f.charas = [
 [playse storage="se/rock-crack1.ogg" ]
 
 #
-{phrase117}[p]
+{phrase125}[p]
 
 #
-{phrase118}[p]
+{phrase126}[p]
 
 [md name="kata" face="悲しみ"]
 
-#カタリナ
-{phrase119}[p]
+#{name75}
+{phrase127}[p]
 
 [playse storage="se/dash-asphalt2.ogg" ]
 [chara_hide name="kata"]
 
 
 #
-{phrase120}[r]
-{phrase121}[r]
-{phrase122}[p]
+{phrase128}[r]
+{phrase129}[r]
+{phrase130}[p]
 
 [md name="maria" face="悲しみ"]
 
 
-#マリア
-{phrase123}[p]
+#{name3}
+{phrase131}[p]
 
 [md name="maria" face="焦り"]
 
 #
-{phrase124}[r]
-{phrase125}[p]
+{phrase132}[r]
+{phrase133}[p]
 
 [md name="maria" face="驚き"]
 
@@ -893,13 +893,13 @@ f.charas = [
 
 [playse storage="se/nadare.ogg" ]
 
-#マリア
-{phrase126}[p]
+#{name3}
+{phrase134}[p]
 
 #
-{phrase127}[r]
-{phrase128}[r]
-{phrase129}[p]
+{phrase135}[r]
+{phrase136}[r]
+{phrase137}	[p]
 
 [bg storage="HF04_292.png"]
 
@@ -908,9 +908,9 @@ f.charas = [
 [playse storage="se/nadare.ogg" ]
 
 #
-{phrase130}[r]
-{phrase131}[r]
-{phrase132}[p]
+{phrase138}[r]
+{phrase139}[r]
+{phrase140}[p]
 
 
 [playbgm volume=15 storage="M21_FinalMix.ogg" ]
@@ -919,11 +919,11 @@ f.charas = [
 
 
 #？？？
-{phrase133}[p]
+{phrase141}[p]
 
 #
-{phrase134}[r]
-{phrase135}[p]
+{phrase142}[r]
+{phrase143}[p]
 
 [md name="maria" face="驚き"]
 
@@ -933,127 +933,127 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase136}[p]
+#{name3}
+{phrase144}[p]
 
 [md name="keeth" face="無表情"]
 
 [v storage="h3"]
 
-#キース
-{phrase137}[r]
-{phrase138}[r]
-{phrase139}[p]
+#{name1}
+{phrase145}[r]
+{phrase146}[r]
+{phrase147}[p]
 
-#マリア
-{phrase140}[p]
+#{name3}
+{phrase148}[p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="悲しみ"]
 
-#キース
-{phrase141}[r]
-{phrase142}[p]
+#{name1}
+{phrase149}[r]
+{phrase150}[p]
 
-#キース
-{phrase143}[r]
-{phrase144}[r]
-{phrase145}[p]
+#{name1}
+{phrase151}[r]
+{phrase152}[r]
+{phrase153}[p]
 
 [md name="maria" face="悲しみ"]
 
 
 #
-{phrase146}[r]
-{phrase147}[p]
+{phrase154}[r]
+{phrase155}[p]
 
 [md name="maria" face="無表情"]
 [md name="keeth" face="驚き"]
-
-#
-{phrase148}[r]
-{phrase149}[r]
-{phrase150}[p]
-
-[md name="maria" face="泣き"]
-
-#マリア
-{phrase151}[r]
-{phrase152}[p]
-
-[md name="keeth" face="無表情"]
-
-#
-{phrase153}[r]
-{phrase154}[p]
-
-[md name="keeth" face="悲しみ"]
-
-[v storage="h5"]
-
-#キース
-{phrase155}[p]
 
 #
 {phrase156}[r]
 {phrase157}[r]
 {phrase158}[p]
 
-[md name="maria" face="悲しみ"]
+[md name="maria" face="泣き"]
 
-#キース
+#{name3}
 {phrase159}[r]
 {phrase160}[p]
 
-[md name="maria" face="泣き"]
-
-#キース
-{phrase161}[p]
+[md name="keeth" face="無表情"]
 
 #
-{phrase162}[r]
-{phrase163}[r]
-{phrase164}[p]
+{phrase161}[r]
+{phrase162}[p]
+
+[md name="keeth" face="悲しみ"]
+
+[v storage="h5"]
+
+#{name1}
+{phrase163}[p]
 
 #
+{phrase164}[r]
 {phrase165}[r]
 {phrase166}[p]
 
-[v storage="69"]
+[md name="maria" face="悲しみ"]
 
-#キース
+#{name1}
 {phrase167}[r]
 {phrase168}[p]
 
-#
-{phrase169}[r]
-{phrase170}[p]
+[md name="maria" face="泣き"]
 
-#キース
+#{name1}
+{phrase169}[p]
+
+#
+{phrase170}[r]
 {phrase171}[r]
 {phrase172}[p]
-
-[md name="maria" face="悲しみ"]
 
 #
 {phrase173}[r]
 {phrase174}[p]
 
-#
+[v storage="69"]
+
+#{name1}
 {phrase175}[r]
 {phrase176}[p]
-
-[md name="keeth" face="微笑み" ]
 
 #
 {phrase177}[r]
 {phrase178}[p]
 
-#マリア
-（何か言わないと……）
+#{name1}
+{phrase179}[r]
+{phrase180}[p]
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="ありがとうございます"  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="どうして助けてくれたんですか？" target="*select_02_02" ]
+[md name="maria" face="悲しみ"]
+
+#
+{phrase181}[r]
+{phrase182}[p]
+
+#
+{phrase183}[r]
+{phrase184}[p]
+
+[md name="keeth" face="微笑み" ]
+
+#
+{phrase185}[r]
+{phrase186}[p]
+
+#{name3}
+{phrase187}
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="{text188}"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="{text189}" target="*select_02_02" ]
 
 [s]
 
@@ -1063,28 +1063,28 @@ f.charas = [
 
 [md name="keeth" face="無表情"]
 
-#マリア
-{phrase179}[r]
-{phrase180}[p]
+#{name3}
+{phrase190}[r]
+{phrase191}[p]
 
-#マリア
-{phrase181}[p]
+#{name3}
+{phrase192}[p]
 
 #
-{phrase182}[r]
-{phrase183}[r]
-{phrase184}[p]
+{phrase193}[r]
+{phrase194}[r]
+{phrase195}[p]
 
-#キース
-{phrase185}[r]
-{phrase186}[r]
-{phrase187}[p]
+#{name1}
+{phrase196}[r]
+{phrase197}[r]
+{phrase198}[p]
 
 [md name="maria" face="驚き"]
 
 
 #
-{phrase188}[p]
+{phrase199}[p]
 
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
@@ -1094,23 +1094,23 @@ f.charas = [
 [love_up]
 
 #
-{phrase189}[r]
-{phrase190}[p]
+{phrase200}[r]
+{phrase201}[p]
 
 [md name="keeth" face="微笑み"]
 
-#キース
-{phrase191}[p]
+#{name1}
+{phrase202}[p]
 
 [md name="maria" face="微笑み"]
 
 #
-{phrase192}[r]
-{phrase193}[p]
+{phrase203}[r]
+{phrase204}[p]
 
 #
-{phrase194}[r]
-{phrase195}[p]
+{phrase205}[r]
+{phrase206}[p]
 
 
 [jump target="*common_02"]
@@ -1124,55 +1124,55 @@ f.charas = [
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
-#マリア
-{phrase196}[r]
-{phrase197}[r]
-{phrase198}[p]
+#{name3}
+{phrase207}[r]
+{phrase208}[r]
+{phrase209}[p]
 
 #
-{phrase199}[r]
-{phrase200}[r]
-{phrase201}[p]
+{phrase210}[r]
+{phrase211}[r]
+{phrase212}[p]
 
 #
-{phrase202}[r]
-{phrase203}[r]
-{phrase204}[p]
+{phrase213}[r]
+{phrase214}[r]
+{phrase215}[p]
 
-#キース
-{phrase205}[r]
-{phrase206}[r]
-{phrase207}[p]
+#{name1}
+{phrase216}[r]
+{phrase217}[r]
+{phrase218}[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="怒り"]
 
-#キース
-{phrase208}[r]
-{phrase209}[r]
-{phrase210}[p]
+#{name1}
+{phrase219}[r]
+{phrase220}[r]
+{phrase221}[p]
 
 #
-{phrase211}[r]
-{phrase212}[r]
-{phrase213}[p]
+{phrase222}[r]
+{phrase223}[r]
+{phrase224}[p]
 
 [md name="maria" face="微笑み"]
 [md name="keeth" face="無表情"]
 
 
-#マリア
-{phrase214}[p]
+#{name3}
+{phrase225}[p]
 
 [md name="keeth" face="微笑み"]
 
-#キース
-{phrase215}[p]
+#{name1}
+{phrase226}[p]
 
 #
-{phrase216}[r]
-{phrase217}[r]
-{phrase218}[p]
+{phrase227}[r]
+{phrase228}[r]
+{phrase229}[p]
 
 *common_02
 
@@ -1196,79 +1196,79 @@ f.charas = [
 
 
 #
-{phrase219}[r]
-{phrase220}[p]
+{phrase230}[r]
+{phrase231}[p]
 
 [chara_show time=10 name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu"]
 
-#マリア
-{phrase221}[p]
+#{name3}
+{phrase232}[p]
 
 #
-{phrase222}[r]
-{phrase223}[p]
+{phrase233}[r]
+{phrase234}[p]
 
 #
-{phrase224}[r]
-{phrase225}[p]
+{phrase235}[r]
+{phrase236}[p]
 
 [chara_hide name="maria"]
 
 [v storage="83"]
 
 #
-{phrase226}[p]
+{phrase237}[p]
 
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" ]
 
-#キース
-{phrase227}[p]
+#{name1}
+{phrase238}[p]
 
 [chara_hide name="keeth"]
 
 [chara_show  name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_odo"]
 
-#マリア
-{phrase228}[p]
-
-#
-{phrase229}[r]
-{phrase230}[p]
-
-[md name="maria" face="悲しみ"]
-
-#マリア	
-{phrase231}[r]
-{phrase232}[p]
-
-[md name="maria" face="無表情"]
-
-#
-{phrase233}[r]
-{phrase234}[p]
-
-[bg storage="HF08_044.png"]
-
-[md name="maria" face="照れ"]
-
-#マリア	
-{phrase235}[r]
-{phrase236}[p]
-
-#
-{phrase237}[r]
-{phrase238}[r]
+#{name3}
 {phrase239}[p]
-
-[md name="maria" face="微笑み"]
 
 #
 {phrase240}[r]
 {phrase241}[p]
 
-#
+[md name="maria" face="悲しみ"]
+
+#{name3}	
 {phrase242}[r]
 {phrase243}[p]
+
+[md name="maria" face="無表情"]
+
+#
+{phrase244}[r]
+{phrase245}[p]
+
+[bg storage="HF08_044.png"]
+
+[md name="maria" face="照れ"]
+
+#{name3}	
+{phrase246}[r]
+{phrase247}[p]
+
+#
+{phrase248}[r]
+{phrase249}[r]
+{phrase250}[p]
+
+[md name="maria" face="微笑み"]
+
+#
+{phrase251}[r]
+{phrase252}[p]
+
+#
+{phrase253}[r]
+{phrase254}[p]
 
 [chara_hide name="maria"]
 
@@ -1276,56 +1276,56 @@ f.charas = [
 
 [v storage="93"]
 
-#キース
-{phrase244}[p]
+#{name1}
+{phrase255}[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="94"]
 
-#キース
-{phrase245}[p]
+#{name1}
+{phrase256}[p]
 
 [v storage="95"]
 
 [md name="keeth" face="無表情"]
 
-#キース
-{phrase246}[p]
+#{name1}
+{phrase257}[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="96"]
 
-#キース
-{phrase247}[p]
+#{name1}
+{phrase258}[p]
 
 [md name="keeth" face="微笑み"]
 
 [v storage="97"]
 
-#キース
-{phrase248}[p]
+#{name1}
+{phrase259}[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="98"]
 
-#キース
-{phrase249}[p]
+#{name1}
+{phrase260}[p]
 
 #
-{phrase250}[r]
-{phrase251}[r]
-{phrase252}[p]
+{phrase261}[r]
+{phrase262}[r]
+{phrase263}[p]
 
 [chara_hide name="keeth"]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" ]
 
 #
-{phrase253}[r]
-{phrase254}[p]
+{phrase264}[r]
+{phrase265}[p]
 
 [md name="maria" face="驚き"]
 
@@ -1334,10 +1334,10 @@ f.charas = [
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-{phrase255}[p]
+{phrase266}[p]
 
 #
-{phrase256}[p]
+{phrase267}[p]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_do" wait=true]
 
 [md name="maria" face="焦り"]
@@ -1345,13 +1345,13 @@ f.charas = [
 
 [v storage="101"]
 
-#キース
-{phrase257}[p]
+#{name1}
+{phrase268}[p]
 
 #
-{phrase258}[l][r]
-{phrase259}[r]
-{phrase260}[p]
+{phrase269}[l][r]
+{phrase270}[r]
+{phrase271}[p]
 
 [md name="keeth" face="驚き"]
 
@@ -1361,122 +1361,122 @@ f.charas = [
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#キース
-{phrase261}[p]
+#{name1}
+{phrase272}[p]
 
 [md name="keeth" face="照れ"]
 
 #
-{phrase262}[r]
-{phrase263}[p]
+{phrase273}[r]
+{phrase274}[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア	
-{phrase264}[r]
-{phrase265}[p]
+#{name3}	
+{phrase275}[r]
+{phrase276}[p]
 
 #
-{phrase266}[r]
-{phrase267}[p]
+{phrase277}[r]
+{phrase278}[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
 #
-{phrase268}[p]
+{phrase279}[p]
 
-#マリア
-{phrase269}[p]
-
-#
-{phrase270}[l][r]
-{phrase271}[r]
-{phrase272}[p]
+#{name3}
+{phrase280}[p]
 
 #
-{phrase273}[p]
+{phrase281}[l][r]
+{phrase282}[r]
+{phrase283}[p]
+
+#
+{phrase284}[p]
 
 [md name="keeth" face="怒り"]
 
 [v storage="111"]
 
-#キース
-{phrase274}[p]
+#{name1}
+{phrase285}[p]
 
 [md name="maria" face="驚き"]
 
 @quake_camera
 
 #
-{phrase275}[p]
+{phrase286}[p]
 
 [md name="maria" face="悲しみ"]
 
 [v storage="113"]
 
-#キース	
-{phrase276}[r]
-{phrase277}[r]
-{phrase278}[p]
+#{name1}	
+{phrase287}[r]
+{phrase288}[r]
+{phrase289}[p]
 
 [v storage="114"]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#キース	
-{phrase279}[r]
-{phrase280}[p]
+#{name1}	
+{phrase290}[r]
+{phrase291}[p]
 
 [md name="maria" face="驚き"]
 
-#マリア
-{phrase281}[p]
+#{name3}
+{phrase292}[p]
 
 [md name="keeth" face="無表情"]
 
 #
-{phrase282}[p]
+{phrase293}[p]
 
 #
-{phrase283}[l][r]
-{phrase284}[r]
-{phrase285}[p]
+{phrase294}[l][r]
+{phrase295}[r]
+{phrase296}[p]
 
 [v storage="118"]
 
-#キース	
-{phrase286}[r]
-{phrase287}[r]
-{phrase288}[p]
+#{name1}	
+{phrase297}[r]
+{phrase298}[r]
+{phrase299}[p]
 
 [chara_hide name="keeth"]
 
 [md name="maria" face="焦り"]
 
 #
-{phrase289}[r]
-{phrase290}[r]
-{phrase291}[p]
+{phrase300}[r]
+{phrase301}[r]
+{phrase302}[p]
 
-#マリア	
-{phrase292}[r]
-{phrase293}[p]
+#{name3}	
+{phrase303}[r]
+{phrase304}[p]
 
 #
-{phrase294}[r]
-{phrase295}[p]
+{phrase305}[r]
+{phrase306}[p]
 
 [md name="maria" face="驚き"]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase296}[p]
+#{name3}
+{phrase307}[p]
 
 [md name="maria" face="照れ"]
 
 #
-{phrase297}[p]
+{phrase308}[p]
 
 *dev3
 
@@ -1499,28 +1499,28 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_tere" wait=false]
 	
 #
-{phrase298}[r]
-{phrase299}[p]
+{phrase309}[r]
+{phrase310}[p]
 
 [md name="maria" face="無表情"]
 
 #
-{phrase300}[r]
-{phrase301}[p]
+{phrase311}[r]
+{phrase312}[p]
 
 #
-{phrase302}[r]
-{phrase303}[p]
+{phrase313}[r]
+{phrase314}[p]
 
 [md name="maria" face="悲しみ"]
 
-#マリア	
-{phrase304}[r]
-{phrase305}[p]
+#{name3}	
+{phrase315}[r]
+{phrase316}[p]
 
 #
-{phrase306}[r]
-{phrase307}[p]
+{phrase317}[r]
+{phrase318}[p]
 
 [playse storage="se/dash-asphalt2.ogg"]
 [wse]
@@ -1530,45 +1530,45 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-{phrase308}[l][r]
-{phrase309}[r]
-{phrase310}[p]
+{phrase319}[l][r]
+{phrase320}[r]
+{phrase321}[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="142"]
 
-#キース	
-{phrase311}[r]
-{phrase312}[r]
-{phrase313}[p]
+#{name1}	
+{phrase322}[r]
+{phrase323}[r]
+{phrase324}[p]
 
 #
-{phrase314}[p]
+{phrase325}[p]
 
 [v storage="140"]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="無表情"]
 
-#キース
-{phrase315}[p]
+#{name1}
+{phrase326}[p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
 #
-{phrase316}[p]
+{phrase327}[p]
 
 #
-{phrase317}[p]
+{phrase328}[p]
 
 [md name="maria" face="照れ"]
 
-#マリア
-{phrase318}[p]
+#{name3}
+{phrase329}[p]
 
 #
-{phrase319}[p]
+{phrase330}[p]
 
 [bg storage="HF01_026_rr.png"]
 
@@ -1578,41 +1578,41 @@ f.charas = [
 [md name="keeth" face="無表情"]
 	
 #
-{phrase320}[p]
+{phrase331}[p]
 
 [v storage="134"]
 
-#キース
-{phrase321}[p]
+#{name1}
+{phrase332}[p]
 
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="怒り"]
 
 #
-{phrase322}[p]
+{phrase333}[p]
 
 #
-{phrase323}[r]
-{phrase324}[r]
-{phrase325}[p]
+{phrase334}[r]
+{phrase335}[r]
+{phrase336}[p]
 
 #
-だからこそ、
-{phrase326}[p]
+{phrase337}
+{phrase338}[p]
 
 #
-{phrase327}[r]
-{phrase328}[p]
+{phrase339}[r]
+{phrase340}[p]
 
 #
-{phrase329}[p]
+{phrase341}[p]
 
 [v storage="129"]
 
-#キース	
-{phrase330}[r]
-{phrase331}[p]
+#{name1}	
+{phrase342}[r]
+{phrase343}[p]
 
 
 [chara_hide_all]
@@ -1622,10 +1622,10 @@ f.charas = [
 
 [v storage="145"]
 
-#キース	
-{phrase332}[r]
-{phrase333}[r]
-{phrase334}[p]
+#{name1}	
+{phrase344}[r]
+{phrase345}[r]
+{phrase346}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -1634,47 +1634,47 @@ f.charas = [
 
 [v storage="146"]
 
-#キース	
-{phrase335}[r]
-{phrase336}[r]
-{phrase337}[p]
+#{name1}	
+{phrase347}[r]
+{phrase348}[r]
+{phrase349}[p]
 
 #
-{phrase338}[l][r]
-{phrase339}[r]
-{phrase340}[p]
+{phrase350}[l][r]
+{phrase351}[r]
+{phrase352}[p]
 
 #
-{phrase341}[p]
+{phrase353}[p]
 
-#マリア
-{phrase342}[p]
+#{name3}
+{phrase354}[p]
 
 [v storage="150"]
 
-#キース
-{phrase343}[p]
+#{name1}
+{phrase355}[p]
 
 [v storage="151"]
 
-#キース	
-{phrase344}[r]
-{phrase345}[r]
-{phrase346}[p]
+#{name1}	
+{phrase356}[r]
+{phrase357}[r]
+{phrase358}[p]
 
 [v storage="152"]
 
-#キース
-{phrase347}[p]
+#{name1}
+{phrase359}[p]
 
-#マリア
-{phrase348}[p]
+#{name3}
+{phrase360}[p]
 
-#マリア
-（どう答える？）
+#{name3}
+{phrase361}
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="喜んでお受けします"  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="本当にいいんですか？" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="{text362}"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="{text363}" target="*select_03_02" ]
 
 [s]
 
@@ -1683,50 +1683,50 @@ f.charas = [
 [cm]
 
 #
-{phrase349}[r]
-{phrase350}[p]
+{phrase364}[r]
+{phrase365}[p]
 
-#マリア
-{phrase351}[r]
-{phrase352}[p]
+#{name3}
+{phrase366}[r]
+{phrase367}[p]
 
 [v storage="156"]
 
 
-#キース
-{phrase353}[p]
+#{name1}
+{phrase368}[p]
 
 @wait time=200
 
 [love_up]
 
 #
-{phrase354}[r]
-{phrase355}[r]
-{phrase356}[p]
+{phrase369}[r]
+{phrase370}[r]
+{phrase371}[p]
 
 [v storage="158"]
 
-#キース
-{phrase357}[p]
+#{name1}
+{phrase372}[p]
 
 #
-{phrase358}[r]
-{phrase359}[p]
+{phrase373}[r]
+{phrase374}[p]
 
 [v storage="160"]
 
-#キース
-{phrase360}[p]
+#{name1}
+{phrase375}[p]
 
 #
-{phrase361}[p]
+{phrase376}[p]
 
-#マリア
-{phrase362}[p]
+#{name3}
+{phrase377}[p]
 
 #
-{phrase363}[p]
+{phrase378}[p]
 
 [jump target="*common_03"]
 
@@ -1735,66 +1735,66 @@ f.charas = [
 *select_03_02
 [cm]
 
-#マリア
-{phrase364}[r]
-{phrase365}[p]
+#{name3}
+{phrase379}[r]
+{phrase380}[p]
 
 #
-{phrase366}[r]
-{phrase367}[p]
+{phrase381}[r]
+{phrase382}[p]
 
 #
-{phrase368}[r]
-{phrase369}[p]
+{phrase383}[r]
+{phrase384}[p]
 
 #
-{phrase370}[p]
+{phrase385}[p]
 
 
 [v storage="h3"]
 
-#キース
-{phrase371}[r]
-{phrase372}[r]
-{phrase373}[p]
+#{name1}
+{phrase386}[r]
+{phrase387}[r]
+{phrase388}[p]
 
-#マリア
-{phrase374}[p]
+#{name3}
+{phrase389}[p]
 
-#キース
-{phrase375}[r]
-{phrase376}[p]
+#{name1}
+{phrase390}[r]
+{phrase391}[p]
 
-#キース
-{phrase377}[r]
-{phrase378}[r]
-{phrase379}[p]
+#{name1}
+{phrase392}[r]
+{phrase393}[r]
+{phrase394}[p]
 
-#マリア
-{phrase380}[p]
+#{name3}
+{phrase395}[p]
 
-#キース
-{phrase381}[p]
+#{name1}
+{phrase396}[p]
 
-#マリア
-{phrase382}[p]
-
-#
-{phrase383}[l][r]
-{phrase384}[r]
-{phrase385}[p]
+#{name3}
+{phrase397}[p]
 
 #
-{phrase386}[p]
+{phrase398}[l][r]
+{phrase399}[r]
+{phrase400}[p]
+
+#
+{phrase401}[p]
 
 [v storage="158"]
 
-#キース
-{phrase387}[p]
+#{name1}
+{phrase402}[p]
 
 #
-{phrase388}[r]
-{phrase389}[p]
+{phrase403}[r]
+{phrase404}[p]
 
 *common_03
 

@@ -3,26 +3,52 @@ import os
 import re
 from config import Row, files, tmp_folder
 
-phrase_regex = re.compile(r"^(.+?)((?:\[\w\])+)$")
+phrase_regex = re.compile(r"^([^\[\#\;\s\$\}\"\*@][^=\[\.]+)[\w\[\]\t ]*$", re.S)
+tag_regex = re.compile(r" (text)=\"(.+?)\"", re.S)
+name_regex = re.compile(r"^#(\w+)", re.S)
 
 
 def extract():
     for file in files.values():
         template = []
         strings = []
+        name_keys = {}
         i = 0
 
         with open(file, "r", encoding="utf-8") as f:
             for line in f:
                 is_phrase = phrase_regex.match(line)
+                is_tag = tag_regex.search(line)
+                is_name = name_regex.match(line)
+
+                replaced_string = line
                 if is_phrase:
                     i += 1
                     key = f"phrase{i}"
-                    model = Row(key=key, jp=is_phrase.group(1))
+                    text = is_phrase.group(1).strip()
+                    model = Row(key=key, jp=text)
                     strings.append(model)
-                    template.append(f"{{{key}}}{is_phrase.group(2)}\n")
-                else:
-                    template.append(line)
+                    replaced_string = line.replace(text, f"{{{key}}}")
+                elif is_tag:
+                    i += 1
+                    key = f"{is_tag.group(1)}{i}"
+                    text = is_tag.group(2).strip()
+                    model = Row(key=key, jp=text)
+                    strings.append(model)
+                    replaced_string = line.replace(text, f"{{{key}}}")
+                elif is_name:
+                    text = is_name.group(1).strip()
+                    if text in name_keys:
+                        key = name_keys[text]
+                    else:
+                        i += 1
+                        key = f"name{i}"
+                        model = Row(key=key, jp=text)
+                        strings.append(model)
+                        name_keys[text] = key
+                    replaced_string = line.replace(text, f"{{{key}}}")
+
+                template.append(replaced_string)
 
         template_path = os.path.join(
             tmp_folder, file.split("/")[-1].replace(".ks", ".template")

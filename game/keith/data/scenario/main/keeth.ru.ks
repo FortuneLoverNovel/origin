@@ -427,11 +427,11 @@ f.charas = [
 
 [v storage="1"]
 
-#キース	
+#	
 [p]
 [playbgm  volume=15   storage="M30_FinalMix.ogg" ]
 
-#マリア
+#
 [p]
 
 [if exp="f.mixmode==true"]
@@ -449,7 +449,7 @@ f.charas = [
 [p]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
@@ -458,7 +458,7 @@ f.charas = [
 
 [v storage="h2"]
 
-#キース
+#
 [p]
 
 #
@@ -467,11 +467,11 @@ f.charas = [
 
 [free_layermode time=1000 ]
 
-#マリア	
-（どうしよう？）
+#	
 
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="逃げる"  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="様子を見る" target="*select_01_02" ]
+
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
 
 [s]
 
@@ -484,7 +484,7 @@ f.charas = [
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_do" wait=false]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="焦り"]
@@ -492,7 +492,7 @@ f.charas = [
 #
 [p]
 
-#マリア
+#
 [r]
 [p]
 
@@ -503,7 +503,7 @@ f.charas = [
 [love_up]
 
 
-#キース	
+#	
 [p]
 
 #
@@ -512,10 +512,10 @@ f.charas = [
 
 [md name="keeth" face="無表情"]
 
-#マリア
+#
 [p]
 
-#マリア
+#
 [r]
 [p]
 
@@ -535,7 +535,7 @@ f.charas = [
 [md name="maria" face="焦り"]
 [md name="keeth" face="微笑み"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -555,7 +555,7 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
 
-#マリア
+#
 [r]
 [p]
 
@@ -578,7 +578,7 @@ f.charas = [
 #
 [p]
 
-#マリア
+#
 [p]
 
 [bg storage="HF04_034_r.png" time=2000]
@@ -598,7 +598,7 @@ f.charas = [
 
 ;[v storage="h2"]
 
-#キース
+#
 [r]
 [r]
 [p]
@@ -606,22 +606,22 @@ f.charas = [
 [md name="maria" face="驚き"]
 [md name="keeth" face="微笑み"]
 
-#キース
+#
 [p]
 
 [md name="maria" face="焦り"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="怒り"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -638,7 +638,7 @@ f.charas = [
 
 [v storage="h1"]
 
-#キース
+#
 [p]
 
 #
@@ -657,7 +657,7 @@ f.charas = [
 
 [md name="keeth" face="微笑み"]
 
-#キース
+#
 [p]
 
 #
@@ -694,7 +694,7 @@ f.charas = [
 
 [v storage="19"]
 
-#カタリナ
+#
 [p]
 
 #
@@ -710,7 +710,7 @@ f.charas = [
 
 [v storage="22"]
 
-#カタリナ
+#
 [r]
 [p]
 
@@ -724,36 +724,36 @@ f.charas = [
 [r]
 [p]
 
-#マリア
+#
 [p]
 
 [chara_hide name="kata" pos_mode=false ]
 
 [chara_show name="reijo1" top="&f.top" left="&f.right" face="hamehura_DVDmob1_do"]
 
-#令嬢1
+#
 
 [r]
 [p]
 
-#マリア
+#
 [p]
 
 [chara_hide name="reijo1"  pos_mode=false]
 [chara_show name="reijo2" top="&f.top" left="&f.right" face="hamehura_DVDmob2_do" ]
 
-#令嬢2
+#
 [r]
-[r]
-[p]
-
-#マリア
 [r]
 [p]
 
 #
 [r]
+[p]
+
+#
 [r]
+[l][r]
 [p]
 
 
@@ -772,7 +772,7 @@ f.charas = [
 
 [v storage="32"]
 
-#カタリナ
+#
 [r]
 [r]
 [p]
@@ -807,7 +807,7 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
 [chara_hide name="reijo3" wait=false wait=false]
@@ -837,7 +837,7 @@ f.charas = [
 [kanim_chara layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 [v storage="42"]
 
-#カタリナ
+#
 [p]
 
 #
@@ -861,7 +861,7 @@ f.charas = [
 
 [md name="kata" face="悲しみ"]
 
-#カタリナ
+#
 [p]
 
 [playse storage="se/dash-asphalt2.ogg" ]
@@ -876,7 +876,7 @@ f.charas = [
 [md name="maria" face="悲しみ"]
 
 
-#マリア
+#
 [p]
 
 [md name="maria" face="焦り"]
@@ -893,13 +893,13 @@ f.charas = [
 
 [playse storage="se/nadare.ogg" ]
 
-#マリア
+#
 [p]
 
 #
 [r]
 [r]
-[p]
+	[p]
 
 [bg storage="HF04_292.png"]
 
@@ -933,29 +933,29 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
 [md name="keeth" face="無表情"]
 
 [v storage="h3"]
 
-#キース
+#
 [r]
 [r]
 [p]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="悲しみ"]
 
-#キース
+#
 [r]
 [p]
 
-#キース
+#
 [r]
 [r]
 [p]
@@ -977,7 +977,7 @@ f.charas = [
 
 [md name="maria" face="泣き"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -991,7 +991,7 @@ f.charas = [
 
 [v storage="h5"]
 
-#キース
+#
 [p]
 
 #
@@ -1001,13 +1001,13 @@ f.charas = [
 
 [md name="maria" face="悲しみ"]
 
-#キース
+#
 [r]
 [p]
 
 [md name="maria" face="泣き"]
 
-#キース
+#
 [p]
 
 #
@@ -1021,7 +1021,7 @@ f.charas = [
 
 [v storage="69"]
 
-#キース
+#
 [r]
 [p]
 
@@ -1029,7 +1029,7 @@ f.charas = [
 [r]
 [p]
 
-#キース
+#
 [r]
 [p]
 
@@ -1049,11 +1049,11 @@ f.charas = [
 [r]
 [p]
 
-#マリア
-（何か言わないと……）
+#
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="ありがとうございます"  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="どうして助けてくれたんですか？" target="*select_02_02" ]
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
 
 [s]
 
@@ -1063,11 +1063,11 @@ f.charas = [
 
 [md name="keeth" face="無表情"]
 
-#マリア
+#
 [r]
 [p]
 
-#マリア
+#
 [p]
 
 #
@@ -1075,7 +1075,7 @@ f.charas = [
 [r]
 [p]
 
-#キース
+#
 [r]
 [r]
 [p]
@@ -1099,7 +1099,7 @@ f.charas = [
 
 [md name="keeth" face="微笑み"]
 
-#キース
+#
 [p]
 
 [md name="maria" face="微笑み"]
@@ -1124,11 +1124,6 @@ f.charas = [
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
-#マリア
-[r]
-[r]
-[p]
-
 #
 [r]
 [r]
@@ -1139,7 +1134,12 @@ f.charas = [
 [r]
 [p]
 
-#キース
+#
+[r]
+[r]
+[p]
+
+#
 [r]
 [r]
 [p]
@@ -1147,7 +1147,7 @@ f.charas = [
 [md name="maria" face="驚き"]
 [md name="keeth" face="怒り"]
 
-#キース
+#
 [r]
 [r]
 [p]
@@ -1161,12 +1161,12 @@ f.charas = [
 [md name="keeth" face="無表情"]
 
 
-#マリア
+#
 [p]
 
 [md name="keeth" face="微笑み"]
 
-#キース
+#
 [p]
 
 #
@@ -1201,7 +1201,7 @@ f.charas = [
 
 [chara_show time=10 name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu"]
 
-#マリア
+#
 [p]
 
 #
@@ -1221,14 +1221,14 @@ f.charas = [
 
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" ]
 
-#キース
+#
 [p]
 
 [chara_hide name="keeth"]
 
 [chara_show  name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_odo"]
 
-#マリア
+#
 [p]
 
 #
@@ -1237,7 +1237,7 @@ f.charas = [
 
 [md name="maria" face="悲しみ"]
 
-#マリア	
+#	
 [r]
 [p]
 
@@ -1251,7 +1251,7 @@ f.charas = [
 
 [md name="maria" face="照れ"]
 
-#マリア	
+#	
 [r]
 [p]
 
@@ -1276,42 +1276,42 @@ f.charas = [
 
 [v storage="93"]
 
-#キース
+#
 [p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="94"]
 
-#キース
+#
 [p]
 
 [v storage="95"]
 
 [md name="keeth" face="無表情"]
 
-#キース
+#
 [p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="96"]
 
-#キース
+#
 [p]
 
 [md name="keeth" face="微笑み"]
 
 [v storage="97"]
 
-#キース
+#
 [p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="98"]
 
-#キース
+#
 [p]
 
 #
@@ -1345,11 +1345,11 @@ f.charas = [
 
 [v storage="101"]
 
-#キース
+#
 [p]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
@@ -1361,7 +1361,7 @@ f.charas = [
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#キース
+#
 [p]
 
 [md name="keeth" face="照れ"]
@@ -1372,7 +1372,7 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア	
+#	
 [r]
 [p]
 
@@ -1386,11 +1386,11 @@ f.charas = [
 #
 [p]
 
-#マリア
+#
 [p]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
@@ -1401,7 +1401,7 @@ f.charas = [
 
 [v storage="111"]
 
-#キース
+#
 [p]
 
 [md name="maria" face="驚き"]
@@ -1415,7 +1415,7 @@ f.charas = [
 
 [v storage="113"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
@@ -1424,13 +1424,13 @@ f.charas = [
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#キース	
+#	
 [r]
 [p]
 
 [md name="maria" face="驚き"]
 
-#マリア
+#
 [p]
 
 [md name="keeth" face="無表情"]
@@ -1439,13 +1439,13 @@ f.charas = [
 [p]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
 [v storage="118"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
@@ -1459,7 +1459,7 @@ f.charas = [
 [r]
 [p]
 
-#マリア	
+#	
 [r]
 [p]
 
@@ -1470,7 +1470,7 @@ f.charas = [
 [md name="maria" face="驚き"]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="照れ"]
@@ -1514,7 +1514,7 @@ f.charas = [
 
 [md name="maria" face="悲しみ"]
 
-#マリア	
+#	
 [r]
 [p]
 
@@ -1530,7 +1530,7 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
@@ -1538,7 +1538,7 @@ f.charas = [
 
 [v storage="142"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
@@ -1551,7 +1551,7 @@ f.charas = [
 [md name="maria" face="驚き"]
 [md name="keeth" face="無表情"]
 
-#キース
+#
 [p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
@@ -1564,7 +1564,7 @@ f.charas = [
 
 [md name="maria" face="照れ"]
 
-#マリア
+#
 [p]
 
 #
@@ -1582,7 +1582,7 @@ f.charas = [
 
 [v storage="134"]
 
-#キース
+#
 [p]
 
 
@@ -1598,7 +1598,7 @@ f.charas = [
 [p]
 
 #
-だからこそ、
+
 [p]
 
 #
@@ -1610,7 +1610,7 @@ f.charas = [
 
 [v storage="129"]
 
-#キース	
+#	
 [r]
 [p]
 
@@ -1622,7 +1622,7 @@ f.charas = [
 
 [v storage="145"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
@@ -1634,47 +1634,47 @@ f.charas = [
 
 [v storage="146"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
 
 #
-[r]
+[l][r]
 [r]
 [p]
 
 #
 [p]
 
-#マリア
+#
 [p]
 
 [v storage="150"]
 
-#キース
+#
 [p]
 
 [v storage="151"]
 
-#キース	
+#	
 [r]
 [r]
 [p]
 
 [v storage="152"]
 
-#キース
+#
 [p]
 
-#マリア
+#
 [p]
 
-#マリア
-（どう答える？）
+#
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="喜んでお受けします"  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="本当にいいんですか？" target="*select_03_02" ]
+
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
 
 [s]
 
@@ -1686,14 +1686,14 @@ f.charas = [
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
 [v storage="156"]
 
 
-#キース
+#
 [p]
 
 @wait time=200
@@ -1707,7 +1707,7 @@ f.charas = [
 
 [v storage="158"]
 
-#キース
+#
 [p]
 
 #
@@ -1716,13 +1716,13 @@ f.charas = [
 
 [v storage="160"]
 
-#キース
+#
 [p]
 
 #
 [p]
 
-#マリア
+#
 [p]
 
 #
@@ -1735,7 +1735,7 @@ f.charas = [
 *select_03_02
 [cm]
 
-#マリア
+#
 [r]
 [p]
 
@@ -1753,34 +1753,34 @@ f.charas = [
 
 [v storage="h3"]
 
-#キース
+#
 [r]
 [r]
 [p]
 
-#マリア
-[p]
-
-#キース
-[r]
-[p]
-
-#キース
-[r]
-[r]
-[p]
-
-#マリア
-[p]
-
-#キース
-[p]
-
-#マリア
+#
 [p]
 
 #
 [r]
+[p]
+
+#
+[r]
+[r]
+[p]
+
+#
+[p]
+
+#
+[p]
+
+#
+[p]
+
+#
+[l][r]
 [r]
 [p]
 
@@ -1789,7 +1789,7 @@ f.charas = [
 
 [v storage="158"]
 
-#キース
+#
 [p]
 
 #

@@ -378,15 +378,15 @@ for(var key in f.charas){
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
 
-#マリア
-{phrase4}[r]
-{phrase5}[p]
+#{name4}
+{phrase5}[r]
+{phrase6}[p]
 
 [chara_hide name="maria"]
 
 #
-{phrase6}[r]
-{phrase7}[p]
+{phrase7}[r]
+{phrase8}[p]
 
 [playbgm volume=30 storage="M03_FinalMix.ogg" ]
 [bg storage="HF08_021_026.png" time=1000 ]
@@ -395,83 +395,83 @@ for(var key in f.charas){
 
 [v storage="5" ]
 
-#ニコル
-{phrase8}[r]
-{phrase9}[p]
-
-#
+#{name9}
 {phrase10}[r]
-{phrase11}[r]
-{phrase12}[p]
+{phrase11}[p]
 
 #
-{phrase13}[p]
+{phrase12}[r]
+{phrase13}[r]
+{phrase14}[p]
+
+#
+{phrase15}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=true]
 
 
-#マリア
-{phrase14}[r]
-{phrase15}[p]
+#{name4}
+{phrase16}[r]
+{phrase17}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-{phrase16}[p]
+{phrase18}[p]
 
 ;[chara_hide name="nicol" pos_mode=false ]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
-{phrase17}[r]
-{phrase18}[r]
-{phrase19}[p]
+{phrase19}[r]
+{phrase20}[r]
+{phrase21}[p]
 
 [chara_show name="sophia" top="&f.top" left="620" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true zindex=0 ]
 
 
-#マリア	
-{phrase20}[p]
+#{name4}	
+{phrase22}[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_odo"]
 
 #？？？	
-{phrase21}[p]
+{phrase23}[p]
 
 [chara_move name="sophia" top="&f.top" anim=true left="520" wait=true zindex=0 ]
 
 
 #
-{phrase22}[r]
-{phrase23}[p]
+{phrase24}[r]
+{phrase25}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 #
-{phrase24}[p]
+{phrase26}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="14" ]
 
-#ニコル
-{phrase25}[r]
-{phrase26}[p]
+#{name9}
+{phrase27}[r]
+{phrase28}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
-{phrase27}[r]
-{phrase28}[p]
+#{name4}
+{phrase29}[r]
+{phrase30}[p]
 
 [chara_hide name="maria" pos_mode=false ]
 [md name="sophia" face="hamehura_Sophia_cos1_ai" ]
 
 #
-{phrase29}[r]
-{phrase30}[r]
-{phrase31}[p]
+{phrase31}[r]
+{phrase32}[r]
+{phrase33}[p]
 
 
 ;=======================================
@@ -495,14 +495,14 @@ for(var key in f.charas){
 ;========================================
 
 
-#マリア
-{phrase32}[r]
-{phrase33}[p]
+#{name4}
+{phrase34}[r]
+{phrase35}[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア
-{phrase34}[p]
+#{name36}
+{phrase37}[p]
 
 ;=======================================
 
@@ -520,14 +520,14 @@ for(var key in f.charas){
 ;=======================================
 
 
-#マリア
-{phrase35}[r]
-{phrase36}[r]
-{phrase37}[p]
+#{name4}
+{phrase38}[r]
+{phrase39}[r]
+{phrase40}[p]
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア	
-{phrase38}[p]
+#{name36}	
+{phrase41}[p]
 
 ;=======================================
 
@@ -545,24 +545,24 @@ for(var key in f.charas){
 ;=======================================
 
 	
-#マリア
-{phrase39}[r]
-{phrase40}[p]
+#{name4}
+{phrase42}[r]
+{phrase43}[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア
-{phrase41}[p]
+#{name36}
+{phrase44}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
-{phrase42}[p]
+#{name4}
+{phrase45}[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_mu"]
 
-#ソフィア
-{phrase43}[p]
+#{name36}
+{phrase46}[p]
 	
 ;=======================================
 [fadeoutbgm ]
@@ -584,12 +584,12 @@ for(var key in f.charas){
 
 
 #
-{phrase44}[r]
-{phrase45}[r]
-{phrase46}[p]
+{phrase47}[r]
+{phrase48}[r]
+{phrase49}[p]
 
-#ニコル
-{phrase47}[p]
+#{name9}
+{phrase50}[p]
 
 [chara_hide_all time=1000]
 
@@ -599,18 +599,18 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
 	
 #
-{phrase48}[r]
-{phrase49}[p]
+{phrase51}[r]
+{phrase52}[p]
 
 #
-{phrase50}[r]
-{phrase51}[p]
+{phrase53}[r]
+{phrase54}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
 #
-{phrase52}[r]
-{phrase53}[p]
+{phrase55}[r]
+{phrase56}[p]
 
 [chara_hide name="maria" pos_mode=false  wait=false]
 [chara_hide name="sophia" pos_mode=false wait=true ]
@@ -618,8 +618,8 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
 
 #
-{phrase54}[r]
-{phrase55}[p]
+{phrase57}[r]
+{phrase58}[p]
 
 [chara_hide name="nicol" pos_mode=false wait=true ]
 
@@ -627,41 +627,41 @@ for(var key in f.charas){
 
 
 #
-{phrase56}[r]
-{phrase57}[r]
-{phrase58}[p]
+{phrase59}[r]
+{phrase60}[r]
+{phrase61}[p]
 
 #
-{phrase59}[r]
-{phrase60}[p]
+{phrase62}[r]
+{phrase63}[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_def"]
 
 #
-{phrase61}[r]
-{phrase62}[r]
-{phrase63}[p]
+{phrase64}[r]
+{phrase65}[r]
+{phrase66}[p]
 
 [chara_hide name="sophia" pos_mode=false wait=true ]
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_odo.png" wait=true]
 
 
-#ニコル
-{phrase64}[p]
-
-#
-{phrase65}[r]
-{phrase66}[p]
-
-#
+#{name9}
 {phrase67}[p]
+
+#
+{phrase68}[r]
+{phrase69}[p]
+
+#
+{phrase70}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 [v storage="40" ]
 
-#ニコル
-{phrase68}[p]
+#{name9}
+{phrase71}[p]
 
 *dev1
 ;=======================================
@@ -686,60 +686,60 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true time=1000 ]
 
 #
-{phrase69}[p]
+{phrase72}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
-{phrase70}[p]
+#{name4}
+{phrase73}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#ニコル
-{phrase71}[r]
-{phrase72}[p]
+#{name9}
+{phrase74}[r]
+{phrase75}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
-{phrase73}[p]
+#{name4}
+{phrase76}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 #
-{phrase74}[r]
-{phrase75}[p]
-
-#ニコル
-{phrase76}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_def2"]
-
-#マリア
 {phrase77}[r]
 {phrase78}[p]
 
-[v storage="h2" ]
-
-#ニコル
+#{name9}
 {phrase79}[p]
 
-[md name="maria" face="hamehura_Maria_cos1_def"]
+[md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#{name4}
 {phrase80}[r]
 {phrase81}[p]
 
-#
+[v storage="h2" ]
+
+#{name9}
 {phrase82}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_def"]
+
+#{name4}
+{phrase83}[r]
+{phrase84}[p]
+
+#
+{phrase85}[p]
 
 [chara_hide_all ]
 
 #
-{phrase83}[r]
-{phrase84}[p]
+{phrase86}[r]
+{phrase87}[p]
 
 
 [chara_show name="reijo1" top="&f.top" left="-160" storage="chara/reijo1/hamehura_DVDmob1_fear.png" wait=false]
@@ -747,46 +747,46 @@ for(var key in f.charas){
 [chara_show name="reijo3" top="&f.top" left="340" storage="chara/reijo3/hamehura_DVDmob3_def.png" wait=true ]
 
 
-#令嬢1
-{phrase85}[r]
-{phrase86}[r]
-{phrase87}[p]
-
-#令嬢2
-{phrase88}[r]
-{phrase89}[p]
-
-#令嬢3
+#{name88}
+{phrase89}[r]
 {phrase90}[r]
-{phrase91}[r]
-{phrase92}[p]
+{phrase91}[p]
+
+#{name92}
+{phrase93}[r]
+{phrase94}[p]
+
+#{name95}
+{phrase96}[r]
+{phrase97}[r]
+{phrase98}[p]
 
 [chara_hide_all ]
 
 
-#令嬢たち
-{phrase93}[p]
+#{name99}
+{phrase100}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=false time=1000 ]
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_do.png" wait=true time=1000 ]
 
 [v storage="h4" ]
 
-#ニコル
-{phrase94}[p]
+#{name9}
+{phrase101}[p]
 
 #
-{phrase95}[r]
-{phrase96}[p]
+{phrase102}[r]
+{phrase103}[p]
 
 #
-{phrase97}[r]
-{phrase98}[p]
+{phrase104}[r]
+{phrase105}[p]
 
-一息に言葉を吐き出した。
+{phrase106}
 
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="気にする必要などないと伝える"  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="ありのままのニコルを信じると伝える" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="{text107}"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="{text108}" target="*select_01_02" ]
 
 [s]
 
@@ -797,15 +797,15 @@ for(var key in f.charas){
 	
 [fadeinbgm storage="M10_FinalMix.ogg" time=2000]
 	
-#マリア
-{phrase99}[r]
-{phrase100}[r]
-{phrase101}[p]
+#{name4}
+{phrase109}[r]
+{phrase110}[r]
+{phrase111}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#ニコル
-{phrase102}[p]
+#{name9}
+{phrase112}[p]
 
 [chara_hide_all]
 
@@ -813,7 +813,7 @@ for(var key in f.charas){
 [bg storage="nicol1.png"]
 	
 #
-{phrase103}[p]
+{phrase113}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -821,29 +821,29 @@ for(var key in f.charas){
 
 
 #
-{phrase104}[r]
-{phrase105}[p]
+{phrase114}[r]
+{phrase115}[p]
 
 #
-{phrase106}[r]
-{phrase107}[p]
+{phrase116}[r]
+{phrase117}[p]
 
 [v storage="64" ]
 
-#ニコル
-{phrase108}[r]
-{phrase109}[r]
-{phrase110}[p]
+#{name9}
+{phrase118}[r]
+{phrase119}[r]
+{phrase120}[p]
 
 #
-{phrase111}[p]
+{phrase121}[p]
 
 #
-{phrase112}[p]
+{phrase122}[p]
 
 #
-{phrase113}[r]
-{phrase114}[p]
+{phrase123}[r]
+{phrase124}[p]
 
 [jump target="common1"]
 
@@ -857,23 +857,23 @@ for(var key in f.charas){
 
 [bg storage="HF08_018_r.png" time=10] 
 
-#マリア
-{phrase115}[r]
-{phrase116}[p]
+#{name4}
+{phrase125}[r]
+{phrase126}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#マリア
-{phrase117}[r]
-{phrase118}[p]
+#{name4}
+{phrase127}[r]
+{phrase128}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
 [kanim_chara layer=0 name="nicol" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase119}[r]
-{phrase120}[p]
+#{name4}
+{phrase129}[r]
+{phrase130}[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -882,8 +882,8 @@ for(var key in f.charas){
 [love_up]
 
 
-#ニコル
-{phrase121}[p]
+#{name9}
+{phrase131}[p]
 
 [chara_hide_all]
 
@@ -891,34 +891,34 @@ for(var key in f.charas){
 [bg storage="nicol1.png"]	
 
 #
-{phrase122}[p]
+{phrase132}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-{phrase123}[p]
-
-#
-{phrase124}[r]
-{phrase125}[p]
-
-#ニコル
-{phrase126}[p]
-
-#
-{phrase127}[r]
-{phrase128}[p]
-
-#ニコル
-{phrase129}[r]
-{phrase130}[p]
-
-#
-{phrase131}[r]
-{phrase132}[r]
 {phrase133}[p]
+
+#
+{phrase134}[r]
+{phrase135}[p]
+
+#{name9}
+{phrase136}[p]
+
+#
+{phrase137}[r]
+{phrase138}[p]
+
+#{name9}
+{phrase139}[r]
+{phrase140}[p]
+
+#
+{phrase141}[r]
+{phrase142}[r]
+{phrase143}[p]
 
 *common1
 
@@ -932,14 +932,14 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_def.png" wait=true time=1000 ]
 
 
-#マリア
-{phrase134}[r]
-{phrase135}[p]
+#{name4}
+{phrase144}[r]
+{phrase145}[p]
 
 #
-{phrase136}[r]
-{phrase137}[r]
-{phrase138}[p]
+{phrase146}[r]
+{phrase147}[r]
+{phrase148}[p]
 
 ;=======================================
 [fadeoutbgm ]
@@ -962,170 +962,170 @@ for(var key in f.charas){
 
 
 #
-{phrase139}[r]
-{phrase140}[r]
-{phrase141}[p]
+{phrase149}[r]
+{phrase150}[r]
+{phrase151}[p]
 
-#マリア
-{phrase142}[r]
-{phrase143}[p]
+#{name4}
+{phrase152}[r]
+{phrase153}[p]
 
-#マリア
-{phrase144}[r]
-{phrase145}[p]
+#{name4}
+{phrase154}[r]
+{phrase155}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_akire"]
 
 #
-{phrase146}[r]
-{phrase147}[p]
+{phrase156}[r]
+{phrase157}[p]
 
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
 
 
-#ニコル	
-{phrase148}[p]
+#{name9}	
+{phrase158}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-{phrase149}[r]
-{phrase150}[p]
+{phrase159}[r]
+{phrase160}[p]
 
-#マリア	
-{phrase151}[p]
+#{name4}	
+{phrase161}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_do"]
 
 [v storage="76" ]
 
-#ニコル	
-{phrase152}[p]
+#{name9}	
+{phrase162}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-{phrase153}[p]
+{phrase163}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-{phrase154}[r]
-{phrase155}[p]
+{phrase164}[r]
+{phrase165}[p]
 
-#マリア
-{phrase156}[r]
-{phrase157}[r]
-{phrase158}[p]
+#{name4}
+{phrase166}[r]
+{phrase167}[r]
+{phrase168}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
-{phrase159}[r]
-{phrase160}[r]
-{phrase161}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_def"]
-
-#
-{phrase162}[r]
-{phrase163}[r]
-{phrase164}[p]
-
-[md name="nicol" face="hamehura_Nicol_cos1_def"]
-
-[v storage="h1" ]
-
-#ニコル	
-{phrase165}[p]
-
-#
-{phrase166}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_odo"]
-
-[v storage="84" ]
-
-#ニコル
-{phrase167}[p]
-
-#マリア
-{phrase168}[p]
-
-#
+#{name4}
 {phrase169}[r]
 {phrase170}[r]
 {phrase171}[p]
 
-[md name="nicol" face="hamehura_Nicol_cos1_ai"]
+[md name="maria" face="hamehura_Maria_cos1_def"]
 
-[v storage="87" ]
-
-#ニコル
+#
 {phrase172}[r]
 {phrase173}[r]
 {phrase174}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#ニコル
-{phrase175}[r]
+[v storage="h1" ]
+
+#{name9}	
+{phrase175}[p]
+
+#
 {phrase176}[p]
 
-[md name="maria" face="hamehura_Maria_cos1_ai"]
+[md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#マリア
+[v storage="84" ]
+
+#{name9}
 {phrase177}[p]
 
-[md name="nicol" face="hamehura_Nicol_cos1_ai"]
-
-#ニコル
+#{name4}
 {phrase178}[p]
 
-[v storage="91" ]
-
-#ニコル
+#
 {phrase179}[r]
 {phrase180}[r]
 {phrase181}[p]
 
-[v storage="92" ]
+[md name="nicol" face="hamehura_Nicol_cos1_ai"]
 
-#ニコル
+[v storage="87" ]
+
+#{name9}
 {phrase182}[r]
 {phrase183}[r]
 {phrase184}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_def"]
+
+#{name9}
+{phrase185}[r]
+{phrase186}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_ai"]
+
+#{name4}
+{phrase187}[p]
+
+[md name="nicol" face="hamehura_Nicol_cos1_ai"]
+
+#{name9}
+{phrase188}[p]
+
+[v storage="91" ]
+
+#{name9}
+{phrase189}[r]
+{phrase190}[r]
+{phrase191}[p]
+
+[v storage="92" ]
+
+#{name9}
+{phrase192}[r]
+{phrase193}[r]
+{phrase194}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="93" ]
 
-#ニコル
-{phrase185}[r]
-{phrase186}[p]
+#{name9}
+{phrase195}[r]
+{phrase196}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 [v storage="94" ]
 
-#ニコル
-{phrase187}[r]
-{phrase188}[p]
+#{name9}
+{phrase197}[r]
+{phrase198}[p]
 
 [v storage="95" ]
 
-#ニコル
-{phrase189}[r]
-{phrase190}[p]
+#{name9}
+{phrase199}[r]
+{phrase200}[p]
 
-#マリア	
-（なんて答えよう？）
+#{name4}	
+{phrase201}
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="こちらこそ、ありがとうございます"  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="お礼を言われるようなことなんて……" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="{text202}"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="{text203}" target="*select_02_02" ]
 
 [s]
 
@@ -1134,43 +1134,43 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
-{phrase191}[p]
+#{name4}
+{phrase204}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
-{phrase192}[r]
-{phrase193}[p]
+#{name4}
+{phrase205}[r]
+{phrase206}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
-{phrase194}[r]
-{phrase195}[p]
+#{name4}
+{phrase207}[r]
+{phrase208}[p]
 
 [v storage="99" ]
 
-#ニコル
-{phrase196}[p]
+#{name9}
+{phrase209}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#マリア
-{phrase197}[r]
-{phrase198}[p]
+#{name4}
+{phrase210}[r]
+{phrase211}[p]
 
-#ニコル
-{phrase199}[p]
+#{name9}
+{phrase212}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="h3" ]
 
-#ニコル
-{phrase200}[r]
-{phrase201}[p]
+#{name9}
+{phrase213}[r]
+{phrase214}[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -1179,20 +1179,20 @@ for(var key in f.charas){
 [love_up]
 
 
-#ニコル
-{phrase202}[r]
-{phrase203}[p]
+#{name9}
+{phrase215}[r]
+{phrase216}[p]
 
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#ニコル
-{phrase204}[p]
+#{name9}
+{phrase217}[p]
 
 #
-{phrase205}[r]
-{phrase206}[p]
+{phrase218}[r]
+{phrase219}[p]
 
 [jump target="common2"]
 
@@ -1201,65 +1201,65 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
-{phrase207}[r]
-{phrase208}[p]
+#{name4}
+{phrase220}[r]
+{phrase221}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
 #
-{phrase209}[r]
-{phrase210}[p]
+{phrase222}[r]
+{phrase223}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
 #
-{phrase211}[r]
-{phrase212}[p]
+{phrase224}[r]
+{phrase225}[p]
 
 [v storage="h1" ]
 
-#ニコル
-{phrase213}[p]
+#{name9}
+{phrase226}[p]
 
-#ニコル
-{phrase214}[p]
+#{name9}
+{phrase227}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
-#マリア
-{phrase215}[p]
+#{name4}
+{phrase228}[p]
 
-#ニコル
-{phrase216}[p]
+#{name9}
+{phrase229}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#マリア
-{phrase217}[p]
+#{name4}
+{phrase230}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#ニコル
-{phrase218}[p]
+#{name9}
+{phrase231}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
 [v storage="h3" ]
 
-#ニコル
-{phrase219}[r]
-{phrase220}[r]
-{phrase221}[p]
+#{name9}
+{phrase232}[r]
+{phrase233}[r]
+{phrase234}[p]
 
-#ニコル
-{phrase222}[p]
+#{name9}
+{phrase235}[p]
 
 #
-{phrase223}[r]
-{phrase224}[r]
-{phrase225}[p]
+{phrase236}[r]
+{phrase237}[r]
+{phrase238}[p]
 
 *common2
 
@@ -1268,16 +1268,16 @@ for(var key in f.charas){
 
 [v storage="106" ]
 
-#ニコル
-{phrase226}[r]
-{phrase227}[r]
-{phrase228}[p]
+#{name9}
+{phrase239}[r]
+{phrase240}[r]
+{phrase241}[p]
 
 [chara_hide name="nicol" pos_mode=false ]
 
 #
-{phrase229}[r]
-{phrase230}[p]
+{phrase242}[r]
+{phrase243}[p]
 
 *dev2
 
@@ -1299,50 +1299,50 @@ for(var key in f.charas){
 ;========================================
 
 #
-{phrase231}[r]
-{phrase232}[p]
+{phrase244}[r]
+{phrase245}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=true]
 
 #
-{phrase233}[p]
+{phrase246}[p]
 
 #
-{phrase234}[r]
-{phrase235}[r]
-{phrase236}[p]
+{phrase247}[r]
+{phrase248}[r]
+{phrase249}[p]
 
 #
-{phrase237}[r]
-{phrase238}[p]
+{phrase250}[r]
+{phrase251}[p]
 
-#マリア
-{phrase239}[r]
-{phrase240}[p]
+#{name4}
+{phrase252}[r]
+{phrase253}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_akire"]
 
 
 #
-{phrase241}[r]
-{phrase242}[p]
+{phrase254}[r]
+{phrase255}[p]
 
 [fadeoutbgm time=2000]
 [playse storage="se/door_wood_knock1.ogg" ]
 
 #
-{phrase243}[r]
-{phrase244}[p]
+{phrase256}[r]
+{phrase257}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 
-#マリア
-{phrase245}[p]
+#{name4}
+{phrase258}[p]
 
 #
-{phrase246}[r]
-{phrase247}[p]
+{phrase259}[r]
+{phrase260}[p]
 
 [playse storage="se/door-open1.ogg" ]
 
@@ -1351,109 +1351,109 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 	
-#ソフィア	
-{phrase248}[p]
+#{name36}	
+{phrase261}[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase249}[p]
+#{name4}
+{phrase262}[p]
 
-#ソフィア
-{phrase250}[r]
-{phrase251}[p]
+#{name36}
+{phrase263}[r]
+{phrase264}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
 
-#マリア
-{phrase252}[p]
+#{name4}
+{phrase265}[p]
 
 #
-{phrase253}[r]
-{phrase254}[r]
-{phrase255}[p]
+{phrase266}[r]
+{phrase267}[r]
+{phrase268}[p]
 
-#ソフィア
-{phrase256}[p]
+#{name36}
+{phrase269}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
-{phrase257}[p]
+#{name4}
+{phrase270}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-{phrase258}[r]
-{phrase259}[p]
+{phrase271}[r]
+{phrase272}[p]
 
-#マリア
-{phrase260}[p]
+#{name4}
+{phrase273}[p]
 
-#マリア
-{phrase261}[r]
-{phrase262}[p]
+#{name4}
+{phrase274}[r]
+{phrase275}[p]
 
-#マリア
-{phrase263}[r]
-{phrase264}[p]
+#{name4}
+{phrase276}[r]
+{phrase277}[p]
 
-#ソフィア	
-{phrase265}[p]
+#{name36}	
+{phrase278}[p]
 
 
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
-#マリア
+#{name4}
 [font size=30]本当です！[resetfont]
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_def"]
 
 #
-{phrase266}[r]
-{phrase267}[p]
-
-#ソフィア	
-{phrase268}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_odo"]
-
-#マリア
-{phrase269}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_kon"]
-
-#ソフィア
-{phrase270}[r]
-{phrase271}[p]
-
-#
-{phrase272}[r]
-{phrase273}[p]
-
-#ソフィア
-{phrase274}[r]
-{phrase275}[r]
-{phrase276}[p]
-
-#マリア
-{phrase277}[p]
-
-#ソフィア	
-{phrase278}[p]
-
-[md name="maria" face="hamehura_Maria_cos1_mu"]
-
-#ソフィア
 {phrase279}[r]
 {phrase280}[p]
 
-#ソフィア	
+#{name36}	
 {phrase281}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_odo"]
+
+#{name4}
+{phrase282}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_kon"]
+
+#{name36}
+{phrase283}[r]
+{phrase284}[p]
+
+#
+{phrase285}[r]
+{phrase286}[p]
+
+#{name36}
+{phrase287}[r]
+{phrase288}[r]
+{phrase289}[p]
+
+#{name4}
+{phrase290}[p]
+
+#{name36}	
+{phrase291}[p]
+
+[md name="maria" face="hamehura_Maria_cos1_mu"]
+
+#{name36}
+{phrase292}[r]
+{phrase293}[p]
+
+#{name36}	
+{phrase294}[p]
 
 
 ;=======================================
@@ -1473,16 +1473,16 @@ for(var key in f.charas){
 
 ;========================================
 	
-#マリア
-{phrase282}[p]
+#{name4}
+{phrase295}[p]
 
 #
-{phrase283}[r]
-{phrase284}[r]
-{phrase285}[p]
+{phrase296}[r]
+{phrase297}[r]
+{phrase298}[p]
 
-#ソフィア	
-{phrase286}[p]
+#{name36}	
+{phrase299}[p]
 
 [bg storage="HF04_066_071_073_084A.png"]
 
@@ -1490,40 +1490,40 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#マリア
-{phrase287}[p]
+#{name4}
+{phrase300}[p]
 
 #
-{phrase288}[r]
-{phrase289}[p]
+{phrase301}[r]
+{phrase302}[p]
 
 #
-{phrase290}[r]
-{phrase291}[p]
+{phrase303}[r]
+{phrase304}[p]
 
-#ソフィア	
-{phrase292}[p]
+#{name36}	
+{phrase305}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
-#マリア
-{phrase293}[r]
-{phrase294}[p]
+#{name4}
+{phrase306}[r]
+{phrase307}[p]
 
-#ソフィア	
-{phrase295}[p]
+#{name36}	
+{phrase308}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#ソフィア	
-{phrase296}[p]
+#{name36}	
+{phrase309}[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#{name4}
 [font size=30]
-{phrase297}[r]
-ソフィア様！
+{phrase310}[r]
+{phrase311}
 [resetfont]
 [p]
 
@@ -1552,63 +1552,63 @@ for(var key in f.charas){
 
 
 #
-{phrase298}[r]
-{phrase299}[r]
-{phrase300}[p]
+{phrase312}[r]
+{phrase313}[r]
+{phrase314}[p]
 
 #
-{phrase301}[r]
-{phrase302}[p]
+{phrase315}[r]
+{phrase316}[p]
 
 [md name="maria" face="hamehura_Maria_cos5_akire"]
 
 #
-{phrase303}[r]
-{phrase304}[r]
-{phrase305}[p]
+{phrase317}[r]
+{phrase318}[r]
+{phrase319}[p]
 
 #
-{phrase306}[p]
+{phrase320}[p]
 
 [v storage="149"]
 
 #？？？	
-{phrase307}[p]
+{phrase321}[p]
 
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos2_mu.png" wait=true]
 [md name="maria" face="hamehura_Maria_cos5_odo"]
 
 #
-{phrase308}[r]
-{phrase309}[r]
-{phrase310}[p]
+{phrase322}[r]
+{phrase323}[r]
+{phrase324}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos2_def"]
 
 [v storage="151"]
 
-#ニコル
-{phrase311}[p]
+#{name9}
+{phrase325}[p]
 
 [md name="maria" face="hamehura_Maria_cos5_kon"]
 
-#マリア
-{phrase312}[p]
+#{name4}
+{phrase326}[p]
 
-#ニコル
-{phrase313}[p]
+#{name9}
+{phrase327}[p]
 
 [md name="maria" face="hamehura_Maria_cos5_tere"]
 [md name="nicol" face="hamehura_Nicol_cos2_mu"]
 
 #
-{phrase314}[r]
-{phrase315}[p]
+{phrase328}[r]
+{phrase329}[p]
 
 [v storage="155"]
 
-#ニコル
-{phrase316}[p]
+#{name9}
+{phrase330}[p]
 
 ;=======================================
 [fadeoutbgm ]
@@ -1631,47 +1631,47 @@ for(var key in f.charas){
 
 
 #
-{phrase317}[r]
-{phrase318}[p]
+{phrase331}[r]
+{phrase332}[p]
 
 [md name="maria" face="hamehura_Maria_cos5_tere2"]
 
 #
-{phrase319}[p]
+{phrase333}[p]
 
 [md name="maria" face="hamehura_Maria_cos5_odo"]
 
 [v storage="158"]
 
-#ニコル
-{phrase320}[p]
+#{name9}
+{phrase334}[p]
 
 #
-{phrase321}[r]
-{phrase322}[p]
+{phrase335}[r]
+{phrase336}[p]
 
 #
-{phrase323}[r]
-{phrase324}[p]
+{phrase337}[r]
+{phrase338}[p]
 
 #
-{phrase325}[r]
-{phrase326}[p]
+{phrase339}[r]
+{phrase340}[p]
 
 [md name="nicol" face="hamehura_Nicol_cos2_tere"]
 
 [v storage="162"]
 
-#ニコル
-{phrase327}[r]
-{phrase328}[p]
+#{name9}
+{phrase341}[r]
+{phrase342}[p]
 
 [v storage="163"]
 
-#ニコル
-{phrase329}[r]
-{phrase330}[r]
-{phrase331}[p]
+#{name9}
+{phrase343}[r]
+{phrase344}[r]
+{phrase345}[p]
 
 [chara_hide_all time=1000]
 
@@ -1681,63 +1681,23 @@ for(var key in f.charas){
 
 [v storage="164"]
 
-#ニコル
-{phrase332}[r]
-{phrase333}[p]
+#{name9}
+{phrase346}[r]
+{phrase347}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-{phrase334}[r]
-{phrase335}[p]
-
-#マリア
-{phrase336}[p]
-
-#
-{phrase337}[r]
-{phrase338}[r]
-{phrase339}[p]
-
-#
-{phrase340}[r]
-{phrase341}[r]
-{phrase342}[p]
-
-#
-{phrase343}[r]
-{phrase344}[p]
-
-#マリア
-{phrase345}[r]
-{phrase346}[p]
-
-#
-{phrase347}[r]
-{phrase348}[p]
-
-#
+{phrase348}[r]
 {phrase349}[p]
 
-#マリア	
-（どうする？）
+#{name4}
+{phrase350}[p]
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="ニコルの手を取る"  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="手を取るのをためらう" target="*select_03_02" ]
-
-[s]
-
-*select_03_01
-[cm]
-
-	
-#マリア
-{phrase350}[r]
-{phrase351}[p]
-
-#マリア
+#
+{phrase351}[r]
 {phrase352}[r]
 {phrase353}[p]
 
@@ -1746,24 +1706,64 @@ for(var key in f.charas){
 {phrase355}[r]
 {phrase356}[p]
 
-[v storage="175"]
-
-#ニコル
-{phrase357}[p]
-
 #
+{phrase357}[r]
 {phrase358}[p]
 
-#マリア
-{phrase359}[p]
+#{name4}
+{phrase359}[r]
+{phrase360}[p]
 
 #
-{phrase360}[r]
-{phrase361}[p]
+{phrase361}[r]
+{phrase362}[p]
 
 #
-{phrase362}[r]
 {phrase363}[p]
+
+#{name4}	
+{phrase364}
+
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="{text365}"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="{text366}" target="*select_03_02" ]
+
+[s]
+
+*select_03_01
+[cm]
+
+	
+#{name4}
+{phrase367}[r]
+{phrase368}[p]
+
+#{name4}
+{phrase369}[r]
+{phrase370}[p]
+
+#
+{phrase371}[r]
+{phrase372}[r]
+{phrase373}[p]
+
+[v storage="175"]
+
+#{name9}
+{phrase374}[p]
+
+#
+{phrase375}[p]
+
+#{name4}
+{phrase376}[p]
+
+#
+{phrase377}[r]
+{phrase378}[p]
+
+#
+{phrase379}[r]
+{phrase380}[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -1778,46 +1778,46 @@ for(var key in f.charas){
 [cm]
 	
 #
-{phrase364}[r]
-{phrase365}[r]
-{phrase366}[p]
+{phrase381}[r]
+{phrase382}[r]
+{phrase383}[p]
 
 #
-{phrase367}[p]
+{phrase384}[p]
 
-#ニコル
-{phrase368}[p]
+#{name9}
+{phrase385}[p]
 
 #
-{phrase369}[r]
-{phrase370}[p]
+{phrase386}[r]
+{phrase387}[p]
 
 [v storage="175"]
 
-#ニコル
-{phrase371}[p]
+#{name9}
+{phrase388}[p]
 
-#ニコル
-{phrase372}[p]
+#{name9}
+{phrase389}[p]
 
-#ニコル
-{phrase373}[p]
-
-#
-{phrase374}[r]
-{phrase375}[p]
+#{name9}
+{phrase390}[p]
 
 #
-{phrase376}[r]
-{phrase377}[p]
-
-#マリア
-{phrase378}[r]
-{phrase379}[p]
+{phrase391}[r]
+{phrase392}[p]
 
 #
-{phrase380}[r]
-{phrase381}[p]
+{phrase393}[r]
+{phrase394}[p]
+
+#{name4}
+{phrase395}[r]
+{phrase396}[p]
+
+#
+{phrase397}[r]
+{phrase398}[p]
 
 *common3
 

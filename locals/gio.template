@@ -345,18 +345,18 @@ f.charas = [
 
 ;[jump target="dev5"]
 
-#マリア	
-{phrase1}[p]
+#{name1}	
+{phrase2}[p]
 [playbgm  volume=30   storage="M08_FinalMix.ogg" ]
 
-{phrase2}[p]
+;再生[p]
 ;[layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=true loop=false ]
 ;[free_layermode]
 
 
 
-/*
-#マリア
+{phrase3}
+#{name1}
 [celanim anim="red_rose_1" layer="1" x=260 y=-150 count=1 speed=0.5 wait=false ]
 [anim name="celanim" top=100 time=2000]
 [wa]
@@ -365,92 +365,92 @@ f.charas = [
 */
 
 #
-{phrase3}[l][r]
-{phrase4}[r]
-{phrase5}[p]
+{phrase4}[l][r]
+{phrase5}[r]
+{phrase6}[p]
 
 #
-{phrase6}[l][r]
-{phrase7}[r]
-{phrase8}[p]
+{phrase7}[l][r]
+{phrase8}[r]
+{phrase9}[p]
 
-#マリア
-{phrase9}[l][r]
-{phrase10}[p]
+#{name1}
+{phrase10}[l][r]
+{phrase11}[p]
 
 [bg storage="HF04_078.png"]
 
 #
-{phrase11}[l][r]
-{phrase12}[p]
+{phrase12}[l][r]
+{phrase13}[p]
 
-#マリア:hamehura_Maria_cos1_def
-{phrase13}[r]
-{phrase14}[p]
+#{name1}:hamehura_Maria_cos1_def
+{phrase14}[r]
+{phrase15}[p]
 
 #
-{phrase15}[r]
-{phrase16}[p]
+{phrase16}[r]
+{phrase17}[p]
 #
-{phrase17}[l][r]
-{phrase18}[r]
-{phrase19}[p]
+{phrase18}[l][r]
+{phrase19}[r]
+{phrase20}[p]
 
 [v storage="h1"]
 #？？？
-{phrase20}[r]
-{phrase21}[p]
-
-#マリア:hamehura_Maria_cos1_odo
+{phrase21}[r]
 {phrase22}[p]
 
-#マリア	
+#{name1}:hamehura_Maria_cos1_odo
 {phrase23}[p]
 
+#{name1}	
+{phrase24}[p]
+
 #
-{phrase24}[r]
-{phrase25}[l][r]
-{phrase26}[p]
+{phrase25}[r]
+{phrase26}[l][r]
+{phrase27}[p]
 
 [chara_move name="maria" left="&f.left" face="hamehura_Maria_cos1_ase"]
 
-#ジオルド
+#{name28}
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_doya"]
 
 
-#マリア	
-{phrase27}[p]
+#{name1}	
+{phrase29}[p]
 
 [v storage="h2"]
 #
-{phrase28}[l][r]
-{phrase29}[p]
-
-#
-{phrase30}[r]
+{phrase30}[l][r]
 {phrase31}[p]
 
-#マリア
+#
 {phrase32}[r]
-{phrase33}[r]
-{phrase34}[p]
+{phrase33}[p]
 
-#ジオルド	
+#{name1}
+{phrase34}[r]
+{phrase35}[r]
+{phrase36}[p]
+
+#{name28}	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
 [v storage="17"]
-{phrase35}[r]
-{phrase36}[r]
-{phrase37}[p]
+{phrase37}[r]
+{phrase38}[r]
+{phrase39}[p]
 
 *dev4
 
-#マリア	
-{phrase38}[p]
-なんて答えよう？
+#{name1}	
+{phrase40}[p]
+{phrase41}
 
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="正直に話す"  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="ごまかす" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="{text42}"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="{text43}" target="*select_01_02" ]
 
 [s]
 
@@ -458,27 +458,27 @@ f.charas = [
 *select_01_01
 [cm]
 
-#マリア
-{phrase39}[r]
-{phrase40}[p]
-
-#ジオルド	
-[chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
-
-#ジオルド	
-
-{phrase41}[l][r]
-{phrase42}[p]
-
-#
-{phrase43}[r]
+#{name1}
 {phrase44}[r]
 {phrase45}[p]
+
+#{name28}	
+[chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
+
+#{name28}	
+
+{phrase46}[l][r]
+{phrase47}[p]
+
+#
+{phrase48}[r]
+{phrase49}[r]
+{phrase50}[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h2"]
 
-#ジオルド
+#{name28}
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -486,28 +486,28 @@ f.charas = [
 [love_up]
 
 #
-{phrase46}[r]
-{phrase47}[p]
+{phrase51}[r]
+{phrase52}[p]
 
 #
-{phrase48}[r]
-{phrase49}[l][r]
-{phrase50}[p]
+{phrase53}[r]
+{phrase54}[l][r]
+{phrase55}[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-{phrase51}[p]
-
-#
-{phrase52}[r]
-{phrase53}[p]
-
-#
-
-{phrase54}[r]
-{phrase55}[r]
 {phrase56}[p]
+
+#
+{phrase57}[r]
+{phrase58}[p]
+
+#
+
+{phrase59}[r]
+{phrase60}[r]
+{phrase61}[p]
 
 [jump target="*common_01"]
 
@@ -518,73 +518,73 @@ f.charas = [
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
 
-#マリア
-{phrase57}[r]
-{phrase58}[p]
+#{name1}
+{phrase62}[r]
+{phrase63}[p]
 
-#マリア
-{phrase59}[l][r]
-{phrase60}[p]
+#{name1}
+{phrase64}[l][r]
+{phrase65}[p]
 
-#ジオルド
-{phrase61}[r]
-{phrase62}[p]
+#{name28}
+{phrase66}[r]
+{phrase67}[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
 #
-{phrase63}[p]
+{phrase68}[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-{phrase64}[l][r]
-{phrase65}[r]
-{phrase66}[p]
+{phrase69}[l][r]
+{phrase70}[r]
+{phrase71}[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
-#ジオルド
-{phrase67}[l][r]
-{phrase68}[p]
+#{name28}
+{phrase72}[l][r]
+{phrase73}[p]
 
 #
-{phrase69}[r]
-{phrase70}[p]
+{phrase74}[r]
+{phrase75}[p]
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-#ジオルド
-{phrase71}[p]
+#{name28}
+{phrase76}[p]
 
-#マリア	
-{phrase72}[p]
+#{name1}	
+{phrase77}[p]
 
 
 *common_01
 
 
-#ジオルド
+#{name28}
 [v storage="25"]
-{phrase73}[p]
+{phrase78}[p]
 
-#ジオルド
+#{name28}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
 [v storage="h2"]
-{phrase74}[l][r]
-{phrase75}[r]
-{phrase76}[p]
+{phrase79}[l][r]
+{phrase80}[r]
+{phrase81}[p]
 
-#マリア
-{phrase77}[p]
+#{name1}
+{phrase82}[p]
 
 #
-{phrase78}[l][r]
-{phrase79}[r]
-{phrase80}[p]
+{phrase83}[l][r]
+{phrase84}[r]
+{phrase85}[p]
 
 *dev5
 
@@ -609,64 +609,64 @@ f.charas = [
 
 [playbgm  volume=30   storage="M24A_FinalMix.ogg" ]
 
-#マリア
-{phrase81}[p]
-
-#
-{phrase82}[r]
-{phrase83}[p]
-
-#
-{phrase84}[r]
-{phrase85}[r]
+#{name1}
 {phrase86}[p]
 
-#マリア
+#
 {phrase87}[r]
-{phrase88}[l][r]
-{phrase89}[p]
+{phrase88}[p]
 
 #
+{phrase89}[r]
 {phrase90}[r]
 {phrase91}[p]
+
+#{name1}
 {phrase92}[r]
-{phrase93}[p]
+{phrase93}[l][r]
+{phrase94}[p]
+
+#
+{phrase95}[r]
+{phrase96}[p]
+{phrase97}[r]
+{phrase98}[p]
 
 [fadeoutbgm time=1000]
 
 #
-{phrase94}[p]
+{phrase99}[p]
 
 [playbgm  volume=30   storage="M43_FinalMix.ogg"]
 
 [chara_move name="maria" left="&f.left" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
 
-#カタリナ
+#{name100}
 [v storage="36"]
-{phrase95}[p]
+{phrase101}[p]
 
-#マリア
+#{name1}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-{phrase96}[p]
+{phrase102}[p]
 
 #
-{phrase97}[r]
-{phrase98}[p]
+{phrase103}[r]
+{phrase104}[p]
 
 #
-{phrase99}[r]
-{phrase100}[p]
-
-#
-{phrase101}[r]
-{phrase102}[l][r]
-{phrase103}[p]
-
-#
-{phrase104}[r]
 {phrase105}[r]
 {phrase106}[p]
+
+#
+{phrase107}[r]
+{phrase108}[l][r]
+{phrase109}[p]
+
+#
+{phrase110}[r]
+{phrase111}[r]
+{phrase112}[p]
 
 [if exp="sf.btn_volume==true"]
 [playse storage="se/punch-middle2.ogg" ]
@@ -676,30 +676,18 @@ f.charas = [
 @quake_camera
 
 #
-{phrase107}[p]
+{phrase113}[p]
 
 #
-{phrase108}[l][r]
-{phrase109}[r]
-{phrase110}[p]
+{phrase114}[l][r]
+{phrase115}[r]
+{phrase116}[p]
 
-#カタリナ
+#{name100}
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_aku"]
 [v storage="43"]
 
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
-
-{phrase111}[r]
-{phrase112}[r]
-{phrase113}[p]
-
-#
-{phrase114}[r]
-{phrase115}[r]
-{phrase116}[p]
-
-#カタリナ
-[v storage="45"]
 
 {phrase117}[r]
 {phrase118}[r]
@@ -707,17 +695,29 @@ f.charas = [
 
 #
 {phrase120}[r]
-{phrase121}[p]
+{phrase121}[r]
+{phrase122}[p]
 
-#マリア
+#{name100}
+[v storage="45"]
+
+{phrase123}[r]
+{phrase124}[r]
+{phrase125}[p]
+
+#
+{phrase126}[r]
+{phrase127}[p]
+
+#{name1}
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 [font size="40"]
-{phrase122}[p]
+{phrase128}[p]
 [resetfont]
 
 #
-{phrase123}[l][r]
-{phrase124}[p]
+{phrase129}[l][r]
+{phrase130}[p]
 
 [chara_hide name="maria" wait=false ]
 [chara_hide name="kata" wait=true ]	
@@ -730,58 +730,58 @@ f.charas = [
 
 #？？？
 [font size="40"]
-{phrase125}[p]
+{phrase131}[p]
 [resetfont]
 
-#ジオルド
+#{name28}
 [chara_show name="gio" top="&f.top" left="&f.left" face="hamehura_Giord_cos1_do" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
  
-#カタリナ
+#{name100}
 
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_odo" ]
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 
 [v storage="50"]
-{phrase126}[p]
+{phrase132}[p]
 
-#ジオルド
+#{name28}
 [v storage="51"]
 
-{phrase127}[r]
-{phrase128}[r]
-{phrase129}[p]
+{phrase133}[r]
+{phrase134}[r]
+{phrase135}[p]
 
-#カタリナ	
+#{name100}	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai" ]
 [v storage="52"]
 
-{phrase130}[r]
-{phrase131}[p]
-
-#ジオルド	
-[chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
-
-{phrase132}[r]
-{phrase133}[p]
-
-{phrase134}[r]
-{phrase135}[l][r]
-{phrase136}[p]
-
-#カタリナ	
-[chara_mod  name="kata" face="hamehura_Catalina_cos1_ai"]
-[v storage="54"]
+{phrase136}[r]
 {phrase137}[p]
 
-#
+#{name28}	
+[chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
+
 {phrase138}[r]
 {phrase139}[p]
 
-#
 {phrase140}[r]
-{phrase141}[r]
+{phrase141}[l][r]
 {phrase142}[p]
+
+#{name100}	
+[chara_mod  name="kata" face="hamehura_Catalina_cos1_ai"]
+[v storage="54"]
+{phrase143}[p]
+
+#
+{phrase144}[r]
+{phrase145}[p]
+
+#
+{phrase146}[r]
+{phrase147}[r]
+{phrase148}[p]
 
 [fadeoutbgm]
 
@@ -794,55 +794,55 @@ f.charas = [
 
 [playbgm  volume=30   storage="M17_FinalMix.ogg" ]
 
-#マリア
+#{name1}
 [chara_move name="gio" left="&f.right"]
 [chara_show name="maria" top=&f.top left="&f.left" face="hamehura_Maria_cos1_ai"]
-{phrase143}[p]
-
-#
-{phrase144}[l][r]
-{phrase145}[l][r]
-{phrase146}[p]
-
-
-#
-
-{phrase147}[r]
-{phrase148}[l][r]
 {phrase149}[p]
+
+#
+{phrase150}[l][r]
+{phrase151}[l][r]
+{phrase152}[p]
+
+
+#
+
+{phrase153}[r]
+{phrase154}[l][r]
+{phrase155}[p]
 
 [chara_hide_all ]
 
 [bg storage="hamehura_jiorudo1.png" ]
 [eval exp="sf.gio_cg_1=true" ]
-#マリア
-{phrase150}[p]
+#{name1}
+{phrase156}[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
-#ジオルド	
+#{name28}	
 [v storage="61"]
 
-{phrase151}[r]
-{phrase152}[p]
+{phrase157}[r]
+{phrase158}[p]
 
 #
 [v storage="h2"]
-{phrase153}[l][r]
-{phrase154}[r]
-{phrase155}[p]
+{phrase159}[l][r]
+{phrase160}[r]
+{phrase161}[p]
 
 #
-{phrase156}[l][r]
-{phrase157}[p]
+{phrase162}[l][r]
+{phrase163}[p]
 
 [free_layermode time=1000 ]
 
 
 ;;;;;;;;;;;;;;
-/*
+{phrase164}
 [mask graphic="kokomade.png" folder="bgimage" effect="zoomInRight"]
 
 [wait time="3000" ]
@@ -869,133 +869,133 @@ f.charas = [
 [bg storage="black.png" time=3000]
 
 #
-{phrase158}[p]
+{phrase165}[p]
 
 [bg storage="HF04_283.png" time=1000 ]
 
 [chara_show name="maria" top="&f.top" left="&f.left" time=1000 face="hamehura_Maria_cos1_mu" ]
 
 #
-{phrase159}[r]
-{phrase160}[p]
+{phrase166}[r]
+{phrase167}[p]
 
-#マリア
-{phrase161}[r]
-{phrase162}[p]
+#{name1}
+{phrase168}[r]
+{phrase169}[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
-{phrase163}[l][r]
-{phrase164}[p]
+#{name1}
+{phrase170}[l][r]
+{phrase171}[p]
 
 
 #
-{phrase165}[r]
-{phrase166}[p]
+{phrase172}[r]
+{phrase173}[p]
 
-{phrase167}[r]
-{phrase168}[p]
+{phrase174}[r]
+{phrase175}[p]
 
 [chara_hide name="maria"]
 
 #？？？
 [v storage="h3"]
-{phrase169}[p]
+{phrase176}[p]
 
 #
-{phrase170}[l][r]
-{phrase171}[p]
+{phrase177}[l][r]
+{phrase178}[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_def"]
 
 
-#ジオルド
+#{name28}
 
-{phrase172}[r]
-{phrase173}[p]
+{phrase179}[r]
+{phrase180}[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#マリア
+#{name1}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
-{phrase174}[p]
+{phrase181}[p]
 
 
 #
 [v storage="h2"]
-{phrase175}[l][r]
-{phrase176}[r]
-{phrase177}[p]
+{phrase182}[l][r]
+{phrase183}[r]
+{phrase184}[p]
 
 #
-{phrase178}[r]
-{phrase179}[p]
+{phrase185}[r]
+{phrase186}[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="75"]
 
-{phrase180}[p]
-
-#
-
-{phrase181}[l][r]
-{phrase182}[l][r]
-{phrase183}[p]
-
-[chara_hide name="gio"]
-[chara_show name="maria" top="&f.top" left="&f.left" ]
-
-
-#マリア
-[chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
-{phrase184}[p]
-
-[chara_hide name="maria"]
-[chara_show name="gio" top="&f.top" left="&f.right" ]
-
-#ジオルド	
-
-{phrase185}[l][r]
-[chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
-
-{phrase186}[p]
-[chara_hide name="gio"]
-[chara_show name="maria" top="&f.top" left="&f.left" ]
-
-#マリア
 {phrase187}[p]
 
-[chara_hide name="maria"]
-[chara_show name="gio" top="&f.top" left="&f.right" ]
-
-#ジオルド
-[chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
-
-{phrase188}[p]
-
 #
 
-{phrase189}[r]
+{phrase188}[l][r]
+{phrase189}[l][r]
 {phrase190}[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#マリア
-どうしよう？
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="跳ぶ"  target="*select_02_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="ためらう"  target="*select_02_02"  ]
+#{name1}
+[chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
+{phrase191}[p]
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="跳ぶ"  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="ためらう" target="*select_02_02" ]
+[chara_hide name="maria"]
+[chara_show name="gio" top="&f.top" left="&f.right" ]
+
+#{name28}	
+
+{phrase192}[l][r]
+[chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
+
+{phrase193}[p]
+[chara_hide name="gio"]
+[chara_show name="maria" top="&f.top" left="&f.left" ]
+
+#{name1}
+{phrase194}[p]
+
+[chara_hide name="maria"]
+[chara_show name="gio" top="&f.top" left="&f.right" ]
+
+#{name28}
+[chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
+
+{phrase195}[p]
+
+#
+
+{phrase196}[r]
+{phrase197}[p]
+
+[chara_hide name="gio"]
+[chara_show name="maria" top="&f.top" left="&f.left" ]
+
+#{name1}
+{phrase198}
+
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="{text199}"  target="*select_02_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="{text200}"  target="*select_02_02"  ]
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="{text201}"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="{text202}" target="*select_02_02" ]
 
 
 [s]
@@ -1005,25 +1005,25 @@ f.charas = [
 [cm]
 
 #
-{phrase191}[r]
-{phrase192}[p]
+{phrase203}[r]
+{phrase204}[p]
 
-#マリア
+#{name1}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-{phrase193}[p]
+{phrase205}[p]
 
 #
-{phrase194}[r]
-{phrase195}[r]
-{phrase196}[p]
+{phrase206}[r]
+{phrase207}[r]
+{phrase208}[p]
 
-#マリア
-{phrase197}[l][r]
-{phrase198}[p]
+#{name1}
+{phrase209}[l][r]
+{phrase210}[p]
 
 #
-{phrase199}[r]
-{phrase200}[p]
+{phrase211}[r]
+{phrase212}[p]
 
 ;白転
 [chara_hide name="maria" time=100]
@@ -1033,22 +1033,22 @@ f.charas = [
 [wait time=1000 ]
 
 #
-{phrase201}[p]
+{phrase213}[p]
 
 [bg storage="HF04_292.png" time=1000] 
 
 #
-{phrase202}[p]
+{phrase214}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man" ]	
 [v storage="85"]
-{phrase203}[p]
+{phrase215}[p]
 
-#ジオルド
+#{name28}
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1060,19 +1060,19 @@ f.charas = [
 
 #
 
-{phrase204}[r]
-{phrase205}[r]
-{phrase206}[p]
+{phrase216}[r]
+{phrase217}[r]
+{phrase218}[p]
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-{phrase207}[l][r]
-{phrase208}[p]
+{phrase219}[l][r]
+{phrase220}[p]
 
 #
-{phrase209}[r]
-{phrase210}[p]
+{phrase221}[r]
+{phrase222}[p]
 
 @jump target="common_02"
 
@@ -1080,48 +1080,48 @@ f.charas = [
 *select_02_02
 
 [cm]
-#マリア
+#{name1}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
-{phrase211}[r]
-{phrase212}[p]
+{phrase223}[r]
+{phrase224}[p]
 
 #
-{phrase213}[r]
-{phrase214}[r]
-{phrase215}[p]
+{phrase225}[r]
+{phrase226}[r]
+{phrase227}[p]
 
 #
-{phrase216}[r]
-{phrase217}[p]
+{phrase228}[r]
+{phrase229}[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h1"]
 
-{phrase218}[r]
-{phrase219}[l][r]
-{phrase220}[p]
+{phrase230}[r]
+{phrase231}[l][r]
+{phrase232}[p]
 
 #
 
-{phrase221}[r]
-{phrase222}[l][r]
-{phrase223}[p]
+{phrase233}[r]
+{phrase234}[l][r]
+{phrase235}[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#マリア
+#{name1}
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-{phrase224}[p]
+{phrase236}[p]
 
 #
-{phrase225}[l][r]
-{phrase226}[p]
+{phrase237}[l][r]
+{phrase238}[p]
 
 
 ;白転
@@ -1132,14 +1132,14 @@ f.charas = [
 [wait time=1000 ]
 
 #
-{phrase227}[p]
+{phrase239}[p]
 
 [bg storage="HF04_292.png" time=1000] 
 ;[kanim layer=0 name="layer_camera" keyframe=quake time=300 count=2 easing=linear]
 @quake_camera
 
 #
-{phrase228}[p]
+{phrase240}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
@@ -1147,41 +1147,41 @@ f.charas = [
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-#ジオルド	
+#{name28}	
 [v storage="85"]
 
-{phrase229}[p]
+{phrase241}[p]
 
 #
-{phrase230}[r]
-{phrase231}[r]
-{phrase232}[p]
+{phrase242}[r]
+{phrase243}[r]
+{phrase244}[p]
 
 ;;;;;;;;;
 
 *common_02
 
 
-#ジオルド
+#{name28}
 [chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
 
 [v storage="88"]
 
-{phrase233}[r]
-{phrase234}[p]
+{phrase245}[r]
+{phrase246}[p]
 
 #
-{phrase235}[r]
-{phrase236}[p]
+{phrase247}[r]
+{phrase248}[p]
 
-#ジオルド
+#{name28}
 [v storage="90"]
-{phrase237}[p]
+{phrase249}[p]
 
 #
-{phrase238}[r]
-{phrase239}[r]
-{phrase240}[p]
+{phrase250}[r]
+{phrase251}[r]
+{phrase252}[p]
 
 *dev3
 [chara_hide_all ]
@@ -1193,101 +1193,101 @@ f.charas = [
 [playbgm  volume=30   storage="M28_FinalMix.ogg" ]
 	
 #
-{phrase241}[r]
-{phrase242}[r]
-{phrase243}[p]
+{phrase253}[r]
+{phrase254}[r]
+{phrase255}[p]
 
 #
-{phrase244}[p]
+{phrase256}[p]
 
 #
-{phrase245}[r]
-{phrase246}[p]
+{phrase257}[r]
+{phrase258}[p]
 
 [chara_show name="reijo1" top="&f.top" face="hamehura_DVDmob1_do"]
 [chara_show name="reijo2" top="&f.top" face="hamehura_DVDmob2_do" ]
 [chara_show name="reijo3" top="&f.top" face="hamehura_DVDmob3_do"]
 
 
-#令嬢1
-{phrase247}[l][r]
-{phrase248}[p]
+#{name259}
+{phrase260}[l][r]
+{phrase261}[p]
 
-#令嬢2:hamehura_DVDmob2_fear
-{phrase249}[l][r]
-{phrase250}[p]
-
-#令嬢1
-{phrase251}[p]
-
-#令嬢3
-{phrase252}[r]
-{phrase253}[p]
-
-#令嬢2
-{phrase254}[r]
-{phrase255}[p]
-
-#令嬢3:hamehura_DVDmob3_fear
-{phrase256}[r]
-{phrase257}[p]
-
-#令嬢1
-{phrase258}[l][r]
-{phrase259}[r]
-{phrase260}[p]
-
-#令嬢3:hamehura_DVDmob3_do
-{phrase261}[r]
-{phrase262}[p]
-
-#令嬢2:hamehura_DVDmob2_do
-{phrase263}[r]
+#{name262}:hamehura_DVDmob2_fear
+{phrase263}[l][r]
 {phrase264}[p]
 
-{phrase265}[r]
-{phrase266}[p]
+#{name259}
+{phrase265}[p]
 
-#令嬢3:hamehura_DVDmob3_fear
-{phrase267}[l][r]
-{phrase268}[r]
-{phrase269}[p]
+#{name266}
+{phrase267}[r]
+{phrase268}[p]
+
+#{name262}
+{phrase269}[r]
+{phrase270}[p]
+
+#{name266}:hamehura_DVDmob3_fear
+{phrase271}[r]
+{phrase272}[p]
+
+#{name259}
+{phrase273}[l][r]
+{phrase274}[r]
+{phrase275}[p]
+
+#{name266}:hamehura_DVDmob3_do
+{phrase276}[r]
+{phrase277}[p]
+
+#{name262}:hamehura_DVDmob2_do
+{phrase278}[r]
+{phrase279}[p]
+
+{phrase280}[r]
+{phrase281}[p]
+
+#{name266}:hamehura_DVDmob3_fear
+{phrase282}[l][r]
+{phrase283}[r]
+{phrase284}[p]
 
 [chara_hide_all]
 
 #
-{phrase270}[l][r]
+{phrase285}[l][r]
 
-{phrase271}[r]
-{phrase272}[p]
+{phrase286}[r]
+{phrase287}[p]
 
 [chara_show name="maria" top=&f.top face="hamehura_Maria_cos1_ai"]
 
-#マリア
-{phrase273}[p]
+#{name1}
+{phrase288}[p]
 
 #
-{phrase274}[p]
+{phrase289}[p]
 
 #
-{phrase275}[p]
+{phrase290}[p]
 
 #
-{phrase276}[r]
-{phrase277}[r]
-{phrase278}[p]
+{phrase291}[r]
+{phrase292}[r]
+{phrase293}[p]
 
 #
-{phrase279}[r]
-{phrase280}[p]
+{phrase294}[r]
+{phrase295}[p]
 
-{phrase281}[r]
-{phrase282}[p]
+{phrase296}[r]
+{phrase297}[p]
 
 #
-{phrase283}[r]
-{phrase284}[r]
-{phrase285}[p]
+{phrase298}[r]
+{phrase299}[r]
+{phrase300}[p]
 
 [chara_hide name="maria" ]
 
@@ -1297,8 +1297,8 @@ f.charas = [
 [bg storage="kyokai.png" ]
 	
 #
-{phrase286}[r]
-{phrase287}[p]
+{phrase301}[r]
+{phrase302}[p]
 
 [playbgm  volume=30   storage="M21_FinalMix.ogg"]
 
@@ -1306,177 +1306,177 @@ f.charas = [
 
 
 #
-{phrase288}[r]
-{phrase289}[r]
-{phrase290}[p]
+{phrase303}[r]
+{phrase304}[r]
+{phrase305}[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_def"]
 
-#マリア
-{phrase291}[p]
+#{name1}
+{phrase306}[p]
 
 #
-{phrase292}[r]
-{phrase293}[p]
+{phrase307}[r]
+{phrase308}[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_doya"]
 
-#ジオルド
+#{name28}
 [v storage="119"]
-{phrase294}[p]
+{phrase309}[p]
 
 [chara_mod name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-{phrase295}[r]
-{phrase296}[p]
-
-#マリア
-{phrase297}[p]
-
-#ジオルド:hamehura_Giord_cos1_def
-[v storage="122"]
-{phrase298}[p]
-
-#マリア:hamehura_Maria_cos1_odo
-{phrase299}[p]
-
-#ジオルド
-[v storage="124"]
-{phrase300}[r]
-{phrase301}[r]
-{phrase302}[p]
-
-#ジオルド:hamehura_Giord_cos1_doya
-[v storage="125"]
-{phrase303}[r]
-{phrase304}[p]
-
-#ジオルド:hamehura_Giord_cos1_def
-[v storage="126"]
-{phrase305}[r]
-{phrase306}[r]
-{phrase307}[p]
-
-#ジオルド
-[v storage="127"]
-{phrase308}[r]
-{phrase309}[p]
-
-#ジオルド:hamehura_Giord_cos1_doya
-[v storage="128"]
 {phrase310}[r]
 {phrase311}[p]
 
-#
-{phrase312}[r]
+#{name1}
+{phrase312}[p]
+
+#{name28}:hamehura_Giord_cos1_def
+[v storage="122"]
 {phrase313}[p]
 
-#ジオルド:hamehura_Giord_cos1_man
-[v storage="130"]
+#{name1}:hamehura_Maria_cos1_odo
+{phrase314}[p]
 
-{phrase314}[r]
-{phrase315}[p]
+#{name28}
+[v storage="124"]
+{phrase315}[r]
+{phrase316}[r]
+{phrase317}[p]
 
-#マリア
-{phrase316}[p]
+#{name28}:hamehura_Giord_cos1_doya
+[v storage="125"]
+{phrase318}[r]
+{phrase319}[p]
 
-#
-{phrase317}[r]
-{phrase318}[p]
-
-#
-{phrase319}[r]
-{phrase320}[p]
-
-#
-{phrase321}[p]
-
-[chara_mod name="maria" face="hamehura_Maria_cos1_ase"]
-
-#
+#{name28}:hamehura_Giord_cos1_def
+[v storage="126"]
+{phrase320}[r]
+{phrase321}[r]
 {phrase322}[p]
 
-#
+#{name28}
+[v storage="127"]
 {phrase323}[r]
 {phrase324}[p]
 
-#マリア:hamehura_Maria_cos1_ai
+#{name28}:hamehura_Giord_cos1_doya
+[v storage="128"]
 {phrase325}[r]
 {phrase326}[p]
 
-[chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
-
-#マリア
+#
 {phrase327}[r]
-{phrase328}[l][r]
-{phrase329}[p]
+{phrase328}[p]
 
-#マリア
-{phrase330}[l][r]
-{phrase331}[r]
-{phrase332}[p]
+#{name28}:hamehura_Giord_cos1_man
+[v storage="130"]
 
-#ジオルド
-[v storage="139"]
+{phrase329}[r]
+{phrase330}[p]
 
+#{name1}
+{phrase331}[p]
+
+#
+{phrase332}[r]
 {phrase333}[p]
 
 #
 {phrase334}[r]
 {phrase335}[p]
 
-#ジオルド
-[v storage="141"]
+#
+{phrase336}[p]
 
-{phrase336}[r]
+[chara_mod name="maria" face="hamehura_Maria_cos1_ase"]
+
+#
 {phrase337}[p]
-
-[chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
 
 #
 {phrase338}[r]
 {phrase339}[p]
 
+#{name1}:hamehura_Maria_cos1_ai
+{phrase340}[r]
+{phrase341}[p]
+
+[chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
+
+#{name1}
+{phrase342}[r]
+{phrase343}[l][r]
+{phrase344}[p]
+
+#{name1}
+{phrase345}[l][r]
+{phrase346}[r]
+{phrase347}[p]
+
+#{name28}
+[v storage="139"]
+
+{phrase348}[p]
+
+#
+{phrase349}[r]
+{phrase350}[p]
+
+#{name28}
+[v storage="141"]
+
+{phrase351}[r]
+{phrase352}[p]
+
+[chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
+
+#
+{phrase353}[r]
+{phrase354}[p]
+
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-{phrase340}[r]
-{phrase341}[r]
-{phrase342}[p]
+{phrase355}[r]
+{phrase356}[r]
+{phrase357}[p]
 
-#ジオルド:hamehura_Giord_cos1_doya
+#{name28}:hamehura_Giord_cos1_doya
 [v storage="144"]
-{phrase343}[r]
-{phrase344}[r]
-{phrase345}[p]
+{phrase358}[r]
+{phrase359}[r]
+{phrase360}[p]
 
-#ジオルド
+#{name28}
 [v storage="145"]
-{phrase346}[p]
-{phrase347}[l][r]
-{phrase348}[r]
-{phrase349}[p]
+{phrase361}[p]
+{phrase362}[l][r]
+{phrase363}[r]
+{phrase364}[p]
 
-#ジオルド:hamehura_Giord_cos1_def
+#{name28}:hamehura_Giord_cos1_def
 [v storage="146"]
 
-{phrase350}[p]
+{phrase365}[p]
 
 #
 
-{phrase351}[l][r]
-{phrase352}[r]
-{phrase353}[p]
+{phrase366}[l][r]
+{phrase367}[r]
+{phrase368}[p]
 
-#マリア
-なんて答えよう？
+#{name1}
+{phrase369}
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="本当に私でいいんですか？"  target="*select_03_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="喜んでお受けします"  target="*select_03_02"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="{text370}"  target="*select_03_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="{text371}"  target="*select_03_02"  ]
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="本当に私でいいんですか"  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="喜んでお受けします" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="{text372}"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="{text373}" target="*select_03_02" ]
 
 [s]
 
@@ -1484,23 +1484,23 @@ f.charas = [
 [eval exp="f.end=1"]
 
 [cm]
-#マリア:hamehura_Maria_cos1_ai
-{phrase354}[l][r]
-{phrase355}[p]
+#{name1}:hamehura_Maria_cos1_ai
+{phrase374}[l][r]
+{phrase375}[p]
 
 #
-{phrase356}[l][r]
-{phrase357}[p]
+{phrase376}[l][r]
+{phrase377}[p]
 
-{phrase358}[p]
+{phrase378}[p]
 
-#マリア
-{phrase359}[r]
-{phrase360}[p]
+#{name1}
+{phrase379}[r]
+{phrase380}[p]
 
-#ジオルド:hamehura_Giord_cos1_man
+#{name28}:hamehura_Giord_cos1_man
 [v storage="151"]
-{phrase361}[p]
+{phrase381}[p]
 
 
 
@@ -1517,26 +1517,26 @@ f.charas = [
 [endif]
 
 #
-{phrase362}[p]
+{phrase382}[p]
 
-{phrase363}[r]
-{phrase364}[p]
+{phrase383}[r]
+{phrase384}[p]
 
 #
 [v storage="h2"]
-{phrase365}[p]
+{phrase385}[p]
 
-{phrase366}[r]
-{phrase367}[p]
+{phrase386}[r]
+{phrase387}[p]
 
 #
-{phrase368}[l][r]
-{phrase369}[p]
+{phrase388}[l][r]
+{phrase389}[p]
 
 #
 [v storage="h4"]
 
-{phrase370}[p]
+{phrase390}[p]
 
 @jump target="common_03"
 
@@ -1546,17 +1546,17 @@ f.charas = [
 
 [cm]
 
-#マリア:hamehura_Maria_cos1_def2
-{phrase371}[l][r]
-{phrase372}[p]
+#{name1}:hamehura_Maria_cos1_def2
+{phrase391}[l][r]
+{phrase392}[p]
 
 #
-{phrase373}[p]
+{phrase393}[p]
 
-{phrase374}[l][r]
-{phrase375}[p]
+{phrase394}[l][r]
+{phrase395}[p]
 
-#ジオルド
+#{name28}
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1564,15 +1564,15 @@ f.charas = [
 [love_up]
 
 #
-{phrase376}[r]
-{phrase377}[p]
+{phrase396}[r]
+{phrase397}[p]
 
-#ジオルド:hamehura_Giord_cos1_man
-{phrase378}[p]
+#{name28}:hamehura_Giord_cos1_man
+{phrase398}[p]
 
 #
-{phrase379}[r]
-{phrase380}[p]
+{phrase399}[r]
+{phrase400}[p]
 
 [chara_hide_all]
 [bg storage="white.png" time=1000] 
@@ -1585,56 +1585,56 @@ f.charas = [
 [endif]
 
 #
-{phrase381}[r]
-{phrase382}[p]
+{phrase401}[r]
+{phrase402}[p]
 
-#マリア
-{phrase383}[p]
-
-#
-{phrase384}[r]
-{phrase385}[p]
+#{name1}
+{phrase403}[p]
 
 #
-
-{phrase386}[l][r]
-{phrase387}[r]
-{phrase388}[p]
+{phrase404}[r]
+{phrase405}[p]
 
 #
-{phrase389}[l][r]
-{phrase390}[p]
+
+{phrase406}[l][r]
+{phrase407}[r]
+{phrase408}[p]
+
+#
+{phrase409}[l][r]
+{phrase410}[p]
 
 #
 [v storage="h4"]
-{phrase391}[p]
+{phrase411}[p]
 *common_03
 
 #
-{phrase392}[r]
-{phrase393}[p]
+{phrase412}[r]
+{phrase413}[p]
 
-#ジオルド
+#{name28}
 [v storage="157"]
 
-{phrase394}[r]
-{phrase395}[r]
-{phrase396}[p]
+{phrase414}[r]
+{phrase415}[r]
+{phrase416}[p]
 
 #
 [v storage="h2"]
 
-{phrase397}[r]
-{phrase398}[p]
+{phrase417}[r]
+{phrase418}[p]
 
 #
-{phrase399}[p]
+{phrase419}[p]
 
 [free_layermode time=1000 ]
 
 #
-{phrase400}[r]
-{phrase401}[p]
+{phrase420}[r]
+{phrase421}[p]
 [layopt layer=message0 visible=false]
 [freeimage layer=0]
 [freeimage layer=1]

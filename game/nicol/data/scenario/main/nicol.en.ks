@@ -378,7 +378,7 @@ for(var key in f.charas){
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
 
-#マリア
+#
 [r]
 [p]
 
@@ -395,7 +395,7 @@ for(var key in f.charas){
 
 [v storage="5" ]
 
-#ニコル
+#
 [r]
 [p]
 
@@ -410,7 +410,7 @@ for(var key in f.charas){
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=true]
 
 
-#マリア
+#
 [r]
 [p]
 
@@ -431,7 +431,7 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="620" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true zindex=0 ]
 
 
-#マリア	
+#	
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_odo"]
@@ -455,13 +455,13 @@ for(var key in f.charas){
 
 [v storage="14" ]
 
-#ニコル
+#
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -495,13 +495,13 @@ for(var key in f.charas){
 ;========================================
 
 
-#マリア
+#
 [r]
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア
+#
 [p]
 
 ;=======================================
@@ -520,13 +520,13 @@ for(var key in f.charas){
 ;=======================================
 
 
-#マリア
+#
 [r]
 [r]
 [p]
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア	
+#	
 [p]
 
 ;=======================================
@@ -545,23 +545,23 @@ for(var key in f.charas){
 ;=======================================
 
 	
-#マリア
+#
 [r]
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#ソフィア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_mu"]
 
-#ソフィア
+#
 [p]
 	
 ;=======================================
@@ -588,7 +588,7 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ニコル
+#
 [p]
 
 [chara_hide_all time=1000]
@@ -646,7 +646,7 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_odo.png" wait=true]
 
 
-#ニコル
+#
 [p]
 
 #
@@ -660,7 +660,7 @@ for(var key in f.charas){
 
 [v storage="40" ]
 
-#ニコル
+#
 [p]
 
 *dev1
@@ -690,19 +690,19 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
+#
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#ニコル
+#
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
@@ -712,23 +712,23 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#
 [r]
 [p]
 
 [v storage="h2" ]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -747,16 +747,16 @@ for(var key in f.charas){
 [chara_show name="reijo3" top="&f.top" left="340" storage="chara/reijo3/hamehura_DVDmob3_def.png" wait=true ]
 
 
-#令嬢1
+#
 [r]
 [r]
 [p]
 
-#令嬢2
+#
 [r]
 [p]
 
-#令嬢3
+#
 [r]
 [r]
 [p]
@@ -764,7 +764,7 @@ for(var key in f.charas){
 [chara_hide_all ]
 
 
-#令嬢たち
+#
 [p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=false time=1000 ]
@@ -772,7 +772,7 @@ for(var key in f.charas){
 
 [v storage="h4" ]
 
-#ニコル
+#
 [p]
 
 #
@@ -783,10 +783,10 @@ for(var key in f.charas){
 [r]
 [p]
 
-一息に言葉を吐き出した。
 
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="気にする必要などないと伝える"  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="ありのままのニコルを信じると伝える" target="*select_01_02" ]
+
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
 
 [s]
 
@@ -797,14 +797,14 @@ for(var key in f.charas){
 	
 [fadeinbgm storage="M10_FinalMix.ogg" time=2000]
 	
-#マリア
+#
 [r]
 [r]
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#ニコル
+#
 [p]
 
 [chara_hide_all]
@@ -830,7 +830,7 @@ for(var key in f.charas){
 
 [v storage="64" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
@@ -857,13 +857,13 @@ for(var key in f.charas){
 
 [bg storage="HF08_018_r.png" time=10] 
 
-#マリア
+#
 [r]
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -871,7 +871,7 @@ for(var key in f.charas){
 
 [kanim_chara layer=0 name="nicol" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [r]
 [p]
 
@@ -882,7 +882,7 @@ for(var key in f.charas){
 [love_up]
 
 
-#ニコル
+#
 [p]
 
 [chara_hide_all]
@@ -904,14 +904,14 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ニコル
+#
 [p]
 
 #
 [r]
 [p]
 
-#ニコル
+#
 [r]
 [p]
 
@@ -932,7 +932,7 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_def.png" wait=true time=1000 ]
 
 
-#マリア
+#
 [r]
 [p]
 
@@ -966,11 +966,11 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
@@ -983,7 +983,7 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
 
 
-#ニコル	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
@@ -994,14 +994,14 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア	
+#	
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_do"]
 
 [v storage="76" ]
 
-#ニコル	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
@@ -1015,14 +1015,14 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [r]
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#
 [r]
 [r]
 [p]
@@ -1038,7 +1038,7 @@ for(var key in f.charas){
 
 [v storage="h1" ]
 
-#ニコル	
+#	
 [p]
 
 #
@@ -1048,10 +1048,10 @@ for(var key in f.charas){
 
 [v storage="84" ]
 
-#ニコル
+#
 [p]
 
-#マリア
+#
 [p]
 
 #
@@ -1063,37 +1063,37 @@ for(var key in f.charas){
 
 [v storage="87" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#ニコル
+#
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
-#マリア
+#
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_ai"]
 
-#ニコル
+#
 [p]
 
 [v storage="91" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
 
 [v storage="92" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
@@ -1103,7 +1103,7 @@ for(var key in f.charas){
 
 [v storage="93" ]
 
-#ニコル
+#
 [r]
 [p]
 
@@ -1111,21 +1111,21 @@ for(var key in f.charas){
 
 [v storage="94" ]
 
-#ニコル
+#
 [r]
 [p]
 
 [v storage="95" ]
 
-#ニコル
+#
 [r]
 [p]
 
-#マリア	
-（なんて答えよう？）
+#	
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="こちらこそ、ありがとうございます"  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="お礼を言われるようなことなんて……" target="*select_02_02" ]
+
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
 
 [s]
 
@@ -1134,33 +1134,33 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#マリア
+#
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#
 [r]
 [p]
 
 [v storage="99" ]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#マリア
+#
 [r]
 [p]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
@@ -1168,7 +1168,7 @@ for(var key in f.charas){
 
 [v storage="h3" ]
 
-#ニコル
+#
 [r]
 [p]
 
@@ -1179,7 +1179,7 @@ for(var key in f.charas){
 [love_up]
 
 
-#ニコル
+#
 [r]
 [p]
 
@@ -1187,7 +1187,7 @@ for(var key in f.charas){
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#ニコル
+#
 [p]
 
 #
@@ -1201,7 +1201,7 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#マリア
+#
 [r]
 [p]
 
@@ -1219,41 +1219,41 @@ for(var key in f.charas){
 
 [v storage="h1" ]
 
-#ニコル
+#
 [p]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
-#マリア
+#
 [p]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#マリア
+#
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
 [v storage="h3" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
 
-#ニコル
+#
 [p]
 
 #
@@ -1268,7 +1268,7 @@ for(var key in f.charas){
 
 [v storage="106" ]
 
-#ニコル
+#
 [r]
 [r]
 [p]
@@ -1316,7 +1316,7 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
@@ -1337,7 +1337,7 @@ for(var key in f.charas){
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 
-#マリア
+#
 [p]
 
 #
@@ -1351,22 +1351,22 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 	
-#ソフィア	
+#	
 [p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
-#ソフィア
+#
 [r]
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
 
-#マリア
+#
 [p]
 
 #
@@ -1374,14 +1374,14 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ソフィア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
@@ -1390,24 +1390,24 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [p]
 
-#マリア
+#
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
-#マリア
+#
 [font size=30]本当です！[resetfont]
 [p]
 
@@ -1417,17 +1417,17 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#マリア
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#ソフィア
+#
 [r]
 [p]
 
@@ -1435,24 +1435,24 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ソフィア
+#
 [r]
 [r]
 [p]
 
-#マリア
+#
 [p]
 
-#ソフィア	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
-#ソフィア
+#
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 
@@ -1473,7 +1473,7 @@ for(var key in f.charas){
 
 ;========================================
 	
-#マリア
+#
 [p]
 
 #
@@ -1481,7 +1481,7 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 [bg storage="HF04_066_071_073_084A.png"]
@@ -1490,7 +1490,7 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#マリア
+#
 [p]
 
 #
@@ -1501,29 +1501,29 @@ for(var key in f.charas){
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
-#マリア
+#
 [r]
 [p]
 
-#ソフィア	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#ソフィア	
+#	
 [p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#マリア
+#
 [font size=30]
 [r]
-ソフィア様！
+
 [resetfont]
 [p]
 
@@ -1587,15 +1587,15 @@ for(var key in f.charas){
 
 [v storage="151"]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos5_kon"]
 
-#マリア
+#
 [p]
 
-#ニコル
+#
 [p]
 
 [md name="maria" face="hamehura_Maria_cos5_tere"]
@@ -1607,7 +1607,7 @@ for(var key in f.charas){
 
 [v storage="155"]
 
-#ニコル
+#
 [p]
 
 ;=======================================
@@ -1643,7 +1643,7 @@ for(var key in f.charas){
 
 [v storage="158"]
 
-#ニコル
+#
 [p]
 
 #
@@ -1662,13 +1662,13 @@ for(var key in f.charas){
 
 [v storage="162"]
 
-#ニコル
+#
 [r]
 [p]
 
 [v storage="163"]
 
-#ニコル
+#
 [r]
 [r]
 [p]
@@ -1681,7 +1681,7 @@ for(var key in f.charas){
 
 [v storage="164"]
 
-#ニコル
+#
 [r]
 [p]
 
@@ -1693,7 +1693,7 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [p]
 
 #
@@ -1710,22 +1710,22 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
-[r]
-[p]
-
 #
 [r]
 [p]
 
 #
+[r]
 [p]
 
-#マリア	
-（どうする？）
+#
+[p]
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="ニコルの手を取る"  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="手を取るのをためらう" target="*select_03_02" ]
+#	
+
+
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
 
 [s]
 
@@ -1733,11 +1733,11 @@ for(var key in f.charas){
 [cm]
 
 	
-#マリア
+#
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
@@ -1748,13 +1748,13 @@ for(var key in f.charas){
 
 [v storage="175"]
 
-#ニコル
+#
 [p]
 
 #
 [p]
 
-#マリア
+#
 [p]
 
 #
@@ -1785,7 +1785,7 @@ for(var key in f.charas){
 #
 [p]
 
-#ニコル
+#
 [p]
 
 #
@@ -1794,13 +1794,13 @@ for(var key in f.charas){
 
 [v storage="175"]
 
-#ニコル
+#
 [p]
 
-#ニコル
+#
 [p]
 
-#ニコル
+#
 [p]
 
 #
@@ -1811,7 +1811,7 @@ for(var key in f.charas){
 [r]
 [p]
 
-#マリア
+#
 [r]
 [p]
 
