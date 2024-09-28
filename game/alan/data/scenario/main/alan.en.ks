@@ -393,57 +393,57 @@ f.charas = [
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ai" wait=true]
 
-#
+#Maria
 
 
-[p]
+Tired...[p]
 
 [playbgm  volume=15   storage="M33_FinalMix.ogg" ]
 
 
 #
-[p]
+Maria was slumped over a desk in the corner of the library.[p]
 
-#
-[r]
-[p]
+#Maria
+With the final exams over,[r]
+I thought I could finally relax...[p]
 
 [chara_hide name="maria"]
 
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
 
 #
-[r]
-[p]
+What Maria remembered was[r]
+the Fourth Prince, Alan Stuart.[p]
 
 #
-[r]
-[r]
-[p]
+Not just his twin brother, Geordo,[r]
+but also the fact that even Maria, a commoner and a woman,[r]
+outperformed him in the exams, left Alan feeling irritated.[p]
 
 [chara_hide name="alan"]
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ai" wait=true]
 
-#
-[r]
-[p]
+#Maria
+Every time we meet, he says something harsh...[r]
+It really hurts...[p]
 
 #
 
-[r]
-[r]
-[p]
+However, those words come from frustration,[r]
+not from malice, like with Katarina.[r]
+I understand that.[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+If my presence causes Alan stress,[r]
+Maria thought it would be better to avoid him.[p]
 
 [stopbgm]
 
 #
-[p]
+Just then,[p]
 
 [playbgm  volume=15   storage="M40_FinalMix.ogg" ]
 [playse storage="se/door-open1.ogg" ]
@@ -452,12 +452,12 @@ f.charas = [
 
 [md name="maria" face="焦り"]
 #
-[r]
-[p]
+she heard the door to the library open,[r]
+and Maria jerked upright.[p]
 
 #
-[r]
-[p]
+Peeking from behind the bookshelf, she saw the person who entered.[r]
+It was him, with a displeased look on his face.[p]
 
 [chara_hide name="maria"]
 
@@ -470,15 +470,15 @@ f.charas = [
 [chara_hide name="alan"]	
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
 
-#
-[p]
+#Maria
+Ugh... It's Prince Alan...[p]
 
-#
+#Maria
 
-
+(What should I do?)
 	
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="I should hide."  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="I should quietly leave." target="*select_01_02" ]
 
 [s]
 
@@ -490,9 +490,9 @@ f.charas = [
 
 [love_up]
 
-#
-[r]
-[p]
+#Maria
+(If he finds me,[r]
+he might say something harsh again...)[p]
 
 ;[anim name="maria" left=-1000 ]
 ;[wa]
@@ -500,29 +500,29 @@ f.charas = [
 [chara_hide name="maria"]
 
 #
-[p]
+Maria hid behind the bookshelf.[p]
 
 [playse storage="se/walk-asphalt1.ogg"]
 
 #
-[p]
+...Alan's footsteps were approaching.[p]
 
 #
-[r]
-[r]
-[p]
+To Maria, those footsteps felt like[r]
+they carried his irritation.[r]
+She held her breath, hoping not to be noticed.[p]
 
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_do" wait=true]
 
 [stopse]
 
-#	
-[p]
+#Alan	
+...Tch.[p]
 
 
 #
-[r]
-[p]
+As they passed on opposite sides of the bookshelf,[r]
+Alan clicked his tongue.[p]
 
 [chara_hide name="alan" pos_mode=false ]
 
@@ -535,21 +535,21 @@ f.charas = [
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
 
 #
-[r]
-[p]
+Maria flinched, but thankfully,[r]
+it seemed Alan hadn't noticed her.[p]
 
 [md name="maria" face="悲しみ"]
 
-#
-[r]
-[p]
+#Maria
+(Prince Alan seems upset again today.[r]
+I'm glad he didn't see me...[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[r]
-[p]
+Maria sighed in relief,[r]
+and continued hiding behind the bookshelf,[r]
+quietly slipping out of the library.[p]
 
 [jump target="*common1" ]
 
@@ -558,67 +558,67 @@ f.charas = [
 
 [md name="maria" face="焦り"]
 
-#
-[r]
-[p]
+#Maria
+(If I stay hidden behind the bookshelf and take a detour,[r]
+I should be able to avoid him...)[p]
 
 #
-[r]
-[p]
+Maria, hiding behind the bookshelf,[r]
+headed for the library door.[p]
 
 [chara_hide name="maria"]
 
 [playse storage="se/walk-asphalt1.ogg"]
 
 #
-[r]
-[p]
+From afar, Alan's[r]
+irritated footsteps could still be heard.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" wait=true]
 
-#
-[p]
+#Maria
+(Please, don't let him notice me...)[p]
 
 #
-[r]
-[r]
-[p]
+The door was right in front of her.[r]
+Maria opened the door carefully, making no sound.[r]
+She opened the door slowly.[p]
 
 [md name="maria" face="驚き" ]
 
 [playse storage="se/door-open1.ogg"]
 
 #
-[r]
-[p]
+But despite her efforts,[r]
+a slight noise escaped...[p]
 
 [stopbgm]
 [md name="maria" face="焦り" ]
 
-#
-[p]
+#Maria
+Ah.[p]
 
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_odo" wait=true]
 
-#	
-[p]
+#Alan	
+Ah.[p]
 
 [playbgm  volume=15 storage="M46_FinalMix.ogg" ]
 
 #
-[r]
-[r]
-[p]
+As Alan turned around,[r]
+just as Maria was about to step through the door,[r]
+it happened at the same time.[p]
 
 #
-[p]
+Their eyes met, and they spoke at the same time.[p]
 
 [md name="alan" face="怒り"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+E-excuse me![p]
 
 [playse storage="se/dash-asphalt2.ogg" ]
 
@@ -629,8 +629,8 @@ f.charas = [
 [v storage="h2"]
 
 #
-[r]
-[p]
+Before Alan could say anything,[r]
+Maria hurried out of the library.[p]
 
 *common1	
 
@@ -655,22 +655,22 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_ai" wait=false]
 	
 #
-[r]
-[r]
-[p]
+Once again, like every day,[r]
+trying to avoid running into Alan,[r]
+she kept sneaking around.[p]
 
 #
-[r]
-[p]
+Maria glanced around nervously[r]
+as she walked through the courtyard.[p]
 
 [md name="maria" face="微笑み" ]
 
-#
-[p]
+#Maria
+It seems Prince Alan isn't around here...[p]
 
 #
-[r]
-[p]
+She let out a sigh of relief.[r]
+It was at that moment.[p]
 
 [fadeinbgm  volume=15 storage="M02_FinalMix.ogg" time=2000 ]
 [wait time=2000]
@@ -678,18 +678,18 @@ f.charas = [
 [md name="maria" face="驚き" ]
 
 #
-[r]
-[p]
+From the other side of the garden hedge, the sound of a violin[r]
+played a beautiful melody.[p]
 
 [md name="maria" face="笑顔" ]
 
-#
-[p]
+#Maria
+What a beautiful sound...[p]
 
 [md name="maria" face="微笑み" ]
 
-#
-[p]
+#Maria
+(I wonder who's playing?)[p]
 
 [chara_hide name="maria"]
 
@@ -699,9 +699,9 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_def" wait=true]
 
 #
-[r]
-[r]
-[p]
+Maria quietly[r]
+peeked out from behind the hedge.[r]
+And there she saw...[p]
 
 [chara_move name="maria" top="&f.top" left="&f.left" wait=true]
 [md name="maria" face="驚き"]
@@ -709,262 +709,262 @@ f.charas = [
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
 
 
-#
-[p]
+#Maria
+Prince Alan...?[p]
 
 [stopbgm]
 [kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
 
 [md name="alan" face="怒り"]
 
-#	
+#Alan	
 
 [v storage="22"]
 
 [font size=30]
-
+W-who's there!?
 [resetfont]
 [p]
 
 [playbgm  volume=15   storage="M09_FinalMix.ogg" ]
 
 #
-[r]
-[p]
+Sensing someone's presence,[r]
+Alan stopped playing and sharply turned around.[p]
 
 [md name="maria" face="焦り"]
 
-#
-[r]
-[p]
+#Maria
+Ah![r]
+Uh, um, I'm sorry...![p]
 
-#
-[r]
-[p]
+#Maria
+I didn't mean to eavesdrop,[r]
+I just heard such a beautiful sound...![p]
 
 [md name="alan" face="驚き"]
 
-#	
-[p]
+#Alan	
+...A beautiful sound?[p]
 
 [v storage="h6"]
 
 #
-[r]
-[r]
-[p]
+Alan frowned.[r]
+As if looking at something unpleasant,[r]
+he cast his gaze down at the violin.[p]
 
 [md name="alan" face="悲しみ"]
 
 [v storage="27"]
 
-#	
-[r]
-[r]
-[p]
+#Alan	
+Beautiful, huh?[r]
+Geordo is much better than me.[r]
+You must think that too, don't you?[p]
 
 [md name="maria" face="怒り"]
 
-#
-[p]
+#Maria
+That's not true at all![p]
 
 [md name="maria" face="微笑み"]
 
-#
-[p]
+#Maria
+It was truly... a wonderful performance.[p]
 
 [md name="maria" face="焦り"]
 
 [v storage="29_A"]
 
-#	
-[p]
+#Alan	
+I'm always second place, at best.[p]
 
 [v storage="29_B"]
 
-#	
-[r]
-[r]
-[p]
+#Alan	
+Whether it's studies or violin, in everything...[r]
+No matter how hard I try...[r]
+I'll never catch up...[p]
 
 #
-[r]
-[p]
+Alan sighed heavily and turned away.[r]
+Maria sensed the heavy burden of sadness Alan carried.[p]
 
 [md name="maria" face="悲しみ"]
 [md name="alan" face="驚き"]
 
 #
-[r]
-[p]
+Maria took a step[r]
+towards Alan's back.[p]
 
-#
-[r]
-[p]
+#Maria
+Prince Alan, you have your own strengths and[r]
+weaknesses, don't you?[p]
 
-#
+#Maria
 
-[r]
-[p]
+It's normal to have things you're good and bad at.[r]
+Isn't that perfectly natural?[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="無表情"]
 
-#
-[p]
+#Maria
+Surely, there's no such thing as a perfect person.[p]
 
-#
-[r]
-[r]
-[p]
+#Maria
+Neither I, nor Prince Geordo, nor you, Prince Alan...[r]
+Everyone has something they're not good at,[r]
+and also something they're skilled at.[p]
 
 [md name="maria" face="笑顔"]
 
 
-#
-[r]
-[r]
-[p]
+#Maria
+That's why I think,[r]
+you should stay just the way you are, Prince Alan.[r]
+That's what I believe.[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="悲しみ"]
 
 
-#
-[p]
+#Alan
+You...[p]
 
 #
-[r]
-[p]
+Alan turned around.[r]
+His face looked like that of a scolded child.[p]
 
 [v storage="38"]
 
-#
-[p]
+#Alan
+...Do you really think that?[p]
 
 [md name="maria" face="笑顔"]
 
-#
-[p]
+#Maria
+Yes, I do.[p]
 
 [md name="maria" face="微笑み"]
 
-#	
-[p]
+#Alan	
+...[p]
 
 [md name="alan" face="微笑み"]
 
-#	
+#Alan	
 [font size=18]
-
+...I see. ...Maybe you're right.
 [resetfont]
 
 [p]
 
 [md name="maria" face="笑顔"]
 
-#
-[p]
+#Maria
+I'm sure of it.[p]
 
 [md name="maria" face="照れ"]
 
-#
-[p]
+#Maria
+And once again...[p]
 
 [md name="maria" face="笑顔"]
 [md name="alan" face="驚き"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[r]
-[r]
-[p]
+#Maria
+I really do like your playing, Prince Alan![r]
+It was truly wonderful.[r]
+Please let me hear it again![p]
 
 [md name="alan" face="微笑み"]
 
-#	
-[p]
+#Alan	
+Yeah.[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="無表情"]
 
-#	
-[p]
+#Alan	
+......[p]
 
 [v storage="45"]
 
 [md name="alan" face="照れ"]
 
-#	
+#Alan	
 [font size="18"]
-
+...Thank you.
 [resetfont]
 [p]
 
 #
-[r]
-[p]
+Averting his gaze,[r]
+Alan mumbled softly.[p]
 
 [md name="maria" face="驚き"]
 [md name="alan" face="悲しみ"]
 
 [v storage="47"]
 
-#	
-[r]
-[p]
+#Alan	
+...I said some harsh things to you, didn't I?[r]
+I was taking out my frustrations. ...I'm sorry.[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="驚き"]
 
-#
-[p]
+#Maria
+Then... should we make up?[p]
 
 [md name="alan" face="悲しみ"]
 
-#
-[p]
+#Alan
+Make up...? How?[p]
 
 [md name="maria" face="照れ"]
 
-#
-[r]
-[p]
+#Maria
+Hmm.[r]
+How about a handshake?[p]
 
 [md name="alan" face="無表情"]
 
-#
-[p]
+#Alan
+A handshake...?[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="照れ"]
 
 #
-[r]
-[r]
-[p]
+Alan looked at his hand.[r]
+Then, a bit shyly, he said 'Hmph'[r]
+and offered his hand.[p]
 
 [md name="maria" face="笑顔"]
 [md name="alan" face="微笑み"]
 
 #
-[p]
+Maria took his hand.[p]
 
 [md name="maria" face="照れ"]
 
-#
-[r]
-[p]
+#Maria
+(Such a big hand...[r]
+But he's just like a child...)[p]
 [md name="maria" face="微笑み"]
 [md name="alan" face="怒り"]
 
 [v storage="h2"]
 
 #
-[r]
-[r]
-[p]
+As Maria chuckled, Alan[r]
+looked away, embarrassed, saying,[r]
+'Don't laugh.'[p]
 
 
 ;=======================================
@@ -985,29 +985,29 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+The seasons passed,[r]
+and the day of the exams came again,[r]
+and finally, today, it was over.[p]
 
 
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_ai" wait=true]
 
-#
-[r]
-[p]
+#Maria
+I'm so tired...[r]
+I've been buried in studies lately...[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Now all that's left is to wait for the results.[r]
+I feel free, but also incredibly tired.[p]
 
-[r]
-[p]
+Maria decided to get some fresh air[r]
+and headed to the courtyard.[p]
 
 #
 
-[p]
+...but,[p]
 
 [chara_hide name="maria" ]
 
@@ -1017,20 +1017,20 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_odo" wait=true]
 	
 #
-[r]
-[p]
+someone was already in her favorite spot.[r]
+It was Alan, lying down.[p]
 
-#
-[p]
+#Alan
+...[p]
 
-#
-[p]
+#Maria
+Is he... sleeping?[p]
 
-#
+#Maria
+(What should I do?)
 
-
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Watch him sleep."  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="Try talking to him." target="*select_02_02" ]
 
 [s]
 
@@ -1039,44 +1039,44 @@ f.charas = [
 
 [md name="maria" face="照れ"]
 
-#
-[r]
-[p]
+#Maria
+(Prince Alan's sleeping face...[r]
+This is such a rare sight...)[p]
 
 #
-[r]
-[r]
-[p]
+Out of curiosity,[r]
+Maria quietly approached Alan[r]
+and slowly looked at his face.[p]
 
 [md name="maria" face="驚き"]
 
 #
-[r]
-[r]
-[p]
+In the dappled sunlight, his sleeping face[r]
+looked as if it had been carved from stone,[r]
+perfectly composed.[p]
 
 [md name="maria" face="微笑み"]
 
 #
-[r]
-[p]
+And yet, there was a certain innocence to it.[r]
+A feeling of tenderness swelled up inside her.[p]
+
+#Maria
+(...So beautiful...)[p]
 
 #
-[p]
-
-#
-[r]
-[r]
-[p]
+As Maria thought this,[r]
+she realized she was the only one seeing him like this right now,[r]
+and a slight smile of happiness crossed her face.[p]
 
 [md name="maria" face="笑顔"]
 
-#
-[p]
+#Maria
+Hehe.[p]
 
 #
-[r]
-[p]
+Just then,[r]
+Alan's eyes suddenly opened.[p]
 
 [md name="maria" face="驚き"]
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
@@ -1085,33 +1085,33 @@ f.charas = [
 
 [v storage="h2"]
 
-#
-[p]
+#Alan
+...Hey.[p]
 
 [md name="maria" face="焦り"]
 [chara_move name="maria" left="&f.left" time=500 ]
 
-#
-[r]
-[p]
+#Maria
+Ah... I'm sorry.[r]
+Did I wake you...?[p]
+
+#Alan
+...I heard your footsteps.[p]
+
+#Maria
+So you were already awake...[p]
 
 #
-[p]
+Looking at his face,[r]
+she wondered if she had made an awkward face[r]
+while doing it...[p]
 
 #
-[p]
+Feeling embarrassed,[r]
+Maria's cheeks grew warm.[p]
 
 #
-[r]
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#
-[p]
+Alan looked at the blushing Maria,[p]
 
 [jump target="common2"]
 
@@ -1120,40 +1120,40 @@ f.charas = [
 
 [md name="maria" face="悲しみ"]
 
-#
-[r]
-[p]
+#Maria
+(Is he sleeping...?[r]
+It'd be bad to wake him, right?)[p]
 
 [md name="maria" face="微笑み"]
 
-#
-[r]
-[p]
+#Maria
+(But still, I'd like to talk to him...[r]
+even just a little bit...)[p]
 
 [md name="maria" face="照れ"]
 
-#
-[p]
+#Maria
+Prince Alan...?[p]
 
 #
-[r]
-[p]
+Hesitantly, Maria[r]
+called out to him quietly.[p]
 
-#
-[p]
+#Alan
+...[p]
 
 [md name="maria" face="無表情"]
 
 #
-[p]
+There was no response from Alan.[p]
+
+#Maria
+(So he really is asleep...[r]
+Maybe he's tired from the exams too...)[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+And at that moment,[r]
+Alan's eyes suddenly opened.[p]
 
 [md name="maria" face="驚き"]
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
@@ -1162,41 +1162,41 @@ f.charas = [
 
 [v storage="h2"]
 
-#
-[p]
+#Alan
+...Hey.[p]
 
 [md name="maria" face="焦り"]
 
 [chara_move name="maria" left="&f.left" time=500 ]
 ;[wa]
 
-#
-[r]
-[p]
+#Maria
+Ah... I'm sorry.[r]
+Did I wake you...?[p]
 
 [md name="alan" face="ドヤ顔"]
 
-#
-[p]
+#Alan
+Is calling my name once enough for you?[p]
 
 [md name="maria" face="驚き"]
 
-#
-[p]
+#Maria
+Huh—[p]
 
-#
-[p]
+#Maria
+(Ah, so he was awake the whole time...)[p]
 
 [md name="maria" face="照れ"]
 
 #
-[r]
-[r]
-[p]
+He narrowed his eyes teasingly,[r]
+and caught Maria in his gaze.[r]
+Maria's cheeks grew hot.[p]
 
-#
-[r]
-[p]
+#Maria
+P-Prince Alan.[r]
+G-good morning...[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="微笑み"]
@@ -1208,12 +1208,12 @@ f.charas = [
 [love_up]
 
 
-#
-[p]
+#Alan
+Yeah.[p]
 
 #
-[r]
-[p]
+Seeing Maria looking down in embarrassment,[r]
+Alan let out a small laugh.[p]
 
 *common2
 
@@ -1223,22 +1223,22 @@ f.charas = [
 
 [v storage="65"]
 
-#
-[p]
+#Alan
+...Come here.[p]
 
 #
-[r]
-[r]
-[p]
+Alan motioned for her to come closer.[r]
+When Maria approached,[r]
+he patted the ground beside him and said, 'Sit.'[p]
 
 [v storage="67"]
 
-#
-[p]
+#Alan
+Come closer.[p]
 
-#
-[r]
-[p]
+#Maria
+(Could it be that Prince Alan...[r]
+wants me to give him a lap pillow?)[p]
 
 
 ;スチル表示
@@ -1251,52 +1251,52 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+Thinking that, she did as she was told,[r]
+and as she expected, Alan[r]
+rested his head on her lap.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-[r]
-[r]
-[p]
+He turned his head away, not looking at Maria,[r]
+as if torn between wanting comfort[r]
+and feeling embarrassed.[p]
 
 #
-[r]
-[p]
+Seeing this cute side of him,[r]
+Maria couldn't help but smile.[p]
 
 [v storage="72"]
 
-#
-[p]
+#Alan
+How were the exams?[p]
 
-#
-[r]
-[r]
-[p]
+#Maria
+Ah, um...[r]
+I think I did pretty well.[r]
+And you, Prince Alan?[p]
 
 [v storage="h5"]
 
-#
-[p]
+#Alan
+Well, I did okay.[p]
 
-#
-[r]
-[p]
+#Maria
+I see.[r]
+Good job.[p]
 
 [v storage="h1"]
 
 #
-[r]
-[r]
-[p]
+It was a simple conversation.[r]
+When the conversation ended,[r]
+a brief silence fell between them.[p]
 
 #
-[r]
-[p]
+A gentle breeze blew softly,[r]
+and the sunlight flickered through the leaves.[p]
 
 [fadeoutbgm time=1000] 
 
@@ -1305,92 +1305,92 @@ f.charas = [
 
 [v storage="78"]
 
-#
-[p]
+#Alan
+It's all thanks to you.[p]
 
 #
-[p]
+Alan suddenly spoke.[p]
 
 [v storage="80"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+Ever since I met you...[r]
+I've been able to let go of the heavy burdens[r]
+I was carrying.[p]
 
 [v storage="81"]
 
-#	
-[r]
-[r]
-[p]
+#Alan	
+I always thought I had to keep looking forward,[r]
+but you taught me[r]
+that it's okay to relax sometimes.[p]
 
 [v storage="82_A"]
 
-#
-[r]
-[p]
+#Alan
+To work hard, to take things seriously.[r]
+Whether it was studying or playing the violin—[p]
 
 [v storage="82_B"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+I had given up on them, thinking I'd never be good,[r]
+but now I can face them head-on,[r]
+and it's all thanks to you.[p]
 
-#
-[p]
+#Maria
+Prince Alan...[p]
 
 ;要チェック
 [v storage="84"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+Ever since I met you, Maria,[r]
+my days have changed.[r]
+They're brighter, more meaningful, precious...[p]
 
 [v storage="85_A"]
 
-#
-[r]
-[p]
+#Alan
+Instead of comparing myself to others,[r]
+I learned that I can just be myself.[p]
 
 [v storage="85_B"]
 
-#
-[r]
-[p]
+#Alan
+That's what you taught me,[r]
+and it made me so happy.[p]
 
 [v storage="86"]
 
-#
-[r]
-[p]
+#Alan
+Maria.[r]
+...Thank you.[p]
+
+#Maria
+You're welcome, Prince Alan.[p]
 
 #
-[p]
+Maria gently stroked Alan's forehead.[p]
 
 #
-[p]
+Surely, Alan had never had anyone[r]
+who would stroke his head and praise him,[r]
+no matter how much he yearned for it.[p]
+
+#Maria
+(Could it be that Prince Alan...[r]
+was waiting here just to talk to me?)[p]
+
+#Maria
+(...No, that can't be.)[p]
 
 #
-[r]
-[r]
-[p]
+A peaceful, quiet moment passed.[p]
 
 #
-[r]
-[p]
-
-#
-[p]
-
-#
-[p]
-
-#
-[r]
-[p]
+But it was Alan who broke the silence.[r]
+Of course, it had to be Alan.[p]
 
 [free_layermode time=1000 ]
 
@@ -1403,26 +1403,26 @@ f.charas = [
 [kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[r]
-[p]
+He suddenly jumped up[r]
+and, as if making a decision, said,[p]
 
 [md name="maria" face="驚き"]
 [md name="alan" face="怒り"]
 
 [v storage="94"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+There's something I want to tell you.[r]
+But before that,[r]
+there's something I need to do.[p]
 
 [md name="alan" face="無表情"]
 
 [v storage="95"]
 
-#
-[r]
-[p]
+#Alan
+...So tomorrow,[r]
+come here at the same time as today.[p]
 
 [fadeoutbgm time=1000]
 [playse storage="se/dash-asphalt2.ogg" ]
@@ -1430,9 +1430,9 @@ f.charas = [
 [chara_hide name="alan"]
 
 #
-[r]
-[r]
-[p]
+Saying that,[r]
+Alan emphasized, 'You better be there,'[r]
+and ran off somewhere.[p]
 
 ;=======================================
 [fadeoutbgm ]
@@ -1454,183 +1454,183 @@ f.charas = [
 
 
 #
-[r]
-[p]
+Remembering her promise with Alan,[r]
+Maria walked to the courtyard.[p]
 
 #
-[r]
-[p]
+But someone was blocking her path.[r]
+And that person was—[p]
 
 [md name="maria" face="焦り"]
 [chara_show name="mary" top="&f.top" left="&f.right" face="hamehura_Mary_cos1_mu" wait=true]
 
-#
-[p]
+#Mary
+Hello, Maria.[p]
 
 #
-[p]
+It was Mary, Alan's fiancée.[p]
+
+#Mary
+Maria.[r]
+I have just one thing[r]
+I want to ask you.[p]
 
 #
-[r]
-[r]
-[p]
-
-#
-[r]
-[p]
+Mary's gaze was direct,[r]
+dignified, and serious.[p]
 
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Maria straightened her expression[r]
+and encouraged her to speak.[p]
 
 [md name="mary" face="怒り"]
 
-#
-[r]
-[p]
+#Mary
+—To you,[r]
+what kind of person is Prince Alan?[p]
 
 [md name="maria" face="驚き"]
 [md name="mary" face="無表情"]
 
-#
-[p]
+#Maria
+To me?[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Maria thought for a moment,[r]
+then looked into Mary's eyes and began to speak firmly.[p]
 
-#
-[r]
-[r]
-[p]
+#Maria
+He's stubborn, proud,[r]
+but honest, hardworking, and kind.[r]
+...More than anyone, he's true to himself.[p]
 
 [md name="maria" face="微笑み"]
 
-#
-[r]
-[p]
+#Maria
+And I... love that about him.[r]
+I want to support him.[p]
 
-#
-[p]
+#Maria
+I want to be close to him...[p]
 
-#
-[p]
+#Maria
+I want to be by his side forever.[p]
 
 [md name="maria" face="悲しみ"]
 [md name="mary" face="悲しみ"]
 
-#
-[r]
-[r]
-[p]
+#Maria
+Not because he's the Fourth Prince,[r]
+or because he's from the Stuart family—[r]
+But because he's Prince Alan.[p]
 
 [md name="maria" face="無表情"]
 
-#
-[r]
-[r]
-[p]
+#Maria
+I just want to be with him.[r]
+I want to be by his side and see him smile.[r]
+I want to support him and walk by his side.[p]
 
-#
-[p]
+#Maria
+...That's how I truly feel.[p]
 
 [md name="maria" face="悲しみ"]
 
 #
-[r]
-[p]
+I'd be lying if I said I didn't feel guilty.[r]
+Mary is Alan's fiancée.[p]
 
 #
-[r]
-[r]
-[p]
+What I just said...[r]
+is like declaring[r]
+that I'm stealing him from her.[p]
 
 #
-[r]
-[r]
-[p]
+But at this moment,[r]
+I had to speak my true feelings,[r]
+or it would be disrespectful to Mary.[p]
 
-#	
-[p]
+#Mary	
+...[p]
 
 #
-[r]
-[p]
+Mary listened intently[r]
+to what Maria was saying.[p]
 
 [md name="mary" face="微笑み"]
 
 #
-[r]
-[p]
+But her expression[r]
+softened slightly.[p]
 
 [md name="maria" face="驚き"]
 
-#
-[p]
+#Mary
+...I can't compete with you.[p]
 
 [md name="maria" face="悲しみ"]
 
-#
-[p]
+#Maria
+Lady Mary...[p]
 
 [md name="mary" face="悲しみ"]
 
-#
-[r]
-[p]
+#Mary
+I was never able to bring[r]
+such a smile to his face.[p]
 
-#
-[r]
-[p]
+#Mary
+The only one who can truly brighten his life is—[r]
+Maria, it's you and only you.[p]
 
 [md name="mary" face="微笑み"]
 
-#
-[r]
-[p]
+#Mary
+Your feelings for Prince Alan...[r]
+Please cherish them.[p]
 
-#
-[p]
+#Mary
+Well then, goodbye.[p]
 
 [md name="mary" face="悲しみ"]
 
-#	
+#Mary	
 [font size="18"]
-
+...Please, be happy.
 [resetfont]
 [p]
 
 #
-[r]
-[p]
+Mary's smile was soft and gentle.[r]
+But the moment she turned away—[p]
 
 [chara_hide name="mary"]
 
 [md name="maria" face="焦り"]
 
-#
-[p]
+#Maria
+Ah...[p]
 
 #
-[r]
-[p]
+Maria saw tears glistening[r]
+in Mary's eyes.[p]
 
 [md name="maria" face="悲しみ"]
 
 
-#
-[p]
+#Maria
+Lady Mary... thank you.[p]
 
 [chara_hide name="maria"]
 
 #
-[r]
-[p]
+Maria bowed deeply[r]
+until she could no longer see her.[p]
 
 
 ;=======================================
@@ -1652,14 +1652,14 @@ f.charas = [
 
 #
 
-[r]
-[p]
+The promised place.[r]
+Under the dappled sunlight.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu" wait=true]
 
 #
-[r]
-[p]
+As Maria looked up at the sky,[r]
+she heard the sound of footsteps approaching.[p]
 
 [playse volume=50 storage="se/dash-in-room1.ogg" ]
 [wse]
@@ -1670,7 +1670,7 @@ f.charas = [
 
 [v storage="130"]
 
-#
+#Alan
 [font size=36]マリア……！
 [resetfont]
 [p]
@@ -1678,12 +1678,12 @@ f.charas = [
 [md name="maria" face="笑顔"]
 [md name="alan" face="無表情"]
 
-#
-[p]
+#Maria
+Prince Alan![p]
 
 #
-[r]
-[p]
+He must have been running the whole way.[r]
+Alan stopped beside Maria, out of breath.[p]
 
 [chara_hide_all ]
 
@@ -1691,89 +1691,89 @@ f.charas = [
 [bg storage="alan2.png" ]
 
 #
-[r]
-[r]
-[p]
+He took a moment to catch his breath...[r]
+After a deep breath, Alan stood up straight[r]
+and took Maria's hand.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-[r]
-[p]
+Then, what he wanted to tell Maria,[r]
+he finally put into words.[p]
 
 [v storage="135"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+Maria.[r]
+I want you by my side.[r]
+Now and forever.[p]
 
 #
-[r]
-[r]
-[p]
+Simple words.[r]
+So simple,[r]
+yet so sincere.[p]
 
 #
-[p]
+Maria gazed at Alan.[p]
 
-#
-[r]
-[p]
+#Maria
+Did he understand what that meant?[r]
+Do you understand what you're asking, Prince Alan?[p]
 
 [v storage="139"]
 
-#
-[p]
+#Alan
+I understand.[p]
 
 [v storage="140"]
 
-#
-[p]
+#Alan
+...Be mine.[p]
 
 [v storage="141"]
 
-#
-[p]
+#Alan
+Marry me.[p]
 
 #
-[r]
-[p]
+Alan's gaze had never been so serious.[r]
+He continued speaking.[p]
 
 [v storage="143"]
 
-#
-[r]
-[p]
+#Alan
+Yesterday, I talked to Mary and Geordo,[r]
+and with both of our parents.[p]
 
 [v storage="144"]
 
-#
-[r]
-[r]
-[p]
+#Alan
+We had a serious conversation.[r]
+And both of them[r]
+gave me their blessing.[p]
+
+#Maria
+(So that's why Lady Mary...)[p]
 
 #
-[p]
+Maria recalled their encounter earlier.[r]
+At the same time, she realized what had been entrusted to her.[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+Both Alan and Mary[r]
+had made up their minds.[p]
 
 #
 
-[p]
+Alan knelt down and looked up at Maria.[p]
 
 [v storage="149"]
 
 ;@quake_camera
 
-#	
+#Alan	
 [font size="36"]お前の人生、俺にくれ！
 [resetfont]
 [p]
@@ -1781,11 +1781,11 @@ f.charas = [
 [free_layermode time=1000 ]
 
 
-#
+#Maria
+(How should I answer?)
 
-
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="With pleasure."  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="Are you really sure?" target="*select_03_02" ]
 
 [s]
 
@@ -1799,27 +1799,27 @@ f.charas = [
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
 
 #
-[r]
-[p]
+A loud voice.[r]
+Big feelings.[p]
 
 #
-[r]
-[p]
+Maria was ready to accept them.[r]
+Because those were the people who supported her.[p]
 
 #
-[r]
-[p]
+And they were her respect[r]
+and deepest sincerity for her own feelings of love.[p]
 
 [md name="maria" face="微笑み"]
 
-#
-[p]
+#Maria
+—With pleasure.[p]
 
 [md name="maria" face="笑顔"]
 
-#
-[r]
-[p]
+#Maria
+I'll give you all of myself.[r]
+Please... take me.[p]
 
 [kanim_chara layer=0 name="alan" keyframe=quake time=300 count=1 easing=linear]
 
@@ -1831,30 +1831,30 @@ f.charas = [
 
 [md name="alan" face="照れ"]
 
-#
-[p]
+#Alan
+...![p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="微笑み"]
 
 [v storage="154"]
 
-#
-[p]
+#Alan
+Yes! Of course![p]
 
 [md name="maria" face="笑顔"]
 
 #
-[r]
-[p]
+Alan smiled like a boy, beaming,[r]
+and wrapped Maria in his arms.[p]
 
 #
-[r]
-[p]
+Maria also wrapped her arms around Alan's big body,[r]
+hugging him back.[p]
 
 #
-[r]
-[p]
+In the gentle sunlight,[r]
+the two of them held each other for a long time.[p]
 
 @jump target="common_03"
 
@@ -1869,82 +1869,82 @@ f.charas = [
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
 
 #
-[r]
-[p]
+A loud voice.[r]
+Big feelings.[p]
 
 [md name="maria" face="悲しみ"]
 
 #
-[r]
-[p]
+But really,[r]
+is it okay for me to accept this?[p]
 
 [md name="alan" face="悲しみ"]
 
 #
-[r]
-[p]
+This involves multiple noble families,[r]
+and it's not just a simple romance between a man and a woman.[p]
 
 #
-[r]
-[r]
-[p]
+Ahead of this love, for the two of them who are still so young,[r]
+there are unimaginable[r]
+hardships awaiting them.[p]
+
+#Maria
+(Is this really okay?)[p]
 
 #
-[p]
+But still—[r]
+Maria remembered[r]
+her conversation with Mary.[p]
 
 #
-[r]
-[r]
-[p]
-
-#
-[r]
-[p]
+I love Alan.[r]
+I want to support him.[p]
 
 [md name="maria" face="無表情"]
 
 #
-[p]
+—I want to be by his side.[p]
+
+#Maria
+(If I hesitate here...[r]
+it's a betrayal to both Lady Mary and Prince Alan.)[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+That's why Maria[r]
+looked straight at Alan—[p]
 
 [md name="maria" face="微笑み"]
 [md name="alan" face="照れ"]
 
 #
-[p]
+and, with all her heart, nodded.[p]
 
 [md name="alan" face="微笑み"]
 
 #
-[r]
-[p]
+This love surely won't be[r]
+filled only with happiness.[p]
 
 #
-[r]
-[p]
+Maybe there will be more hardships[r]
+than joy.[p]
 
 [md name="alan" face="微笑み"]
 
-#
-[p]
+#Maria
+(But even so, we will...)[p]
 
 [md name="maria" face="笑顔"]
 
 #
-[r]
-[r]
-[p]
+As Alan smiled and held her close,[r]
+Maria tightly[r]
+hugged him back.[p]
 
 #
-[r]
-[p]
+In the gentle sunlight,[r]
+they vowed to walk their future together.[p]
 
 *common_03
 
