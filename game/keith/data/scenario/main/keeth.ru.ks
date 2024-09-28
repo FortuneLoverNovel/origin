@@ -427,12 +427,12 @@ f.charas = [
 
 [v storage="1"]
 
-#	
-[p]
+#Киc	
+Ты милая. Из какой ты семьи?[p]
 [playbgm  volume=15   storage="M30_FinalMix.ogg" ]
 
-#
-[p]
+#Мария
+Э... это...?[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -440,38 +440,38 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+Юноша, появившийся перед ней,[r]
+внезапно так сказал,[r]
+и на мгновение разум Марии помутнел.[p]
 
 #
-[r]
-[p]
+Мария внимательно посмотрела на юношу[r]
+и внезапно осознала, кто он.[p]
 
 #
-[l][r]
-[r]
-[p]
+Это был Кис Клаес,[l][r]
+наследник дома Клаес и сводный брат[r]
+леди Катарины Клаес, невесты принца Джордо.[p]
 
 #
-[p]
+Кис с уверенной улыбкой наклонился к Марии.[p]
 
 [v storage="h2"]
 
-#
-[p]
+#Киc
+Эй, давай поиграем немного?[p]
 
 #
-[r]
-[p]
+Кис прикоснулся к подбородку Марии[r]
+и попытался поднять её лицо, но—[p]
 
 [free_layermode time=1000 ]
 
-#	
+#Мария	
+(Что же мне делать?)
 
-
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="Убежать"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="Остаться и посмотреть" target="*select_01_02" ]
 
 [s]
 
@@ -484,17 +484,17 @@ f.charas = [
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_do" wait=false]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
-#
-[p]
+#Мария
+Н-нет, спасибо![p]
 
 [md name="maria" face="焦り"]
 
 #
-[p]
+Мария в спешке отступила от Киса на полшага.[p]
 
-#
-[r]
-[p]
+#Мария
+(He's the heir of the Claes family.[r]
+He must be teasing me...!)[p]
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -503,45 +503,45 @@ f.charas = [
 [love_up]
 
 
-#	
-[p]
+#Киc	
+Ого? Ты говоришь *мне* «нет, спасибо»?[p]
 
 #
-[r]
-[p]
+Кис посмотрел на свою пустую руку[r]
+и насмешливо приподнял бровь.[p]
 
 [md name="keeth" face="無表情"]
 
-#
-[p]
+#Мария
+Я не дворянка, я простая девушка.[p]
 
-#
-[r]
-[p]
+#Мария
+There's no way I could ever[r]
+быть достойной такого, как вы, Кис-сама![p]
 
 [md name="maria" face="焦り"]
 
 #
-[p]
+Мария быстро начала лепетать оправдания.[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
 #
-[r]
-[r]
+In reality, offending the Claes family[r]
+could cost a commoner like her her life.[r]
 [p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="微笑み"]
 
-#
-[r]
-[p]
+#Мария
+Эм, э-эм, я...[r]
+Мне нужно на занятия, так что прошу меня извинить...![p]
 
 #
-[r]
-[p]
+Мария быстро поклонилась Кису[r]
+и быстро развернулась, чтобы убежать.[p]
 
 [jump target="*common_01"]
 
@@ -555,31 +555,31 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
 
-#
-[r]
-[p]
+#Мария
+(He's the heir to the Claes family...[r]
+What if rejecting him causes problems...?)[p]
 
 [md name="maria" face="焦り"]
 
 #
-[r]
-[r]
+Offending the Claes family[r]
+would be more than a commoner could handle.[r]
 [p]
 
 #
-[r]
-[r]
-[p]
+Я не знаю, что он сделает, но...[r]
+От этой неизвестности Мария крепко зажмурилась[r]
+и сжалась в комочек.[p]
 
 [chara_hide_all]
 
 [bg storage="black.png" time="100"]
 	
 #
-[p]
+—Но сколько бы она ни ждала, ничего не происходило.[p]
 
-#
-[p]
+#Мария
+(Huh...?)[p]
 
 [bg storage="HF04_034_r.png" time=2000]
 
@@ -590,45 +590,45 @@ f.charas = [
 [md name="keeth" face="悲しみ"]
 
 #
-[r]
-[p]
+When she cautiously opened her eyes,[r]
+перед ней стоял Кис, неловко пожимая плечами.[p]
 
 [md name="maria" face="焦り"]
 
 
 ;[v storage="h2"]
 
-#
-[r]
-[r]
-[p]
+#Киc
+Не реагируй так.[r]
+Будто я тебя обижаю.[r]
+Я бы не сделал ничего плохого леди.[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Киc
+...Или ты на самом деле чего-то ожидала?[p]
 
 [md name="maria" face="焦り"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Мария
+—![p]
 
-#
-[p]
+#Мария
+(He's teasing me!)[p]
 
 [md name="maria" face="怒り"]
 
-#
-[r]
-[p]
+#Мария
+Э-э! Я...[r]
+Мне нужно на занятия, так что прошу меня извинить![p]
 
 
 #
-[r]
-[p]
+Мария отскочила от Киса[r]
+и быстро развернулась и убежала.[p]
 
 *common_01
 
@@ -638,32 +638,32 @@ f.charas = [
 
 [v storage="h1"]
 
-#
-[p]
+#Киc
+Хм...[p]
 
 #
-[r]
-[p]
+Отказаться от моего предложения, да?[r]
+Кис приподнял бровь.[p]
 
 #
-[r]
-[r]
-[p]
+Кис, удивлённый её реакцией,[r]
+смотрел ей вслед, как хищник.[r]
+словно кот, следящий за своей добычей.[p]
 
 #
-[r]
-[r]
-[p]
+Он сделал несколько шагов вперёд.[r]
+Кис поднял платочек,[r]
+который Мария уронила.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Киc
+Хм. Дёшево, но со вкусом.[p]
 
 #
-[r]
-[r]
-[p]
+Посмотрев на имя «Мария», вышитое на платке,[r]
+Кис хитро ухмыльнулся[r]
+с хитрой улыбкой на лице.[p]
 
 *dev1
 
@@ -686,75 +686,75 @@ f.charas = [
 [playbgm  volume=15   storage="M39_FinalMix.ogg" ]
 
 #
-[r]
-[p]
+У Марии была проблема.[r]
+И сейчас она столкнулась с ней лицом к лицу.[p]
 
 [chara_show  name="kata" face="hamehura_Catalina_cos1_aku" top="&f.top" left="&f.right" ]
 
 
 [v storage="19"]
 
-#
-[p]
+#Катарина
+Для простолюдинки—[p]
 
 #
-[r]
-[r]
-[p]
+Леди Катарина и[r]
+её свита благородных девиц[r]
+окружили Марию враждебными взглядами.[p]
 
 #
-[r]
-[p]
+Ах, опять это.[r]
+Мария опустила голову и прикусила губу.[p]
 
 [md name="kata" face="怒り"]
 
 [v storage="22"]
 
-#
-[r]
-[p]
+#Катарина
+Думаешь, раз у тебя есть сила света,[r]
+можешь задирать нос![p]
 
 #
-[r]
-[r]
-[p]
+Они возненавидели Марию[r]
+и всякий раз осыпали её жестокими словами,[r]
+когда только была возможность.[p]
 
 #
-[r]
-[r]
-[p]
+Все они были благородными девицами из знатных семей.[r]
+Для простолюдинки, как Мария, даже если их оскорбления были несправедливы,[r]
+ей не позволено было ответить.[p]
 
-#
-[p]
+#Мария
+(Всё будет хорошо...)[p]
 
 [chara_hide name="kata" pos_mode=false ]
 
 [chara_show name="reijo1" top="&f.top" left="&f.right" face="hamehura_DVDmob1_do"]
 
-#
+#Девица 1
 
-[r]
-[p]
+Наверняка студсовету очень жаль,[r]
+что им приходится с тобой общаться![p]
 
-#
-[p]
+#Мария
+(Если я просто буду молчать...)[p]
 
 [chara_hide name="reijo1"  pos_mode=false]
 [chara_show name="reijo2" top="&f.top" left="&f.right" face="hamehura_DVDmob2_do" ]
 
-#
-[r]
-[r]
-[p]
+#Девица 2
+Верно![r]
+И твои оценки на тестах, наверное, хорошие только потому,[r]
+что тебя поддерживали из-за твоей магии![p]
+
+#Мария
+(Once they've said their fill,[r]
+they'll leave...)[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[l][r]
-[p]
+Но—[r]
+Сегодня было особенно неспокойно.[l][r]
+Резкие голоса благородных девиц становились всё громче.[p]
 
 
 [chara_hide_all]
@@ -762,7 +762,7 @@ f.charas = [
 [playbgm volume=15 storage="M43_FinalMix.ogg" ]
 
 #
-[p]
+И, наконец—[p]
 
 [chara_show time=1000 name="maria" face="hamehura_Maria_cos1_ase" top="&f.top" left="&f.left" wait=false]
 [chara_show time=1000 name="kata" face="hamehura_Catalina_cos1_aku2" top="&f.top" left="&f.right" wait=true]
@@ -772,28 +772,28 @@ f.charas = [
 
 [v storage="32"]
 
-#
-[r]
-[r]
-[p]
+#Катарина
+Меня бесит твоё выражение «жертвы»![r]
+Покажи ей её место![r]
+Дай ей понять, где её место.[p]
 
 [chara_hide name="kata"  pos_mode=false]
 
 [chara_show name="reijo3" top="&f.top" left="&f.right" face="hamehura_DVDmob3_def" ]
 
 #
-[r]
+Катарина высокомерно приказала своей свите.[r]
 [p]
 
 #
-[r]
-[p]
+Одна из девиц злобно усмехнулась[r]
+и подняла руку.[p]
 
 #
-[p]
+Мерцание—[p]
 
-[r]
-[p]
+В её руке вспыхнуло пламя.[r]
+Она выпустила в Марию агрессивное заклинание огня—![p]
 
 [mask time=100 color="red"]
 [wait time=100]
@@ -807,8 +807,8 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Мария
+—![p]
 
 [chara_hide name="reijo3" wait=false wait=false]
 [chara_hide name="maria"  wait=true wait=true]
@@ -816,10 +816,10 @@ f.charas = [
 [bg storage="black.png" time=100]	
 
 #
-[p]
+Мария крепко зажмурилась.[p]
 
 #
-[p]
+Но боль так и не пришла.[p]
 
 [bg storage="HF05_068_r.png"]
 
@@ -827,8 +827,8 @@ f.charas = [
 
 
 #
-[r]
-[r]
+Когда она осторожно открыла глаза,[r]
+перед ней возвышалась огромная стена земли.[r]
 [p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
@@ -837,13 +837,13 @@ f.charas = [
 [kanim_chara layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 [v storage="42"]
 
-#
-[p]
+#Катарина
+Ч-что...!?[p]
 
 #
-[r]
-[r]
-[p]
+Нет, это была не просто стена.[r]
+Это была огромная фигура, созданная из земляной магии,[r]
+которая стояла перед ней, защищая её.[p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
 
@@ -854,36 +854,36 @@ f.charas = [
 [playse storage="se/rock-crack1.ogg" ]
 
 #
-[p]
+Глиняная фигура подняла массивную руку.[p]
 
 #
-[p]
+Если бы эта рука обрушилась на кого-то—[p]
 
 [md name="kata" face="悲しみ"]
 
-#
-[p]
+#Катарина
+Ах...!![p]
 
 [playse storage="se/dash-asphalt2.ogg" ]
 [chara_hide name="kata"]
 
 
 #
-[r]
-[r]
-[p]
+Не представляя даже, что могло бы произойти, Катарина и другие[r]
+побледнели и закричали,[r]
+разбегаясь, как испуганные пауки...[p]
 
 [md name="maria" face="悲しみ"]
 
 
-#
-[p]
+#Мария
+Эм, извините...[p]
 
 [md name="maria" face="焦り"]
 
 #
-[r]
-[p]
+Мария попыталась заговорить с глиняной фигурой, которая, казалось, её спасла.[r]
+Но фигура молчала и осторожно подняла Марию.[p]
 
 [md name="maria" face="驚き"]
 
@@ -893,12 +893,12 @@ f.charas = [
 
 [playse storage="se/nadare.ogg" ]
 
-#
-[p]
+#Мария
+Кья...!?[p]
 
 #
-[r]
-[r]
+Мария была напугана, но руки фигуры были нежны[r]
+и, поняв, что в этом не было враждебности, позволила ему нести её куда-то.[r]
 	[p]
 
 [bg storage="HF04_292.png"]
@@ -908,9 +908,9 @@ f.charas = [
 [playse storage="se/nadare.ogg" ]
 
 #
-[r]
-[r]
-[p]
+Глиняная фигура остановилась в углу двора.[r]
+Когда она вновь растеклась в землю,[r]
+она осторожно опустила Марию.[p]
 
 
 [playbgm volume=15 storage="M21_FinalMix.ogg" ]
@@ -919,11 +919,11 @@ f.charas = [
 
 
 #？？？
-[p]
+...Похоже, ты не ранена, да?[p]
 
 #
-[r]
-[p]
+Неожиданно раздался голос,[r]
+и Мария повернулась на его источник.[p]
 
 [md name="maria" face="驚き"]
 
@@ -933,127 +933,127 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Мария
+Кис-сама...!?[p]
 
 [md name="keeth" face="無表情"]
 
 [v storage="h3"]
 
-#
-[r]
-[r]
-[p]
+#Киc
+...Ха.[r]
+Я просто хотел вернуть платок, который подобрал,[r]
+но вместо этого я оказался свидетелем *этого*.[p]
 
-#
-[p]
+#Мария
+Кис-сама, вы спасли меня?[p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="悲しみ"]
 
-#
-[r]
-[p]
+#Киc
+Ну... думаю, можно сказать и так.[r]
+Но не говори никому, хорошо?[p]
 
-#
-[r]
-[r]
-[p]
+#Киc
+В конце концов... Катарина всё же моя сестра.[r]
+Если станет известно, что я помог тебе,[r]
+это может вызвать для меня проблемы.[p]
 
 [md name="maria" face="悲しみ"]
 
 
 #
-[r]
-[p]
+Вот почему я не вмешался напрямую.[r]
+Я послал глиняную фигуру, объяснил Кис.[p]
 
 [md name="maria" face="無表情"]
 [md name="keeth" face="驚き"]
 
 #
-[r]
-[r]
-[p]
+...Но внезапно Мария перед ним[r]
+начала проливать крупные слёзы.[r]
+Кис растерялся,[p]
 
 [md name="maria" face="泣き"]
 
-#
-[r]
-[p]
+#Мария
+Ах—нет, простите.[r]
+Мне надо было поблагодарить вас, но...[p]
 
 [md name="keeth" face="無表情"]
 
 #
-[r]
-[p]
+Мария пыталась сдержать слёзы,[r]
+но они всё текли и текли.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="h5"]
 
-#
-[p]
+#Киc
+Мария...[p]
 
 #
-[r]
-[r]
+Смотря на дрожащие плечи Марии, Кис[r]
+осознал, сколько же страха она испытала.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
 
-#
-[r]
-[p]
+#Киc
+(Сколько же страха и тревоги...[r]
+this girl must have been feeling all alone...)[p]
 
 [md name="maria" face="泣き"]
 
+#Киc
+Ты тоже терпела всё это одна, да...?[p]
+
 #
+Отождествляя её ситуацию со своей,[r]
+Кис не мог просто оставить её одну.[r]
 [p]
 
 #
-[r]
-[r]
-[p]
-
-#
-[r]
-[p]
+Кис неуверенно протянул руку,[r]
+но затем крепко обнял Марию.[p]
 
 [v storage="69"]
 
-#
-[r]
-[p]
+#Киc
+...Ты молодец. Должно быть, тебе было страшно.[r]
+Но теперь всё хорошо.[p]
 
 #
-[r]
-[p]
+Его рука неловко погладила волосы Марии.[r]
+Но Кис изо всех сил старался её утешить.[p]
 
-#
-[r]
-[p]
+#Киc
+Так что, ну...[r]
+хватит плакать, ладно?[p]
 
 [md name="maria" face="悲しみ"]
 
 #
-[r]
-[p]
+Обычно ветреный Кис[r]
+сейчас выглядел неловко.[p]
 
 #
-[r]
+Но Мария была глубоко тронута его искренними усилиями её утешить.[r]
 [p]
 
 [md name="keeth" face="微笑み" ]
 
 #
-[r]
-[p]
+От чувства безопасности её слёзы незаметно прекратились.[r]
+Мария вытерла глаза пальцами и посмотрела на Киса.[p]
 
-#
+#Мария
+(I have to say something...)
 
-
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Спасибо."  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="Почему вы мне помогли?" target="*select_02_02" ]
 
 [s]
 
@@ -1063,28 +1063,28 @@ f.charas = [
 
 [md name="keeth" face="無表情"]
 
-#
-[r]
-[p]
+#Мария
+...Спасибо вам, Кис-сама.[r]
+Если бы вы меня не спасли, я не знаю, что бы со мной случилось...[p]
+
+#Мария
+Я даже не знаю, как вас отблагодарить...[p]
 
 #
-[p]
+Голос Марии, ещё дрожащий от слёз,[r]
+всё ещё немного дрожал, но[r]
+она изо всех сил старалась выразить благодарность Кису.[p]
 
-#
-[r]
-[r]
-[p]
-
-#
-[r]
-[r]
-[p]
+#Киc
+Ну... ничего.[r]
+Видеть, как с девушкой так поступают,[r]
+и просто стоять в стороне, было бы неправильно...[p]
 
 [md name="maria" face="驚き"]
 
 
 #
-[p]
+Кис отвернулся от Марии.[p]
 
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
@@ -1094,23 +1094,23 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+Но его лицо, слегка покрасневшее,[r]
+смущённо порозовело.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Киc
+Ну, главное, что ты не пострадала, да?[p]
 
 [md name="maria" face="微笑み"]
 
 #
-[r]
-[p]
+Несмотря на то, как он это сказал,[r]
+в его словах чувствовалось облегчение.[p]
 
 #
-[r]
-[p]
+Мария не могла не улыбнуться[r]
+его неловкой доброте.[p]
 
 
 [jump target="*common_02"]
@@ -1124,55 +1124,55 @@ f.charas = [
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
-#
-[r]
-[r]
-[p]
+#Мария
+Эм... Кис-сама.[r]
+Почему вы[r]
+помогли мне?[p]
 
 #
-[r]
-[r]
-[p]
+Леди Катарина — сводная сестра Киса.[r]
+Действия Киса шли вразрез с[r]
+интересами Катарины.[p]
 
 #
-[r]
-[r]
+Хотя он и её сводный брат,[r]
+его действия могли поставить его в сложное положение.[r]
 [p]
 
-#
-[r]
-[r]
-[p]
+#Киc
+Ну... ничего.[r]
+Видеть, как с девушкой так поступают,[r]
+и просто стоять в стороне, было бы неправильно...[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="怒り"]
 
-#
-[r]
-[r]
-[p]
+#Киc
+...Это было моё собственное решение.[r]
+Тебе не нужно волноваться[r]
+или чувствовать себя виноватой, хорошо?[p]
 
 #
-[r]
-[r]
+Хотя его слова были неловкими,[r]
+в них чувствовалась забота о Марии.[r]
 [p]
 
 [md name="maria" face="微笑み"]
 [md name="keeth" face="無表情"]
 
 
-#
-[p]
+#Мария
+...Спасибо, Кис-сама.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Киc
+Пожалуйста.[p]
 
 #
-[r]
-[r]
-[p]
+Кис снова отвернулся от Марии.[r]
+Но его лицо, слегка покрасневшее,[r]
+смущённо порозовело.[p]
 
 *common_02
 
@@ -1196,79 +1196,79 @@ f.charas = [
 
 
 #
-[r]
-[p]
+Скоро выпускной.[r]
+Академия была полна суеты.[p]
 
 [chara_show time=10 name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu"]
 
+#Мария
+Фух...[p]
+
 #
+В последнее время Мария была занята работой в студенческом совете.[r]
 [p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+Сейчас у неё был перерыв.[r]
+Она посмотрела на сад из коридора, чтобы немного отвлечься.[p]
 
 [chara_hide name="maria"]
 
 [v storage="83"]
 
 #
-[p]
+...И в этот момент.[p]
 
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" ]
 
-#
-[p]
+#Киc
+...[p]
 
 [chara_hide name="keeth"]
 
 [chara_show  name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_odo"]
 
-#
-[p]
+#Мария
+Кис-сама...?[p]
 
 #
-[r]
+Она увидела, как Кис направляется в сад.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
 
-#	
-[r]
-[p]
+#Мария	
+(Come to think of it, I've been so busy lately...[r]
+I haven't had a chance to talk to Lord Keith.)[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Захотев с ним поговорить после столь долгого времени,[r]
+Мария последовала за ним в сад.[p]
 
 [bg storage="HF08_044.png"]
 
 [md name="maria" face="照れ"]
 
-#	
-[r]
-[p]
+#Мария	
+(Hehe...[r]
+Maybe I'll play a little prank on him.)[p]
 
 #
-[r]
-[r]
-[p]
+Она тихо приблизилась к нему сзади[r]
+и решила его испугать криком «Буу!».[r]
+Мария задумала это.[p]
 
 [md name="maria" face="微笑み"]
 
 #
-[r]
+Казалось, Кис был по другую сторону цветочных кустов.[r]
 [p]
 
 #
-[r]
-[p]
+И тут она услышала, как Кис что-то бормочет[r]
+себе под нос.[p]
 
 [chara_hide name="maria"]
 
@@ -1276,56 +1276,56 @@ f.charas = [
 
 [v storage="93"]
 
-#
-[p]
+#Киc
+Пожалуйста, выйди за меня.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="94"]
 
-#
-[p]
+#Киc
+...Мм, слишком просто?[p]
 
 [v storage="95"]
 
 [md name="keeth" face="無表情"]
 
-#
-[p]
+#Киc
+Покойся со мной в одном гробу.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="96"]
 
-#
-[p]
+#Киc
+...Слишком мрачно? Наверное, отпугну её...[p]
 
 [md name="keeth" face="微笑み"]
 
 [v storage="97"]
 
-#
-[p]
+#Киc
+Ты моя прекрасная первая звезда...[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="98"]
 
-#
-[p]
+#Киc
+Фу, слишком слащаво. Точно нет.[p]
 
 #
-[r]
-[r]
-[p]
+Это явно были слова предложения.[r]
+Похоже, Кис[r]
+репетировал признание.[p]
 
 [chara_hide name="keeth"]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" ]
 
 #
-[r]
-[p]
+Став свидетелем чего-то неожиданного,[r]
+Мария попыталась тихо отступить, но...[p]
 
 [md name="maria" face="驚き"]
 
@@ -1334,10 +1334,10 @@ f.charas = [
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[p]
+(*Snap!*)[p]
 
 #
-[p]
+Она наступила на маленькую ветку.[p]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_do" wait=true]
 
 [md name="maria" face="焦り"]
@@ -1345,13 +1345,13 @@ f.charas = [
 
 [v storage="101"]
 
-#
-[p]
+#Киc
+К-кто здесь!?[p]
 
 #
-[l][r]
-[r]
-[p]
+Голос Киса звучал явно обеспокоенно, когда он заглянул через кусты.[l][r]
+И когда он увидел Марию,[r]
+его голос стал ещё выше.[p]
 
 [md name="keeth" face="驚き"]
 
@@ -1361,122 +1361,122 @@ f.charas = [
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Киc
+W-what!? Maria!?[p]
 
 [md name="keeth" face="照れ"]
 
 #
-[r]
-[p]
+Лицо Киса залилось румянцем.[r]
+Мария никогда прежде не видела его таким.[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#	
-[r]
-[p]
+#Мария	
+Эм, простите![r]
+Я забуду, что только что увидела![p]
 
 #
-[r]
-[p]
+Мария быстро заговорила.[r]
+Но—[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
 #
-[p]
+Её сердце вдруг кольнула боль.[p]
+
+#Мария
+(Lord Keith... has someone he loves...)[p]
 
 #
-[p]
+На мгновение повисло неловкое молчание.[l][r]
+Мария опустила голову и поспешила[r]
+покинуть это место.[p]
 
 #
-[l][r]
-[r]
-[p]
-
-#
-[p]
+But.[p]
 
 [md name="keeth" face="怒り"]
 
 [v storage="111"]
 
-#
-[p]
+#Киc
+Подожди.[p]
 
 [md name="maria" face="驚き"]
 
 @quake_camera
 
 #
-[p]
+Кис схватил Марию за руку.[p]
 
 [md name="maria" face="悲しみ"]
 
 [v storage="113"]
 
-#	
-[r]
-[r]
-[p]
+#Киc	
+С-слушай...[r]
+Кажется, ты кое-что неправильно поняла, так что[r]
+I'll just say it...[p]
 
 [v storage="114"]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#	
-[r]
-[p]
+#Киc	
+Ah, to hell with it.[r]
+Это всё было *из-за тебя*![p]
 
 [md name="maria" face="驚き"]
 
-#
-[p]
+#Мария
+Что...?[p]
 
 [md name="keeth" face="無表情"]
 
 #
-[p]
+Мария ошеломлённо посмотрела на Киса.[p]
 
 #
-[l][r]
-[r]
-[p]
+Кис смущённо отвернулся.[l][r]
+Но его уши были ярко-красными,[r]
+а рука, державшая Марию, была горячей.[p]
 
 [v storage="118"]
 
-#	
-[r]
-[r]
-[p]
+#Киc	
+...Завтра. Завтра я сделаю всё как надо,[r]
+so come here and take responsibility, okay?[r]
+And no backing out. You don't get a say in this.[p]
 
 [chara_hide name="keeth"]
 
 [md name="maria" face="焦り"]
 
 #
-[r]
-[r]
-[p]
+Сказав это,[r]
+Кис отпустил руку Марии[r]
+и быстро ушёл.[p]
 
-#	
-[r]
-[p]
+#Мария	
+...[r]
+Подожди, из-за меня...?[p]
 
 #
-[r]
-[p]
+Left behind, Maria[r]
+slowly realized the situation.[p]
 
 [md name="maria" face="驚き"]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Мария
+—Что!![p]
 
 [md name="maria" face="照れ"]
 
 #
-[p]
+Лицо Марии стало ярко-красным.[p]
 
 *dev3
 
@@ -1499,28 +1499,28 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_tere" wait=false]
 	
 #
-[r]
-[p]
+Вспоминая вчерашнее,[r]
+Мария почувствовала, как её лицо разгорелось.[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Как и обещала Кису,[r]
+Мария была на том же месте, что и вчера.[p]
 
 #
-[r]
-[p]
+Что же будет дальше...[r]
+Она была достаточно взрослой, чтобы понять.[p]
 
 [md name="maria" face="悲しみ"]
 
-#	
-[r]
-[p]
+#Мария	
+(Maybe I should've worn something nicer...[r]
+before coming...)[p]
 
 #
-[r]
-[p]
+Пока она нервно ждала,[r]
+она услышала приближающиеся шаги.[p]
 
 [playse storage="se/dash-asphalt2.ogg"]
 [wse]
@@ -1530,45 +1530,45 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-[l][r]
-[r]
-[p]
+Это был Кис.[l][r]
+He too, just like Maria,[r]
+seemed a little uneasy.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="142"]
 
-#	
-[r]
-[r]
-[p]
+#Киc	
+Uh... Actually, I forgot to tell you yesterday...[r]
+I was planning to meet you at the rose garden...[r]
+but I got too flustered.[p]
 
 #
-[p]
+After that excuse, he said,[p]
 
 [v storage="140"]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="無表情"]
 
-#
-[p]
+#Киc
+Let's go.[p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[p]
+Keith took Maria's hand and led her through the garden.[p]
 
 #
-[p]
+His hand was even warmer than yesterday and slightly sweaty.[p]
 
 [md name="maria" face="照れ"]
 
-#
-[p]
+#Мария
+(Lord Keith is nervous...)[p]
 
 #
-[p]
+His nervousness was contagious for Maria.[p]
 
 [bg storage="HF01_026_rr.png"]
 
@@ -1578,41 +1578,41 @@ f.charas = [
 [md name="keeth" face="無表情"]
 	
 #
-[p]
+They reached the rose garden in silence.[p]
 
 [v storage="134"]
 
-#
-[p]
+#Киc
+...Phew.[p]
 
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="怒り"]
 
 #
-[p]
+Keith took a deep breath and faced Maria.[p]
 
 #
-[r]
-[r]
-[p]
+His eyes were serious and tense.[r]
+The face Keith had shown since yesterday[r]
+was one Maria had never seen before.[p]
 
 #
-
-[p]
-
-#
-[r]
-[p]
+И именно поэтому
+Maria's heart was racing like never before.[p]
 
 #
-[p]
+Maria looked straight into Keith's eyes.[r]
+She told him with her eyes that she was ready.[p]
+
+#
+Keith understood and began to speak to Maria.[p]
 
 [v storage="129"]
 
-#	
-[r]
-[p]
+#Киc	
+It's not really like me to say something like this,[r]
+but...[p]
 
 
 [chara_hide_all]
@@ -1622,10 +1622,10 @@ f.charas = [
 
 [v storage="145"]
 
-#	
-[r]
-[r]
-[p]
+#Киc	
+I love you.[r]
+As a woman, I love you.[r]
+I want to make you the happiest person in the world.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -1634,47 +1634,47 @@ f.charas = [
 
 [v storage="146"]
 
-#	
-[r]
-[r]
+#Киc	
+...I'm the brother of the woman who tormented you.[r]
+You don't need to worry about anything.[r]
+Just give me your honest answer.[p]
+
+#
+His words were simple and straightforward.[l][r]
+But they were filled with concern for Maria's heart.[r]
 [p]
 
 #
-[l][r]
-[r]
-[p]
+Thump—Maria's heart trembled.[p]
 
-#
-[p]
-
-#
-[p]
+#Мария
+...Are you sure you want someone like me?[p]
 
 [v storage="150"]
 
-#
-[p]
+#Киc
+It has to be you, Maria.[p]
 
 [v storage="151"]
 
-#	
-[r]
-[r]
-[p]
+#Киc	
+When you're with me, my empty heart feels full.[r]
+You see me for who I am. You hold the real me close.[r]
+...And that makes me incredibly happy.[p]
 
 [v storage="152"]
 
-#
-[p]
+#Киc
+...I've never felt like this before.[p]
 
-#
-[p]
+#Мария
+Lord Keith...[p]
 
-#
+#Мария
+(How should I answer?)
 
-
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="С радостью приму."  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="Ты точно уверен в этом?" target="*select_03_02" ]
 
 [s]
 
@@ -1683,50 +1683,50 @@ f.charas = [
 [cm]
 
 #
-[r]
-[p]
+Maria took a small breath[r]
+and gave him a heartfelt smile.[p]
 
-#
-[r]
-[p]
+#Мария
+I'd be happy to.[r]
+Lord Keith, I... I love you too.[p]
 
 [v storage="156"]
 
 
-#
-[p]
+#Киc
+Maria...![p]
 
 @wait time=200
 
 [love_up]
 
 #
-[r]
-[r]
-[p]
+Relief, joy, and happiness filled Keith's face as[r]
+he smiled and[r]
+hugged Maria tightly.[p]
 
 [v storage="158"]
 
-#
-[p]
+#Киc
+Thank you, Maria. I'll cherish you forever.[p]
 
 #
-[r]
-[p]
+With those words, Keith gently kissed Maria's cheek.[r]
+Then, he gave Maria a playful wink.[p]
 
 [v storage="160"]
 
-#
-[p]
+#Киc
+I'll save the kiss on the lips for our wedding day.[p]
 
 #
-[p]
+Keith gently poked Maria's lips with his finger.[p]
+
+#Мария
+(That's the Keith I know.)[p]
 
 #
-[p]
-
-#
-[p]
+Blushing, Maria felt overwhelmed with happiness.[p]
 
 [jump target="*common_03"]
 
@@ -1735,66 +1735,66 @@ f.charas = [
 *select_03_02
 [cm]
 
-#
-[r]
-[p]
+#Мария
+I'm touched by your feelings.[r]
+But... are you really sure about this?[p]
 
 #
-[r]
-[p]
+Keith and Maria were of different statuses.[r]
+Keith was especially the heir to a duke's house.[p]
 
 #
-[r]
-[p]
+Love alone wasn't enough to justify this,[r]
+especially in such high positions.[p]
 
 #
-[p]
+Maria cared about Keith, and that's why she was worried.[p]
 
 
 [v storage="h3"]
 
-#
-[r]
-[r]
-[p]
+#Киc
+Sigh...[r]
+Do I really seem that naive to you?[r]
+That hurts...[p]
+
+#Мария
+Ah, no, I didn't mean...![p]
+
+#Киc
+I know, I know—[r]
+I understand how you feel.[p]
+
+#Киc
+But...[r]
+It's because you think of me like that,[r]
+that I want you to be my partner for life.[p]
+
+#Мария
+Lord Keith...[p]
+
+#Киc
+I've already made up my mind. What about you?[p]
+
+#Мария
+I...[p]
 
 #
-[p]
+Keith opened his arms, waiting for Maria.[l][r]
+Maria paused for a moment[r]
+before stepping into his arms.[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[r]
-[p]
-
-#
-[p]
-
-#
-[p]
-
-#
-[p]
-
-#
-[l][r]
-[r]
-[p]
-
-#
-[p]
+That was her answer to his feelings.[p]
 
 [v storage="158"]
 
-#
-[p]
+#Киc
+...Thank you, Maria. I'll always cherish you.[p]
 
 #
-[r]
-[p]
+Held gently by Keith,[r]
+Maria nodded with happiness in her heart.[p]
 
 *common_03
 

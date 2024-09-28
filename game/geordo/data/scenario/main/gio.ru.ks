@@ -345,8 +345,8 @@ f.charas = [
 
 ;[jump target="dev5"]
 
-#	
-[p]
+#Мария	
+Где это я...?[p]
 [playbgm  volume=30   storage="M08_FinalMix.ogg" ]
 
 ;再生[p]
@@ -355,8 +355,8 @@ f.charas = [
 
 
 
-
-#
+/*
+#Мария
 [celanim anim="red_rose_1" layer="1" x=260 y=-150 count=1 speed=0.5 wait=false ]
 [anim name="celanim" top=100 time=2000]
 [wa]
@@ -365,92 +365,92 @@ f.charas = [
 */
 
 #
-[l][r]
-[r]
-[p]
+Прекрасный сад, запах роз.[l][r]
+Несмотря на красивый пейзаж,[r]
+девушка выглядела растерянной.[p]
 
 #
-[l][r]
-[r]
-[p]
+Девушка, только что поступившая в магическую академию —[l][r]
+Мария из любопытства[r]
+гуляла по академии...[p]
 
-#
-[l][r]
-[p]
+#Мария
+Но потеряться вот так...[l][r]
+Что же мне делать...?[p]
 
 [bg storage="HF04_078.png"]
 
 #
-[l][r]
-[p]
+Мария осмотрелась вокруг.[l][r]
+Тогда она заметила большое дерево.[p]
 
-#:hamehura_Maria_cos1_def
-[r]
-[p]
+#Мария:hamehura_Maria_cos1_def
+Точно, если я залезу на это высокое дерево,[r]
+может, я смогу понять, где я нахожусь...[p]
 
 #
-[r]
-[p]
+Мария, несмотря на юбку,[r]
+поставила ногу на ствол дерева.[p]
 #
-[l][r]
-[r]
-[p]
+Однако...[l][r]
+Как только ей показалось, что она сможет залезть,[r]
+и она приготовилась сделать усилие...[p]
 
 [v storage="h1"]
 #？？？
-[r]
-[p]
+—Ох.[r]
+Что ты там делаешь?[p]
 
-#:hamehura_Maria_cos1_odo
-[p]
+#Мария:hamehura_Maria_cos1_odo
+А?[p]
 
-#	
-[p]
+#Мария	
+...Ах![p]
 
 #
-[r]
-[l][r]
-[p]
+Всё ещё стоя в позе для подъёма,[r]
+Мария широко раскрыла глаза.[l][r]
+Потому что там стоял—[p]
 
 [chara_move name="maria" left="&f.left" face="hamehura_Maria_cos1_ase"]
 
-#
+#Джордо
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_doya"]
 
 
-#	
-[p]
+#Мария	
+Д-Джордо-сама...!?[p]
 
 [v storage="h2"]
 #
-[l][r]
-[p]
+Джордо Стюарт.[l][r]
+Сам третий принц этого королевства.[p]
 
 #
-[r]
-[p]
+Мария быстро выпрямилась[r]
+и глубоко поклонилась.[p]
 
-#
-[r]
-[r]
-[p]
+#Мария
+Простите меня.[r]
+За то, что показалась вам в таком неподобающем виде,[r]
+...вашему высочеству![p]
 
-#	
+#Джордо	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
 [v storage="17"]
-[r]
-[r]
-[p]
+Лезть на дерево[r]
+в такой одежде?[r]
+Вы такая сорванка.[p]
 
 *dev4
 
-#	
-[p]
+#Мария	
+Э-э...[p]
+Что мне ответить?
 
-
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="Сказать правду"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="Отговориться" target="*select_01_02" ]
 
 [s]
 
@@ -458,27 +458,27 @@ f.charas = [
 *select_01_01
 [cm]
 
-#
-[r]
-[p]
+#Мария
+Я думала, если заберусь повыше, смогу осмотреться...[r]
+Я просто хотела понять, где нахожусь...[p]
 
-#	
+#Джордо	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
 
-#	
+#Джордо	
 
-[l][r]
-[p]
+Понятно.[l][r]
+Значит, ты заблудилась, да?[p]
 
 #
-[r]
-[r]
-[p]
+Сказав это с улыбкой, он попал в точку,[r]
+и Мария смогла только пробормотать: «Уу...»[r]
+ей не осталось, что сказать.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h2"]
 
-#
+#Джордо
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -486,28 +486,28 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+Видя её состояние,[r]
+Джордо тихо усмехнулся.[p]
 
 #
-[r]
-[l][r]
-[p]
+Даже то, как он смеялся,[r]
+было невероятно элегантным.[l][r]
+Но для Марии в этот момент...[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[p]
+то, что над ней смеялся сам принц...[p]
 
 #
-[r]
-[p]
+Смущённая до предела, Мария[r]
+опустила лицо, пылающее от стыда.[p]
 
 #
 
-[r]
-[r]
-[p]
+Однако.[r]
+Следующие слова Джордо[r]
+были очень мягкими и учтивыми.[p]
 
 [jump target="*common_01"]
 
@@ -518,73 +518,73 @@ f.charas = [
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
 
-#
-[r]
-[p]
+#Мария
+(Если я скажу, что заблудилась,[r]
+он просто снова засмеётся...)[p]
 
-#
-[l][r]
-[p]
+#Мария
+Э-это... ничего серьёзного.[l][r]
+Пожалуйста, не беспокойтесь об этом...![p]
 
-#
-[r]
-[p]
+#Джордо
+Когда ты говоришь «ничего»,[r]
+это ещё больше заинтриговывает меня.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
 #
-[p]
+Джордо слегка склонил голову.[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[l][r]
-[r]
-[p]
+Даже этот жест был элегантным, но[l][r]
+Марии казалось, что принц счёл её нелепой,[r]
+и ей оставалось только опустить покрасневшее лицо.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
-#
-[l][r]
-[p]
+#Джордо
+Ах, не надо так выглядеть.[l][r]
+Я не хочу тебя обижать.[p]
 
 #
-[r]
-[p]
+Голос Джордо был таким мягким,[r]
+и вежливым.[p]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-#
-[p]
+#Джордо
+Значит, ты заблудилась, да?[p]
 
-#	
-[p]
+#Мария	
+...Да...[p]
 
 
 *common_01
 
 
-#
+#Джордо
 [v storage="25"]
-[p]
+Тогда позвольте мне проводить вас до общежития.[p]
 
-#
+#Джордо
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+«Сюда», — сказал Джордо, начиная идти.[l][r]
+Мария удивилась, но не могла отказаться от[r]
+доброй помощи третьего принца.[p]
+
+#Мария
+С-сасибо вам огромное![p]
 
 #
-[p]
-
-#
-[l][r]
-[r]
-[p]
+Может, он и правда добрый человек.[l][r]
+Подумав так, Мария[r]
+пошла за Джордо.[p]
 
 *dev5
 
@@ -609,64 +609,64 @@ f.charas = [
 
 [playbgm  volume=30   storage="M24A_FinalMix.ogg" ]
 
-#
-[p]
+#Мария
+—Вот что произошло тогда.[p]
 
 #
-[r]
-[p]
+Вспоминая свою встречу с Джордо,[r]
+Мария тихо засмеялась.[p]
 
 #
-[r]
-[r]
+С тех пор она выучила план академии,[r]
+и больше не терялась, как тогда.[r]
 [p]
 
-#
-[r]
-[l][r]
-[p]
+#Мария
+До комнаты студенческого совета[r]
+здесь короткий путь, верно?[l][r]
+...Интересно, всем понравится?[p]
 
 #
-[r]
-[p]
-[r]
-[p]
+В руках Марии была корзинка,[r]
+полная домашних маффинов.[p]
+Представив себе радостные лица всех,[r]
+Мария почувствовала лёгкость в ногах.[p]
 
 [fadeoutbgm time=1000]
 
 #
-[p]
+—Но.[p]
 
 [playbgm  volume=30   storage="M43_FinalMix.ogg"]
 
 [chara_move name="maria" left="&f.left" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
 
-#
+#Катарина
 [v storage="36"]
-[p]
+Мария, куда это ты направляешься?[p]
 
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+Ах...[p]
 
 #
-[r]
-[p]
+Голос, полный враждебности и злобы,[r]
+остановил Марию.[p]
 
 #
-[r]
-[p]
+Не успела она опомниться, как Мария оказалась окружена[r]
+группой благородных девиц.[p]
 
 #
-[r]
-[l][r]
-[p]
+Во главе их стояла[r]
+леди Катарина Клаес, дочь герцога.[l][r]
+Она была невестой Джордо.[p]
 
 #
-[r]
-[r]
-[p]
+Прежде чем Мария успела что-то сказать,[r]
+Катарина стремительно направилась к Марии[r]
+и подняла руку—[p]
 
 [if exp="sf.btn_volume==true"]
 [playse storage="se/punch-middle2.ogg" ]
@@ -676,48 +676,48 @@ f.charas = [
 @quake_camera
 
 #
-[p]
+—Шлёп![p]
 
 #
-[l][r]
-[r]
-[p]
+Она сбила корзинку на землю.[l][r]
+Пирожные с приятным запахом[r]
+выкатились на землю.[p]
 
-#
+#Катарина
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_aku"]
 [v storage="43"]
 
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 
-[r]
-[r]
-[p]
+Только потому, что у тебя есть магия света,[r]
+ты думаешь, что тебе будут льстить[r]
+и что все будут на тебя молиться![p]
 
 #
-[r]
-[r]
-[p]
+Катарина нахмурила брови[r]
+и, выкрикивая слова, яростно[r]
+уставилась на упавшие маффины.[p]
 
-#
+#Катарина
 [v storage="45"]
 
-[r]
-[r]
-[p]
+Ты думаешь, что это жалкое угощение, сделанное простолюдинкой,[r]
+подходит для студенческого совета?[r]
+Как же это неуместно![p]
 
 #
-[r]
-[p]
+Катарина подняла ногу.[r]
+Она собиралась раздавить маффины.[p]
 
-#
+#Мария
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 [font size="40"]
-[p]
+Не надо—[p]
 [resetfont]
 
 #
-[l][r]
-[p]
+Мария попыталась протянуть руку,[l][r]
+но в этот момент...[p]
 
 [chara_hide name="maria" wait=false ]
 [chara_hide name="kata" wait=true ]	
@@ -730,58 +730,58 @@ f.charas = [
 
 #？？？
 [font size="40"]
-[p]
+Прекратите![p]
 [resetfont]
 
-#
+#Джордо
 [chara_show name="gio" top="&f.top" left="&f.left" face="hamehura_Giord_cos1_do" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
  
-#
+#Катарина
 
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_odo" ]
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 
 [v storage="50"]
-[p]
+Д-Джордо-сама!?[p]
 
-#
+#Джордо
 [v storage="51"]
 
-[r]
-[r]
-[p]
+На моих глазах,[r]
+ты посмела нарушить порядок[r]
+так? Я не могу это терпеть.[p]
 
-#	
+#Катарина	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai" ]
 [v storage="52"]
 
-[r]
-[p]
+Чёрт...![r]
+Но, Джордо-сама—[p]
 
-#	
+#Джордо	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-[r]
+Катарина. Я думал, что ты умнее...[r]
 [p]
 
-[r]
+Ты хочешь заставить меня снова это объяснять?[r]
 [l][r]
-[p]
+Если да, то это просто смешная шутка.[p]
 
-#	
+#Катарина	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai"]
 [v storage="54"]
-[p]
+Угхх...![p]
 
 #
-[r]
-[p]
+Перед холодным тоном Джордо[r]
+даже Катарина не могла ничего возразить.[p]
 
 #
-[r]
-[r]
-[p]
+Её лицо было красным от ярости,[r]
+и, злобно посмотрев на Марию,[r]
+быстро покинула место происшествия вместе со своей свитой.[p]
 
 [fadeoutbgm]
 
@@ -794,55 +794,55 @@ f.charas = [
 
 [playbgm  volume=30   storage="M17_FinalMix.ogg" ]
 
-#
+#Мария
 [chara_move name="gio" left="&f.right"]
 [chara_show name="maria" top=&f.top left="&f.left" face="hamehura_Maria_cos1_ai"]
-[p]
+Э-это... Джордо-сама...[p]
 
 #
-[l][r]
-[l][r]
-[p]
+Должна ли она извиниться за беспокойство[l][r]
+или поблагодарить его за помощь?[l][r]
+Мария не знала, что сказать.[p]
 
 
 #
 
-[r]
-[l][r]
-[p]
+Тем временем Джордо[r]
+спокойно поднял один из упавших маффинов[l][r]
+и, не колеблясь, откусил.[p]
 
 [chara_hide_all ]
 
 [bg storage="hamehura_jiorudo1.png" ]
 [eval exp="sf.gio_cg_1=true" ]
-#
-[p]
+#Мария
+Ч-что—!?[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
-#	
+#Джордо	
 [v storage="61"]
 
-[r]
-[p]
+Мм.[r]
+Это очень вкусно.[p]
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+Словно цветы распускаются одновременно.[l][r]
+С такой нежной улыбкой[r]
+Джордо посмотрел на Марию.[p]
 
 #
-[l][r]
-[p]
+—Тук-тук.[l][r]
+В этот момент в сердце Марии разгорелся огонь...[p]
 
 [free_layermode time=1000 ]
 
 
 ;;;;;;;;;;;;;;
-
+/*
 [mask graphic="kokomade.png" folder="bgimage" effect="zoomInRight"]
 
 [wait time="3000" ]
@@ -869,133 +869,133 @@ f.charas = [
 [bg storage="black.png" time=3000]
 
 #
-[p]
+Конец года приближался.[p]
 
 [bg storage="HF04_283.png" time=1000 ]
 
 [chara_show name="maria" top="&f.top" left="&f.left" time=1000 face="hamehura_Maria_cos1_mu" ]
 
 #
-[r]
-[p]
+Мария сидела на верхушке дерева[r]
+и смотрела на академию.[p]
 
-#
-[r]
-[p]
+#Мария
+Этот год...[r]
+Так много всего произошло...[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[l][r]
-[p]
+#Мария
+Здесь я встретила Джордо-сама, да?[l][r]
+Он так много для меня сделал...[p]
 
 
 #
-[r]
-[p]
+Кстати,[r]
+Джордо всегда в моих воспоминаниях.[p]
 
-[r]
-[p]
+Вспоминая его добрую улыбку,[r]
+Мария не могла не почувствовать, как её лицо разгорелось.[p]
 
 [chara_hide name="maria"]
 
 #？？？
 [v storage="h3"]
-[p]
+...Мария.[p]
 
 #
-[l][r]
-[p]
+В этот момент она услышала, как её имя позвал он.[l][r]
+Под деревом стоял Джордо.[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_def"]
 
 
-#
+#Джордо
 
-[r]
-[p]
+Ты всегда такая же свободная, как бабочка,[r]
+не так ли?[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
-[p]
+Ах.[p]
 
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+Джордо тихо засмеялся.[l][r]
+Чувствуя, что над ней подшучивают,[r]
+Мария в спешке попыталась что-то сказать.[p]
 
 #
-[r]
-[p]
+Но прежде чем Мария успела что-либо сказать,[r]
+Джордо заговорил, всё ещё улыбаясь.[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="75"]
 
-[p]
+Мария, спускайся.[p]
 
 #
 
-[l][r]
-[l][r]
-[p]
+Джордо раскинул руки.[l][r]
+Я поймаю тебя.[l][r]
+Услышав это, Мария растерялась.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
 
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
-[p]
+Н-но—[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#	
+#Джордо	
 
-[l][r]
+Всё в порядке.[l][r]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
-[p]
+...Или ты мне не доверяешь?[p]
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
-[p]
+#Мария
+Нет, это не так...![p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-[p]
+Тогда давай.[p]
 
 #
 
-[r]
-[p]
+Джордо продолжал улыбаться,[r]
+глядя на Марию.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Мария
+Что же делать?
 
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="Прыгнуть"  target="*select_02_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="Заколебаться"  target="*select_02_02"  ]
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text=""  target="*select_02_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text=""  target="*select_02_02"  ]
-
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Прыгнуть"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="Заколебаться" target="*select_02_02" ]
 
 
 [s]
@@ -1005,25 +1005,25 @@ f.charas = [
 [cm]
 
 #
-[r]
+Мария знала, что такая улыбка не терпит отказа.[r]
 [p]
 
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+...[p]
 
 #
-[r]
-[r]
+Чувствуя взгляд Джордо,[r]
+Мария отвернула горящее лицо.[r]
 [p]
 
-#
-[l][r]
-[p]
+#Мария
+(Джордо-сама...[l][r]
+ждёт меня...)[p]
 
 #
-[r]
-[p]
+Собрав всю свою решимость, несмотря на смущение,[r]
+Мария прыгнула к Джордо.[p]
 
 ;白転
 [chara_hide name="maria" time=100]
@@ -1033,22 +1033,22 @@ f.charas = [
 [wait time=1000 ]
 
 #
-[p]
+—Шуух.[p]
 
 [bg storage="HF04_292.png" time=1000] 
 
 #
-[p]
+Его руки нежно поймали её.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man" ]	
 [v storage="85"]
-[p]
+Поймал.[p]
 
-#
+#Джордо
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1060,19 +1060,19 @@ f.charas = [
 
 #
 
-[r]
-[r]
-[p]
+Шёпот Джордо нежно задел ухо Марии[r]
+и его тёплые, сильные руки[r]
+надёжно держали её.[p]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-[l][r]
-[p]
+...Хех.[l][r]
+Ты такая честная... и хорошая девушка.[p]
 
 #
-[r]
-[p]
+Палец Джордо нежно провёл по щеке Марии[r]
+будто хваля её...[p]
 
 @jump target="common_02"
 
@@ -1080,48 +1080,48 @@ f.charas = [
 *select_02_02
 
 [cm]
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
-[r]
-[p]
+Э-это же опасно, знаете?[r]
+Что если с вами что-нибудь случится...?[p]
 
 #
-[r]
-[r]
-[p]
+Мария так отговорилась, но на самом деле[r]
+она[r]
+просто смутилась.[p]
 
 #
-[r]
+Конечно, Джордо знал это прекрасно.[r]
 [p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h1"]
 
-[r]
-[l][r]
-[p]
+О, что?[r]
+Я кажусь тебе таким ненадёжным?[l][r]
+Как неожиданно... Мне даже обидно.[p]
 
 #
 
-[r]
+Джордо нарочито вздохнул[r]
 [l][r]
-[p]
+Конечно, он продолжал улыбаться.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Мария
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+(Ухх... Это нечестно...)[p]
 
 #
-[l][r]
-[p]
+В этот момент у Марии не оставалось выбора, кроме как последовать.[l][r]
+Мария прыгнула к Джордо.[p]
 
 
 ;白転
@@ -1132,14 +1132,14 @@ f.charas = [
 [wait time=1000 ]
 
 #
-[p]
+—Шуух.[p]
 
 [bg storage="HF04_292.png" time=1000] 
 ;[kanim layer=0 name="layer_camera" keyframe=quake time=300 count=2 easing=linear]
 @quake_camera
 
 #
-[p]
+Его руки нежно поймали её.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
@@ -1147,41 +1147,41 @@ f.charas = [
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-#	
+#Джордо	
 [v storage="85"]
 
-[p]
+Поймал.[p]
 
 #
-[r]
-[r]
-[p]
+Шёпот Джордо нежно задел ухо Марии[r]
+и его тёплые, сильные руки[r]
+надёжно держали её.[p]
 
 ;;;;;;;;;
 
 *common_02
 
 
-#
+#Джордо
 [chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
 
 [v storage="88"]
 
-[r]
-[p]
+Я хочу сказать тебе кое-что.[r]
+Завтра вечером, встретимся в часовне.[p]
 
 #
-[r]
-[p]
+С этими словами Джордо закончил[r]
+и отпустил Марию.[p]
 
-#
+#Джордо
 [v storage="90"]
-[p]
+Я буду ждать тебя.[p]
 
 #
-[r]
-[r]
-[p]
+Сказал он с улыбкой,[r]
+когда он повернулся на каблуках и элегантно[r]
+ушёл, его плащ колыхался за ним.[p]
 
 *dev3
 [chara_hide_all ]
@@ -1193,100 +1193,100 @@ f.charas = [
 [playbgm  volume=30   storage="M28_FinalMix.ogg" ]
 	
 #
-[r]
-[r]
-[p]
+Как сказал Джордо,[r]
+Мария шла сквозь вечерние сумерки,[r]
+направляясь к часовне.[p]
 
 #
-[p]
+Шёпот, шёпот...[p]
 
 #
-[r]
-[p]
+До ушей Марии[r]
+долетел шёпот благородных девиц.[p]
 
 [chara_show name="reijo1" top="&f.top" face="hamehura_DVDmob1_do"]
 [chara_show name="reijo2" top="&f.top" face="hamehura_DVDmob2_do" ]
 [chara_show name="reijo3" top="&f.top" face="hamehura_DVDmob3_do"]
 
 
-#
-[l][r]
+#Девица 1
+Ты слышала?[l][r]
+Леди Катарину сослали за пределы королевства.[p]
+
+#Девица 2:hamehura_DVDmob2_fear
+Ох, боже мой...[l][r]
+А что будет с Джордо-сама?[p]
+
+#Девица 1
+Говорят, что он интересуется какой-то простолюдинкой...[p]
+
+#Девица 3
+Скорее всего, ссылка Катарины[r]
+дело рук этой простолюдинки...[p]
+
+#Девица 2
+Неужели Джордо-сама[r]
+соблазнён этой простой девицей?[p]
+
+#Девица 3:hamehura_DVDmob3_fear
+У неё такое невинное лицо, но[r]
+она настоящая злодейка.[p]
+
+#Девица 1
+Меня так беспокоит Джордо-сама...[l][r]
+Если эта женщина испортит репутацию Джордо-сама,[r]
+он больше не оправится.[p]
+
+#Девица 3:hamehura_DVDmob3_do
+Хм, выбрать такую женщину? Я[r]
+так разочарована в Джордо-сама![p]
+
+#Девица 2:hamehura_DVDmob2_do
+Неужели он не понимает,[r]
+что это значит для будущего короля?[p]
+
+Он будто сам выбирает свою погибель.[r]
 [p]
 
-#:hamehura_DVDmob2_fear
-[l][r]
-[p]
-
-#
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#:hamehura_DVDmob3_fear
-[r]
-[p]
-
-#
-[l][r]
-[r]
-[p]
-
-#:hamehura_DVDmob3_do
-[r]
-[p]
-
-#:hamehura_DVDmob2_do
-[r]
-[p]
-
-[r]
-[p]
-
-#:hamehura_DVDmob3_fear
-[l][r]
-[r]
-[p]
+#Девица 3:hamehura_DVDmob3_fear
+Тсс, это та простолюдинка...[l][r]
+Если мы подойдём слишком близко,[r]
+нас тоже может что-нибудь затронуть...[p]
 
 [chara_hide_all]
 
 #
-[l][r]
+Лживые злые слухи.[l][r]
 
-[r]
+Шипы злобы пронзили сердце Марии.[r]
 [p]
 
 [chara_show name="maria" top=&f.top face="hamehura_Maria_cos1_ai"]
 
-#
-[p]
+#Мария
+...Ах.[p]
 
 #
-[p]
+Мария сжала губы и вытерпела.[p]
 
 #
-[p]
+—Это было больно.[p]
 
 #
-[r]
-[r]
-[p]
+Больнее всего было не то, что оскорбляют её,[r]
+а то, что из-за неё оскорбляют[r]
+дорогого ей человека.[p]
 
 #
-[r]
-[p]
+Это её больше всего ранило,[r]
+и она не могла этого вынести.[p]
 
-[r]
-[p]
+В то же время[r]
+она чувствовала себя виноватой перед Джордо.[p]
 
 #
-[r]
-[r]
+Мария, пытаясь стряхнуть с себя слухи и свои чувства,[r]
+поспешила прочь.[r]
 [p]
 
 [chara_hide name="maria" ]
@@ -1297,8 +1297,8 @@ f.charas = [
 [bg storage="kyokai.png" ]
 	
 #
-[r]
-[p]
+Когда Мария открыла двери часовни,[r]
+Джордо уже был там.[p]
 
 [playbgm  volume=30   storage="M21_FinalMix.ogg"]
 
@@ -1306,177 +1306,177 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+Свет вечерних сумерек[r]
+падал алым сквозь витражные стёкла[r]
+и мистически освещал Джордо.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_def"]
 
-#
-[p]
+#Мария
+Как красиво—[p]
 
 #
-[r]
-[p]
+Это было похоже на видение из другого мира.[r]
+Мария тихо вздохнула.[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_doya"]
 
-#
+#Джордо
 [v storage="119"]
-[p]
+Мария, подойди.[p]
 
 [chara_mod name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-[r]
-[p]
+Джордо поманил её рукой.[r]
+Очнувшись, Мария встала рядом с ним.[p]
 
-#
-[p]
+#Мария
+Джордо-сама, вы хотели что-то сказать—[p]
 
-#:hamehura_Giord_cos1_def
+#Джордо:hamehura_Giord_cos1_def
 [v storage="122"]
-[p]
+...Я никогда не встречал никого, похожего на тебя.[p]
 
-#:hamehura_Maria_cos1_odo
-[p]
+#Мария:hamehura_Maria_cos1_odo
+А?[p]
 
-#
+#Джордо
 [v storage="124"]
-[r]
-[r]
-[p]
+Ты такая яркая во всём, что делаешь...[r]
+Я думал, что мои дни всегда будут одинаковыми,[r]
+но с тех пор, как я встретил тебя, они наполнились красками.[p]
 
-#:hamehura_Giord_cos1_doya
+#Джордо:hamehura_Giord_cos1_doya
 [v storage="125"]
-[r]
-[p]
+Не успел я заметить, как всегда стал следить за тобой—[r]
+Я захотел тебя.[p]
 
-#:hamehura_Giord_cos1_def
+#Джордо:hamehura_Giord_cos1_def
 [v storage="126"]
-[r]
-[r]
-[p]
+Но стоило мне протянуть руку, как ты ускользала, словно бабочка.[r]
+А затем, как котёнок,[r]
+ты смотрела на меня так мило...[p]
 
-#
+#Джордо
 [v storage="127"]
-[r]
-[p]
+Все другие пытаются сами стать моими,[r]
+понимаешь? Хе-хе.[p]
 
-#:hamehura_Giord_cos1_doya
+#Джордо:hamehura_Giord_cos1_doya
 [v storage="128"]
-[r]
-[p]
+...Но сегодня,[r]
+я хочу сказать тебе следующее.[p]
 
 #
-[r]
-[p]
+Джордо взял Марию за руку[r]
+и встал на колено, как принц.[p]
 
-#:hamehura_Giord_cos1_man
+#Джордо:hamehura_Giord_cos1_man
 [v storage="130"]
 
-[r]
-[p]
+Мария.[r]
+Стань моей принцессой, только моей.[p]
+
+#Мария
+Джордо-сама...[p]
 
 #
-[p]
+Мария ошеломлённо уставилась[r]
+в глаза Джордо.[p]
 
 #
-[r]
-[p]
+Она не была настолько глупа, чтобы не понять,[r]
+что это было предложение.[p]
 
 #
-[r]
-[p]
-
-#
-[p]
+Я так рада.[p]
 
 [chara_mod name="maria" face="hamehura_Maria_cos1_ase"]
 
 #
-[p]
+...Но.[p]
 
 #
-[r]
-[p]
+Мария вспомнила[r]
+те злобные слухи.[p]
 
-#:hamehura_Maria_cos1_ai
-[r]
-[p]
+#Мария:hamehura_Maria_cos1_ai
+...Я навлеку на вас, Джордо-сама,[r]
+только неприятности.[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
 
-#
-[r]
-[l][r]
-[p]
+#Мария
+Джордо-сама,[r]
+вы будущий кандидат на трон.[l][r]
+Женщина вроде меня только испортит вашу репутацию.[p]
 
-#
-[l][r]
-[r]
-[p]
+#Мария
+Все так говорят.[l][r]
+Что я стану причиной[r]
+гибели Джордо-сама.[p]
 
-#
+#Джордо
 [v storage="139"]
 
-[p]
+—Ах, ну надо же.[p]
 
 #
-[r]
-[p]
+Прерывая Марию, которая повесила голову,[r]
+Джордо печально улыбнулся.[p]
 
-#
+#Джордо
 [v storage="141"]
 
-[r]
-[p]
+Неужели мне снова[r]
+придётся ловить тебя?[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
 
 #
-[r]
-[p]
+Его улыбающиеся, цвета розы губы[r]
+нежно коснулись её руки.[p]
 
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[r]
-[r]
-[p]
+Мария слегка дёрнулась,[r]
+когда Джордо встал и[r]
+взглянул ей в глаза.[p]
 
-#:hamehura_Giord_cos1_doya
+#Джордо:hamehura_Giord_cos1_doya
 [v storage="144"]
-[r]
-[r]
-[p]
+Я однажды стану королём этой страны.[r]
+Короля не могут волновать мелочные слухи[r]
+нижестоящих.[p]
 
-#
+#Джордо
 [v storage="145"]
-[p]
-[l][r]
-[r]
-[p]
+Нужно просто сохранять достоинство.[p]
+И ты, и я.[l][r]
+Потому что это правда,[r]
+нам не за что стыдиться, не так ли?[p]
 
-#:hamehura_Giord_cos1_def
+#Джордо:hamehura_Giord_cos1_def
 [v storage="146"]
 
-[p]
+...Так что, пожалуйста, не сдавайся.[p]
 
 #
 
-[l][r]
-[r]
-[p]
+Какой бы ты ни была, я приму тебя—[l][r]
+Это намерение читалось[r]
+в его мягком, но твёрдом взгляде.[p]
 
-#
+#Мария
+Что мне ответить?
 
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="Вы правда уверены, что я подхожу?"  target="*select_03_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="Я с радостью приму."  target="*select_03_02"  ]
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text=""  target="*select_03_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text=""  target="*select_03_02"  ]
-
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="Вы правда уверены, что я подхожу?"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="Я с радостью приму." target="*select_03_02" ]
 
 [s]
 
@@ -1484,23 +1484,23 @@ f.charas = [
 [eval exp="f.end=1"]
 
 [cm]
-#:hamehura_Maria_cos1_ai
-[l][r]
-[p]
+#Мария:hamehura_Maria_cos1_ai
+Джордо-сама...[l][r]
+Вы правда уверены... что всё в порядке?[p]
 
 #
-[l][r]
-[p]
+Голос Марии дрожал.[l][r]
+Какой же он добрый человек.[p]
 
-[p]
+Глаза её наполнились слезами от радости.[p]
 
-#
-[r]
-[p]
+#Мария
+Если я отдам вам всю себя...[r]
+Это будет нормально?[p]
 
-#:hamehura_Giord_cos1_man
+#Джордо:hamehura_Giord_cos1_man
 [v storage="151"]
-[p]
+Конечно, Мария.[p]
 
 
 
@@ -1517,26 +1517,26 @@ f.charas = [
 [endif]
 
 #
-[p]
+Джордо улыбнулся и раскинул руки.[p]
 
-[r]
-[p]
+Мария, по своей воле,[r]
+отдалась в его объятия.[p]
 
 #
 [v storage="h2"]
-[p]
+Это было самое нежное объятие, что у них было.[p]
 
-[r]
-[p]
+В сверкании витражного света[r]
+они смотрели друг другу в глаза.[p]
 
 #
-[l][r]
-[p]
+Джордо медленно наклонился к ней.[l][r]
+Мария закрыла глаза, готовая принять это.[p]
 
 #
 [v storage="h4"]
 
-[p]
+—Тёплый поцелуй.[p]
 
 @jump target="common_03"
 
@@ -1546,17 +1546,17 @@ f.charas = [
 
 [cm]
 
-#:hamehura_Maria_cos1_def2
-[l][r]
-[p]
+#Мария:hamehura_Maria_cos1_def2
+Джордо-сама—[l][r]
+Я с радостью приму.[p]
 
 #
-[p]
+Голос Марии дрожал.[p]
 
-[l][r]
-[p]
+Теперь ей было позволено идти с ним рядом.[l][r]
+Эта радость растопила её сердце.[p]
 
-#
+#Джордо
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1564,15 +1564,15 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+Джордо, полный счастья,[r]
+довольно прищурил глаза.[p]
 
-#:hamehura_Giord_cos1_man
-[p]
+#Джордо:hamehura_Giord_cos1_man
+...Ты такая хорошая девушка.[p]
 
 #
-[r]
-[p]
+Это был маленький, сладкий шёпот,[r]
+услышанный только Марией.[p]
 
 [chara_hide_all]
 [bg storage="white.png" time=1000] 
@@ -1585,56 +1585,56 @@ f.charas = [
 [endif]
 
 #
-[r]
-[p]
+В следующий момент Джордо[r]
+сильно притянул Марию в свои объятия.[p]
+
+#Мария
+Джордо-сама...![p]
 
 #
-[p]
-
-#
-[r]
-[p]
+Мария, по своей воле[r]
+изо всех сил обняла его в ответ.[p]
 
 #
 
-[l][r]
-[r]
-[p]
+Это было самое страстное объятие за всё время.[l][r]
+В сверкании витражного света[r]
+они смотрели друг другу в глаза.[p]
 
 #
-[l][r]
-[p]
+Джордо медленно наклонился к ней.[l][r]
+Мария закрыла глаза, готовая принять это.[p]
 
 #
 [v storage="h4"]
-[p]
+—Такой горячий поцелуй, что она могла растаять.[p]
 *common_03
 
 #
-[r]
-[p]
+Когда их лица разошлись,[r]
+Джордо улыбался.[p]
 
-#
+#Джордо
 [v storage="157"]
 
-[r]
-[r]
+Ну, а теперь ты можешь сказать мне,[r]
+кто распускает эти нелепые слухи?[r]
 [p]
 
 #
 [v storage="h2"]
 
-[r]
-[p]
+Всё ещё нежно улыбаясь, Джордо[r]
+показал свою тёмную сторону.[p]
 
 #
-[p]
+—Ах, всё тот же Джордо-сама.[p]
 
 [free_layermode time=1000 ]
 
 #
-[r]
-[p]
+Мария не могла не[r]
+тихо засмеяться.[p]
 [layopt layer=message0 visible=false]
 [freeimage layer=0]
 [freeimage layer=1]

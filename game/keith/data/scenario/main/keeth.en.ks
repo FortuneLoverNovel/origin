@@ -427,12 +427,12 @@ f.charas = [
 
 [v storage="1"]
 
-#	
-[p]
+#Keith	
+You're cute. Which family are you from?[p]
 [playbgm  volume=15   storage="M30_FinalMix.ogg" ]
 
-#
-[p]
+#Maria
+Huh... um...?[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -440,38 +440,38 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+The boy who appeared in front of her[r]
+suddenly said that,[r]
+and Maria's mind went blank for a moment.[p]
 
 #
-[r]
-[p]
+Maria stared at the boy intently[r]
+and suddenly realized who he was.[p]
 
 #
-[l][r]
-[r]
-[p]
+He was Keith Claes,[l][r]
+the heir to the Claes dukedom, and the stepbrother of[r]
+Lady Katarina Claes, the fiancée of Prince Geordo.[p]
 
 #
-[p]
+With a confident smile, Keith leaned closer to Maria.[p]
 
 [v storage="h2"]
 
-#
-[p]
+#Keith
+Hey, why don't you play with me for a bit?[p]
 
 #
-[r]
-[p]
+Keith touched Maria's chin[r]
+and tried to lift it, but—[p]
 
 [free_layermode time=1000 ]
 
-#	
+#Maria	
+(What should I do?)
 
-
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="Run away"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="See what happens" target="*select_01_02" ]
 
 [s]
 
@@ -484,15 +484,15 @@ f.charas = [
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_do" wait=false]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
-#
-[p]
+#Maria
+N-no, thank you![p]
 
 [md name="maria" face="焦り"]
 
 #
-[p]
+Maria hurriedly stepped back from Keith.[p]
 
-#
+#Maria
 [r]
 [p]
 
@@ -503,26 +503,26 @@ f.charas = [
 [love_up]
 
 
-#	
-[p]
+#Keith	
+Oh? You're telling *me* 'no, thank you'?[p]
 
 #
-[r]
-[p]
+Keith glanced at his empty hand[r]
+and raised an amused eyebrow.[p]
 
 [md name="keeth" face="無表情"]
 
-#
-[p]
+#Maria
+I'm not a noble or anything, just a common girl.[p]
 
-#
+#Maria
 [r]
-[p]
+be worthy of someone like you, Lord Keith![p]
 
 [md name="maria" face="焦り"]
 
 #
-[p]
+Maria quickly rattled off her excuses.[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
@@ -535,13 +535,13 @@ f.charas = [
 [md name="maria" face="焦り"]
 [md name="keeth" face="微笑み"]
 
-#
-[r]
-[p]
+#Maria
+Um, um, I...[r]
+I have class, so I must be going...![p]
 
 #
-[r]
-[p]
+Maria gave Keith a quick bow[r]
+and quickly turned to run.[p]
 
 [jump target="*common_01"]
 
@@ -555,7 +555,7 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_def" wait=true]
 
 
-#
+#Maria
 [r]
 [p]
 
@@ -567,18 +567,18 @@ f.charas = [
 [p]
 
 #
-[r]
-[r]
-[p]
+I don't know what he'll do to me, but...[r]
+Not knowing made Maria tightly shut her eyes[r]
+and curl up slightly.[p]
 
 [chara_hide_all]
 
 [bg storage="black.png" time="100"]
 	
 #
-[p]
+—But no matter how long she waited, nothing happened.[p]
 
-#
+#Maria
 [p]
 
 [bg storage="HF04_034_r.png" time=2000]
@@ -591,44 +591,44 @@ f.charas = [
 
 #
 [r]
-[p]
+Keith was there, shrugging awkwardly.[p]
 
 [md name="maria" face="焦り"]
 
 
 ;[v storage="h2"]
 
-#
-[r]
-[r]
-[p]
+#Keith
+Don't react like that.[r]
+It's like I'm bullying you or something.[r]
+I wouldn't do anything bad to a lady.[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Keith
+...Or were you actually expecting something?[p]
 
 [md name="maria" face="焦り"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+—![p]
 
-#
+#Maria
 [p]
 
 [md name="maria" face="怒り"]
 
-#
-[r]
-[p]
+#Maria
+Um! I...[r]
+I have class, so I must go![p]
 
 
 #
-[r]
-[p]
+Maria jumped back from Keith[r]
+and quickly turned and ran.[p]
 
 *common_01
 
@@ -638,32 +638,32 @@ f.charas = [
 
 [v storage="h1"]
 
-#
-[p]
+#Keith
+Hmph...[p]
 
 #
-[r]
-[p]
+Rejecting my offer, huh?[r]
+Keith raised an eyebrow.[p]
 
 #
-[r]
-[r]
-[p]
+Keith, surprised by her reaction,[r]
+watched Maria's retreating back with the eyes of a predator.[r]
+like a cat watching its prey.[p]
 
 #
-[r]
-[r]
-[p]
+He took a few steps forward.[r]
+Keith picked up the handkerchief[r]
+Maria had dropped.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Keith
+Hmm. It's cheap, but it's got nice taste.[p]
 
 #
-[r]
-[r]
-[p]
+Looking at the name 'Maria' embroidered on it,[r]
+Keith grinned slyly,[r]
+a mischievous smile on his face.[p]
 
 *dev1
 
@@ -686,75 +686,75 @@ f.charas = [
 [playbgm  volume=15   storage="M39_FinalMix.ogg" ]
 
 #
-[r]
-[p]
+Maria had a problem.[r]
+And now, she was facing it.[p]
 
 [chara_show  name="kata" face="hamehura_Catalina_cos1_aku" top="&f.top" left="&f.right" ]
 
 
 [v storage="19"]
 
-#
-[p]
+#Katarina
+For a commoner—[p]
 
 #
-[r]
-[r]
-[p]
+Lady Katarina and[r]
+her group of noble ladies[r]
+surrounded Maria with hostile glares.[p]
 
 #
-[r]
-[p]
+Oh, it's happening again today...[r]
+Maria looked down and bit her lip.[p]
 
 [md name="kata" face="怒り"]
 
 [v storage="22"]
 
-#
-[r]
-[p]
+#Katarina
+Just because you have light magic power,[r]
+don't get ahead of yourself![p]
 
 #
-[r]
-[r]
-[p]
+They treated Maria as their sworn enemy,[r]
+always throwing cruel words at her[r]
+whenever they could.[p]
 
 #
-[r]
-[r]
-[p]
+They were all noble ladies from prestigious families.[r]
+For a commoner like Maria, even if their insults were unjust,[r]
+she couldn't talk back.[p]
 
-#
-[p]
+#Maria
+(It'll be okay...)[p]
 
 [chara_hide name="kata" pos_mode=false ]
 
 [chara_show name="reijo1" top="&f.top" left="&f.right" face="hamehura_DVDmob1_do"]
 
-#
+#Noble Lady 1
 
-[r]
-[p]
+The student council must feel so sorry[r]
+for being forced to deal with you![p]
 
-#
-[p]
+#Maria
+(If I just stay quiet today...[p]
 
 [chara_hide name="reijo1"  pos_mode=false]
 [chara_show name="reijo2" top="&f.top" left="&f.right" face="hamehura_DVDmob2_do" ]
 
-#
-[r]
+#Noble Lady 2
+That's right![r]
+Your grades were probably only good[r]
+because they favored you for your magic![p]
+
+#Maria
 [r]
 [p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[l][r]
-[p]
+But—[r]
+Today was more tense than usual.[l][r]
+The noble girls' shrill voices escalated.[p]
 
 
 [chara_hide_all]
@@ -762,7 +762,7 @@ f.charas = [
 [playbgm volume=15 storage="M43_FinalMix.ogg" ]
 
 #
-[p]
+Finally—[p]
 
 [chara_show time=1000 name="maria" face="hamehura_Maria_cos1_ase" top="&f.top" left="&f.left" wait=false]
 [chara_show time=1000 name="kata" face="hamehura_Catalina_cos1_aku2" top="&f.top" left="&f.right" wait=true]
@@ -772,28 +772,28 @@ f.charas = [
 
 [v storage="32"]
 
-#
-[r]
-[r]
-[p]
+#Katarina
+I can't stand that victim face of yours![r]
+Show her where she belongs![r]
+Make her understand her place.[p]
 
 [chara_hide name="kata"  pos_mode=false]
 
 [chara_show name="reijo3" top="&f.top" left="&f.right" face="hamehura_DVDmob3_def" ]
 
 #
-[r]
+Katarina arrogantly commanded her followers,[r]
 [p]
 
 #
-[r]
-[p]
+One of the girls gave a malicious smile[r]
+and raised her hand.[p]
 
 #
-[p]
+A faint flicker—[p]
 
-[r]
-[p]
+A flame ignited in her hand.[r]
+She launched an aggressive fire spell at Maria—![p]
 
 [mask time=100 color="red"]
 [wait time=100]
@@ -807,8 +807,8 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+—![p]
 
 [chara_hide name="reijo3" wait=false wait=false]
 [chara_hide name="maria"  wait=true wait=true]
@@ -816,10 +816,10 @@ f.charas = [
 [bg storage="black.png" time=100]	
 
 #
-[p]
+Maria squeezed her eyes shut tightly.[p]
 
 #
-[p]
+But the pain never came.[p]
 
 [bg storage="HF05_068_r.png"]
 
@@ -827,8 +827,8 @@ f.charas = [
 
 
 #
-[r]
-[r]
+When she cautiously opened her eyes,[r]
+there was a massive wall of earth in front of her.[r]
 [p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
@@ -837,13 +837,13 @@ f.charas = [
 [kanim_chara layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 [v storage="42"]
 
-#
-[p]
+#Katarina
+Wh-what...!?[p]
 
 #
-[r]
-[r]
-[p]
+No, it wasn't just a wall.[r]
+It was a giant figure made of earth magic[r]
+that stood as a shield to protect Maria.[p]
 
 [chara_show name="kata" face="hamehura_Catalina_cos1_odo" top="&f.top" left="&f.right" ]
 
@@ -854,36 +854,36 @@ f.charas = [
 [playse storage="se/rock-crack1.ogg" ]
 
 #
-[p]
+The earthen figure raised its massive arm.[p]
 
 #
-[p]
+If that arm hit someone—[p]
 
 [md name="kata" face="悲しみ"]
 
-#
-[p]
+#Katarina
+Eek...!![p]
 
 [playse storage="se/dash-asphalt2.ogg" ]
 [chara_hide name="kata"]
 
 
 #
-[r]
-[r]
-[p]
+Without needing to imagine what would happen, Katarina and the others[r]
+turned pale and screamed,[r]
+running away like scattered spiders...[p]
 
 [md name="maria" face="悲しみ"]
 
 
-#
-[p]
+#Maria
+Um...[p]
 
 [md name="maria" face="焦り"]
 
 #
-[r]
-[p]
+Maria tried to speak to the earthen figure that had saved her.[r]
+But the figure remained silent and gently lifted Maria.[p]
 
 [md name="maria" face="驚き"]
 
@@ -893,12 +893,12 @@ f.charas = [
 
 [playse storage="se/nadare.ogg" ]
 
-#
-[p]
+#Maria
+Kyaa...!?[p]
 
 #
-[r]
-[r]
+Maria was startled, but the figure's arms were gentle[r]
+and she realized it meant no harm, allowing it to carry her.[r]
 	[p]
 
 [bg storage="HF04_292.png"]
@@ -908,9 +908,9 @@ f.charas = [
 [playse storage="se/nadare.ogg" ]
 
 #
-[r]
-[r]
-[p]
+The earthen figure stopped at the corner of the courtyard.[r]
+As it melted back into the ground,[r]
+it carefully set Maria down.[p]
 
 
 [playbgm volume=15 storage="M21_FinalMix.ogg" ]
@@ -919,11 +919,11 @@ f.charas = [
 
 
 #？？？
-[p]
+...It doesn't seem like you're hurt, right?[p]
 
 #
-[r]
-[p]
+Suddenly, a voice spoke up,[r]
+and Maria turned toward it.[p]
 
 [md name="maria" face="驚き"]
 
@@ -933,127 +933,127 @@ f.charas = [
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+Lord Keith...!?[p]
 
 [md name="keeth" face="無表情"]
 
 [v storage="h3"]
 
-#
-[r]
-[r]
-[p]
+#Keith
+...Sigh.[r]
+I was just coming to return the handkerchief I picked up,[r]
+but I stumbled onto *that* scene instead.[p]
 
-#
-[p]
+#Maria
+Lord Keith, did you save me?[p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="悲しみ"]
 
-#
-[r]
-[p]
+#Keith
+Well... I guess you could say that.[r]
+But keep it a secret, okay?[p]
 
-#
-[r]
-[r]
-[p]
+#Keith
+I mean, after all... Katarina's technically my sister, right?[r]
+If it gets out that I helped you,[r]
+it could cause some problems for me.[p]
 
 [md name="maria" face="悲しみ"]
 
 
 #
-[r]
-[p]
+That's why I didn't get involved directly.[r]
+I sent the earthen figure instead, Keith explained.[p]
 
 [md name="maria" face="無表情"]
 [md name="keeth" face="驚き"]
 
 #
-[r]
-[r]
-[p]
+...But then, the Maria in front of him suddenly[r]
+started to shed large tears.[r]
+Keith panicked,[p]
 
 [md name="maria" face="泣き"]
 
-#
-[r]
-[p]
+#Maria
+Ah—no, I'm sorry.[r]
+I should be thanking you, but...[p]
 
 [md name="keeth" face="無表情"]
 
 #
-[r]
-[p]
+Maria tried to stop her tears,[r]
+but they kept flowing one after the other.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="h5"]
 
-#
-[p]
+#Keith
+Maria...[p]
 
 #
-[r]
-[r]
+Seeing Maria's trembling shoulders, Keith[r]
+realized just how much fear she must have felt earlier.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
 
-#
-[r]
+#Keith
+(Just how much anxiety and fear...[r]
 [p]
 
 [md name="maria" face="泣き"]
 
+#Keith
+You've been enduring it all alone too, haven't you...?[p]
+
 #
+As he saw himself in Maria's circumstances,[r]
+Keith couldn't bring himself to leave her be.[r]
 [p]
 
 #
-[r]
-[r]
-[p]
-
-#
-[r]
-[p]
+Keith hesitantly reached out his hand,[r]
+but then firmly hugged Maria.[p]
 
 [v storage="69"]
 
-#
-[r]
-[p]
+#Keith
+...You held up well. You must've been scared.[r]
+But it's okay now.[p]
 
 #
-[r]
-[p]
+His hand awkwardly stroked Maria's hair.[r]
+But Keith was trying his hardest to comfort her.[p]
 
-#
-[r]
-[p]
+#Keith
+So, you know...[r]
+stop crying, okay?[p]
 
 [md name="maria" face="悲しみ"]
 
 #
-[r]
-[p]
+The usually flirtatious Keith[r]
+now had an unfamiliar air of awkwardness.[p]
 
 #
-[r]
+But Maria was deeply moved by his sincere effort to comfort her.[r]
 [p]
 
 [md name="keeth" face="微笑み" ]
 
 #
-[r]
-[p]
+That sense of security stopped her tears before she even realized it.[r]
+Maria wiped her eyes with her fingertips and looked up at Keith.[p]
 
-#
+#Maria
 
 
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Thank you."  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="Why did you help me?" target="*select_02_02" ]
 
 [s]
 
@@ -1063,28 +1063,28 @@ f.charas = [
 
 [md name="keeth" face="無表情"]
 
-#
-[r]
-[p]
+#Maria
+...Thank you, Lord Keith.[r]
+If you hadn't saved me, I don't know what would've happened to me...[p]
+
+#Maria
+I don't even know how to thank you enough...[p]
 
 #
-[p]
+Maria's voice, still shaky from crying,[r]
+was still a little moist, but[r]
+she earnestly expressed her gratitude to Keith.[p]
 
-#
-[r]
-[r]
-[p]
-
-#
-[r]
-[r]
-[p]
+#Keith
+Well... it's nothing.[r]
+Seeing a girl go through something like that[r]
+and just standing by would feel wrong...[p]
 
 [md name="maria" face="驚き"]
 
 
 #
-[p]
+Keith turned away from Maria.[p]
 
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
@@ -1094,23 +1094,23 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+But his profile, slightly flushed,[r]
+was tinged with embarrassment.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Keith
+Well, at least you didn't get hurt, right?[p]
 
 [md name="maria" face="微笑み"]
 
 #
-[r]
-[p]
+Even though he said it like that,[r]
+there was a sense of relief in his words.[p]
 
 #
-[r]
-[p]
+Maria couldn't help but smile[r]
+at his awkward kindness.[p]
 
 
 [jump target="*common_02"]
@@ -1124,55 +1124,55 @@ f.charas = [
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
-#
-[r]
-[r]
-[p]
+#Maria
+Um... Lord Keith.[r]
+Why did you[r]
+help me?[p]
 
 #
-[r]
-[r]
-[p]
+Lady Katarina is Keith's stepsister.[r]
+Keith's actions earlier clearly went against[r]
+Katarina.[p]
 
 #
-[r]
-[r]
+Even though he's her stepbrother,[r]
+those actions could be problematic for him.[r]
 [p]
 
-#
-[r]
-[r]
-[p]
+#Keith
+Well... it's nothing.[r]
+Seeing a girl go through something like that[r]
+and just standing by would feel wrong...[p]
 
 [md name="maria" face="驚き"]
 [md name="keeth" face="怒り"]
 
-#
-[r]
-[r]
-[p]
+#Keith
+...That was my own choice.[r]
+You don't need to worry[r]
+or feel guilty about it, okay?[p]
 
 #
-[r]
-[r]
+Even though his words were clumsy,[r]
+there was a sense of care for Maria in them.[r]
 [p]
 
 [md name="maria" face="微笑み"]
 [md name="keeth" face="無表情"]
 
 
-#
-[p]
+#Maria
+...Thank you, Lord Keith.[p]
 
 [md name="keeth" face="微笑み"]
 
-#
-[p]
+#Keith
+You're welcome.[p]
 
 #
-[r]
-[r]
-[p]
+Keith turned away from Maria again.[r]
+But his profile, slightly flushed,[r]
+was tinged with embarrassment.[p]
 
 *common_02
 
@@ -1196,79 +1196,79 @@ f.charas = [
 
 
 #
-[r]
-[p]
+Graduation day is approaching.[r]
+The academy was buzzing with activity.[p]
 
 [chara_show time=10 name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_mu"]
 
+#Maria
+Phew...[p]
+
 #
+Recently, Maria had been busy with student council work.[r]
 [p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+Now she was on a break.[r]
+She gazed out at the garden from the hallway to clear her mind.[p]
 
 [chara_hide name="maria"]
 
 [v storage="83"]
 
 #
-[p]
+...And then, at that moment.[p]
 
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" ]
 
-#
-[p]
+#Keith
+...[p]
 
 [chara_hide name="keeth"]
 
 [chara_show  name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_odo"]
 
-#
-[p]
+#Maria
+Lord Keith...?[p]
 
 #
-[r]
+She saw Keith walking toward the garden.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
 
-#	
+#Maria	
 [r]
 [p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Wanting to talk to him after so long,[r]
+Maria followed him to the garden.[p]
 
 [bg storage="HF08_044.png"]
 
 [md name="maria" face="照れ"]
 
-#	
+#Maria	
 [r]
 [p]
 
 #
-[r]
-[r]
-[p]
+She quietly approached him from behind,[r]
+thinking she'd surprise him with a 'Boo!'[r]
+Maria thought of this plan.[p]
 
 [md name="maria" face="微笑み"]
 
 #
-[r]
+It seemed Keith was on the other side of the flower bushes.[r]
 [p]
 
 #
-[r]
-[p]
+Then, she heard Keith muttering[r]
+something quietly.[p]
 
 [chara_hide name="maria"]
 
@@ -1276,56 +1276,56 @@ f.charas = [
 
 [v storage="93"]
 
-#
-[p]
+#Keith
+Please marry me.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="94"]
 
-#
-[p]
+#Keith
+...Hmm, too simple?[p]
 
 [v storage="95"]
 
 [md name="keeth" face="無表情"]
 
-#
-[p]
+#Keith
+Join me in the same grave.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="96"]
 
-#
-[p]
+#Keith
+...Too heavy? She'll probably run away...[p]
 
 [md name="keeth" face="微笑み"]
 
 [v storage="97"]
 
-#
-[p]
+#Keith
+You're my beautiful first star...[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="98"]
 
-#
-[p]
+#Keith
+Ugh, too cheesy. No way.[p]
 
 #
-[r]
-[r]
-[p]
+Those were unmistakably proposal words.[r]
+It seemed Keith was[r]
+practicing a confession.[p]
 
 [chara_hide name="keeth"]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ase" ]
 
 #
-[r]
-[p]
+Having witnessed something unexpected,[r]
+Maria tried to quietly back away, but...[p]
 
 [md name="maria" face="驚き"]
 
@@ -1337,7 +1337,7 @@ f.charas = [
 [p]
 
 #
-[p]
+She stepped on a small branch.[p]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_do" wait=true]
 
 [md name="maria" face="焦り"]
@@ -1345,13 +1345,13 @@ f.charas = [
 
 [v storage="101"]
 
-#
-[p]
+#Keith
+I-is someone there!?[p]
 
 #
-[l][r]
-[r]
-[p]
+Keith's voice was clearly flustered as he peeked through the bushes.[l][r]
+And when he saw Maria there,[r]
+his voice grew even higher.[p]
 
 [md name="keeth" face="驚き"]
 
@@ -1361,38 +1361,38 @@ f.charas = [
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#
+#Keith
 [p]
 
 [md name="keeth" face="照れ"]
 
 #
-[r]
-[p]
+Keith's face turned bright red.[r]
+Maria had never seen him look like this before.[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#	
-[r]
-[p]
+#Maria	
+Um, sorry![r]
+I'll forget what I just saw![p]
 
 #
-[r]
-[p]
+Maria hurriedly spoke.[r]
+But—[p]
 
 [md name="maria" face="悲しみ"]
 [md name="keeth" face="無表情"]
 
 #
+A prick of pain stabbed her heart.[p]
+
+#Maria
 [p]
 
 #
-[p]
-
-#
-[l][r]
-[r]
-[p]
+An awkward silence hung in the air for a moment.[l][r]
+Maria looked down and quickly[r]
+tried to leave.[p]
 
 #
 [p]
@@ -1401,52 +1401,52 @@ f.charas = [
 
 [v storage="111"]
 
-#
-[p]
+#Keith
+Wait.[p]
 
 [md name="maria" face="驚き"]
 
 @quake_camera
 
 #
-[p]
+Keith grabbed Maria's hand.[p]
 
 [md name="maria" face="悲しみ"]
 
 [v storage="113"]
 
-#	
-[r]
-[r]
+#Keith	
+L-listen...[r]
+It seems like you've misunderstood something, so[r]
 [p]
 
 [v storage="114"]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#	
+#Keith	
 [r]
-[p]
+All of that was because of *you*![p]
 
 [md name="maria" face="驚き"]
 
-#
-[p]
+#Maria
+Huh...?[p]
 
 [md name="keeth" face="無表情"]
 
 #
-[p]
+Maria stared blankly at Keith.[p]
 
 #
-[l][r]
-[r]
-[p]
+Keith turned his face away, embarrassed.[l][r]
+But his ears were bright red,[r]
+and the hand that held Maria's was burning hot.[p]
 
 [v storage="118"]
 
-#	
-[r]
+#Keith	
+...Tomorrow. Tomorrow, I'll do it properly,[r]
 [r]
 [p]
 
@@ -1455,13 +1455,13 @@ f.charas = [
 [md name="maria" face="焦り"]
 
 #
-[r]
-[r]
-[p]
+With that,[r]
+Keith let go of Maria's hand[r]
+and quickly walked away.[p]
 
-#	
-[r]
-[p]
+#Maria	
+...[r]
+Wait, what do you mean, my fault...?[p]
 
 #
 [r]
@@ -1470,13 +1470,13 @@ f.charas = [
 [md name="maria" face="驚き"]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+—Wha!![p]
 
 [md name="maria" face="照れ"]
 
 #
-[p]
+Maria's face turned bright red.[p]
 
 *dev3
 
@@ -1499,28 +1499,28 @@ f.charas = [
 [chara_show name="maria" top="&f.top" face="hamehura_Maria_cos1_tere" wait=false]
 	
 #
-[r]
-[p]
+As she remembered what had happened yesterday,[r]
+Maria felt her face heat up.[p]
 
 [md name="maria" face="無表情"]
 
 #
-[r]
-[p]
+Just as she had promised Keith,[r]
+Maria was at the same place as yesterday.[p]
 
 #
-[r]
-[p]
+What was about to happen...[r]
+She wasn't too naive to know.[p]
 
 [md name="maria" face="悲しみ"]
 
-#	
+#Maria	
 [r]
 [p]
 
 #
-[r]
-[p]
+As she nervously waited,[r]
+she heard footsteps approaching.[p]
 
 [playse storage="se/dash-asphalt2.ogg"]
 [wse]
@@ -1530,7 +1530,7 @@ f.charas = [
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-[l][r]
+It was Keith.[l][r]
 [r]
 [p]
 
@@ -1538,7 +1538,7 @@ f.charas = [
 
 [v storage="142"]
 
-#	
+#Keith	
 [r]
 [r]
 [p]
@@ -1551,7 +1551,7 @@ f.charas = [
 [md name="maria" face="驚き"]
 [md name="keeth" face="無表情"]
 
-#
+#Keith
 [p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
@@ -1564,7 +1564,7 @@ f.charas = [
 
 [md name="maria" face="照れ"]
 
-#
+#Maria
 [p]
 
 #
@@ -1582,7 +1582,7 @@ f.charas = [
 
 [v storage="134"]
 
-#
+#Keith
 [p]
 
 
@@ -1598,7 +1598,7 @@ f.charas = [
 [p]
 
 #
-
+That's why
 [p]
 
 #
@@ -1610,7 +1610,7 @@ f.charas = [
 
 [v storage="129"]
 
-#	
+#Keith	
 [r]
 [p]
 
@@ -1622,7 +1622,7 @@ f.charas = [
 
 [v storage="145"]
 
-#	
+#Keith	
 [r]
 [r]
 [p]
@@ -1634,7 +1634,7 @@ f.charas = [
 
 [v storage="146"]
 
-#	
+#Keith	
 [r]
 [r]
 [p]
@@ -1647,34 +1647,34 @@ f.charas = [
 #
 [p]
 
-#
+#Maria
 [p]
 
 [v storage="150"]
 
-#
+#Keith
 [p]
 
 [v storage="151"]
 
-#	
+#Keith	
 [r]
 [r]
 [p]
 
 [v storage="152"]
 
-#
+#Keith
 [p]
 
-#
+#Maria
 [p]
 
-#
+#Maria
 
 
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="I'd be happy to accept."  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="Are you really sure about this?" target="*select_03_02" ]
 
 [s]
 
@@ -1686,14 +1686,14 @@ f.charas = [
 [r]
 [p]
 
-#
+#Maria
 [r]
 [p]
 
 [v storage="156"]
 
 
-#
+#Keith
 [p]
 
 @wait time=200
@@ -1707,7 +1707,7 @@ f.charas = [
 
 [v storage="158"]
 
-#
+#Keith
 [p]
 
 #
@@ -1716,13 +1716,13 @@ f.charas = [
 
 [v storage="160"]
 
-#
+#Keith
 [p]
 
 #
 [p]
 
-#
+#Maria
 [p]
 
 #
@@ -1735,7 +1735,7 @@ f.charas = [
 *select_03_02
 [cm]
 
-#
+#Maria
 [r]
 [p]
 
@@ -1753,30 +1753,30 @@ f.charas = [
 
 [v storage="h3"]
 
-#
+#Keith
 [r]
 [r]
 [p]
 
-#
+#Maria
 [p]
 
-#
+#Keith
 [r]
 [p]
 
-#
+#Keith
 [r]
 [r]
 [p]
 
-#
+#Maria
 [p]
 
-#
+#Keith
 [p]
 
-#
+#Maria
 [p]
 
 #
@@ -1789,7 +1789,7 @@ f.charas = [
 
 [v storage="158"]
 
-#
+#Keith
 [p]
 
 #

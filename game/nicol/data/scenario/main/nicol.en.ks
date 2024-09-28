@@ -371,22 +371,22 @@ for(var key in f.charas){
 [chara_show name="maria" top="&f.top" left="&f.center" storage="chara/hamehura_Maria_cos1_mu.png" wait=true]
 
 #
-[r]
-[r]
-[p]
+Maria, born a commoner,[r]
+was appointed as a member of the Magic Academy's student council[r]
+due to her excellent grades.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
 
-#
-[r]
-[p]
+#Maria
+(Starting today, I'm part of the student council...[r]
+I have to do my best...!)[p]
 
 [chara_hide name="maria"]
 
 #
-[r]
-[p]
+With a mix of nerves and determination,[r]
+Maria opened the door to the student council room.[p]
 
 [playbgm volume=30 storage="M03_FinalMix.ogg" ]
 [bg storage="HF08_021_026.png" time=1000 ]
@@ -395,83 +395,83 @@ for(var key in f.charas){
 
 [v storage="5" ]
 
-#
-[r]
-[p]
+#Nicol
+—Hello.[r]
+You must be Miss Campbell, the new member?[p]
 
 #
-[r]
-[r]
-[p]
+The one who greeted Maria was[r]
+the student council vice president and son of the Prime Minister,[r]
+Nicol Ascart, son of Count Ascart.[p]
 
 #
-[p]
+An upperclassman, and a year older than Maria.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_def.png" wait=true]
 
 
-#
-[r]
-[p]
+#Maria
+Good day.[r]
+I'm Maria Campbell. It's a pleasure to meet you.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-[p]
+Maria bowed deeply.[p]
 
 ;[chara_hide name="nicol" pos_mode=false ]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
-[r]
-[r]
-[p]
+...And then she felt a different gaze from Nicol,[r]
+She looked up and saw, hiding behind him,[r]
+a pale girl staring at Maria.[p]
 
 [chara_show name="sophia" top="&f.top" left="620" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true zindex=0 ]
 
 
-#	
-[p]
+#Maria	
+(What a beautiful person...!)[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_odo"]
 
 #？？？	
-[p]
+...![p]
 
 [chara_move name="sophia" top="&f.top" anim=true left="520" wait=true zindex=0 ]
 
 
 #
-[r]
-[p]
+The moment their eyes met,[r]
+she completely hid behind Nicol.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 #
-[p]
+Nicol smiled wryly and introduced himself: Nicol Ascart.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="14" ]
 
-#
-[r]
-[p]
+#Nicol
+This is my younger sister, Sophia.[r]
+...She's a bit shy. Please don't mind her.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[r]
-[p]
+#Maria
+Oh, she's your sister.[r]
+Lady Sophia, it's a pleasure to meet you.[p]
 
 [chara_hide name="maria" pos_mode=false ]
 [md name="sophia" face="hamehura_Sophia_cos1_ai" ]
 
 #
-[r]
-[r]
-[p]
+Maria greeted her as well, but[r]
+Sophia stayed hidden behind Nicol,[r]
+and didn't come out.[p]
 
 
 ;=======================================
@@ -495,14 +495,14 @@ for(var key in f.charas){
 ;========================================
 
 
-#
-[r]
-[p]
+#Maria
+Lady Sophia, I made muffins for everyone in the student council.[r]
+Would you like to try some?[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#
-[p]
+#Sophia
+...I'm not fond of sweets.[p]
 
 ;=======================================
 
@@ -520,14 +520,14 @@ for(var key in f.charas){
 ;=======================================
 
 
-#
-[r]
-[r]
-[p]
+#Maria
+Uh, Lady Sophia,[r]
+I also have some baked goods...[r]
+I made them with less sugar, so if you'd like...[p]
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#	
-[p]
+#Sophia	
+...I don't want to get cavities.[p]
 
 ;=======================================
 
@@ -545,24 +545,24 @@ for(var key in f.charas){
 ;=======================================
 
 	
-#
-[r]
-[p]
+#Maria
+Lady Sophia, there are beautiful roses blooming in the garden.[r]
+Would you like to go see them with me?[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_ai"]
 
-#
-[p]
+#Sophia
+...I'm not very good with sunlight.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#
-[p]
+#Maria
+I can hold a parasol for you.[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_mu"]
 
-#
-[p]
+#Sophia
+......Well, just for a little while.[p]
 	
 ;=======================================
 [fadeoutbgm ]
@@ -584,12 +584,12 @@ for(var key in f.charas){
 
 
 #
-[r]
-[r]
-[p]
+Maria and Sophia[r]
+walked through the garden,[r]
+and Nicol watched them from the student council room window.[p]
 
-#
-[p]
+#Nicol
+(She's... a strange person...)[p]
 
 [chara_hide_all time=1000]
 
@@ -599,18 +599,18 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
 	
 #
-[r]
-[p]
+Holding the parasol and smiling at Sophia,[r]
+Nicol narrowed his eyes as he looked at Maria.[p]
 
 #
-[r]
-[p]
+Without being swayed by Nicol's appearance or position,[r]
+she didn't try to flatter him.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
 #
-[r]
-[p]
+And she treated Sophia, who looked different from everyone else,[r]
+with such warmth and kindness.[p]
 
 [chara_hide name="maria" pos_mode=false  wait=false]
 [chara_hide name="sophia" pos_mode=false wait=true ]
@@ -618,8 +618,8 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
 
 #
-[r]
-[p]
+Recently, Nicol had noticed changes in Sophia.[r]
+It had started when Maria began approaching her.[p]
 
 [chara_hide name="nicol" pos_mode=false wait=true ]
 
@@ -627,41 +627,41 @@ for(var key in f.charas){
 
 
 #
-[r]
-[r]
-[p]
+At first, Sophia seemed to think that Maria[r]
+was only trying to get closer to Nicol through her.[r]
+That was her assumption.[p]
 
 #
-[r]
-[p]
+She didn't want her brother taken away.[r]
+She didn't want to let a bad woman near him.[p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_def"]
 
 #
-[r]
-[r]
-[p]
+Because of this, she was cold towards Maria at first,[r]
+but Maria never gave up.[r]
+and little by little, Sophia had begun to open up to Maria's smile.[p]
 
 [chara_hide name="sophia" pos_mode=false wait=true ]
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_odo.png" wait=true]
 
 
-#
-[p]
+#Nicol
+(Sophia... is smiling...)[p]
 
 #
-[r]
-[p]
+Though small,[r]
+Sophia had a smile on her face for Maria.[p]
 
 #
-[p]
+Nicol couldn't remember the last time he had seen his sister smile like that.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 [v storage="40" ]
 
-#
-[p]
+#Nicol
+You really... are a mysterious person.[p]
 
 *dev1
 ;=======================================
@@ -686,60 +686,60 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true time=1000 ]
 
 #
-[p]
+On her way to the student council room, Maria bumped into Nicol.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[p]
+#Maria
+Hello, Lord Nicol.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#
-[r]
-[p]
+#Nicol
+Hello, Miss Campbell.[r]
+...Since we're headed in the same direction, shall we go together?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#
-[p]
+#Maria
+Ah, yes![p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 #
-[r]
-[p]
+The grounds of the Magic Academy were vast.[r]
+The two walked down the long hallways.[p]
 
-#
-[p]
+#Nicol
+It seems you also took care of Sophia the other day.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#
-[r]
-[p]
+#Maria
+Not at all.[r]
+I'm happy to have become friends with Lady Sophia![p]
 
 [v storage="h2" ]
 
-#
-[p]
+#Nicol
+...I see.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[r]
-[p]
+#Maria
+(Lord Nicol must really[r]
+care about Lady Sophia...）[p]
 
 #
-[p]
+Maria felt warmth in her heart.[p]
 
 [chara_hide_all ]
 
 #
-[r]
-[p]
+It was at that moment.[r]
+Whispers could be heard from the shadows.[p]
 
 
 [chara_show name="reijo1" top="&f.top" left="-160" storage="chara/reijo1/hamehura_DVDmob1_fear.png" wait=false]
@@ -747,46 +747,46 @@ for(var key in f.charas){
 [chara_show name="reijo3" top="&f.top" left="340" storage="chara/reijo3/hamehura_DVDmob3_def.png" wait=true ]
 
 
-#
-[r]
-[r]
-[p]
+#Lady 1
+Lord Nicol is such a wonderful person, but to have a sister who looks like that...[r]
+He must be so unfortunate[r]
+to have her as his sister.[p]
 
-#
-[r]
-[p]
+#Lady 2
+Perhaps Lady Sophia[r]
+is the Prime Minister's illegitimate child...[p]
 
-#
-[r]
-[r]
-[p]
+#Lady 3
+Her face, at least, is lovely,[r]
+so maybe that's not too far off?[r]
+Heheh.[p]
 
 [chara_hide_all ]
 
 
-#
-[p]
+#The Ladies
+Ahahaha![p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=false time=1000 ]
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_do.png" wait=true time=1000 ]
 
 [v storage="h4" ]
 
-#
-[p]
+#Nicol
+......[p]
 
 #
-[r]
-[p]
+Nicol furrowed his brows slightly, but[r]
+he said nothing.[p]
 
 #
-[r]
-[p]
+Maria quietly looked at Nicol's face,[r]
+took a deep breath, and—[p]
 
+let the words out in one gulp:
 
-
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="Tell him not to worry about it"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="Tell him you believe in the real Nicol" target="*select_01_02" ]
 
 [s]
 
@@ -797,15 +797,15 @@ for(var key in f.charas){
 	
 [fadeinbgm storage="M10_FinalMix.ogg" time=2000]
 	
-#
-[r]
-[r]
-[p]
+#Maria
+Lord Nicol has such a wonderful sister,[r]
+so she sure they're just jealous.[r]
+They're just envious of you.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#
-[p]
+#Nicol
+...![p]
 
 [chara_hide_all]
 
@@ -813,7 +813,7 @@ for(var key in f.charas){
 [bg storage="nicol1.png"]
 	
 #
-[p]
+Nicol stopped in his tracks and stared at Maria.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
@@ -821,29 +821,29 @@ for(var key in f.charas){
 
 
 #
-[r]
-[p]
+At his intense gaze, Maria wondered if[r]
+she might have said something wrong.[p]
 
 #
-[r]
-[p]
+Maria opened her mouth to apologize, but[r]
+Nicol spoke first.[p]
 
 [v storage="64" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+...No one's ever spoken of my sister[r]
+in such a way before.[r]
+Thank you, Miss Campbell.[p]
 
 #
-[p]
+Gently,[p]
 
 #
-[p]
+Nicol smiled like a blooming flower.[p]
 
 #
-[r]
-[p]
+Those words, from someone who rarely shows emotion,[r]
+made Maria feel Nicol's sincere heart.[p]
 
 [jump target="common1"]
 
@@ -857,23 +857,23 @@ for(var key in f.charas){
 
 [bg storage="HF08_018_r.png" time=10] 
 
-#
-[r]
-[p]
+#Maria
+I envy you for having such a sister as Lady Sophia, Lord Nicol.[r]
+I'm quite envious.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_odo"]
 
-#
-[r]
-[p]
+#Maria
+I can tell you care for her deeply.[r]
+It shows in how you treat her.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
 [kanim_chara layer=0 name="nicol" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[r]
-[p]
+#Maria
+That's why, I truly believe in what I feel—[r]
+I believe in both you and Lady Sophia.[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -882,8 +882,8 @@ for(var key in f.charas){
 [love_up]
 
 
-#
-[p]
+#Nicol
+...[p]
 
 [chara_hide_all]
 
@@ -891,34 +891,34 @@ for(var key in f.charas){
 [bg storage="nicol1.png"]	
 
 #
-[p]
+Nicol stopped and stared at Maria again.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-[p]
+Maria looked him straight in the eye.[p]
 
 #
-[r]
-[p]
+With her words and her heart,[r]
+she showed she was being honest.[p]
+
+#Nicol
+You truly believe... don't you?[p]
 
 #
-[p]
+He smiled a little, almost like a bitter laugh, but softer,[r]
+Nicol let out a small chuckle.[p]
+
+#Nicol
+...Then I'll believe those words too. 'Truly.'[r]
+Thank you, Miss Campbell.[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[r]
-[p]
+Those words came from someone who rarely shows emotion,[r]
+and Maria could tell that Nicol's heart was filled with[r]
+a warm sense of relief and gratitude.[p]
 
 *common1
 
@@ -932,14 +932,14 @@ for(var key in f.charas){
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_def.png" wait=true time=1000 ]
 
 
-#
-[r]
-[p]
+#Maria
+No need to thank me...[r]
+I just said what I was thinking.[p]
 
 #
-[r]
-[r]
-[p]
+She was humble,[r]
+but Nicol's genuine smile[r]
+made her heart race.[p]
 
 ;=======================================
 [fadeoutbgm ]
@@ -962,170 +962,170 @@ for(var key in f.charas){
 
 
 #
-[r]
-[r]
-[p]
+Maria let out a heavy sigh.[r]
+Graduation day at the Magic Academy was fast approaching.[r]
+The day Nicol would graduate was drawing near.[p]
 
-#
-[r]
-[p]
+#Maria
+It wasn't a permanent goodbye, but...[r]
+Lord Nicol is a noble, and I'm just a commoner.[p]
 
-#
-[r]
-[p]
+#Maria
+Once he graduates, I may never see him again.[r]
+It was possible.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_akire"]
 
 #
-[r]
-[p]
+While finishing some student council tasks,[r]
+Maria muttered to herself.[p]
 
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos1_mu.png" wait=true]
 
 
-#	
-[p]
+#Nicol	
+Is something wrong?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[r]
-[p]
+Suddenly, Nicol was by her side.[r]
+Maria raised her head as if startled.[p]
 
-#	
-[p]
+#Maria	
+Ah, no, it's nothing![p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_do"]
 
 [v storage="76" ]
 
-#	
-[p]
+#Nicol	
+Don't hide it from me.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-[p]
+It seemed Nicol had the upper hand.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[r]
-[p]
+Under his intense gaze,[r]
+Maria lowered her eyes to her hands.[p]
 
-#
-[r]
-[r]
-[p]
+#Maria
+Since the graduation ceremony is approaching...[r]
+I feel sad when I think of you graduating, Lord Nicol...[r]
+It makes me feel... lonely.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#
-[r]
-[r]
-[p]
+#Maria
+...That's wrong, isn't it![r]
+It's a joyous occasion, but[r]
+I shouldn't be feeling so down...[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
 #
-[r]
-[r]
-[p]
+Even though he had told her not to hide it,[r]
+Maria ended up forcing a smile.[r]
+She couldn't help it.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 [v storage="h1" ]
 
-#	
-[p]
+#Nicol	
+I'm glad.[p]
 
 #
-[p]
+Nicol chuckled softly.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [v storage="84" ]
 
-#
-[p]
+#Nicol
+...Because I feel the same way.[p]
+
+#Maria
+Eh—[p]
 
 #
-[p]
-
-#
-[r]
-[r]
+Nicol, still smiling, narrowed his eyes as he said,[r]
+and placed his hand gently on top of Maria's.[r]
 [p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_ai"]
 
 [v storage="87" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+Until now, I never cared much about meetings or partings.[r]
+But the thought of having less time with you, Miss Campbell,[r]
+makes me very lonely. I truly feel that way.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#
-[r]
-[p]
+#Nicol
+I've never felt this way about anyone besides my family before.[r]
+It's the first time.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
-#
-[p]
+#Maria
+Lord Nicol...[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_ai"]
 
-#
-[p]
+#Nicol
+For so long, deep down inside me—[p]
 
 [v storage="91" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+I’ve been hurt by others who don’t know me,[r]
+and insulted the people I love—my sister, Sophia.[r]
+They kept calling her a burden to me. It hurt.[p]
 
 [v storage="92" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+They judged us by our looks and titles,[r]
+without bothering to see who we really were.[r]
+I grew tired of them fawning over me.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="93" ]
 
-#
-[r]
-[p]
+#Nicol
+But you,[r]
+you saw who we really are and smiled at us.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 [v storage="94" ]
 
-#
-[r]
-[p]
+#Nicol
+Sophia only started smiling like that[r]
+because of you.[p]
 
 [v storage="95" ]
 
-#
-[r]
-[p]
+#Nicol
+Thank you, Miss Campbell.[r]
+My deepest gratitude to you.[p]
 
-#	
+#Maria	
+(What should I say?)
 
-
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Thank you as well."  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="There's nothing to thank me for..." target="*select_02_02" ]
 
 [s]
 
@@ -1134,43 +1134,43 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#
-[p]
+#Maria
+No, really, it's me who should be thanking you, Lord Nicol.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[r]
-[p]
+#Maria
+Both you and Lady Sophia[r]
+saw me for who I am, not just as a commoner.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#
-[r]
-[p]
+#Maria
+The reason I've enjoyed my school life so much[r]
+is thanks to you both![p]
 
 [v storage="99" ]
 
-#
-[p]
+#Nicol
+Haha, really?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#
-[r]
-[p]
+#Maria
+Auu...[r]
+Y-Yes, it's true![p]
 
-#
-[p]
+#Nicol
+Yeah, I know.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
 [v storage="h3" ]
 
-#
-[r]
-[p]
+#Nicol
+...Ah.[r]
+I had forgotten what it felt like to smile from the heart.[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -1179,20 +1179,20 @@ for(var key in f.charas){
 [love_up]
 
 
-#
-[r]
-[p]
+#Nicol
+I always thought I had to be strong, to be firm,[r]
+and maybe I've been keeping myself too guarded.[p]
 
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
 
-#
-[p]
+#Nicol
+I never thought I'd feel this way...[p]
 
 #
-[r]
-[p]
+Nicol's gaze as he looked at Maria[r]
+was as warm and radiant as a sunny day.[p]
 
 [jump target="common2"]
 
@@ -1201,65 +1201,65 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
-#
-[r]
-[p]
+#Maria
+No, really,[r]
+there's no need to thank me...[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
 #
-[r]
-[p]
+Maria simply acted naturally,[r]
+just being herself with Nicol and Sophia.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_tere"]
 
 #
-[r]
-[p]
+That's why Nicol's[r]
+genuine gratitude made her feel embarrassed.[p]
 
 [v storage="h1" ]
 
-#
-[p]
+#Nicol
+...Heh. You're so shy.[p]
 
-#
-[p]
+#Nicol
+But at least accept my thanks.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 [md name="nicol" face="hamehura_Nicol_cos1_mu"]
 
-#
-[p]
+#Maria
+I-I'm sorry...[p]
 
-#
-[p]
+#Nicol
+No need to apologize.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#
-[p]
+#Maria
+Auu...[p]
 
 [md name="nicol" face="hamehura_Nicol_cos1_def"]
 
-#
-[p]
+#Nicol
+Haha—You're adorable.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def"]
 
 [v storage="h3" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+...Ah.[r]
+I never thought I'd feel this way about anyone.[r]
+I never thought I'd open my heart to someone like this.[p]
+
+#Nicol
+I never imagined it...[p]
 
 #
-[p]
-
-#
-[r]
-[r]
-[p]
+As he said this, Nicol looked at Maria with a gaze[r]
+that was endlessly gentle,[r]
+like a warm spring day.[p]
 
 *common2
 
@@ -1268,16 +1268,16 @@ for(var key in f.charas){
 
 [v storage="106" ]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+Miss Campbell.[r]
+There is something I want to tell you at tomorrow's graduation party.[r]
+Please, be sure to attend.[p]
 
 [chara_hide name="nicol" pos_mode=false ]
 
 #
-[r]
-[p]
+Nicol whispered this,[r]
+bowed and left with a polite gesture.[p]
 
 *dev2
 
@@ -1299,50 +1299,50 @@ for(var key in f.charas){
 ;========================================
 
 #
-[r]
+The graduation party is known to be one of the most glamorous events at the academy.[r]
 [p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" storage="chara/hamehura_Maria_cos1_ai.png" wait=true]
 
 #
-[p]
+—And that's why Maria was worried.[p]
 
 #
-[r]
-[r]
-[p]
+As a commoner, Maria[r]
+had only been able to alter a cheap second-hand dress[r]
+and that was the best she could do.[p]
 
 #
-[r]
-[p]
+Would such a dress be suitable[r]
+to appear before Nicol in...?[p]
 
-#
-[r]
-[p]
+#Maria
+(It’s not just about me. Just being with me,[r]
+Nicol might also be laughed at...)[p]
 
 [md name="maria" face="hamehura_Maria_cos1_akire"]
 
 
 #
-[r]
-[p]
+Standing in front of her mirror in the girls' dormitory that night,[r]
+Maria sighed.[p]
 
 [fadeoutbgm time=2000]
 [playse storage="se/door_wood_knock1.ogg" ]
 
 #
-[r]
-[p]
+And at that moment,[r]
+there was a knock at her door.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
 
-#
-[p]
+#Maria
+Yes?[p]
 
 #
-[r]
-[p]
+Wondering who could be visiting at such an hour,[r]
+Maria opened the door.[p]
 
 [playse storage="se/door-open1.ogg" ]
 
@@ -1351,109 +1351,109 @@ for(var key in f.charas){
 [chara_show name="sophia" top="&f.top" left="&f.right_s" storage="chara/hamehura_Sophia_cos1_mu.png" wait=true time=1000 ]
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 	
-#	
-[p]
+#Sophia	
+Good evening, Maria.[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+Lady Sophia!? What brings you here?[p]
 
-#
-[r]
-[p]
+#Sophia
+I have something I would like to talk to you about, Maria.[r]
+Is that alright?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
 
-#
-[p]
+#Maria
+Yes... Please, come in.[p]
 
 #
-[r]
-[r]
-[p]
+Maria invited Sophia in.[r]
+It was Sophia who began the conversation.[r]
+She gazed at Maria with a serious expression.[p]
 
-#
-[p]
+#Sophia
+What do you think of my brother?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
-#
-[p]
+#Maria
+Eh—[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[r]
-[p]
+Taken aback by the sudden question,[r]
+Maria furrowed her brows and revealed her true feelings.[p]
 
-#
-[p]
+#Maria
+...I don’t want to say goodbye.[p]
 
-#
-[r]
-[p]
+#Maria
+The thought of Lord Nicol going far away[r]
+makes my heart ache... and it’s painful.[p]
 
-#
-[r]
-[p]
+#Maria
+If possible,[r]
+I want to stay by his side forever...[p]
 
-#	
-[p]
+#Sophia	
+Is that how you really feel?[p]
 
 
 [md name="maria" face="hamehura_Maria_cos1_do"]
 
-#
+#Maria
 [font size=30]本当です！[resetfont]
 [p]
 
 [md name="sophia" face="hamehura_Sophia_cos1_def"]
 
 #
-[r]
-[p]
+Maria answered without thinking.[r]
+Sophia smiled gently at Maria.[p]
 
-#	
-[p]
+#Sophia	
+I knew you’d say that.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#
-[p]
+#Maria
+Eh...?[p]
 
 [md name="maria" face="hamehura_Maria_cos1_kon"]
 
-#
-[r]
-[p]
+#Sophia
+It was so obvious.[r]
+That you and my brother care for each other.[p]
 
 #
-[r]
-[p]
+Sophia giggled.[r]
+Maria felt her face heat up.[p]
 
-#
-[r]
-[r]
-[p]
+#Sophia
+...Hehe.[r]
+Soon enough, I’ll have to call you[r]
+'Sister,' won't I?[p]
 
-#
-[p]
+#Maria
+Lady Sophia, what are you saying...?[p]
 
-#	
-[p]
+#Sophia	
+Oh, my.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_mu"]
 
-#
-[r]
-[p]
+#Sophia
+Now then, with that being said...[r]
+I have a gift for you in celebration.[p]
 
-#	
-[p]
+#Sophia	
+Please come to my room later.[p]
 
 
 ;=======================================
@@ -1473,16 +1473,16 @@ for(var key in f.charas){
 
 ;========================================
 	
-#
-[p]
+#Maria
+(...A gift? I wonder what it is?)[p]
 
 #
-[r]
-[r]
-[p]
+Feeling nervous,[r]
+Maria knocked on Sophia's door.[r]
+A reply came immediately from within.[p]
 
-#	
-[p]
+#Sophia	
+Please, come in.[p]
 
 [bg storage="HF04_066_071_073_084A.png"]
 
@@ -1490,40 +1490,40 @@ for(var key in f.charas){
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#
-[p]
+#Maria
+This is...[p]
 
 #
-[r]
-[p]
+—Before her was[r]
+a modest yet elegant dress.[p]
 
 #
-[r]
-[p]
+It was designed so that Maria, a commoner, wouldn’t stand out negatively.[r]
+It was a thoughtfully made piece.[p]
 
-#	
-[p]
+#Sophia	
+Please, wear this, Maria.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_ase"]
 
-#
-[r]
-[p]
+#Maria
+...Is it really okay?[r]
+Such a beautiful...![p]
 
-#	
-[p]
+#Sophia	
+Yes, of course![p]
 
 [md name="maria" face="hamehura_Maria_cos1_odo"]
 
-#	
-[p]
+#Sophia	
+...Please, take good care of my brother.[p]
 
 [md name="maria" face="hamehura_Maria_cos1_def2"]
 
-#
+#Maria
 [font size=30]
-[r]
-
+Th-Thank you so much![r]
+Lady Sophia!
 [resetfont]
 [p]
 
@@ -1552,63 +1552,63 @@ for(var key in f.charas){
 
 
 #
-[r]
-[r]
-[p]
+Maria's dress[r]
+was one that even other noble girls admired.[r]
+It was graceful and dignified.[p]
 
 #
-[r]
-[p]
+Even the girls who usually bullied Maria[r]
+were left speechless by its beauty.[p]
 
 [md name="maria" face="hamehura_Maria_cos5_akire"]
 
 #
-[r]
-[r]
-[p]
+But Maria herself, wearing such a[r]
+luxurious dress for the first time in her life,[r]
+felt so shy that she had become a wallflower.[p]
 
 #
-[p]
+And then.[p]
 
 [v storage="149"]
 
 #？？？	
-[p]
+That dress suits you well.[p]
 
 [chara_show name="nicol" top="&f.top" left="&f.right" storage="chara/hamehura_Nicol_cos2_mu.png" wait=true]
 [md name="maria" face="hamehura_Maria_cos5_odo"]
 
 #
-[r]
-[r]
-[p]
+A sweet voice whispered unexpectedly nearby.[r]
+Maria looked up and saw[r]
+Nicol, dressed in a stunning formal outfit.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos2_def"]
 
 [v storage="151"]
 
-#
-[p]
+#Nicol
+You're very beautiful.[p]
 
 [md name="maria" face="hamehura_Maria_cos5_kon"]
 
-#
-[p]
+#Maria
+L-Lord Nicol, you too...![p]
 
-#
-[p]
+#Nicol
+Oh, well, thank you.[p]
 
 [md name="maria" face="hamehura_Maria_cos5_tere"]
 [md name="nicol" face="hamehura_Nicol_cos2_mu"]
 
 #
-[r]
-[p]
+Nicol smiled softly and[r]
+took Maria's hand and said, 'Now then.'[p]
 
 [v storage="155"]
 
-#
-[p]
+#Nicol
+Shall we talk over there?[p]
 
 ;=======================================
 [fadeoutbgm ]
@@ -1631,47 +1631,47 @@ for(var key in f.charas){
 
 
 #
-[r]
-[p]
+He led her to a[r]
+quiet balcony under the starry sky.[p]
 
 [md name="maria" face="hamehura_Maria_cos5_tere2"]
 
 #
-[p]
+The noise of the party was faint in the distance.[p]
 
 [md name="maria" face="hamehura_Maria_cos5_odo"]
 
 [v storage="158"]
 
-#
-[p]
+#Nicol
+—Maria.[p]
 
 #
-[r]
-[p]
+Not 'Miss Campbell,'[r]
+Nicol called her by her name for the first time.[p]
 
 #
-[r]
-[p]
+Maria was enveloped in surprise.[r]
+It was so strong that the distant noise faded away.[p]
 
 #
-[r]
-[p]
+Nicol gazed at Maria gently[r]
+and continued speaking.[p]
 
 [md name="nicol" face="hamehura_Nicol_cos2_tere"]
 
 [v storage="162"]
 
-#
-[r]
-[p]
+#Nicol
+I love you.[r]
+I want to walk through life with you from now on.[p]
 
 [v storage="163"]
 
-#
-[r]
-[r]
-[p]
+#Nicol
+With you, I feel like we can share peaceful, warm days[r]
+forever.[r]
+I don't want to let you go. I've never felt this way before.[p]
 
 [chara_hide_all time=1000]
 
@@ -1681,51 +1681,51 @@ for(var key in f.charas){
 
 [v storage="164"]
 
-#
-[r]
-[p]
+#Nicol
+So... Maria.[r]
+Please, be my partner for life.[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
 #
-[r]
-[p]
+With those words, Nicol knelt down[r]
+and extended his hand to Maria.[p]
+
+#Maria
+...![p]
 
 #
-[p]
+It wasn't formal language like when they first met,[r]
+nor did he call her Miss Campbell.[r]
+These were Nicol's true feelings,[p]
 
 #
-[r]
-[r]
-[p]
+and Maria felt that she had never[r]
+been the recipient of such deep and warm feelings before.[r]
+It was the first time in her life.[p]
 
 #
-[r]
-[r]
-[p]
+The shock of it all[r]
+made her feel a bit flustered, but—[p]
+
+#Maria
+(I don't want to say goodbye to Lord Nicol.[r]
+I want to stay with him forever.)[p]
 
 #
-[r]
-[p]
+She remembered the feelings she had shared with Sophia—[r]
+her feelings of love.[p]
 
 #
-[r]
-[p]
+Maria gave Nicol a firm, determined look.[p]
 
-#
-[r]
-[p]
+#Maria	
+(What will you do?)
 
-#
-[p]
-
-#	
-
-
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="Take Nicol's hand"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="Hesitate to take his hand" target="*select_03_02" ]
 
 [s]
 
@@ -1733,37 +1733,37 @@ for(var key in f.charas){
 [cm]
 
 	
-#
-[r]
-[p]
+#Maria
+I...[r]
+I've always been in love with you.[p]
+
+#Maria
+Please, let me stay by your side.[r]
+Always, forever...[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[r]
-[p]
+Maria took Nicol's hand.[r]
+Nicol smiled as warmly as a spring flower[r]
+and kissed the back of her hand with reverence.[p]
 
 [v storage="175"]
 
-#
-[p]
+#Nicol
+I vow to love you forever.[p]
 
 #
-[p]
+Nicol stood up, still holding Maria's hand.[p]
+
+#Maria
+Please take care of me, Lord Nicol—[p]
 
 #
-[p]
+Maria held his hand back[r]
+with all her heart.[p]
 
 #
-[r]
-[p]
-
-#
-[r]
-[p]
+A gentle breeze blew, scattering flower petals around them,[r]
+as if celebrating their union—[p]
 
 [celanim anim="green_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
 @wait time=200
@@ -1778,46 +1778,46 @@ for(var key in f.charas){
 [cm]
 	
 #
-[r]
-[r]
-[p]
+Am I really the one for him?[r]
+Is it alright to accept these feelings?[r]
+Such thoughts swirled in Maria's mind.[p]
 
 #
-[p]
+But—[p]
+
+#Nicol
+It’s alright.[p]
 
 #
-[p]
-
-#
-[r]
-[p]
+Nicol took Maria's hand.[r]
+And once again, he kissed the back of her hand.[p]
 
 [v storage="175"]
 
+#Nicol
+I vow to love you forever.[p]
+
+#Nicol
+And I will protect you always.[p]
+
+#Nicol
+Please—trust me.[p]
+
 #
+Nicol stood and gently embraced Maria.[r]
 [p]
 
 #
-[p]
+At last, Maria found her voice.[r]
+They were honest, heartfelt words.[p]
+
+#Maria
+I...[r]
+I love you too, Lord Nicol...[p]
 
 #
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[p]
+As if blessing the two, the starry sky[r]
+twinkled brightly overhead—[p]
 
 *common3
 

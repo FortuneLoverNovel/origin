@@ -345,8 +345,8 @@ f.charas = [
 
 ;[jump target="dev5"]
 
-#	
-[p]
+#Maria	
+Where am I...?[p]
 [playbgm  volume=30   storage="M08_FinalMix.ogg" ]
 
 ;再生[p]
@@ -355,8 +355,8 @@ f.charas = [
 
 
 
-
-#
+/*
+#Maria
 [celanim anim="red_rose_1" layer="1" x=260 y=-150 count=1 speed=0.5 wait=false ]
 [anim name="celanim" top=100 time=2000]
 [wa]
@@ -365,92 +365,92 @@ f.charas = [
 */
 
 #
-[l][r]
-[r]
-[p]
+A lovely garden, with the scent of roses.[l][r]
+Despite the beautiful scenery,[r]
+the girl had a confused look on her face.[p]
 
 #
-[l][r]
-[r]
-[p]
+The girl who had just enrolled in the magic academy—[l][r]
+Maria, out of curiosity,[r]
+had been exploring the academy...[p]
 
-#
-[l][r]
-[p]
+#Maria
+But to get lost like this...[l][r]
+What should I do...?[p]
 
 [bg storage="HF04_078.png"]
 
 #
-[l][r]
-[p]
+Maria looked around.[l][r]
+Then, she spotted a large tree.[p]
 
-#:hamehura_Maria_cos1_def
-[r]
-[p]
+#Maria:hamehura_Maria_cos1_def
+Yes, if I climb that tall tree,[r]
+maybe I can figure out where I am...[p]
 
 #
-[r]
-[p]
+Maria, still in her skirt,[r]
+placed her foot on the tree.[p]
 #
-[l][r]
-[r]
-[p]
+But...[l][r]
+Just as she thought she might be able to climb,[r]
+and was about to pull herself up...[p]
 
 [v storage="h1"]
 #？？？
-[r]
-[p]
+—Oh.[r]
+What are you doing there?[p]
 
-#:hamehura_Maria_cos1_odo
-[p]
+#Maria:hamehura_Maria_cos1_odo
+Huh?[p]
 
-#	
-[p]
+#Maria	
+...Ah![p]
 
 #
-[r]
-[l][r]
-[p]
+Still in her climbing position, Maria[r]
+opened her eyes wide.[l][r]
+Because standing there was—[p]
 
 [chara_move name="maria" left="&f.left" face="hamehura_Maria_cos1_ase"]
 
-#
+#Geordo
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_doya"]
 
 
-#	
-[p]
+#Maria	
+P-Prince Geordo...?[p]
 
 [v storage="h2"]
 #
-[l][r]
-[p]
+Geordo Stuart.[l][r]
+The third prince of this kingdom himself.[p]
 
 #
-[r]
-[p]
+Maria quickly corrected her posture[r]
+and bowed deeply.[p]
 
-#
-[r]
-[r]
-[p]
+#Maria
+I apologize.[r]
+For showing such an improper sight,[r]
+...to Your Highness![p]
 
-#	
+#Geordo	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
 [v storage="17"]
-[r]
-[r]
-[p]
+Trying to climb a tree[r]
+in those clothes?[r]
+You're quite the tomboy.[p]
 
 *dev4
 
-#	
-[p]
+#Maria	
+W-well...[p]
+What should I say?
 
-
-[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text=""  target="*select_01_01"]
-[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="" target="*select_01_02" ]
+[button name="button" graphic="select/ans_01_01.png" enterimg="select/ans_01_01_on.png" x=220 y=100 text="Tell the truth"  target="*select_01_01"]
+[button name="button" graphic="select/ans_01_02.png" enterimg="select/ans_01_02_on.png" x=220 y=240 text="Make an excuse" target="*select_01_02" ]
 
 [s]
 
@@ -458,27 +458,27 @@ f.charas = [
 *select_01_01
 [cm]
 
-#
-[r]
-[p]
+#Maria
+I thought if I got higher, I could see the surroundings...[r]
+I just wanted to find my way...[p]
 
-#	
+#Geordo	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
 
-#	
+#Geordo	
 
-[l][r]
-[p]
+I see.[l][r]
+So, you were lost, weren't you?[p]
 
 #
-[r]
-[r]
-[p]
+He said it with a smile, hitting the mark,[r]
+causing Maria to mutter, 'Ugh...'[r]
+and struggle to find words.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h2"]
 
-#
+#Geordo
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -486,28 +486,28 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+Seeing Maria like this,[r]
+Geordo chuckled.[p]
 
 #
-[r]
-[l][r]
-[p]
+Even the way he laughed[r]
+was incredibly graceful.[l][r]
+But to Maria right now...[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[p]
+being laughed at by the prince was...[p]
 
 #
-[r]
-[p]
+Too embarrassed, Maria[r]
+looked down, her face burning.[p]
 
 #
 
-[r]
-[r]
-[p]
+But...[r]
+The next words from Geordo[r]
+were gentle and gentlemanly.[p]
 
 [jump target="*common_01"]
 
@@ -518,73 +518,73 @@ f.charas = [
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
 
-#
-[r]
-[p]
+#Maria
+(If I tell him I was lost,[r]
+he'll just laugh again...)[p]
 
-#
-[l][r]
-[p]
+#Maria
+I-it's nothing, really.[l][r]
+Please, don't worry about it...![p]
 
-#
-[r]
-[p]
+#Geordo
+When you say 'nothing,'[r]
+it makes me even more curious.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
 #
-[p]
+Geordo tilted his head slightly.[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-[l][r]
-[r]
-[p]
+Even such a gesture was graceful, but[l][r]
+Maria felt as if the prince thought she was ridiculous,[r]
+and she could only look down, her face flushed.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
-#
-[l][r]
-[p]
+#Geordo
+Ah, don't make that face.[l][r]
+I don't mean to be cruel.[p]
 
 #
-[r]
-[p]
+Geordo's voice was so gentle,[r]
+and gentlemanly.[p]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-#
-[p]
+#Geordo
+So, you were lost, weren't you?[p]
 
-#	
-[p]
+#Maria	
+...Yes...[p]
 
 
 *common_01
 
 
-#
+#Geordo
 [v storage="25"]
-[p]
+Then let me escort you back to the dormitory.[p]
 
-#
+#Geordo
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+This way, Geordo began walking.[l][r]
+Maria was surprised, but she couldn't possibly refuse[r]
+the kindness of the third prince.[p]
+
+#Maria
+Th-thank you so much...![p]
 
 #
-[p]
-
-#
-[l][r]
-[r]
-[p]
+He might actually be a kind person.[l][r]
+Maria thought as she[r]
+followed Geordo.[p]
 
 *dev5
 
@@ -609,64 +609,64 @@ f.charas = [
 
 [playbgm  volume=30   storage="M24A_FinalMix.ogg" ]
 
-#
-[p]
+#Maria
+—That sure happened, didn't it?[p]
 
 #
-[r]
-[p]
+Remembering her first meeting with Geordo,[r]
+Maria let out a small laugh.[p]
 
 #
-[r]
-[r]
+Since then, she's learned the layout of the academy well,[r]
+and no longer gets lost like she did back then.[r]
 [p]
 
-#
-[r]
-[l][r]
-[p]
+#Maria
+To the student council room,[r]
+this way is the shortcut, right?[l][r]
+...I wonder if everyone will like them?[p]
 
 #
-[r]
-[p]
-[r]
-[p]
+In Maria's hands was a basket[r]
+filled with homemade muffins.[p]
+Imagining everyone's happy faces,[r]
+Maria felt light on her feet.[p]
 
 [fadeoutbgm time=1000]
 
 #
-[p]
+—But.[p]
 
 [playbgm  volume=30   storage="M43_FinalMix.ogg"]
 
 [chara_move name="maria" left="&f.left" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
 
-#
+#Katarina
 [v storage="36"]
-[p]
+Maria, where are you going?[p]
 
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+Ah...[p]
 
 #
-[r]
-[p]
+A voice full of hostility and malice[r]
+stopped Maria in her tracks.[p]
 
 #
-[r]
-[p]
+Before she knew it, Maria was surrounded[r]
+by a group of noble girls.[p]
 
 #
-[r]
-[l][r]
-[p]
+Leading them was[r]
+Lady Katarina Claes, the duke's daughter.[l][r]
+She was Geordo's fiancée.[p]
 
 #
-[r]
-[r]
-[p]
+Before Maria could say anything,[r]
+Katarina strode towards Maria[r]
+and raised her hand—[p]
 
 [if exp="sf.btn_volume==true"]
 [playse storage="se/punch-middle2.ogg" ]
@@ -676,48 +676,48 @@ f.charas = [
 @quake_camera
 
 #
-[p]
+—Smack![p]
 
 #
-[l][r]
-[r]
-[p]
+She knocked the basket to the ground.[l][r]
+The sweet-smelling pastries[r]
+spilled out onto the ground.[p]
 
-#
+#Katarina
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_aku"]
 [v storage="43"]
 
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 
-[r]
-[r]
-[p]
+Just because you have Light Magic,[r]
+you think you're so special[r]
+and everyone's going to treat you like royalty![p]
 
 #
-[r]
-[r]
-[p]
+Katarina raised her eyebrows[r]
+and shouted, glaring down[r]
+at the fallen muffins.[p]
 
-#
+#Katarina
 [v storage="45"]
 
-[r]
-[r]
-[p]
+You think this pitiful food made by a commoner[r]
+is good enough for the student council?[r]
+How ridiculous![p]
 
 #
-[r]
-[p]
+Katarina lifted her foot.[r]
+She was about to step on the muffins.[p]
 
-#
+#Maria
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 [font size="40"]
-[p]
+Stop—[p]
 [resetfont]
 
 #
-[l][r]
-[p]
+Maria reached out her hand[l][r]
+but just then...[p]
 
 [chara_hide name="maria" wait=false ]
 [chara_hide name="kata" wait=true ]	
@@ -730,58 +730,58 @@ f.charas = [
 
 #？？？
 [font size="40"]
-[p]
+Stop that![p]
 [resetfont]
 
-#
+#Geordo
 [chara_show name="gio" top="&f.top" left="&f.left" face="hamehura_Giord_cos1_do" ]
 [chara_show name="kata" face="hamehura_Catalina_cos1_do" top="&f.top" left="&f.right" ]
  
-#
+#Katarina
 
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_odo" ]
 [kanim layer=0 name="kata" keyframe=quake time=300 count=1 easing=linear]
 
 [v storage="50"]
-[p]
+P-Prince Geordo!?[p]
 
-#
+#Geordo
 [v storage="51"]
 
-[r]
-[r]
-[p]
+In front of me,[r]
+you dare disturb the order[r]
+like this? I won't tolerate it.[p]
 
-#	
+#Katarina	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai" ]
 [v storage="52"]
 
-[r]
-[p]
+Tch...![r]
+But, Prince Geordo—[p]
 
-#	
+#Geordo	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-[r]
+Katarina. I thought you were smarter than this...[r]
 [p]
 
-[r]
+Do you plan to make me explain this again?[r]
 [l][r]
-[p]
+If so, what a funny joke.[p]
 
-#	
+#Katarina	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai"]
 [v storage="54"]
-[p]
+Grrrr...![p]
 
 #
-[r]
-[p]
+Faced with Geordo's cold demeanor,[r]
+even Katarina couldn't argue back.[p]
 
 #
-[r]
-[r]
-[p]
+Her face red, Katarina[r]
+glared at Maria and, with her entourage,[r]
+quickly left the scene.[p]
 
 [fadeoutbgm]
 
@@ -794,55 +794,55 @@ f.charas = [
 
 [playbgm  volume=30   storage="M17_FinalMix.ogg" ]
 
-#
+#Maria
 [chara_move name="gio" left="&f.right"]
 [chara_show name="maria" top=&f.top left="&f.left" face="hamehura_Maria_cos1_ai"]
-[p]
+Um, Prince Geordo...[p]
 
 #
-[l][r]
-[l][r]
-[p]
+Should she apologize for causing trouble,[l][r]
+or thank him for helping her?[l][r]
+Maria wasn't sure which to say.[p]
 
 
 #
 
-[r]
-[l][r]
-[p]
+Meanwhile, Geordo[r]
+calmly picked up one of the fallen muffins[l][r]
+and, without hesitation, took a bite.[p]
 
 [chara_hide_all ]
 
 [bg storage="hamehura_jiorudo1.png" ]
 [eval exp="sf.gio_cg_1=true" ]
-#
-[p]
+#Maria
+Eh—!?[p]
 
 [if exp="f.mixmode==true"]
 [layermode_movie mute=true video=kirakira.webm time=1500 mode=screen wait=false loop=false ]
 [endif]
 
-#	
+#Geordo	
 [v storage="61"]
 
-[r]
-[p]
+Mmm.[r]
+It's really delicious.[p]
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+It's like flowers blooming all at once.[l][r]
+With a gentle smile like that,[r]
+Geordo smiled at Maria.[p]
 
 #
-[l][r]
-[p]
+—Thump.[l][r]
+At that moment, Maria's heart was set aflame...[p]
 
 [free_layermode time=1000 ]
 
 
 ;;;;;;;;;;;;;;
-
+/*
 [mask graphic="kokomade.png" folder="bgimage" effect="zoomInRight"]
 
 [wait time="3000" ]
@@ -869,133 +869,133 @@ f.charas = [
 [bg storage="black.png" time=3000]
 
 #
-[p]
+The end of the year was approaching.[p]
 
 [bg storage="HF04_283.png" time=1000 ]
 
 [chara_show name="maria" top="&f.top" left="&f.left" time=1000 face="hamehura_Maria_cos1_mu" ]
 
 #
-[r]
-[p]
+Maria sat atop a tree,[r]
+looking out at the academy.[p]
 
-#
-[r]
-[p]
+#Maria
+This past year...[r]
+So much has happened...[p]
 
 [chara_mod  name="maria" face="hamehura_Maria_cos1_def"]
 
-#
-[l][r]
-[p]
+#Maria
+I met Prince Geordo here, didn't I?[l][r]
+He's done so much for me...[p]
 
 
 #
-[r]
-[p]
+Now that I think about it,[r]
+Geordo is always in my memories.[p]
 
-[r]
-[p]
+When I remember his kind smile,[r]
+Maria couldn't help but feel her face grow warm.[p]
 
 [chara_hide name="maria"]
 
 #？？？
 [v storage="h3"]
-[p]
+...Maria.[p]
 
 #
-[l][r]
-[p]
+It was then that she heard her name being called.[l][r]
+Geordo was standing beneath the tree.[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" face="hamehura_Giord_cos1_def"]
 
 
-#
+#Geordo
 
-[r]
-[p]
+You are always as free as a butterfly,[r]
+aren't you?[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
-[p]
+Ah.[p]
 
 
 #
 [v storage="h2"]
-[l][r]
-[r]
-[p]
+Geordo chuckled softly.[l][r]
+Feeling like she was being teased,[r]
+Maria quickly tried to say something.[p]
 
 #
-[r]
-[p]
+But before Maria could speak,[r]
+Geordo spoke, still smiling.[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="75"]
 
-[p]
+Maria, come down.[p]
 
 #
 
-[l][r]
-[l][r]
-[p]
+Geordo spread his arms wide.[l][r]
+I'll catch you.[l][r]
+Hearing this, Maria panicked.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
 
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
-[p]
+B-but—[p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#	
+#Geordo	
 
-[l][r]
+It's okay.[l][r]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
-[p]
+...Or do you not trust me?[p]
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
-[p]
+#Maria
+No, it's not that...![p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-[p]
+Then come on.[p]
 
 #
 
-[r]
-[p]
+Geordo kept smiling as he[r]
+looked up at Maria.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Maria
+What should I do?
 
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="Jump"  target="*select_02_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="Hesitate"  target="*select_02_02"  ]
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text=""  target="*select_02_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text=""  target="*select_02_02"  ]
-
-[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text=""  target="*select_02_01"]
-[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="" target="*select_02_02" ]
+[button name="button" graphic="select/ans_02_01.png" enterimg="select/ans_02_01_on.png" x=220 y=100 text="Jump"  target="*select_02_01"]
+[button name="button" graphic="select/ans_02_02.png" enterimg="select/ans_02_02_on.png" x=220 y=240 text="Hesitate" target="*select_02_02" ]
 
 
 [s]
@@ -1005,25 +1005,25 @@ f.charas = [
 [cm]
 
 #
-[r]
+That smile was one Maria knew she couldn't refuse.[r]
 [p]
 
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+...[p]
 
 #
-[r]
-[r]
+Feeling Geordo's gaze,[r]
+Maria turned her flushed face away.[r]
 [p]
 
-#
-[l][r]
-[p]
+#Maria
+(Prince Geordo...[l][r]
+is waiting for me...)[p]
 
 #
-[r]
-[p]
+Gathering her courage despite her embarrassment,[r]
+Maria jumped towards Geordo.[p]
 
 ;白転
 [chara_hide name="maria" time=100]
@@ -1033,22 +1033,22 @@ f.charas = [
 [wait time=1000 ]
 
 #
-[p]
+—Fwoosh.[p]
 
 [bg storage="HF04_292.png" time=1000] 
 
 #
-[p]
+His arms gently caught her.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man" ]	
 [v storage="85"]
-[p]
+Got you.[p]
 
-#
+#Geordo
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1060,19 +1060,19 @@ f.charas = [
 
 #
 
-[r]
-[r]
-[p]
+Geordo's whisper tickled Maria's ear[r]
+sweetly, while his warm and strong arms[r]
+held her firmly.[p]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
-[l][r]
-[p]
+...Heh.[l][r]
+You're so honest... and such a good girl.[p]
 
 #
-[r]
-[p]
+Geordo's finger gently stroked Maria's cheek[r]
+as if praising her...[p]
 
 @jump target="common_02"
 
@@ -1080,48 +1080,48 @@ f.charas = [
 *select_02_02
 
 [cm]
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
-[r]
-[p]
+I-it's dangerous, you know?[r]
+What if something had happened to you...?[p]
 
 #
-[r]
-[r]
-[p]
+Maria made such an excuse, but in reality,[r]
+the truth was,[r]
+she was just embarrassed.[p]
 
 #
-[r]
+Of course, Geordo knew all too well.[r]
 [p]
 
 [chara_hide name="maria"]
 [chara_show name="gio" top="&f.top" left="&f.right" ]
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 [v storage="h1"]
 
-[r]
-[l][r]
-[p]
+Oh?[r]
+Do I look that unreliable to you?[l][r]
+How surprising... That hurts my feelings.[p]
 
 #
 
-[r]
+Geordo sighed dramatically,[r]
 [l][r]
-[p]
+Of course, he was still smiling.[p]
 
 [chara_hide name="gio"]
 [chara_show name="maria" top="&f.top" left="&f.left" ]
 
-#
+#Maria
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase"]
-[p]
+(Ugh... That's not fair...)[p]
 
 #
-[l][r]
-[p]
+At this point, Maria had no choice but to follow.[l][r]
+Maria jumped towards Geordo.[p]
 
 
 ;白転
@@ -1132,14 +1132,14 @@ f.charas = [
 [wait time=1000 ]
 
 #
-[p]
+—Fwoosh.[p]
 
 [bg storage="HF04_292.png" time=1000] 
 ;[kanim layer=0 name="layer_camera" keyframe=quake time=300 count=2 easing=linear]
 @quake_camera
 
 #
-[p]
+His arms gently caught her.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" wait=false]
 [chara_show name="gio" top="&f.top" left="&f.right" wait=true]
@@ -1147,41 +1147,41 @@ f.charas = [
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-#	
+#Geordo	
 [v storage="85"]
 
-[p]
+Got you.[p]
 
 #
-[r]
-[r]
-[p]
+Geordo's whisper tickled Maria's ear[r]
+sweetly, while his warm and strong arms[r]
+held her firmly.[p]
 
 ;;;;;;;;;
 
 *common_02
 
 
-#
+#Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_doya"]
 
 [v storage="88"]
 
-[r]
-[p]
+There's something I want to tell you.[r]
+Tomorrow evening, meet me at the chapel.[p]
 
 #
-[r]
-[p]
+With that, Geordo finished speaking[r]
+and let go of Maria.[p]
 
-#
+#Geordo
 [v storage="90"]
-[p]
+I'll be waiting.[p]
 
 #
-[r]
-[r]
-[p]
+He said with a smile,[r]
+as he turned on his heel and gracefully[r]
+walked away, cloak billowing behind him.[p]
 
 *dev3
 [chara_hide_all ]
@@ -1193,100 +1193,100 @@ f.charas = [
 [playbgm  volume=30   storage="M28_FinalMix.ogg" ]
 	
 #
-[r]
-[r]
-[p]
+As Geordo instructed,[r]
+Maria walked through the twilight[r]
+heading towards the chapel.[p]
 
 #
-[p]
+Whisper, whisper...[p]
 
 #
-[r]
-[p]
+In Maria's ears,[r]
+came the gossip of noble girls.[p]
 
 [chara_show name="reijo1" top="&f.top" face="hamehura_DVDmob1_do"]
 [chara_show name="reijo2" top="&f.top" face="hamehura_DVDmob2_do" ]
 [chara_show name="reijo3" top="&f.top" face="hamehura_DVDmob3_do"]
 
 
-#
-[l][r]
+#Noblewoman 1
+Did you hear?[l][r]
+Lady Katarina has been exiled from the kingdom.[p]
+
+#Noblewoman 2:hamehura_DVDmob2_fear
+Oh my...[l][r]
+Then what about Prince Geordo?[p]
+
+#Noblewoman 1
+Rumor has it, he's interested in a commoner...[p]
+
+#Noblewoman 3
+Katarina's exile was probably[r]
+that commoner's doing, wasn't it...?[p]
+
+#Noblewoman 2
+Could it be that Prince Geordo[r]
+is being seduced by that common girl?[p]
+
+#Noblewoman 3:hamehura_DVDmob3_fear
+She may look innocent, but[r]
+she's quite the wicked woman.[p]
+
+#Noblewoman 1
+I'm so worried about Prince Geordo...[l][r]
+If that woman damages Prince Geordo's reputation,[r]
+he'll never recover.[p]
+
+#Noblewoman 3:hamehura_DVDmob3_do
+Hmph, choosing a woman like that? I am[r]
+so disappointed in Prince Geordo![p]
+
+#Noblewoman 2:hamehura_DVDmob2_do
+Doesn't he realize what that means[r]
+for a future king?[p]
+
+It's as if he's choosing his own ruin.[r]
 [p]
 
-#:hamehura_DVDmob2_fear
-[l][r]
-[p]
-
-#
-[p]
-
-#
-[r]
-[p]
-
-#
-[r]
-[p]
-
-#:hamehura_DVDmob3_fear
-[r]
-[p]
-
-#
-[l][r]
-[r]
-[p]
-
-#:hamehura_DVDmob3_do
-[r]
-[p]
-
-#:hamehura_DVDmob2_do
-[r]
-[p]
-
-[r]
-[p]
-
-#:hamehura_DVDmob3_fear
-[l][r]
-[r]
-[p]
+#Noblewoman 3:hamehura_DVDmob3_fear
+Shh, that's the commoner girl...[l][r]
+If we get too close,[r]
+we might be dragged into something too...[p]
 
 [chara_hide_all]
 
 #
-[l][r]
+Baseless black rumors.[l][r]
 
-[r]
+The thorns of malice pricked at Maria's heart.[r]
 [p]
 
 [chara_show name="maria" top=&f.top face="hamehura_Maria_cos1_ai"]
 
-#
-[p]
+#Maria
+...Ugh.[p]
 
 #
-[p]
+Maria bit her lip and held it in.[p]
 
 #
-[p]
+—It hurt.[p]
 
 #
-[r]
-[r]
-[p]
+More than being insulted herself,[r]
+the fact that someone dear to her[r]
+was being spoken ill of because of her.[p]
 
 #
-[r]
-[p]
+That hurt Maria the most,[r]
+and she couldn't bear it.[p]
 
-[r]
-[p]
+At the same time,[r]
+she felt guilty towards Geordo.[p]
 
 #
-[r]
-[r]
+Maria, trying to shake off the rumors and her feelings,[r]
+hurried her pace.[r]
 [p]
 
 [chara_hide name="maria" ]
@@ -1297,8 +1297,8 @@ f.charas = [
 [bg storage="kyokai.png" ]
 	
 #
-[r]
-[p]
+When Maria opened the chapel doors,[r]
+Geordo was already there.[p]
 
 [playbgm  volume=30   storage="M21_FinalMix.ogg"]
 
@@ -1306,177 +1306,177 @@ f.charas = [
 
 
 #
-[r]
-[r]
-[p]
+The evening light[r]
+shone red through the stained glass,[r]
+illuminating Geordo in a mystical light.[p]
 
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_def"]
 
-#
-[p]
+#Maria
+So beautiful—[p]
 
 #
-[r]
-[p]
+It was like something not of this world.[r]
+Maria let out a soft sigh.[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_doya"]
 
-#
+#Geordo
 [v storage="119"]
-[p]
+Maria, come here.[p]
 
 [chara_mod name="maria" face="hamehura_Maria_cos1_mu"]
 
 #
-[r]
-[p]
+Geordo motioned for her to come.[r]
+Coming back to her senses, Maria stood beside him.[p]
 
-#
-[p]
+#Maria
+Prince Geordo, you wanted to talk—[p]
 
-#:hamehura_Giord_cos1_def
+#Geordo:hamehura_Giord_cos1_def
 [v storage="122"]
-[p]
+...I've never met someone like you before.[p]
 
-#:hamehura_Maria_cos1_odo
-[p]
+#Maria:hamehura_Maria_cos1_odo
+Huh?[p]
 
-#
+#Geordo
 [v storage="124"]
-[r]
-[r]
-[p]
+You're so vivid in everything you do...[r]
+I thought my days would always be the same,[r]
+but ever since I met you, they've been full of color.[p]
 
-#:hamehura_Giord_cos1_doya
+#Geordo:hamehura_Giord_cos1_doya
 [v storage="125"]
-[r]
-[p]
+Before I knew it, I was always watching you—[r]
+I wanted you.[p]
 
-#:hamehura_Giord_cos1_def
+#Geordo:hamehura_Giord_cos1_def
 [v storage="126"]
-[r]
-[r]
-[p]
+But every time I reached out, you slipped away like a butterfly.[r]
+Then, like a kitten,[r]
+you'd look at me so endearingly...[p]
 
-#
+#Geordo
 [v storage="127"]
-[r]
-[p]
+Everyone else tries to become mine on their own,[r]
+you know? Heh heh.[p]
 
-#:hamehura_Giord_cos1_doya
+#Geordo:hamehura_Giord_cos1_doya
 [v storage="128"]
-[r]
-[p]
+...But today,[r]
+I want to say this to you.[p]
 
 #
-[r]
-[p]
+Geordo took Maria's hand[r]
+and knelt down like a prince.[p]
 
-#:hamehura_Giord_cos1_man
+#Geordo:hamehura_Giord_cos1_man
 [v storage="130"]
 
-[r]
-[p]
+Maria.[r]
+Be my princess and mine alone.[p]
+
+#Maria
+Prince Geordo...[p]
 
 #
-[p]
+Maria stared in amazement[r]
+into Geordo's eyes.[p]
 
 #
-[r]
-[p]
+She wasn't so dense as to not realize[r]
+that this was a proposal.[p]
 
 #
-[r]
-[p]
-
-#
-[p]
+I'm so happy.[p]
 
 [chara_mod name="maria" face="hamehura_Maria_cos1_ase"]
 
 #
-[p]
+...But.[p]
 
 #
-[r]
-[p]
+What came to Maria's mind was[r]
+the dark rumors from earlier.[p]
 
-#:hamehura_Maria_cos1_ai
-[r]
-[p]
+#Maria:hamehura_Maria_cos1_ai
+...With me, Prince Geordo,[r]
+I'll just cause you trouble.[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
 
-#
-[r]
-[l][r]
-[p]
+#Maria
+Prince Geordo, you're[r]
+a candidate for the next king.[l][r]
+A woman like me would just tarnish your position.[p]
 
-#
-[l][r]
-[r]
-[p]
+#Maria
+That's what everyone is saying.[l][r]
+That I'll be the one to bring about[r]
+Prince Geordo's ruin.[p]
 
-#
+#Geordo
 [v storage="139"]
 
-[p]
+—Ah, goodness.[p]
 
 #
-[r]
-[p]
+Interrupting Maria as she hung her head,[r]
+Geordo gave a troubled smile.[p]
 
-#
+#Geordo
 [v storage="141"]
 
-[r]
-[p]
+Do I have to come catch you[r]
+all over again?[p]
 
 [chara_mod name="gio" face="hamehura_Giord_cos1_ai"]
 
 #
-[r]
-[p]
+His smiling, rose-colored lips brushed softly[r]
+against the back of Maria's hand in a gentle kiss.[p]
 
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-[r]
-[r]
-[p]
+Maria flinched slightly,[r]
+as Geordo stood up and[r]
+looked into her eyes.[p]
 
-#:hamehura_Giord_cos1_doya
+#Geordo:hamehura_Giord_cos1_doya
 [v storage="144"]
-[r]
-[r]
-[p]
+I will eventually become the king of this country.[r]
+A king can't be swayed by the petty rumors[r]
+of the lower ranks.[p]
 
-#
+#Geordo
 [v storage="145"]
-[p]
-[l][r]
-[r]
-[p]
+One must simply remain dignified.[p]
+Both you and I.[l][r]
+Because that's the truth,[r]
+there's nothing to be ashamed of, is there?[p]
 
-#:hamehura_Giord_cos1_def
+#Geordo:hamehura_Giord_cos1_def
 [v storage="146"]
 
-[p]
+...So please, don't give up?[p]
 
 #
 
-[l][r]
-[r]
-[p]
+No matter who you are, I'll accept you—[l][r]
+That determination filled[r]
+his gentle, flame-like gaze.[p]
 
-#
+#Maria
+How should I respond?
 
+;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text="Are you really sure it's me?"  target="*select_03_01"  ]
+;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text="I'll gladly accept."  target="*select_03_02"  ]
 
-;[glink  color="white"  size="20"  x="360"  width="400"  y="100"  text=""  target="*select_03_01"  ]
-;[glink  color="white"  size="20"  x="360"  width="400"  y="170"  text=""  target="*select_03_02"  ]
-
-[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text=""  target="*select_03_01"]
-[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="" target="*select_03_02" ]
+[button name="button" graphic="select/ans_03_01.png" enterimg="select/ans_03_01_on.png" x=220 y=100 text="Are you really sure it's me?"  target="*select_03_01"]
+[button name="button" graphic="select/ans_03_02.png" enterimg="select/ans_03_02_on.png" x=220 y=240 text="I'll gladly accept." target="*select_03_02" ]
 
 [s]
 
@@ -1484,23 +1484,23 @@ f.charas = [
 [eval exp="f.end=1"]
 
 [cm]
-#:hamehura_Maria_cos1_ai
-[l][r]
-[p]
+#Maria:hamehura_Maria_cos1_ai
+Prince Geordo...[l][r]
+Are you really sure... it's okay?[p]
 
 #
-[l][r]
-[p]
+Maria's voice trembled.[l][r]
+How kind he is.[p]
 
-[p]
+Tears of joy welled up in her eyes.[p]
 
-#
-[r]
-[p]
+#Maria
+If I give you all of myself...[r]
+Is that okay?[p]
 
-#:hamehura_Giord_cos1_man
+#Geordo:hamehura_Giord_cos1_man
 [v storage="151"]
-[p]
+Of course, Maria.[p]
 
 
 
@@ -1517,26 +1517,26 @@ f.charas = [
 [endif]
 
 #
-[p]
+Geordo smiled and spread his arms.[p]
 
-[r]
-[p]
+Maria, of her own will,[r]
+entrusted herself to his arms.[p]
 
 #
 [v storage="h2"]
-[p]
+It was the gentlest embrace they'd ever shared.[p]
 
-[r]
-[p]
+In the shimmering light of the stained glass,[r]
+they gazed into each other's eyes.[p]
 
 #
-[l][r]
-[p]
+Geordo slowly leaned in.[l][r]
+Maria closed her eyes, ready to accept it.[p]
 
 #
 [v storage="h4"]
 
-[p]
+—A warm kiss.[p]
 
 @jump target="common_03"
 
@@ -1546,17 +1546,17 @@ f.charas = [
 
 [cm]
 
-#:hamehura_Maria_cos1_def2
-[l][r]
-[p]
+#Maria:hamehura_Maria_cos1_def2
+Prince Geordo—[l][r]
+I'll gladly accept.[p]
 
 #
-[p]
+Maria's voice trembled.[p]
 
-[l][r]
-[p]
+She was allowed to walk by his side.[l][r]
+The joy melted Maria's heart.[p]
 
-#
+#Geordo
 [celanim anim="red_rose_1" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
 @wait time=200
 [celanim anim="red_rose_2" layer="1" x=680 y=150 count=1 speed=0.5 wait=true]
@@ -1564,15 +1564,15 @@ f.charas = [
 [love_up]
 
 #
-[r]
-[p]
+Geordo, full of happiness,[r]
+narrowed his eyes in satisfaction.[p]
 
-#:hamehura_Giord_cos1_man
-[p]
+#Geordo:hamehura_Giord_cos1_man
+...You're such a good girl.[p]
 
 #
-[r]
-[p]
+It was a small, sweet whisper[r]
+meant only for Maria to hear.[p]
 
 [chara_hide_all]
 [bg storage="white.png" time=1000] 
@@ -1585,56 +1585,56 @@ f.charas = [
 [endif]
 
 #
-[r]
-[p]
+In the next moment, Geordo[r]
+pulled Maria firmly into his arms.[p]
+
+#Maria
+Prince Geordo...![p]
 
 #
-[p]
-
-#
-[r]
-[p]
+Maria, of her own will,[r]
+hugged him back with all her strength.[p]
 
 #
 
-[l][r]
-[r]
-[p]
+It was the most passionate embrace they'd ever shared.[l][r]
+In the shimmering light of the stained glass,[r]
+they gazed into each other's eyes.[p]
 
 #
-[l][r]
-[p]
+Geordo slowly leaned in.[l][r]
+Maria closed her eyes, ready to accept it.[p]
 
 #
 [v storage="h4"]
-[p]
+—A kiss so hot, it felt like she might melt.[p]
 *common_03
 
 #
-[r]
-[p]
+When they pulled apart,[r]
+Geordo was smiling.[p]
 
-#
+#Geordo
 [v storage="157"]
 
-[r]
-[r]
+So, for now, can you tell me[r]
+who's been spreading these ridiculous rumors?[r]
 [p]
 
 #
 [v storage="h2"]
 
-[r]
-[p]
+Still smiling gently, Geordo[r]
+showed a glimpse of his dark side.[p]
 
 #
-[p]
+—Ah, it's the usual Prince Geordo.[p]
 
 [free_layermode time=1000 ]
 
 #
-[r]
-[p]
+Maria couldn't help but[r]
+let out a giggle.[p]
 [layopt layer=message0 visible=false]
 [freeimage layer=0]
 [freeimage layer=1]
