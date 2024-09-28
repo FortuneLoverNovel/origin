@@ -4,20 +4,6 @@
 [title name="フォーチュンラバー"]
 [stop_keyconfig]
 
-
-[if exp="$.isNWJS()==false"]
-
-[preload storage="data/bgimage/splash1.png"]
-[bg storage="splash1.png" time=500]
-[p]
-[playbgm storage="M19_FinalMix.ogg"]
-
-[endif]
-
-
-[bg storage="black.png" time=500]
-
-
 ;ティラノスクリプトが標準で用意している便利なライブラリ群
 ;コンフィグ、CG、回想モードを使う場合は必須
 @call storage="tyrano.ks"
