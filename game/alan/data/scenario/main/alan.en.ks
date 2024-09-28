@@ -396,30 +396,30 @@ f.charas = [
 #Maria
 
 
-Tired...[p]
+I'm exhausted...[p]
 
 [playbgm  volume=15   storage="M33_FinalMix.ogg" ]
 
 
 #
-Maria was slumped over a desk in the corner of the library.[p]
+Maria was slumped over a desk in the library corner.[p]
 
 #Maria
-With the final exams over,[r]
-I thought I could finally relax...[p]
+Now that finals are over,[r]
+I thought I could finally rest...[p]
 
 [chara_hide name="maria"]
 
 [chara_show name="alan" top="&f.top" left="&f.right" face="hamehura_Alan_cos1_mu" wait=true]
 
 #
-What Maria remembered was[r]
+Maria's thoughts turned to...[r]
 the Fourth Prince, Alan Stuart.[p]
 
 #
-Not just his twin brother, Geordo,[r]
-but also the fact that even Maria, a commoner and a woman,[r]
-outperformed him in the exams, left Alan feeling irritated.[p]
+Not just his twin, Geordo,[r]
+but also that even Maria, a commoner,[r]
+outdid him in the exams, leaving Alan irritated.[p]
 
 [chara_hide name="alan"]
 [chara_show name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_ai" wait=true]
@@ -430,15 +430,15 @@ It really hurts...[p]
 
 #
 
-However, those words come from frustration,[r]
-not from malice, like with Katarina.[r]
-I understand that.[p]
+But it's out of frustration,[r]
+not malice, like Katarina's.[r]
+I get that.[p]
 
 [md name="maria" face="無表情"]
 
 #
-If my presence causes Alan stress,[r]
-Maria thought it would be better to avoid him.[p]
+If I cause Alan stress,[r]
+Maria thought she should avoid him.[p]
 
 [stopbgm]
 
@@ -452,12 +452,12 @@ Just then,[p]
 
 [md name="maria" face="焦り"]
 #
-she heard the door to the library open,[r]
-and Maria jerked upright.[p]
+She heard the library door open,[r]
+and Maria jumped up in surprise.[p]
 
 #
-Peeking from behind the bookshelf, she saw the person who entered.[r]
-It was him, with a displeased look on his face.[p]
+Peeking from behind the shelf, she saw who entered.[r]
+It was him, looking displeased.[p]
 
 [chara_hide name="maria"]
 
@@ -678,8 +678,8 @@ It was at that moment.[p]
 [md name="maria" face="驚き" ]
 
 #
-From the other side of the garden hedge, the sound of a violin[r]
-played a beautiful melody.[p]
+From beyond the garden hedge, the sound of a violin[r]
+weaving a beautiful melody.[p]
 
 [md name="maria" face="笑顔" ]
 

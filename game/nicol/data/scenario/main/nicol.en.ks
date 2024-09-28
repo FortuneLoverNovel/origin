@@ -562,7 +562,7 @@ I can hold a parasol for you.[p]
 [md name="sophia" face="hamehura_Sophia_cos1_mu"]
 
 #Sophia
-......Well, just for a little while.[p]
+...Well, just for a little while.[p]
 	
 ;=======================================
 [fadeoutbgm ]
@@ -902,7 +902,7 @@ Maria looked him straight in the eye.[p]
 
 #
 With her words and her heart,[r]
-she showed she was being honest.[p]
+showed that she was being honest.[p]
 
 #Nicol
 You truly believe... don't you?[p]

@@ -1426,7 +1426,7 @@ It seems like you've misunderstood something, so[r]
 
 #Keith	
 [r]
-All of that was because of *you*![p]
+All of that was because of you![p]
 
 [md name="maria" face="驚き"]
 

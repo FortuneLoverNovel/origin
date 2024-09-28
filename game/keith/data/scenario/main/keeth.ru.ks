@@ -427,7 +427,7 @@ f.charas = [
 
 [v storage="1"]
 
-#Киc	
+#Кит	
 Ты милая. Из какой ты семьи?[p]
 [playbgm  volume=15   storage="M30_FinalMix.ogg" ]
 
@@ -449,20 +449,20 @@ f.charas = [
 и внезапно осознала, кто он.[p]
 
 #
-Это был Кис Клаес,[l][r]
+Это был Кит Клаес,[l][r]
 наследник дома Клаес и сводный брат[r]
 леди Катарины Клаес, невесты принца Джордо.[p]
 
 #
-Кис с уверенной улыбкой наклонился к Марии.[p]
+Кит с уверенной улыбкой наклонился к Марии.[p]
 
 [v storage="h2"]
 
-#Киc
+#Кит
 Эй, давай поиграем немного?[p]
 
 #
-Кис прикоснулся к подбородку Марии[r]
+Кит прикоснулся к подбородку Марии[r]
 и попытался поднять её лицо, но—[p]
 
 [free_layermode time=1000 ]
@@ -490,7 +490,7 @@ f.charas = [
 [md name="maria" face="焦り"]
 
 #
-Мария в спешке отступила от Киса на полшага.[p]
+Мария в спешке отступила от Кита на полшага.[p]
 
 #Мария
 (He's the heir of the Claes family.[r]
@@ -503,11 +503,11 @@ He must be teasing me...!)[p]
 [love_up]
 
 
-#Киc	
+#Кит	
 Ого? Ты говоришь *мне* «нет, спасибо»?[p]
 
 #
-Кис посмотрел на свою пустую руку[r]
+Кит посмотрел на свою пустую руку[r]
 и насмешливо приподнял бровь.[p]
 
 [md name="keeth" face="無表情"]
@@ -517,7 +517,7 @@ He must be teasing me...!)[p]
 
 #Мария
 There's no way I could ever[r]
-быть достойной такого, как вы, Кис-сама![p]
+быть достойной такого, как вы, Кит-сама![p]
 
 [md name="maria" face="焦り"]
 
@@ -540,7 +540,7 @@ could cost a commoner like her her life.[r]
 Мне нужно на занятия, так что прошу меня извинить...![p]
 
 #
-Мария быстро поклонилась Кису[r]
+Мария быстро поклонилась Киту[r]
 и быстро развернулась, чтобы убежать.[p]
 
 [jump target="*common_01"]
@@ -591,14 +591,14 @@ would be more than a commoner could handle.[r]
 
 #
 When she cautiously opened her eyes,[r]
-перед ней стоял Кис, неловко пожимая плечами.[p]
+перед ней стоял Кит, неловко пожимая плечами.[p]
 
 [md name="maria" face="焦り"]
 
 
 ;[v storage="h2"]
 
-#Киc
+#Кит
 Не реагируй так.[r]
 Будто я тебя обижаю.[r]
 Я бы не сделал ничего плохого леди.[p]
@@ -606,7 +606,7 @@ When she cautiously opened her eyes,[r]
 [md name="maria" face="驚き"]
 [md name="keeth" face="微笑み"]
 
-#Киc
+#Кит
 ...Или ты на самом деле чего-то ожидала?[p]
 
 [md name="maria" face="焦り"]
@@ -627,7 +627,7 @@ When she cautiously opened her eyes,[r]
 
 
 #
-Мария отскочила от Киса[r]
+Мария отскочила от Кита[r]
 и быстро развернулась и убежала.[p]
 
 *common_01
@@ -638,31 +638,31 @@ When she cautiously opened her eyes,[r]
 
 [v storage="h1"]
 
-#Киc
+#Кит
 Хм...[p]
 
 #
 Отказаться от моего предложения, да?[r]
-Кис приподнял бровь.[p]
+Кит приподнял бровь.[p]
 
 #
-Кис, удивлённый её реакцией,[r]
+Кит, удивлённый её реакцией,[r]
 смотрел ей вслед, как хищник.[r]
 словно кот, следящий за своей добычей.[p]
 
 #
 Он сделал несколько шагов вперёд.[r]
-Кис поднял платочек,[r]
+Кит поднял платочек,[r]
 который Мария уронила.[p]
 
 [md name="keeth" face="微笑み"]
 
-#Киc
+#Кит
 Хм. Дёшево, но со вкусом.[p]
 
 #
 Посмотрев на имя «Мария», вышитое на платке,[r]
-Кис хитро ухмыльнулся[r]
+Кит хитро ухмыльнулся[r]
 с хитрой улыбкой на лице.[p]
 
 *dev1
@@ -699,7 +699,7 @@ When she cautiously opened her eyes,[r]
 
 #
 Леди Катарина и[r]
-её свита благородных девиц[r]
+её свита благородных девушек[r]
 окружили Марию враждебными взглядами.[p]
 
 #
@@ -786,7 +786,7 @@ they'll leave...)[p]
 [p]
 
 #
-Одна из девиц злобно усмехнулась[r]
+Одна из девушек злобно усмехнулась[r]
 и подняла руку.[p]
 
 #
@@ -934,28 +934,28 @@ they'll leave...)[p]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #Мария
-Кис-сама...!?[p]
+Кит-сама...!?[p]
 
 [md name="keeth" face="無表情"]
 
 [v storage="h3"]
 
-#Киc
+#Кит
 ...Ха.[r]
 Я просто хотел вернуть платок, который подобрал,[r]
 но вместо этого я оказался свидетелем *этого*.[p]
 
 #Мария
-Кис-сама, вы спасли меня?[p]
+Кит-сама, вы спасли меня?[p]
 
 [md name="maria" face="焦り"]
 [md name="keeth" face="悲しみ"]
 
-#Киc
+#Кит
 Ну... думаю, можно сказать и так.[r]
 Но не говори никому, хорошо?[p]
 
-#Киc
+#Кит
 В конце концов... Катарина всё же моя сестра.[r]
 Если станет известно, что я помог тебе,[r]
 это может вызвать для меня проблемы.[p]
@@ -965,7 +965,7 @@ they'll leave...)[p]
 
 #
 Вот почему я не вмешался напрямую.[r]
-Я послал глиняную фигуру, объяснил Кис.[p]
+Я послал глиняную фигуру, объяснил Кит.[p]
 
 [md name="maria" face="無表情"]
 [md name="keeth" face="驚き"]
@@ -973,7 +973,7 @@ they'll leave...)[p]
 #
 ...Но внезапно Мария перед ним[r]
 начала проливать крупные слёзы.[r]
-Кис растерялся,[p]
+Кит растерялся,[p]
 
 [md name="maria" face="泣き"]
 
@@ -991,52 +991,52 @@ they'll leave...)[p]
 
 [v storage="h5"]
 
-#Киc
+#Кит
 Мария...[p]
 
 #
-Смотря на дрожащие плечи Марии, Кис[r]
+Смотря на дрожащие плечи Марии, Кит[r]
 осознал, сколько же страха она испытала.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
 
-#Киc
+#Кит
 (Сколько же страха и тревоги...[r]
 this girl must have been feeling all alone...)[p]
 
 [md name="maria" face="泣き"]
 
-#Киc
+#Кит
 Ты тоже терпела всё это одна, да...?[p]
 
 #
 Отождествляя её ситуацию со своей,[r]
-Кис не мог просто оставить её одну.[r]
+Кит не мог просто оставить её одну.[r]
 [p]
 
 #
-Кис неуверенно протянул руку,[r]
+Кит неуверенно протянул руку,[r]
 но затем крепко обнял Марию.[p]
 
 [v storage="69"]
 
-#Киc
+#Кит
 ...Ты молодец. Должно быть, тебе было страшно.[r]
 Но теперь всё хорошо.[p]
 
 #
 Его рука неловко погладила волосы Марии.[r]
-Но Кис изо всех сил старался её утешить.[p]
+Но Кит изо всех сил старался её утешить.[p]
 
-#Киc
+#Кит
 Так что, ну...[r]
 хватит плакать, ладно?[p]
 
 [md name="maria" face="悲しみ"]
 
 #
-Обычно ветреный Кис[r]
+Обычно ветреный Кит[r]
 сейчас выглядел неловко.[p]
 
 #
@@ -1047,7 +1047,7 @@ this girl must have been feeling all alone...)[p]
 
 #
 От чувства безопасности её слёзы незаметно прекратились.[r]
-Мария вытерла глаза пальцами и посмотрела на Киса.[p]
+Мария вытерла глаза пальцами и посмотрела на Кита.[p]
 
 #Мария
 (I have to say something...)
@@ -1064,7 +1064,7 @@ this girl must have been feeling all alone...)[p]
 [md name="keeth" face="無表情"]
 
 #Мария
-...Спасибо вам, Кис-сама.[r]
+...Спасибо вам, Кит-сама.[r]
 Если бы вы меня не спасли, я не знаю, что бы со мной случилось...[p]
 
 #Мария
@@ -1073,9 +1073,9 @@ this girl must have been feeling all alone...)[p]
 #
 Голос Марии, ещё дрожащий от слёз,[r]
 всё ещё немного дрожал, но[r]
-она изо всех сил старалась выразить благодарность Кису.[p]
+она изо всех сил старалась выразить благодарность Киту.[p]
 
-#Киc
+#Кит
 Ну... ничего.[r]
 Видеть, как с девушкой так поступают,[r]
 и просто стоять в стороне, было бы неправильно...[p]
@@ -1084,7 +1084,7 @@ this girl must have been feeling all alone...)[p]
 
 
 #
-Кис отвернулся от Марии.[p]
+Кит отвернулся от Марии.[p]
 
 
 [celanim anim="yellow_rose_1" layer="1" x=680 y=200 count=1 speed=0.5 wait=true]
@@ -1099,7 +1099,7 @@ this girl must have been feeling all alone...)[p]
 
 [md name="keeth" face="微笑み"]
 
-#Киc
+#Кит
 Ну, главное, что ты не пострадала, да?[p]
 
 [md name="maria" face="微笑み"]
@@ -1125,13 +1125,13 @@ this girl must have been feeling all alone...)[p]
 [md name="keeth" face="無表情"]
 
 #Мария
-Эм... Кис-сама.[r]
+Эм... Кит-сама.[r]
 Почему вы[r]
 помогли мне?[p]
 
 #
-Леди Катарина — сводная сестра Киса.[r]
-Действия Киса шли вразрез с[r]
+Леди Катарина — сводная сестра Кита.[r]
+Действия Кита шли вразрез с[r]
 интересами Катарины.[p]
 
 #
@@ -1139,7 +1139,7 @@ this girl must have been feeling all alone...)[p]
 его действия могли поставить его в сложное положение.[r]
 [p]
 
-#Киc
+#Кит
 Ну... ничего.[r]
 Видеть, как с девушкой так поступают,[r]
 и просто стоять в стороне, было бы неправильно...[p]
@@ -1147,7 +1147,7 @@ this girl must have been feeling all alone...)[p]
 [md name="maria" face="驚き"]
 [md name="keeth" face="怒り"]
 
-#Киc
+#Кит
 ...Это было моё собственное решение.[r]
 Тебе не нужно волноваться[r]
 или чувствовать себя виноватой, хорошо?[p]
@@ -1162,15 +1162,15 @@ this girl must have been feeling all alone...)[p]
 
 
 #Мария
-...Спасибо, Кис-сама.[p]
+...Спасибо, Кит-сама.[p]
 
 [md name="keeth" face="微笑み"]
 
-#Киc
+#Кит
 Пожалуйста.[p]
 
 #
-Кис снова отвернулся от Марии.[r]
+Кит снова отвернулся от Марии.[r]
 Но его лицо, слегка покрасневшее,[r]
 смущённо порозовело.[p]
 
@@ -1221,7 +1221,7 @@ this girl must have been feeling all alone...)[p]
 
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" ]
 
-#Киc
+#Кит
 ...[p]
 
 [chara_hide name="keeth"]
@@ -1229,10 +1229,10 @@ this girl must have been feeling all alone...)[p]
 [chara_show  name="maria" top="&f.top" left="&f.left" face="hamehura_Maria_cos1_odo"]
 
 #Мария
-Кис-сама...?[p]
+Кит-сама...?[p]
 
 #
-Она увидела, как Кис направляется в сад.[r]
+Она увидела, как Кит направляется в сад.[r]
 [p]
 
 [md name="maria" face="悲しみ"]
@@ -1263,11 +1263,11 @@ Maybe I'll play a little prank on him.)[p]
 [md name="maria" face="微笑み"]
 
 #
-Казалось, Кис был по другую сторону цветочных кустов.[r]
+Казалось, Кит был по другую сторону цветочных кустов.[r]
 [p]
 
 #
-И тут она услышала, как Кис что-то бормочет[r]
+И тут она услышала, как Кит что-то бормочет[r]
 себе под нос.[p]
 
 [chara_hide name="maria"]
@@ -1276,47 +1276,47 @@ Maybe I'll play a little prank on him.)[p]
 
 [v storage="93"]
 
-#Киc
+#Кит
 Пожалуйста, выйди за меня.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="94"]
 
-#Киc
+#Кит
 ...Мм, слишком просто?[p]
 
 [v storage="95"]
 
 [md name="keeth" face="無表情"]
 
-#Киc
+#Кит
 Покойся со мной в одном гробу.[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="96"]
 
-#Киc
+#Кит
 ...Слишком мрачно? Наверное, отпугну её...[p]
 
 [md name="keeth" face="微笑み"]
 
 [v storage="97"]
 
-#Киc
+#Кит
 Ты моя прекрасная первая звезда...[p]
 
 [md name="keeth" face="悲しみ"]
 
 [v storage="98"]
 
-#Киc
+#Кит
 Фу, слишком слащаво. Точно нет.[p]
 
 #
 Это явно были слова предложения.[r]
-Похоже, Кис[r]
+Похоже, Кит[r]
 репетировал признание.[p]
 
 [chara_hide name="keeth"]
@@ -1334,7 +1334,7 @@ Maybe I'll play a little prank on him.)[p]
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
 
 #
-(*Snap!*)[p]
+(Snap!)[p]
 
 #
 Она наступила на маленькую ветку.[p]
@@ -1345,11 +1345,11 @@ Maybe I'll play a little prank on him.)[p]
 
 [v storage="101"]
 
-#Киc
+#Кит
 К-кто здесь!?[p]
 
 #
-Голос Киса звучал явно обеспокоенно, когда он заглянул через кусты.[l][r]
+Голос Кита звучал явно обеспокоенно, когда он заглянул через кусты.[l][r]
 И когда он увидел Марию,[r]
 его голос стал ещё выше.[p]
 
@@ -1361,13 +1361,13 @@ Maybe I'll play a little prank on him.)[p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#Киc
+#Кит
 W-what!? Maria!?[p]
 
 [md name="keeth" face="照れ"]
 
 #
-Лицо Киса залилось румянцем.[r]
+Лицо Кита залилось румянцем.[r]
 Мария никогда прежде не видела его таким.[p]
 
 [kanim_chara layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
@@ -1401,7 +1401,7 @@ But.[p]
 
 [v storage="111"]
 
-#Киc
+#Кит
 Подожди.[p]
 
 [md name="maria" face="驚き"]
@@ -1409,13 +1409,13 @@ But.[p]
 @quake_camera
 
 #
-Кис схватил Марию за руку.[p]
+Кит схватил Марию за руку.[p]
 
 [md name="maria" face="悲しみ"]
 
 [v storage="113"]
 
-#Киc	
+#Кит	
 С-слушай...[r]
 Кажется, ты кое-что неправильно поняла, так что[r]
 I'll just say it...[p]
@@ -1424,9 +1424,9 @@ I'll just say it...[p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
 
-#Киc	
+#Кит	
 Ah, to hell with it.[r]
-Это всё было *из-за тебя*![p]
+Это всё было из-за тебя![p]
 
 [md name="maria" face="驚き"]
 
@@ -1436,16 +1436,16 @@ Ah, to hell with it.[r]
 [md name="keeth" face="無表情"]
 
 #
-Мария ошеломлённо посмотрела на Киса.[p]
+Мария ошеломлённо посмотрела на Кита.[p]
 
 #
-Кис смущённо отвернулся.[l][r]
+Кит смущённо отвернулся.[l][r]
 Но его уши были ярко-красными,[r]
 а рука, державшая Марию, была горячей.[p]
 
 [v storage="118"]
 
-#Киc	
+#Кит	
 ...Завтра. Завтра я сделаю всё как надо,[r]
 so come here and take responsibility, okay?[r]
 And no backing out. You don't get a say in this.[p]
@@ -1456,7 +1456,7 @@ And no backing out. You don't get a say in this.[p]
 
 #
 Сказав это,[r]
-Кис отпустил руку Марии[r]
+Кит отпустил руку Марии[r]
 и быстро ушёл.[p]
 
 #Мария	
@@ -1505,7 +1505,7 @@ slowly realized the situation.[p]
 [md name="maria" face="無表情"]
 
 #
-Как и обещала Кису,[r]
+Как и обещала Киту,[r]
 Мария была на том же месте, что и вчера.[p]
 
 #
@@ -1530,7 +1530,7 @@ before coming...)[p]
 [chara_show name="keeth" top="&f.top" left="&f.right" face="hamehura_Keith_cos1_mu" wait=true]
 
 #
-Это был Кис.[l][r]
+Это был Кит.[l][r]
 He too, just like Maria,[r]
 seemed a little uneasy.[p]
 
@@ -1538,7 +1538,7 @@ seemed a little uneasy.[p]
 
 [v storage="142"]
 
-#Киc	
+#Кит	
 Uh... Actually, I forgot to tell you yesterday...[r]
 I was planning to meet you at the rose garden...[r]
 but I got too flustered.[p]
@@ -1551,7 +1551,7 @@ After that excuse, he said,[p]
 [md name="maria" face="驚き"]
 [md name="keeth" face="無表情"]
 
-#Киc
+#Кит
 Let's go.[p]
 
 [kanim_chara layer=0 name="keeth" keyframe=quake time=300 count=1 easing=linear]
@@ -1582,7 +1582,7 @@ They reached the rose garden in silence.[p]
 
 [v storage="134"]
 
-#Киc
+#Кит
 ...Phew.[p]
 
 
@@ -1610,7 +1610,7 @@ Keith understood and began to speak to Maria.[p]
 
 [v storage="129"]
 
-#Киc	
+#Кит	
 It's not really like me to say something like this,[r]
 but...[p]
 
@@ -1622,7 +1622,7 @@ but...[p]
 
 [v storage="145"]
 
-#Киc	
+#Кит	
 I love you.[r]
 As a woman, I love you.[r]
 I want to make you the happiest person in the world.[p]
@@ -1634,7 +1634,7 @@ I want to make you the happiest person in the world.[p]
 
 [v storage="146"]
 
-#Киc	
+#Кит	
 ...I'm the brother of the woman who tormented you.[r]
 You don't need to worry about anything.[r]
 Just give me your honest answer.[p]
@@ -1652,19 +1652,19 @@ Thump—Maria's heart trembled.[p]
 
 [v storage="150"]
 
-#Киc
+#Кит
 It has to be you, Maria.[p]
 
 [v storage="151"]
 
-#Киc	
+#Кит	
 When you're with me, my empty heart feels full.[r]
 You see me for who I am. You hold the real me close.[r]
 ...And that makes me incredibly happy.[p]
 
 [v storage="152"]
 
-#Киc
+#Кит
 ...I've never felt like this before.[p]
 
 #Мария
@@ -1693,7 +1693,7 @@ Lord Keith, I... I love you too.[p]
 [v storage="156"]
 
 
-#Киc
+#Кит
 Maria...![p]
 
 @wait time=200
@@ -1707,7 +1707,7 @@ hugged Maria tightly.[p]
 
 [v storage="158"]
 
-#Киc
+#Кит
 Thank you, Maria. I'll cherish you forever.[p]
 
 #
@@ -1716,7 +1716,7 @@ Then, he gave Maria a playful wink.[p]
 
 [v storage="160"]
 
-#Киc
+#Кит
 I'll save the kiss on the lips for our wedding day.[p]
 
 #
@@ -1753,7 +1753,7 @@ Maria cared about Keith, and that's why she was worried.[p]
 
 [v storage="h3"]
 
-#Киc
+#Кит
 Sigh...[r]
 Do I really seem that naive to you?[r]
 That hurts...[p]
@@ -1761,11 +1761,11 @@ That hurts...[p]
 #Мария
 Ah, no, I didn't mean...![p]
 
-#Киc
+#Кит
 I know, I know—[r]
 I understand how you feel.[p]
 
-#Киc
+#Кит
 But...[r]
 It's because you think of me like that,[r]
 that I want you to be my partner for life.[p]
@@ -1773,7 +1773,7 @@ that I want you to be my partner for life.[p]
 #Мария
 Lord Keith...[p]
 
-#Киc
+#Кит
 I've already made up my mind. What about you?[p]
 
 #Мария
@@ -1789,7 +1789,7 @@ That was her answer to his feelings.[p]
 
 [v storage="158"]
 
-#Киc
+#Кит
 ...Thank you, Maria. I'll always cherish you.[p]
 
 #

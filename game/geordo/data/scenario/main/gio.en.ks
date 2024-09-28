@@ -367,7 +367,7 @@ Where am I...?[p]
 #
 A lovely garden, with the scent of roses.[l][r]
 Despite the beautiful scenery,[r]
-the girl had a confused look on her face.[p]
+the girl looked confused.[p]
 
 #
 The girl who had just enrolled in the magic academy—[l][r]
@@ -382,18 +382,18 @@ What should I do...?[p]
 
 #
 Maria looked around.[l][r]
-Then, she spotted a large tree.[p]
+Then, she saw a large tree.[p]
 
 #Maria:hamehura_Maria_cos1_def
-Yes, if I climb that tall tree,[r]
-maybe I can figure out where I am...[p]
+Yes, if I climb that tree,[r]
+I might figure out where I am...[p]
 
 #
-Maria, still in her skirt,[r]
+Maria, in her skirt,[r]
 placed her foot on the tree.[p]
 #
 But...[l][r]
-Just as she thought she might be able to climb,[r]
+Just as she thought she could climb,[r]
 and was about to pull herself up...[p]
 
 [v storage="h1"]
@@ -408,7 +408,7 @@ Huh?[p]
 ...Ah![p]
 
 #
-Still in her climbing position, Maria[r]
+Still in her climbing pose, Maria[r]
 opened her eyes wide.[l][r]
 Because standing there was—[p]
 
@@ -424,15 +424,15 @@ P-Prince Geordo...?[p]
 [v storage="h2"]
 #
 Geordo Stuart.[l][r]
-The third prince of this kingdom himself.[p]
+The third prince of this kingdom.[p]
 
 #
-Maria quickly corrected her posture[r]
+Maria quickly adjusted her posture[r]
 and bowed deeply.[p]
 
 #Maria
 I apologize.[r]
-For showing such an improper sight,[r]
+For showing such improper behavior,[r]
 ...to Your Highness![p]
 
 #Geordo	
@@ -459,7 +459,7 @@ What should I say?
 [cm]
 
 #Maria
-I thought if I got higher, I could see the surroundings...[r]
+I thought I could see better from up high...[r]
 I just wanted to find my way...[p]
 
 #Geordo	
@@ -468,7 +468,7 @@ I just wanted to find my way...[p]
 #Geordo	
 
 I see.[l][r]
-So, you were lost, weren't you?[p]
+So, you were lost, huh?[p]
 
 #
 He said it with a smile, hitting the mark,[r]
@@ -487,7 +487,7 @@ and struggle to find words.[p]
 
 #
 Seeing Maria like this,[r]
-Geordo chuckled.[p]
+Geordo chuckled softly.[p]
 
 #
 Even the way he laughed[r]
@@ -519,8 +519,8 @@ were gentle and gentlemanly.[p]
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ase" ]
 
 #Maria
-(If I tell him I was lost,[r]
-he'll just laugh again...)[p]
+(If I admit I was lost,[r]
+he'll laugh again...[p]
 
 #Maria
 I-it's nothing, really.[l][r]
@@ -528,7 +528,7 @@ Please, don't worry about it...![p]
 
 #Geordo
 When you say 'nothing,'[r]
-it makes me even more curious.[p]
+it only makes me more curious.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
 
@@ -538,19 +538,19 @@ Geordo tilted his head slightly.[p]
 [chara_mod  name="maria" face="hamehura_Maria_cos1_ai"]
 
 #
-Even such a gesture was graceful, but[l][r]
-Maria felt as if the prince thought she was ridiculous,[r]
+Even that gesture was graceful, but[l][r]
+Maria felt the prince thought she was ridiculous.[r]
 and she could only look down, her face flushed.[p]
 
 [chara_mod  name="gio" face="hamehura_Giord_cos1_ai"]
 
 #Geordo
-Ah, don't make that face.[l][r]
+Ah, don't look so sad.[l][r]
 I don't mean to be cruel.[p]
 
 #
-Geordo's voice was so gentle,[r]
-and gentlemanly.[p]
+Geordo's voice was very gentle,[r]
+and full of chivalry.[p]
 
 #Geordo
 [chara_mod  name="gio" face="hamehura_Giord_cos1_def"]
@@ -567,14 +567,14 @@ So, you were lost, weren't you?[p]
 
 #Geordo
 [v storage="25"]
-Then let me escort you back to the dormitory.[p]
+Then let me escort you back.[p]
 
 #Geordo
 [chara_mod  name="maria" face="hamehura_Maria_cos1_odo"]
 
 #
 [v storage="h2"]
-This way, Geordo began walking.[l][r]
+This way, said Geordo, starting to walk.[l][r]
 Maria was surprised, but she couldn't possibly refuse[r]
 the kindness of the third prince.[p]
 
@@ -582,7 +582,7 @@ the kindness of the third prince.[p]
 Th-thank you so much...![p]
 
 #
-He might actually be a kind person.[l][r]
+He might really be kind.[l][r]
 Maria thought as she[r]
 followed Geordo.[p]
 
@@ -614,23 +614,23 @@ followed Geordo.[p]
 
 #
 Remembering her first meeting with Geordo,[r]
-Maria let out a small laugh.[p]
+Maria smiled softly.[p]
 
 #
-Since then, she's learned the layout of the academy well,[r]
-and no longer gets lost like she did back then.[r]
+Since then, she learned the academy's layout,[r]
+and no longer got lost like back then.[r]
 [p]
 
 #Maria
 To the student council room,[r]
-this way is the shortcut, right?[l][r]
-...I wonder if everyone will like them?[p]
+this is the shortcut, right?[l][r]
+...Will everyone like them?[p]
 
 #
-In Maria's hands was a basket[r]
+Maria held a basket[r]
 filled with homemade muffins.[p]
-Imagining everyone's happy faces,[r]
-Maria felt light on her feet.[p]
+Imagining their happy faces,[r]
+Maria felt lighter on her feet.[p]
 
 [fadeoutbgm time=1000]
 
@@ -652,20 +652,20 @@ Ah...[p]
 
 #
 A voice full of hostility and malice[r]
-stopped Maria in her tracks.[p]
+called out to Maria.[p]
 
 #
-Before she knew it, Maria was surrounded[r]
-by a group of noble girls.[p]
+Before she realized, Maria was surrounded[r]
+by several noble girls.[p]
 
 #
 Leading them was[r]
-Lady Katarina Claes, the duke's daughter.[l][r]
+Lady Katarina Claes, daughter of a duke.[l][r]
 She was Geordo's fiancée.[p]
 
 #
 Before Maria could say anything,[r]
-Katarina strode towards Maria[r]
+Katarina strode up to Maria[r]
 and raised her hand—[p]
 
 [if exp="sf.btn_volume==true"]
@@ -691,23 +691,23 @@ spilled out onto the ground.[p]
 
 Just because you have Light Magic,[r]
 you think you're so special[r]
-and everyone's going to treat you like royalty![p]
+and that everyone will praise you![p]
 
 #
 Katarina raised her eyebrows[r]
-and shouted, glaring down[r]
-at the fallen muffins.[p]
+and, shouting angrily,[r]
+glared at the fallen muffins.[p]
 
 #Katarina
 [v storage="45"]
 
-You think this pitiful food made by a commoner[r]
-is good enough for the student council?[r]
+You think this pathetic food made by a commoner[r]
+is fit for the student council?[r]
 How ridiculous![p]
 
 #
 Katarina lifted her foot.[r]
-She was about to step on the muffins.[p]
+She was about to crush the muffins.[p]
 
 #Maria
 [kanim layer=0 name="maria" keyframe=quake time=300 count=1 easing=linear]
@@ -749,8 +749,8 @@ P-Prince Geordo!?[p]
 [v storage="51"]
 
 In front of me,[r]
-you dare disturb the order[r]
-like this? I won't tolerate it.[p]
+you dare disrupt order?[r]
+I won't allow it.[p]
 
 #Katarina	
 [chara_mod  name="kata" face="hamehura_Catalina_cos1_ai" ]
@@ -762,11 +762,11 @@ But, Prince Geordo—[p]
 #Geordo	
 [chara_mod  name="gio" face="hamehura_Giord_cos1_man"]
 
-Katarina. I thought you were smarter than this...[r]
+Katarina, I thought you were smarter than this...[r]
 [p]
 
-Do you plan to make me explain this again?[r]
-[l][r]
+You aren't seriously expecting[r]
+me to explain this twice?[l][r]
 If so, what a funny joke.[p]
 
 #Katarina	
@@ -808,7 +808,7 @@ Maria wasn't sure which to say.[p]
 #
 
 Meanwhile, Geordo[r]
-calmly picked up one of the fallen muffins[l][r]
+calmly picked up one of the muffins[l][r]
 and, without hesitation, took a bite.[p]
 
 [chara_hide_all ]
@@ -1092,7 +1092,7 @@ the truth was,[r]
 she was just embarrassed.[p]
 
 #
-Of course, Geordo knew all too well.[r]
+Of course, Geordo knew that all too well.[r]
 [p]
 
 [chara_hide name="maria"]
@@ -1251,7 +1251,7 @@ It's as if he's choosing his own ruin.[r]
 #Noblewoman 3:hamehura_DVDmob3_fear
 Shh, that's the commoner girl...[l][r]
 If we get too close,[r]
-we might be dragged into something too...[p]
+we might get dragged into it...[p]
 
 [chara_hide_all]
 
